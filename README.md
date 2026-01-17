@@ -169,6 +169,26 @@ python src/assistants/keto_shopping_assistant.py
 - **[VYBAVENI_A_TIPY.md](VYBAVENI_A_TIPY.md)** - Využití kuchyňského vybavení
 - **[TRAVENI_A_METABOLISMUS.md](TRAVENI_A_METABOLISMUS.md)** - Jak zlepšit trávení
 - **[MACINGOVA_DIETA.md](MACINGOVA_DIETA.md)** - Info o dietě Antonie Mačingové
+- **[TRAVENI_A_METABOLISMUS.md](TRAVENI_A_METABOLISMUS.md)** - Jak zlepšit trávení a metabolismus
+  - Co reálně pomáhá (bílkoviny, tuky, vláknina)
+  - Kdy co jíst pro optimální metabolismus
+  - Rychlá orientační tabulka
+  - Doporučení pro reflux a trávicí problémy
+
+- **[MACINGOVA_DIETA.md](MACINGOVA_DIETA.md)** - Podrobné informace o dietě Antonie Mačingové
+  - Všechna jídla a jejich varianty
+  - Principy Mačingovky
+  - Nákupní seznamy
+  - Tipy na přípravu
+
+- **[KETO_12_12_PLAN.md](KETO_12_12_PLAN.md)** - Keto + časově omezené stravování (12:12)
+  - Realistický plán pro ranní vstávání
+  - Kombinace keto s 12hodinovým fastingem
+  - Časování jídel pro optimální metabolismus
+  - Praktické tipy pro GERD a reflux
+  - Udržitelný režim bez extrémů
+
+### Use in Python code
 
 ### 🔧 Technická dokumentace:
 - **[osoby/README.md](osoby/README.md)** - Práce s profily a preferencemi
