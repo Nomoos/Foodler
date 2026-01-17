@@ -159,7 +159,32 @@ Tento jídelníček je určen pro:
 
 ## Další dokumentace
 
-### 📚 Podrobné průvodce:
+### 🚀 Začněte zde:
+- **[RYCHLY_START.md](RYCHLY_START.md)** - ⭐ Začněte TENTO víkend!
+  - Kompletní nákupní seznam
+  - Jednoduchý 2-hodinový meal prep
+  - Přesný časový harmonogram
+  - 3 základní recepty krok za krokem
+  - Ideální pro začátečníky
+
+### 📚 Podrobné průvodce meal prepu:
+- **[TYDENNI_PLANOVANI.md](TYDENNI_PLANOVANI.md)** - Kompletní strategie týdenního plánování
+  - Systém "2+5" (2 vaření za týden, 5 minut denně)
+  - Meal prep krok za krokem
+  - Top 5 receptů pro přípravu dopředu
+  - Nákupní seznamy a časové harmonogramy
+  - Strategie mražení a skladování
+  - Úspora 50-65% času stráveného vařením
+
+- **[VYBAVENI_A_TIPY.md](VYBAVENI_A_TIPY.md)** - Maximální využití kuchyňského vybavení
+  - Jak využít tlakový hrnec pro rychlé vaření
+  - Vakuovačka pro prodloužení trvanlivosti 2-3x
+  - Mrazák jako váš spojenec (až 3 měsíce zásoby)
+  - Trouba pro batch cooking (12 porcí za 1 hodinu)
+  - Smoothie meal prep (2minutové snídaně)
+  - Praktické kombinované strategie
+
+### 📖 O dietě a receptech:
 - **[MACINGOVA_DIETA.md](MACINGOVA_DIETA.md)** - Podrobné informace o dietě Antonie Mačingové
   - Všechna jídla a jejich varianty
   - Principy Mačingovky
@@ -172,7 +197,10 @@ Tento jídelníček je určen pro:
   - Vegetariánské varianty
   - Tipy na zálivky a dresinky
 
-- **[purpose](purpose)** - Původní dietní cíle a makronutrienty
+- **[PURPOSE_ANALYSIS.md](PURPOSE_ANALYSIS.md)** - Analýza účelu repozitáře
+  - Dietní cíle a makronutrienty
+  - Zdravotní kontext
+  - Detailní rozklad plánu
 
 ## Inspirace a použití
 
