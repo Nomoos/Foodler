@@ -14,8 +14,8 @@ Nástroj pro podporu hubnutí a zdravého stravování pro celou rodinu s důraz
 
 ### Pája (Pavla)
 - **Váha:** 77.3 kg (měření 22.12.2025)
-- **Výška:** 170 cm
-- **BMI:** 26.7
+- **Výška:** 169 cm
+- **BMI:** 27.1
 - **Procento tuku:** 39.6% (měření)
 - **Svalová hmota (SMM):** 25.6 kg (měření)
 - **VFA:** 147.2 cm²/level (měření)

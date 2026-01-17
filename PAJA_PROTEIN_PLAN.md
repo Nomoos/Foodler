@@ -9,8 +9,8 @@ Jde o **protein-first low-carb režim** s 12:12 intervalovým půstem, optimaliz
 
 - **Jméno:** Pája (Pavla)
 - **Hmotnost:** 77.3 kg (měření 22.12.2025)
-- **Výška:** 170 cm
-- **BMI:** 26.7
+- **Výška:** 169 cm
+- **BMI:** 27.1
 - **Procento tuku:** 39.6%
 - **Svalová hmota (SMM):** 25.6 kg
 - **VFA:** 147.2 cm²/level

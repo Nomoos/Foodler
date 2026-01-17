@@ -15,7 +15,7 @@ class OsobniProfil:
     
     jmeno: str = "Pája (Pavla)"
     vaha: float = 77.3  # kg (měření 22.12.2025)
-    vyska: int = 170  # cm
+    vyska: int = 169  # cm
     pohlavi: str = "žena"
     procento_tuku: float = 39.6  # % (měření 22.12.2025)
     tuková_hmota: float = 30.6  # kg (měření 22.12.2025)
