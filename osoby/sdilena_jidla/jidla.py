@@ -10,7 +10,7 @@ from dataclasses import dataclass
 
 
 @dataclass
-class SdilenеJidlo:
+class SdileneJidlo:
     """Reprezentuje jídlo, které může být sdíleno mezi osobami."""
     
     nazev: str
@@ -41,8 +41,8 @@ class SdilenеJidlo:
 class SdilenaJidla:
     """Sbírka sdílených jídel vhodných pro celou rodinu."""
     
-    JIDLA: List[SdilenеJidlo] = [
-        SdilenеJidlo(
+    JIDLA: List[SdileneJidlo] = [
+        SdileneJidlo(
             nazev="Kuřecí prsa na grilu s brokolicí",
             kategorie="obed",
             ingredience=["kuřecí prsa", "brokolice", "olivový olej", "česnek", "koření"],
@@ -56,7 +56,7 @@ class SdilenaJidla:
             vhodne_pro_meal_prep=True,
             poznamky="Ideální pro přípravu dopředu, vydrží 3-4 dny v lednici"
         ),
-        SdilenеJidlo(
+        SdileneJidlo(
             nazev="Salát s tuňákem a vejcem",
             kategorie="obed",
             ingredience=["tuňák v konzervě", "vejce", "zelený salát", "okurka", "olivový olej", "citrón"],
@@ -70,7 +70,7 @@ class SdilenaJidla:
             vhodne_pro_meal_prep=True,
             poznamky="Rychlá příprava, lze připravit den dopředu"
         ),
-        SdilenеJidlo(
+        SdileneJidlo(
             nazev="Hovězí maso s cuketou",
             kategorie="vecere",
             ingredience=["hovězí maso", "cuketa", "cibule", "rajčata", "olivový olej"],
@@ -84,7 +84,7 @@ class SdilenaJidla:
             vhodne_pro_meal_prep=True,
             poznamky="Výborné pro víkendový meal prep, vydrží 4 dny"
         ),
-        SdilenеJidlo(
+        SdileneJidlo(
             nazev="Vaječná omeleta se špenátem",
             kategorie="snidane",
             ingredience=["vejce", "špenát", "sýr", "máslo", "koření"],
@@ -98,7 +98,7 @@ class SdilenaJidla:
             vhodne_pro_meal_prep=False,
             poznamky="Nejlepší čerstvě připravená, ale lze ohřát"
         ),
-        SdilenеJidlo(
+        SdileneJidlo(
             nazev="Tvaroh s lněným semínkem",
             kategorie="svacina",
             ingredience=["tvaroh polotučný", "lněné semínko", "skořice"],
@@ -112,7 +112,7 @@ class SdilenaJidla:
             vhodne_pro_meal_prep=True,
             poznamky="Rychlá svačina, vydrží 2 dny"
         ),
-        SdilenеJidlo(
+        SdileneJidlo(
             nazev="Losos s kedlubnou",
             kategorie="vecere",
             ingredience=["lososový filet", "kedlubna", "olivový olej", "citrón", "kopr"],
@@ -126,7 +126,7 @@ class SdilenaJidla:
             vhodne_pro_meal_prep=True,
             poznamky="Omega-3, vhodné 2x týdně"
         ),
-        SdilenеJidlo(
+        SdileneJidlo(
             nazev="Salát z červené řepy s vejcem",
             kategorie="obed",
             ingredience=["červená řepa", "vejce", "olivový olej", "ocet", "koření"],
@@ -140,7 +140,7 @@ class SdilenaJidla:
             vhodne_pro_meal_prep=True,
             poznamky="Klasika z Mačingovky, vydrží 3 dny"
         ),
-        SdilenеJidlo(
+        SdileneJidlo(
             nazev="Krůtí maso s paprikou",
             kategorie="obed",
             ingredience=["krůtí prsa", "paprika", "cibule", "rajčata", "olivový olej"],
@@ -154,7 +154,7 @@ class SdilenaJidla:
             vhodne_pro_meal_prep=True,
             poznamky="Lehká varianta, vhodné pro večeři"
         ),
-        SdilenеJidlo(
+        SdileneJidlo(
             nazev="Cottage cheese s ořechy",
             kategorie="svacina",
             ingredience=["cottage cheese", "vlašské ořechy", "skořice"],
@@ -168,7 +168,7 @@ class SdilenaJidla:
             vhodne_pro_meal_prep=True,
             poznamky="Rychlá proteinová svačina"
         ),
-        SdilenеJidlo(
+        SdileneJidlo(
             nazev="Zeleninový salát s mandlemi",
             kategorie="svacina",
             ingredience=["zelený salát", "okurka", "rajčata", "mandle", "olivový olej"],
@@ -185,17 +185,17 @@ class SdilenaJidla:
     ]
     
     @staticmethod
-    def najdi_jidla_podle_kategorie(kategorie: str) -> List[SdilenеJidlo]:
+    def najdi_jidla_podle_kategorie(kategorie: str) -> List[SdileneJidlo]:
         """Najde všechna jídla podle kategorie."""
         return [j for j in SdilenaJidla.JIDLA if j.kategorie == kategorie]
     
     @staticmethod
-    def najdi_meal_prep_jidla() -> List[SdilenеJidlo]:
+    def najdi_meal_prep_jidla() -> List[SdileneJidlo]:
         """Najde jídla vhodná pro meal prep."""
         return [j for j in SdilenaJidla.JIDLA if j.vhodne_pro_meal_prep]
     
     @staticmethod
-    def najdi_rychla_jidla(max_minut: int = 15) -> List[SdilenеJidlo]:
+    def najdi_rychla_jidla(max_minut: int = 15) -> List[SdileneJidlo]:
         """Najde jídla s krátkou dobou přípravy."""
         return [j for j in SdilenaJidla.JIDLA if j.priprava_cas_min <= max_minut]
 

@@ -135,7 +135,7 @@ class DietniOmezeni:
         Kontroluje, zda jídlo spadá do denních limitů makronutrientů.
         
         Args:
-            sacharidy: Množství sacharidů v grамech
+            sacharidy: Množství sacharidů v gramech
             bilkoviny: Množství bílkovin v gramech
             
         Returns:
