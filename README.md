@@ -9,7 +9,14 @@ This project helps with diet tracking and meal planning by fetching nutritional 
 ## Installation
 
 1. Install Python 3.7 or higher
-2. Install required dependencies:
+2. (Optional but recommended) Create a virtual environment:
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+3. Install required dependencies:
 
 ```bash
 pip install -r requirements.txt
@@ -78,10 +85,12 @@ This script requires internet access to fetch data from kaloricketabulky.cz. If 
 ## Error Handling
 
 The script includes error handling for:
-- Network connection issues
-- Invalid URLs
-- Parsing errors
-- Missing data fields
+- **Network connection issues**: Returns error message "Error fetching data: [details]" and exits with code 1
+- **Invalid URLs**: Returns HTTP error with status code
+- **Parsing errors**: Returns error message "Error parsing data: [details]" 
+- **Missing data fields**: Fields not found in HTML will be omitted from output JSON
+
+When errors occur, the script will print an error message to stderr and return None (in library mode) or exit with code 1 (in CLI mode).
 
 ## Contributing
 

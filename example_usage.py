@@ -6,6 +6,7 @@ including caching for offline use.
 
 import json
 import os
+import sys
 from fetch_nutrition_data import fetch_nutrition_data
 
 
@@ -103,6 +104,8 @@ def calculate_serving(nutrition_data, serving_size_g, per_100g=True):
             calculated_value = numeric_value * factor
             serving_data['macros'][key] = f"{calculated_value:.1f} {unit}"
         except (ValueError, IndexError):
+            # Could not parse value, keep original
+            print(f"Warning: Could not parse value for {key}: {value}", file=sys.stderr)
             serving_data['macros'][key] = value
     
     return serving_data
