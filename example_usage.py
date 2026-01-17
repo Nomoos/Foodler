@@ -19,8 +19,14 @@ def save_nutrition_data(data, filename="nutrition_cache.json"):
     # Load existing cache if it exists
     cache = {}
     if os.path.exists(filename):
-        with open(filename, 'r', encoding='utf-8') as f:
-            cache = json.load(f)
+        try:
+            with open(filename, 'r', encoding='utf-8') as f:
+                content = f.read().strip()
+                if content:  # Only parse if file is not empty
+                    cache = json.loads(content)
+        except (json.JSONDecodeError, IOError):
+            # If cache is corrupted, start fresh
+            cache = {}
     
     # Add new data
     url = data.get('url', 'unknown')
