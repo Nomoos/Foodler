@@ -9,13 +9,17 @@ import json
 import csv
 from datetime import datetime, timedelta
 
+# Cesta k meal plan datům
+MEAL_PLAN_JSON = 'data/meal_plans/meal_plan_28_days.json'
+MEAL_PLAN_CSV = 'data/meal_plans/meal_plan_28_days.csv'
+
 def load_meal_plan_json():
     """Načte jídelníček z JSON souboru"""
     try:
-        with open('meal_plan_28_days.json', 'r', encoding='utf-8') as f:
+        with open(MEAL_PLAN_JSON, 'r', encoding='utf-8') as f:
             return json.load(f)
     except FileNotFoundError:
-        print("Chyba: Soubor 'meal_plan_28_days.json' nenalezen!")
+        print(f"Chyba: Soubor '{MEAL_PLAN_JSON}' nenalezen!")
         return None
     except json.JSONDecodeError as e:
         print(f"Chyba: Neplatný JSON formát - {e}")
@@ -24,10 +28,10 @@ def load_meal_plan_json():
 def load_meal_plan_csv():
     """Načte jídelníček z CSV souboru"""
     try:
-        with open('meal_plan_28_days.csv', 'r', encoding='utf-8') as f:
+        with open(MEAL_PLAN_CSV, 'r', encoding='utf-8') as f:
             return list(csv.DictReader(f))
     except FileNotFoundError:
-        print("Chyba: Soubor 'meal_plan_28_days.csv' nenalezen!")
+        print(f"Chyba: Soubor '{MEAL_PLAN_CSV}' nenalezen!")
         return None
 
 def get_meal_for_day(day_number):
