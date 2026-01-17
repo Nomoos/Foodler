@@ -116,6 +116,12 @@ Tento jídelníček je určen pro:
   - Principy Mačingovky
   - Nákupní seznamy
   - Tipy na přípravu
+
+- **[PROTEIN_FIRST_PLAN.md](PROTEIN_FIRST_PLAN.md)** - Protein-first low-carb plán (12:12 intermittent fasting)
+  - Optimalizováno pro osobu ~130 kg s GERD
+  - Závazné denní limity (≤2000 kcal, 140-150g protein, ≤70g carbs)
+  - Rozložení makroživin během dne
+  - Stravovací okno 6:30-18:30
 ### Use in Python code
 
 ```python
