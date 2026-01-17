@@ -7,8 +7,15 @@ This demonstrates the expected functionality with mock data.
 
 import unittest
 from unittest.mock import Mock, patch, MagicMock
-from kupi_scraper import KupiCzScraper, Product
 from datetime import datetime
+import sys
+import os
+
+# Přidání cesty pro import modulů
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+from src.scrapers.kupi_scraper import KupiCzScraper
+from modely.product import Product
 
 
 class TestKupiCzScraper(unittest.TestCase):
@@ -141,18 +148,19 @@ class TestKupiCzScraper(unittest.TestCase):
             )
         ]
         
-        with patch.object(self.scraper, '_parse_products', return_value=sample_products):
-            # Test with category
-            products = self.scraper.get_current_discounts(category='potraviny')
-            self.assertEqual(len(products), 1)
-            
-            # Test with store
-            products = self.scraper.get_current_discounts(store='lidl')
-            self.assertEqual(len(products), 1)
-            
-            # Test with both
-            products = self.scraper.get_current_discounts(category='potraviny', store='lidl')
-            self.assertEqual(len(products), 1)
+        with patch.object(self.scraper, 'fetch_page', return_value=Mock()):
+            with patch.object(self.scraper, '_parse_products', return_value=sample_products):
+                # Test with category
+                products = self.scraper.get_current_discounts(category='potraviny')
+                self.assertEqual(len(products), 1)
+                
+                # Test with store
+                products = self.scraper.get_current_discounts(store='lidl')
+                self.assertEqual(len(products), 1)
+                
+                # Test with both
+                products = self.scraper.get_current_discounts(category='potraviny', store='lidl')
+                self.assertEqual(len(products), 1)
 
 
 class TestIntegration(unittest.TestCase):

@@ -1,81 +1,213 @@
-# Foodler - Nutrition Data Fetcher
+# Foodler - Rodinný systém pro hubnutí a dietní plánování
 
-A tool to fetch nutritional data from Czech nutrition database (kaloricketabulky.cz) for diet and meal planning.
+Nástroj pro podporu hubnutí a zdravého stravování pro celou rodinu s důrazem na ketogenní/nízkosacharidovou dietu.
 
-## Purpose
+## 🎯 Účel projektu
 
-This project helps with diet tracking and meal planning by fetching nutritional information from online databases. It's designed to support a family diet plan with specific macro targets.
+Tento repozitář slouží jako **rodinný systém pro hubnutí a řízení stravy**. Primárním cílem je poskytnout strukturovanou podporu pro snižování váhy a zlepšení zdraví pro celou rodinu.
 
-## Installation
+## 👥 Cílová skupina
 
-1. Install Python 3.7 or higher
-2. (Optional but recommended) Create a virtual environment:
+### Osoba 1 (Muž)
+- Váha: 135 kg, Výška: 183 cm
+- BMI: 40.3, Procento tuku: 41%
+- Denní cíl: 2000 kcal, 140g+ bílkovin, max 70g sacharidů
 
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+### Osoba 2 (Žena)
+- Váha: 80 kg, Výška: 170 cm
+- Denní cíl: 1600 kcal, 100g+ bílkovin, max 60g sacharidů
+
+## 📁 Struktura projektu
+
+```
+Foodler/
+├── potraviny/                    # 🥩 Čisté potraviny/ingredience
+│   ├── databaze.py              # Databáze potravin s nutričními hodnotami
+│   └── README.md                # Dokumentace
+│
+├── jidla/                        # 🍽️  Hotová jídla ke konzumaci
+│   ├── databaze.py              # Databáze jídel s receptury
+│   └── README.md                # Dokumentace
+│
+├── nakup/                        # 🛒 Nákupní seznamy
+│   ├── seznamy.py               # Správa nákupních seznamů
+│   └── README.md                # Dokumentace
+│
+├── lednice/                      # 🧊 Domácí zásoby
+│   ├── zasoby.py                # Sledování zásob a expirace
+│   └── README.md                # Dokumentace
+│
+├── osoby/                        # 👥 Personalizované profily
+│   ├── osoba_1/                  # Profil muže
+│   │   ├── profil.py            # Antropometrie a cíle
+│   │   └── preference.py         # Preference a omezení
+│   ├── osoba_2/                  # Profil ženy
+│   │   ├── profil.py            # Antropometrie a cíle
+│   │   └── preference.py         # Preference a omezení
+│   └── sdilena_jidla/           # Sdílená jídla pro rodinu
+│       └── jidla.py              # Recepty a meal prep
+│
+├── data/                         # 📊 Datové soubory
+│   ├── keto_foods.py            # Keto kategorie potravin
+│   └── meal_plans/              # Jídelní plány
+│       ├── meal_plan_28_days.json
+│       └── meal_plan_28_days.csv
+│
+├── modely/                       # 🔧 Datové modely (SOLID)
+│   └── product.py               # Model produktu
+│
+├── src/                          # 💻 Zdrojový kód
+│   ├── scrapers/                # Web scrapers
+│   │   └── kupi_scraper.py      # Kupi.cz scraper
+│   └── assistants/              # Asistenti
+│       └── keto_shopping_assistant.py
+│
+└── dokumentace/                  # 📚 Česká dokumentace
+    ├── MACINGOVA_DIETA.md       # Info o Mačingovce
+    ├── RYCHLY_START.md          # Rychlý start
+    └── ...
 ```
 
-3. Install required dependencies:
+## 🚀 Rychlý start
+
+### Instalace
 
 ```bash
+# 1. Klonovat repozitář
+git clone https://github.com/Nomoos/Foodler.git
+cd Foodler
+
+# 2. (Volitelné) Vytvořit virtuální prostředí
+python -m venv venv
+source venv/bin/activate  # Na Windows: venv\Scripts\activate
+
+# 3. Nainstalovat závislosti
 pip install -r requirements.txt
 ```
 
-## Usage
-
-### Fetch nutrition data by product name (NEW!)
+### Zobrazení osobního profilu
 
 ```bash
-# Search by product name (Czech language)
-python fetch_nutrition_data.py "Tvaroh tučný Pilos"
-python fetch_nutrition_data.py "Nutrend Whey protein"
+# Profil osoby 1
+python osoby/osoba_1/profil.py
+
+# Profil osoby 2
+python osoby/osoba_2/profil.py
+
+# Preference
+python osoby/osoba_1/preference.py
 ```
 
-The script will search for the product on kaloricketabulky.cz and automatically fetch data from the first result.
-
-### Fetch nutrition data from a URL
+### Sdílená jídla a meal prep
 
 ```bash
-python fetch_nutrition_data.py "https://www.kaloricketabulky.cz/potraviny/whey-protein-chocolate-a-cocoa-100-nutrend"
+# Zobrazit sdílená jídla a týdenní plán
+python osoby/sdilena_jidla/jidla.py
 ```
-Foodler/
-├── purpose                     # Original purpose document (Czech)
-├── README.md                   # This file - Project overview
-├── PURPOSE_ANALYSIS.md         # Detailed analysis and documentation
-├── kupi_scraper.py            # Kupi.cz discount scraper module
-├── keto_shopping_assistant.py # Keto diet shopping assistant tool
-├── KUPI_INTEGRATION.md        # Kupi.cz integration guide
-└── requirements.txt           # Python dependencies
 
-Skript obsahuje příklady:
-- Zobrazení menu pro konkrétní den
-- Zobrazení menu na celý týden
-- Vyhledávání jídel podle ingredience
-- Automatické určení aktuálního dne v cyklu
-- Statistiky o jídelníčku
+### Potraviny a ingredience
 
-## Poznámky
+```bash
+# Zobrazit databázi čistých potravin
+python potraviny/databaze.py
+```
 
-- Jídelníček je navržen jako flexibilní plán - lze přizpůsobit individuálním potřebám
-- Některá jídla se opakují, což usnadňuje nákup a přípravu
-- Každý den obsahuje 5 jídel pro optimální rozložení příjmu energie během dne
-- Všechna data jsou v UTF-8 kódování pro správné zobrazení českých znaků
+### Hotová jídla a recepty
 
-## Cílová skupina
+```bash
+# Zobrazit databázi hotových jídel
+python jidla/databaze.py
+```
 
-Tento jídelníček je určen pro:
-- Osoby, které chtějí hubnout zdravým způsobem
-- Rodiny hledající vyváženou stravu
-- Kohokoliv, kdo hledá inspiraci pro pestrou a zdravou kuchyni
+### Nákupní seznamy
 
-## Další dokumentace
+```bash
+# Vytvořit a zobrazit týdenní nákupní seznam
+python nakup/seznamy.py
+```
 
-### 🚀 Začněte zde:
-- **[RYCHLY_START.md](RYCHLY_START.md)** - ⭐ Začněte TENTO víkend!
+### Domácí zásoby (lednice)
+
+```bash
+# Zobrazit inventář zásob a upozornění na expiraci
+python lednice/zasoby.py
+```
+
+### Příklad použití jídelníčku
+
+```bash
+# Zobrazit denní menu a statistiky
+python example_usage.py
+```
+
+### Keto nákupní asistent
+
+```bash
+# Najít zlevněné keto produkty v českých supermarketech
+python src/assistants/keto_shopping_assistant.py
+```
+
+## 💡 Klíčové funkce
+
+### 🥩 Potraviny (čisté ingredience)
+- Databáze 30+ běžných potravin s nutričními hodnotami
+- Kategorizace (bílkoviny, zelenina, mléčné výrobky, tuky, ořechy)
+- Výpočet makronutrientů pro libovolné množství
+- Kontrola low-carb a high-protein potravin
+- Informace o cenách a sezónnosti
+
+### 🍽️ Jídla (hotová jídla)
+- 7 kompletních receptů s detailními ingrediencemi
+- Nutriční hodnoty pro celé jídlo i na porci
+- Postup přípravy a časová náročnost
+- Vhodnost pro meal prep (3-4 dny trvanlivost)
+- Kategorizace podle typu (snídaně, oběd, večeře, svačina)
+
+### 🛒 Nákupní seznamy
+- Automatické vytvoření týdenního nákupního seznamu
+- Odhad cen (1451 Kč/týden)
+- Rozdělení podle obchodů (Lidl, Kaufland)
+- Prioritizace položek (vysoká, normální, nízká)
+- Sledování koupených položek
+
+### 🧊 Domácí zásoby (lednice)
+- Sledování zásob v lednici, mrazáku a spíži
+- Automatické upozornění na expiraci
+- Kontrola čerstvosti potravin
+- Plánování vaření podle dostupných ingrediencí
+- Kalkulace hodnoty zásob
+
+### ✅ Personalizované profily
+- Individuální cíle pro každou osobu
+- Sledování antropometrických dat
+- Výpočet BMI a ideální váhy
+- Odhad kalorické potřeby
+
+### 🥗 Preference a omezení
+- **Bez hub**: Automatické filtrování jídel obsahujících houby
+- Preferované bílkoviny, zelenina a tuky
+- Dietní omezení (ketogenní/low-carb)
+- Doporučené časy jídel
+
+### 🍴 Sdílená jídla pro rodinu
+- 10 rodinných receptů s makronutrienty
+- Meal prep jídla (vydrží 3-4 dny)
+- Rychlá jídla (≤15 minut)
+- Týdenní plán přípravy
+- Nákupní seznam
+
+### 🏪 Smart nákupní asistent
+- Integrace s Kupi.cz
+- Hledání slev v českých supermarketech
+- Filtrování keto-friendly produktů
+- Odhad týdenního rozpočtu
+
+## 📖 Dokumentace
+
+### 🚀 Pro začátečníky:
+- **[RYCHLY_START.md](RYCHLY_START.md)** - Začněte tento víkend!
   - Kompletní nákupní seznam
-  - Jednoduchý 2-hodinový meal prep
-  - Přesný časový harmonogram
+  - 2-hodinový meal prep
   - 3 základní recepty krok za krokem
   - Ideální pro začátečníky
 
@@ -105,6 +237,10 @@ Tento jídelníček je určen pro:
   - Srovnání diet podle různých kritérií
 
 ### 📚 Podrobné průvodce:
+- **[TYDENNI_PLANOVANI.md](TYDENNI_PLANOVANI.md)** - Strategie týdenního plánování
+- **[VYBAVENI_A_TIPY.md](VYBAVENI_A_TIPY.md)** - Využití kuchyňského vybavení
+- **[TRAVENI_A_METABOLISMUS.md](TRAVENI_A_METABOLISMUS.md)** - Jak zlepšit trávení
+- **[MACINGOVA_DIETA.md](MACINGOVA_DIETA.md)** - Info o dietě Antonie Mačingové
 - **[TRAVENI_A_METABOLISMUS.md](TRAVENI_A_METABOLISMUS.md)** - Jak zlepšit trávení a metabolismus
   - Co reálně pomáhá (bílkoviny, tuky, vláknina)
   - Kdy co jíst pro optimální metabolismus
@@ -126,116 +262,133 @@ Tento jídelníček je určen pro:
 
 ### Use in Python code
 
-```python
-from fetch_nutrition_data import fetch_nutrition_data, fetch_by_product_name
+### 🔧 Technická dokumentace:
+- **[osoby/README.md](osoby/README.md)** - Práce s profily a preferencemi
+- **[KUPI_INTEGRATION.md](KUPI_INTEGRATION.md)** - Kupi.cz scraper
 
-- **[PURPOSE_ANALYSIS.md](PURPOSE_ANALYSIS.md)** - Analýza účelu repozitáře
-  - Dietní cíle a makronutrienty
-  - Zdravotní kontext
-  - Detailní rozklad plánu
-# Option 1: Search by product name
-data = fetch_by_product_name("Tvaroh tučný Pilos")
+## 🏗️ SOLID principy
 
-# Option 2: Fetch from URL
-url = "https://www.kaloricketabulky.cz/potraviny/whey-protein-chocolate-a-cocoa-100-nutrend"
-data = fetch_nutrition_data(url)
+Projekt je strukturován podle SOLID principů:
 
-if data:
-    print(f"Product: {data['product_name']}")
-    print(f"Protein: {data['macros'].get('protein', 'N/A')}")
-    print(f"Carbs: {data['macros'].get('carbohydrates', 'N/A')}")
-    print(f"Fat: {data['macros'].get('fat', 'N/A')}")
-```
+- **Single Responsibility**: Každý modul má jediný účel
+  - `modely/product.py` - pouze datový model
+  - `src/scrapers/kupi_scraper.py` - pouze scrapování
+  - `data/keto_foods.py` - pouze data
+  - `src/assistants/keto_shopping_assistant.py` - pouze logika asistenta
 
-## Features
+- **Open/Closed**: Snadné rozšíření o nové osoby nebo jídla
+- **Liskov Substitution**: Všechny profily mají stejné rozhraní
+- **Interface Segregation**: Oddělení concerns (data vs. logika)
+- **Dependency Inversion**: Závislost na abstrakcích
 
-- **Search by product name** - Just provide the Czech product name, no URL needed
-- Fetches product information from kaloricketabulky.cz
-- Parses nutritional data (calories, protein, carbs, fat, fiber, sugar)
-- Outputs data in JSON format
-- Handles Czech language nutrition terms
-- Provides formatted summary for diet tracking
-
-## Example Output
-
-```json
-{
-  "product_name": "Whey Protein Chocolate & Cocoa 100% - Nutrend",
-  "url": "https://www.kaloricketabulky.cz/potraviny/whey-protein-chocolate-a-cocoa-100-nutrend",
-  "macros": {
-    "calories": "380 kcal",
-    "protein": "78 g",
-    "carbohydrates": "6 g",
-    "fat": "6 g",
-    "fiber": "2 g"
-  }
-}
-```
-
-## Diet Plan Reference
-
-The `purpose` file contains the original diet plan with daily macro targets:
-- Protein: minimum 140g
-- Carbohydrates: max 70g
-- Fat: 129g
-- Fiber: at least 20g (ideally more)
-- Total: 2000 kcal in 6 meals
-
-## Network Requirements
-
-This script requires internet access to fetch data from kaloricketabulky.cz. If running in a restricted environment, the script will fail gracefully with an error message.
-
-## Error Handling
-
-The script includes error handling for:
-- **Network connection issues**: Returns error message "Error fetching data: [details]" and exits with code 1
-- **Invalid URLs**: Returns HTTP error with status code
-- **Parsing errors**: Returns error message "Error parsing data: [details]" 
-- **Missing data fields**: Fields not found in HTML will be omitted from output JSON
-
-- [PURPOSE_ANALYSIS.md](./PURPOSE_ANALYSIS.md) - Comprehensive analysis of dietary plan and methodology
-- [KUPI_INTEGRATION.md](./KUPI_INTEGRATION.md) - Guide for using the Kupi.cz discount scraper
-
-## Features
-
-### 🛒 Smart Shopping Integration
-
-### Lékařský kontext
-Program je lékařsky sledován a zahrnuje řízení:
-- Kardiovaskulárního zdraví (léky na krevní tlak)
-- Trávicího zdraví (léčba refluxu) - viz [průvodce trávením a metabolismem](TRAVENI_A_METABOLISMUS.md)
-- Celkové zlepšení metabolického zdraví
-The repository includes tools to connect to **Kupi.cz**, a Czech discount aggregator, to help find the best deals on keto-friendly foods:
+## 🧪 Testování
 
 ```bash
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the keto shopping assistant
-python keto_shopping_assistant.py
-
-# Or use the scraper directly
-python kupi_scraper.py
+# Spustit testy
+python test_kupi_scraper.py
+python test_mock_data.py
 ```
 
-The shopping tools help:
-- Find discounted proteins, dairy, vegetables, and healthy fats
-- Compare prices across Czech supermarkets (Lidl, Kaufland, Albert, etc.)
-- Plan weekly shopping based on current offers
-- Optimize grocery budget while maintaining diet requirements
+## 🥑 Dietní přístup
 
-See [KUPI_INTEGRATION.md](./KUPI_INTEGRATION.md) for detailed usage instructions.
-When errors occur, the script will print an error message to stderr and return None (in library mode) or exit with code 1 (in CLI mode).
+### Ketogenní/Low-carb dieta
+- **Nízké sacharidy**: Max 60-70g denně
+- **Vysoké bílkoviny**: Min 100-140g denně
+- **Střední až vysoké tuky**: Zdravé zdroje
+- **Vláknina**: Min 20g denně
 
-## Contributing
+### Společné preference
+- ❌ **Bez hub**: Houby, žampiony, hříbky
+- ✅ **Preferované bílkoviny**: Kuře, krůta, hovězí, ryby, vejce
+- ✅ **Preferovaná zelenina**: Brokolice, špenát, salát, cuketa
+- ✅ **Zdravé tuky**: Olivový olej, avokádo, ořechy
 
-**Active Development** - The repository includes:
-- ✅ Documented dietary plan and health objectives
-- ✅ Kupi.cz integration for finding grocery discounts
-- ✅ Keto diet shopping assistant
-- 🚧 Future: Meal tracking, progress monitoring, recipe database
-Feel free to add support for:
-- Other nutrition databases
-- Additional data fields (vitamins, minerals)
-- Export formats (CSV, Excel)
-- Database storage for tracked foods
+## 🔬 Zdravotní kontext
+
+Program je lékařsky sledován a zahrnuje řízení:
+- Kardiovaskulárního zdraví (léky na krevní tlak)
+- Trávicího zdraví (léčba refluxu)
+- Celkové zlepšení metabolického zdraví
+
+Viz [TRAVENI_A_METABOLISMUS.md](TRAVENI_A_METABOLISMUS.md) pro více informací.
+
+## 📊 Příklad použití v kódu
+
+### Práce s profilem
+
+```python
+from osoby.osoba_1.profil import OsobniProfil
+
+profil = OsobniProfil()
+print(f"BMI: {profil.vypocti_bmi()}")
+print(f"Ideální váha: {profil.vypocti_idealniVahu()} kg")
+
+# Získat denní rozložení makronutrientů
+makra = profil.ziskej_denni_rozlozeni()
+print(f"Denní kalorie: {makra['kalorie']}")
+```
+
+### Filtrace jídel podle preferencí
+
+```python
+from osoby.osoba_1.preference import PreferenceJidel
+
+jidla = [
+    "Kuřecí prsa s brokolicí",
+    "Žampionová omáčka",
+    "Losos s kedlubnou"
+]
+
+# Odfiltruje jídla s houbami
+vhodna_jidla = PreferenceJidel.filtruj_jidla(jidla)
+print(vhodna_jidla)
+# Output: ['Kuřecí prsa s brokolicí', 'Losos s kedlubnou']
+```
+
+### Sdílená jídla
+
+```python
+from osoby.sdilena_jidla.jidla import SdilenaJidla, RodinnePlanovani
+
+# Najít meal prep jídla
+meal_prep_jidla = SdilenaJidla.najdi_meal_prep_jidla()
+
+# Získat týdenní plán
+plan = RodinnePlanovani.doporuc_tydenni_plan()
+
+# Vygenerovat nákupní seznam
+nakup = RodinnePlanovani.vypocti_nakupni_seznam_pro_tyden()
+```
+
+## 🛠️ Požadavky na síť
+
+- Scraper vyžaduje připojení k internetu pro přístup ke kupi.cz
+- Pokud běží v omezeném prostředí, selže s chybovou zprávou
+
+## 🤝 Přispívání
+
+Návrhy na vylepšení:
+- Další nutriční databáze
+- Více datových polí (vitamíny, minerály)
+- Export formáty (CSV, Excel)
+- Databázové úložiště pro sledované potraviny
+
+## 📝 Licence
+
+Tento projekt je určen pro osobní použití.
+
+## 🔗 Související odkazy
+
+- [Kaloricketabulky.cz](https://www.kaloricketabulky.cz/) - Nutriční data
+- [Kupi.cz](https://www.kupi.cz/) - Slevy v supermarketech
+- Mačingovka - Dieta Antonie Mačingové
+
+---
+
+**Aktivní vývoj** - Repozitář zahrnuje:
+- ✅ Zdokumentovaný dietní plán a zdravotní cíle
+- ✅ Personalizované profily a preference
+- ✅ Sdílená jídla a meal prep plány
+- ✅ Integrace Kupi.cz pro hledání slev
+- ✅ Keto dietní nákupní asistent
+- 🚧 Budoucnost: Sledování jídel, monitoring pokroku, databáze receptů
