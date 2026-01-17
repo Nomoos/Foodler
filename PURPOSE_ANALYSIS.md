@@ -12,10 +12,12 @@ This repository is designed to serve as a **family weight loss assistance and di
 ## Target Audience
 
 ### Primary User
-- **Weight:** 135 kg
+- **Weight:** 134.2 kg
 - **Height:** 183 cm
-- **Body Fat:** 41%
-- **Gender:** Male (implied from context)
+- **Age:** 34 years
+- **Body Fat:** 46%
+- **Gender:** Male
+- **Activity Level:** Mostly sedentary
 
 ### Secondary User
 - **Weight:** ~80 kg
@@ -33,11 +35,11 @@ The repository outlines research and implementation of specific dietary methodol
 ## Daily Nutritional Requirements
 
 ### Primary User's Macros
-- **Protein:** Minimum 140g
+- **Protein:** Minimum 140g (range: 93-154g)
 - **Carbohydrates:** Maximum 70g
-- **Fat:** 129g
+- **Fat:** 129g (range: 30-183g)
 - **Fiber:** Minimum 20g (ideally more)
-- **Total Calories:** 2000 kcal
+- **Total Calories:** 2001 kcal (20% deficit)
 - **Meal Frequency:** 6 meals per day
 
 ### Macro Distribution Philosophy

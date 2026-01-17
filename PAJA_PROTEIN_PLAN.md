@@ -220,14 +220,14 @@ Jde o **protein-first low-carb režim** s 12:12 intervalovým půstem, optimaliz
 | Parametr | Roman | Pája | Poměr |
 |----------|-------|------|-------|
 | Váha | 134.2 kg | 77.3 kg | 0.576 |
-| Kalorie | 2000 | 1508 | 0.754 |
+| Kalorie | 2001 | 1508 | 0.754 |
 | Bílkoviny | 140g | 92g | 0.657 |
 | Sacharidy | 70g | 60g | 0.857 |
 | Tuky | 129g | 100g | 0.775 |
 
 Pája má **vyšší poměr kalorií k váze** než Roman, protože:
-- Ženy mají vyšší procento tuku (39.6% vs 37.5%)
-- Deficit je nastaven konzervatívně (10%)
+- Ženy mají vyšší procento tuku (39.6% vs 46%)
+- Deficit je nastaven konzervatívně (10% vs 20%)
 - Cílem je udržitelné hubnutí bez ztráty svalové hmoty
 
 ---

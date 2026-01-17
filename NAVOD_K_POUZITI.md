@@ -25,18 +25,20 @@ python osoby/osoba_2/profil.py
 
 **Výstup:**
 ```
-Profil: Osoba 1
+Profil: Roman (Romča)
 ==================================================
 Antropometrie:
-  Váha: 135.0 kg
+  Váha: 134.2 kg
   Výška: 183 cm
-  BMI: 40.3
+  Věk: 34 let
+  BMI: 40.1
   Ideální váha (BMI 25): 83.7 kg
   
-Denní cíle:
-  Kalorie: 2000 kcal (6 jídel)
-  Bílkoviny: min 140g
+Denní cíle (20% deficit):
+  Kalorie: 2001 kcal (6 jídel)
+  Bílkoviny: min 140g (range: 93-154g)
   Sacharidy: max 70g
+  Tuky: 129g (range: 30-183g)
 ```
 
 ### 3. Zobrazení preferencí a omezení
