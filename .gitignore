@@ -1,3 +1,4 @@
+# .gitignore content for Foodler project
 # Python
 __pycache__/
 *.py[cod]
@@ -19,6 +20,21 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+MANIFEST
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+.DS_Store
+.vscode/
+.idea/
 
 # Virtual environments
 venv/
