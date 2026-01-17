@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Profil osoby 1 - Muž
+Profil osoby 1 - Roman (Romča)
 Obsahuje osobní údaje a cíle pro hubnutí
 """
 
@@ -13,11 +13,13 @@ from typing import List, Dict
 class OsobniProfil:
     """Osobní profil s antropometrickými daty a dietními cíli."""
     
-    jmeno: str = "Osoba 1"
-    vaha: float = 135.0  # kg
+    jmeno: str = "Roman (Romča)"
+    vaha: float = 134.2  # kg (měření 1.9.2026 16:16)
     vyska: int = 183  # cm
     pohlavi: str = "muž"
-    procento_tuku: float = 41.0  # %
+    procento_tuku: float = 37.5  # % (měření 1.9.2026)
+    tuková_hmota: float = 50.3  # kg (vypočteno: 134.2 × 0.375)
+    svalová_hmota: float = 43.6  # kg (SMM, měření 1.9.2026)
     
     # Dietní cíle (denní příjem)
     cil_kalorie: int = 2000  # kcal
@@ -104,6 +106,8 @@ Antropometrie:
   Pohlaví: {self.pohlavi}
   BMI: {bmi}
   Procento tuku: {self.procento_tuku}%
+  Tuková hmota: {self.tuková_hmota} kg
+  Svalová hmota (SMM): {self.svalová_hmota} kg
   Ideální váha (BMI 25): {idealni_vaha} kg
   
 Denní cíle:

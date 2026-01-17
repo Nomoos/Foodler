@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Profil osoby 2 - Žena
+Profil osoby 2 - Pája (Pavla)
 Obsahuje osobní údaje a cíle pro hubnutí
 """
 
@@ -13,17 +13,20 @@ from typing import List, Dict
 class OsobniProfil:
     """Osobní profil s antropometrickými daty a dietními cíli."""
     
-    jmeno: str = "Osoba 2"
-    vaha: float = 80.0  # kg
-    vyska: int = 170  # cm
+    jmeno: str = "Pája (Pavla)"
+    vaha: float = 77.3  # kg (měření 22.12.2025)
+    vyska: int = 169  # cm
     pohlavi: str = "žena"
-    procento_tuku: float = 35.0  # % (odhad)
+    procento_tuku: float = 39.6  # % (měření 22.12.2025)
+    tuková_hmota: float = 30.6  # kg (měření 22.12.2025)
+    svalová_hmota: float = 25.6  # kg (SSM, měření 22.12.2025)
+    vfa: float = 147.2  # cm2/level (viscerální tuk, měření 22.12.2025)
     
-    # Dietní cíle (denní příjem) - budou zpřesněny
-    cil_kalorie: int = 1600  # kcal (nižší než osoba 1)
-    cil_bilkoviny: int = 100  # g (minimum)
-    cil_sacharidy: int = 60   # g (maximum)
-    cil_tuky: int = 100       # g
+    # Dietní cíle (denní příjem) - vypočteno Ankerl Keto Calculator
+    cil_kalorie: int = 1508  # kcal (10% deficit, Ankerl)
+    cil_bilkoviny: int = 92  # g (minimum 80g, max 100g, Ankerl)
+    cil_sacharidy: int = 60   # g (maximum, Ankerl)
+    cil_tuky: int = 100       # g (60-120g rozmezí, Ankerl)
     cil_vlaknina: int = 20    # g (minimum, ideálně více)
     
     # Počet jídel denně
@@ -35,7 +38,12 @@ class OsobniProfil:
     def __post_init__(self):
         if self.zdravotni_poznamky is None:
             self.zdravotni_poznamky = [
-                "Budou doplněny specifické poznámky"
+                "Měření tělesného složení (22.12.2025):",
+                "  • Váha: 77.3 kg, PBF: 39.6%, Tuk: 30.6 kg",
+                "  • SSM: 25.6 kg, VFA: 147.2 cm²/level",
+                "Předchozí měření (19.11.2025):",
+                "  • Váha: 76.7 kg, PBF: 39.1%, Tuk: 30.0 kg",
+                "  • SSM: 25.6 kg, VFA: 143 cm²/level"
             ]
     
     def vypocti_bmi(self) -> float:
@@ -102,6 +110,9 @@ Antropometrie:
   Pohlaví: {self.pohlavi}
   BMI: {bmi}
   Procento tuku: {self.procento_tuku}%
+  Tuková hmota: {self.tuková_hmota} kg
+  Svalová hmota (SSM): {self.svalová_hmota} kg
+  VFA (viscerální tuk): {self.vfa} cm²/level
   Ideální váha (BMI 22): {idealni_vaha} kg
   
 Denní cíle:
