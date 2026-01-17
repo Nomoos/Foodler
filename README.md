@@ -37,32 +37,32 @@ Nástroj pro podporu hubnutí a zdravého stravování pro celou rodinu s důraz
 ## 📚 Dokumentace
 
 ### 🚀 Začínáme
-- **[NAVOD_K_POUZITI.md](NAVOD_K_POUZITI.md)** - Kompletní návod k použití systému
-- **[QUICKSTART.md](QUICKSTART.md)** - Rychlý start
-- **[RYCHLY_START.md](RYCHLY_START.md)** - Začněte tento víkend! (meal prep guide)
+- **[NAVOD_K_POUZITI.md](docs/getting-started/NAVOD_K_POUZITI.md)** - Kompletní návod k použití systému
+- **[QUICKSTART.md](docs/getting-started/QUICKSTART.md)** - Rychlý start
+- **[RYCHLY_START.md](docs/getting-started/RYCHLY_START.md)** - Začněte tento víkend! (meal prep guide)
 
 ### 📋 Dietní plány
-- **[PROTEIN_FIRST_PLAN.md](PROTEIN_FIRST_PLAN.md)** - Protein-first low-carb (12:12 IF) - pro Romana
-- **[PAJA_PROTEIN_PLAN.md](PAJA_PROTEIN_PLAN.md)** - Protein-first low-carb (12:12 IF) - pro Páju (poměrový přepočet)
-- **[KETO_12_12_PLAN.md](KETO_12_12_PLAN.md)** - Keto + časově omezené stravování
-- **[NEJLEPSI_DIETY.md](NEJLEPSI_DIETY.md)** - Přehled 15 nejlepších diet na hubnutí
-- **[MACINGOVA_DIETA.md](MACINGOVA_DIETA.md)** - Dieta Antonie Mačingové
+- **[PROTEIN_FIRST_PLAN.md](docs/diet-plans/PROTEIN_FIRST_PLAN.md)** - Protein-first low-carb (12:12 IF) - pro Romana
+- **[PAJA_PROTEIN_PLAN.md](docs/diet-plans/PAJA_PROTEIN_PLAN.md)** - Protein-first low-carb (12:12 IF) - pro Páju (poměrový přepočet)
+- **[KETO_12_12_PLAN.md](docs/diet-plans/KETO_12_12_PLAN.md)** - Keto + časově omezené stravování
+- **[NEJLEPSI_DIETY.md](docs/diet-plans/NEJLEPSI_DIETY.md)** - Přehled 15 nejlepších diet na hubnutí
+- **[MACINGOVA_DIETA.md](docs/diet-plans/MACINGOVA_DIETA.md)** - Dieta Antonie Mačingové
 
 ### 🍽️ Plánování a příprava
-- **[TYDENNI_PLANOVANI.md](TYDENNI_PLANOVANI.md)** - Strategie týdenního meal prepu
-- **[VYBAVENI_A_TIPY.md](VYBAVENI_A_TIPY.md)** - Využití kuchyňského vybavení
-- **[RECEPTY_SALATY.md](RECEPTY_SALATY.md)** - Recepty a saláty
+- **[TYDENNI_PLANOVANI.md](docs/meal-planning/TYDENNI_PLANOVANI.md)** - Strategie týdenního meal prepu
+- **[VYBAVENI_A_TIPY.md](docs/meal-planning/VYBAVENI_A_TIPY.md)** - Využití kuchyňského vybavení
+- **[RECEPTY_SALATY.md](docs/meal-planning/RECEPTY_SALATY.md)** - Recepty a saláty
 
 ### 🏥 Zdraví a metabolismus
-- **[TRAVENI_A_METABOLISMUS.md](TRAVENI_A_METABOLISMUS.md)** - Trávení a metabolismus
-- **[PURPOSE_ANALYSIS.md](PURPOSE_ANALYSIS.md)** - Analýza účelu a zdravotního kontextu
+- **[TRAVENI_A_METABOLISMUS.md](docs/health/TRAVENI_A_METABOLISMUS.md)** - Trávení a metabolismus
+- **[PURPOSE_ANALYSIS.md](docs/health/PURPOSE_ANALYSIS.md)** - Analýza účelu a zdravotního kontextu
 
 ### 🛒 Nákupy a slevy
-- **[KUPI_INTEGRATION.md](KUPI_INTEGRATION.md)** - Integrace s Kupi.cz pro sledování slev
+- **[KUPI_INTEGRATION.md](docs/technical/KUPI_INTEGRATION.md)** - Integrace s Kupi.cz pro sledování slev
 
 ### 🔧 Technická dokumentace
-- **[IMPLEMENTATION_SUMMARY.md](IMPLEMENTATION_SUMMARY.md)** - Shrnutí implementace
-- **[REFACTORING_SUMMARY.md](REFACTORING_SUMMARY.md)** - Historie refaktoringu
+- **[IMPLEMENTATION_SUMMARY.md](docs/technical/IMPLEMENTATION_SUMMARY.md)** - Shrnutí implementace
+- **[REFACTORING_SUMMARY.md](docs/technical/REFACTORING_SUMMARY.md)** - Historie refaktoringu
 - **[osoby/README.md](osoby/README.md)** - Práce s profily a preferencemi
 
 ---
@@ -81,7 +81,7 @@ Foodler/
 └── src/            # 💻 Zdrojový kód (scrapers, assistants)
 ```
 
-Podrobnosti o jednotlivých složkách najdete v **[NAVOD_K_POUZITI.md](NAVOD_K_POUZITI.md)**.
+Podrobnosti o jednotlivých složkách najdete v **[NAVOD_K_POUZITI.md](docs/getting-started/NAVOD_K_POUZITI.md)**.
 
 ---
 
@@ -127,7 +127,7 @@ python nakup/seznamy.py
 python src/assistants/keto_shopping_assistant.py
 ```
 
-Více příkladů použití v **[NAVOD_K_POUZITI.md](NAVOD_K_POUZITI.md)**.
+Více příkladů použití v **[NAVOD_K_POUZITI.md](docs/getting-started/NAVOD_K_POUZITI.md)**.
 
 ---
 

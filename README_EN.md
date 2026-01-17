@@ -42,10 +42,15 @@ python fetch_nutrition_data.py "https://www.kaloricketabulky.cz/potraviny/whey-p
 Foodler/
 ├── purpose                     # Original purpose document (Czech)
 ├── README.md                   # This file - Project overview
-├── PURPOSE_ANALYSIS.md         # Detailed analysis and documentation
-├── kupi_scraper.py            # Kupi.cz discount scraper module
-├── keto_shopping_assistant.py # Keto diet shopping assistant tool
-├── KUPI_INTEGRATION.md        # Kupi.cz integration guide
+├── docs/                       # Documentation folder
+│   ├── getting-started/        # Quick start guides
+│   ├── diet-plans/            # Diet plan documents
+│   ├── meal-planning/         # Meal prep and planning guides
+│   ├── health/                # Health and metabolism info
+│   └── technical/             # Technical documentation
+├── src/                       # Source code
+│   ├── assistants/            # Shopping assistants
+│   └── scrapers/              # Web scrapers
 └── requirements.txt           # Python dependencies
 
 Skript obsahuje příklady:
@@ -72,7 +77,7 @@ Tento jídelníček je určen pro:
 ## Další dokumentace
 
 ### 🚀 Začněte zde:
-- **[RYCHLY_START.md](RYCHLY_START.md)** - ⭐ Začněte TENTO víkend!
+- **[RYCHLY_START.md](docs/getting-started/RYCHLY_START.md)** - ⭐ Začněte TENTO víkend!
   - Kompletní nákupní seznam
   - Jednoduchý 2-hodinový meal prep
   - Přesný časový harmonogram
@@ -80,7 +85,7 @@ Tento jídelníček je určen pro:
   - Ideální pro začátečníky
 
 ### 📚 Podrobné průvodce meal prepu:
-- **[TYDENNI_PLANOVANI.md](TYDENNI_PLANOVANI.md)** - Kompletní strategie týdenního plánování
+- **[TYDENNI_PLANOVANI.md](docs/meal-planning/TYDENNI_PLANOVANI.md)** - Kompletní strategie týdenního plánování
   - Systém "2+5" (2 vaření za týden, 5 minut denně)
   - Meal prep krok za krokem
   - Top 5 receptů pro přípravu dopředu
@@ -88,7 +93,7 @@ Tento jídelníček je určen pro:
   - Strategie mražení a skladování
   - Úspora 50-65% času stráveného vařením
 
-- **[VYBAVENI_A_TIPY.md](VYBAVENI_A_TIPY.md)** - Maximální využití kuchyňského vybavení
+- **[VYBAVENI_A_TIPY.md](docs/meal-planning/VYBAVENI_A_TIPY.md)** - Maximální využití kuchyňského vybavení
   - Jak využít tlakový hrnec pro rychlé vaření
   - Vakuovačka pro prodloužení trvanlivosti 2-3x
   - Mrazák jako váš spojenec (až 3 měsíce zásoby)
@@ -98,13 +103,13 @@ Tento jídelníček je určen pro:
 
 ### 📖 O dietě a receptech:
 ### 📚 Podrobné průvodce:
-- **[TRAVENI_A_METABOLISMUS.md](TRAVENI_A_METABOLISMUS.md)** - Jak zlepšit trávení a metabolismus
+- **[TRAVENI_A_METABOLISMUS.md](docs/health/TRAVENI_A_METABOLISMUS.md)** - Jak zlepšit trávení a metabolismus
   - Co reálně pomáhá (bílkoviny, tuky, vláknina)
   - Kdy co jíst pro optimální metabolismus
   - Rychlá orientační tabulka
   - Doporučení pro reflux a trávicí problémy
 
-- **[MACINGOVA_DIETA.md](MACINGOVA_DIETA.md)** - Podrobné informace o dietě Antonie Mačingové
+- **[MACINGOVA_DIETA.md](docs/diet-plans/MACINGOVA_DIETA.md)** - Podrobné informace o dietě Antonie Mačingové
   - Všechna jídla a jejich varianty
   - Principy Mačingovky
   - Nákupní seznamy
@@ -114,7 +119,7 @@ Tento jídelníček je určen pro:
 ```python
 from fetch_nutrition_data import fetch_nutrition_data, fetch_by_product_name
 
-- **[PURPOSE_ANALYSIS.md](PURPOSE_ANALYSIS.md)** - Analýza účelu repozitáře
+- **[PURPOSE_ANALYSIS.md](docs/health/PURPOSE_ANALYSIS.md)** - Analýza účelu repozitáře
   - Dietní cíle a makronutrienty
   - Zdravotní kontext
   - Detailní rozklad plánu
@@ -178,8 +183,8 @@ The script includes error handling for:
 - **Parsing errors**: Returns error message "Error parsing data: [details]" 
 - **Missing data fields**: Fields not found in HTML will be omitted from output JSON
 
-- [PURPOSE_ANALYSIS.md](./PURPOSE_ANALYSIS.md) - Comprehensive analysis of dietary plan and methodology
-- [KUPI_INTEGRATION.md](./KUPI_INTEGRATION.md) - Guide for using the Kupi.cz discount scraper
+- [PURPOSE_ANALYSIS.md](./docs/health/PURPOSE_ANALYSIS.md) - Comprehensive analysis of dietary plan and methodology
+- [KUPI_INTEGRATION.md](./docs/technical/KUPI_INTEGRATION.md) - Guide for using the Kupi.cz discount scraper
 
 ## Features
 
@@ -188,7 +193,7 @@ The script includes error handling for:
 ### Lékařský kontext
 Program je lékařsky sledován a zahrnuje řízení:
 - Kardiovaskulárního zdraví (léky na krevní tlak)
-- Trávicího zdraví (léčba refluxu) - viz [průvodce trávením a metabolismem](TRAVENI_A_METABOLISMUS.md)
+- Trávicího zdraví (léčba refluxu) - viz [průvodce trávením a metabolismem](docs/health/TRAVENI_A_METABOLISMUS.md)
 - Celkové zlepšení metabolického zdraví
 The repository includes tools to connect to **Kupi.cz**, a Czech discount aggregator, to help find the best deals on keto-friendly foods:
 
@@ -209,7 +214,7 @@ The shopping tools help:
 - Plan weekly shopping based on current offers
 - Optimize grocery budget while maintaining diet requirements
 
-See [KUPI_INTEGRATION.md](./KUPI_INTEGRATION.md) for detailed usage instructions.
+See [KUPI_INTEGRATION.md](./docs/technical/KUPI_INTEGRATION.md) for detailed usage instructions.
 When errors occur, the script will print an error message to stderr and return None (in library mode) or exit with code 1 (in CLI mode).
 
 ## Contributing
