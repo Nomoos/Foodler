@@ -22,11 +22,11 @@ class OsobniProfil:
     svalová_hmota: float = 25.6  # kg (SSM, měření 22.12.2025)
     vfa: float = 147.2  # cm2/level (viscerální tuk, měření 22.12.2025)
     
-    # Dietní cíle (denní příjem) - budou zpřesněny
-    cil_kalorie: int = 1600  # kcal (nižší než osoba 1)
-    cil_bilkoviny: int = 100  # g (minimum)
-    cil_sacharidy: int = 60   # g (maximum)
-    cil_tuky: int = 100       # g
+    # Dietní cíle (denní příjem) - přepočteno poměrově podle váhy
+    cil_kalorie: int = 1150  # kcal (poměr 77.3/134.2 z Romana)
+    cil_bilkoviny: int = 80  # g (minimum, poměr z Romana)
+    cil_sacharidy: int = 40   # g (maximum, poměr z Romana)
+    cil_tuky: int = 74       # g (přepočteno)
     cil_vlaknina: int = 20    # g (minimum, ideálně více)
     
     # Počet jídel denně

@@ -5,11 +5,11 @@ Nástroj pro podporu hubnutí a zdravého stravování pro celou rodinu s důraz
 ## 👥 Cílová skupina
 
 ### Roman (Romča)
-- **Váha:** 135.5 kg (měření)
+- **Váha:** 134.2 kg (měření 1.9.2026)
 - **Výška:** 183 cm
-- **BMI:** 40.5
+- **BMI:** 40.1
 - **Procento tuku:** 37.5% (měření)
-- **Svalová hmota (SMM):** 45.3 kg (měření)
+- **Svalová hmota (SMM):** 43.6 kg (měření)
 - **Denní cíl:** 2000 kcal, 140g+ bílkovin, max 70g sacharidů
 
 ### Pája (Pavla)
@@ -19,7 +19,7 @@ Nástroj pro podporu hubnutí a zdravého stravování pro celou rodinu s důraz
 - **Procento tuku:** 39.6% (měření)
 - **Svalová hmota (SMM):** 25.6 kg (měření)
 - **VFA:** 147.2 cm²/level (měření)
-- **Denní cíl:** 1600 kcal, 100g+ bílkovin, max 60g sacharidů
+- **Denní cíl:** 1150 kcal, 80g+ bílkovin, max 40g sacharidů (poměrově z Romana)
 
 ---
 
@@ -31,7 +31,8 @@ Nástroj pro podporu hubnutí a zdravého stravování pro celou rodinu s důraz
 - **[RYCHLY_START.md](RYCHLY_START.md)** - Začněte tento víkend! (meal prep guide)
 
 ### 📋 Dietní plány
-- **[PROTEIN_FIRST_PLAN.md](PROTEIN_FIRST_PLAN.md)** - Protein-first low-carb (12:12 IF)
+- **[PROTEIN_FIRST_PLAN.md](PROTEIN_FIRST_PLAN.md)** - Protein-first low-carb (12:12 IF) - pro Romana
+- **[PAJA_PROTEIN_PLAN.md](PAJA_PROTEIN_PLAN.md)** - Protein-first low-carb (12:12 IF) - pro Páju (poměrový přepočet)
 - **[KETO_12_12_PLAN.md](KETO_12_12_PLAN.md)** - Keto + časově omezené stravování
 - **[NEJLEPSI_DIETY.md](NEJLEPSI_DIETY.md)** - Přehled 15 nejlepších diet na hubnutí
 - **[MACINGOVA_DIETA.md](MACINGOVA_DIETA.md)** - Dieta Antonie Mačingové
