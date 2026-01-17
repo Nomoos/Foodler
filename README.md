@@ -160,6 +160,12 @@ Tento jídelníček je určen pro:
 ## Další dokumentace
 
 ### 📚 Podrobné průvodce:
+- **[TRAVENI_A_METABOLISMUS.md](TRAVENI_A_METABOLISMUS.md)** - Jak zlepšit trávení a metabolismus
+  - Co reálně pomáhá (bílkoviny, tuky, vláknina)
+  - Kdy co jíst pro optimální metabolismus
+  - Rychlá orientační tabulka
+  - Doporučení pro reflux a trávicí problémy
+
 - **[MACINGOVA_DIETA.md](MACINGOVA_DIETA.md)** - Podrobné informace o dietě Antonie Mačingové
   - Všechna jídla a jejich varianty
   - Principy Mačingovky
@@ -232,7 +238,7 @@ This program is medically supervised and includes management of:
 ### Lékařský kontext
 Program je lékařsky sledován a zahrnuje řízení:
 - Kardiovaskulárního zdraví (léky na krevní tlak)
-- Trávicího zdraví (léčba refluxu)
+- Trávicího zdraví (léčba refluxu) - viz [průvodce trávením a metabolismem](TRAVENI_A_METABOLISMUS.md)
 - Celkové zlepšení metabolického zdraví
 
 ---
