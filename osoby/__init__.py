@@ -1,0 +1,1 @@
+# Osoby - profily a konfigurace
