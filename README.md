@@ -97,6 +97,13 @@ Tento jídelníček je určen pro:
   - Praktické kombinované strategie
 
 ### 📖 O dietě a receptech:
+- **[NEJLEPSI_DIETY.md](NEJLEPSI_DIETY.md)** - ⭐ Přehled 15 nejlepších diet na hubnutí
+  - Kompletní shrnutí populárních diet (keto, paleo, středomořská, atd.)
+  - Výhody a nevýhody každé diety
+  - Jak vybrat správnou dietu pro vás
+  - Důležitá doporučení a časté chyby
+  - Srovnání diet podle různých kritérií
+
 ### 📚 Podrobné průvodce:
 - **[TRAVENI_A_METABOLISMUS.md](TRAVENI_A_METABOLISMUS.md)** - Jak zlepšit trávení a metabolismus
   - Co reálně pomáhá (bílkoviny, tuky, vláknina)
