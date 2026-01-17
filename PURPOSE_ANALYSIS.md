@@ -121,16 +121,31 @@ Based on the content analysis, the Foodler repository aims to:
 ## Nutritional Analysis
 
 ### Daily Totals (as planned)
-- **Total Calories:** ~1,651 kcal (slightly under 2000 target)
+- **Total Calories:** ~1,651 kcal 
+  - ⚠️ **Gap Identified:** 349 kcal below the 2000 kcal target
+  - This shortfall may be intentional for creating a caloric deficit, or meals may need adjustment
 - **Total Protein:** 157g (exceeds 140g minimum) ✓
 - **Total Carbs:** 37g (well under 70g maximum) ✓
-- **Total Fat:** 94g (below 129g target)
+- **Total Fat:** 94g 
+  - ⚠️ **Gap Identified:** 35g below the 129g target
+  - To reach the fat target while maintaining carb limits, additional healthy fats should be added (e.g., olive oil, avocado, nuts)
 - **Total Fiber:** 29g (exceeds 20g minimum) ✓
 
-### Macro Ratio
-- **Protein:** ~38% (high-protein approach)
-- **Carbs:** ~9% (ketogenic range)
-- **Fat:** ~53% (ketogenic/low-carb range)
+### Current Macro Ratio (Based on Documented Meals)
+- **Protein:** ~38% of 1,651 kcal (high-protein approach)
+- **Carbs:** ~9% of 1,651 kcal (ketogenic range)
+- **Fat:** ~53% of 1,651 kcal (moderate-fat approach)
+
+### Target Macro Ratio (If 2000 kcal Goal Met)
+If the full 2000 kcal target were met with proper fat content:
+- **Protein:** 140g = 560 kcal (28%)
+- **Carbs:** 70g = 280 kcal (14%)
+- **Fat:** 129g = 1,161 kcal (58%)
+
+**Note:** There is a discrepancy between documented meals and stated targets. This may indicate:
+1. The meal plan is intentionally designed with a caloric deficit for weight loss
+2. Some meal details are incomplete or to be refined
+3. Additional snacks or fat sources are added but not fully documented
 
 ## Medical Context
 
