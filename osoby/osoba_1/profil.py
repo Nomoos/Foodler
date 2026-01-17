@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Profil osoby 1 - Muž
+Profil osoby 1 - Roman (Romča)
 Obsahuje osobní údaje a cíle pro hubnutí
 """
 
@@ -13,7 +13,7 @@ from typing import List, Dict
 class OsobniProfil:
     """Osobní profil s antropometrickými daty a dietními cíli."""
     
-    jmeno: str = "Osoba 1"
+    jmeno: str = "Roman (Romča)"
     vaha: float = 135.5  # kg (aktuální měření)
     vyska: int = 183  # cm
     pohlavi: str = "muž"
