@@ -17,7 +17,29 @@ pip install -r requirements.txt
 
 ### Step 2: Fetch Data
 
-#### Option A: Command Line Usage
+#### Option A: Search by Product Name (Easiest!)
+
+```bash
+# Just provide the product name in Czech
+python fetch_nutrition_data.py "Tvaroh tučný Pilos"
+```
+
+The script will automatically search for the product and fetch data from the first result.
+
+**Example Output:**
+```
+Searching for product: Tvaroh tučný Pilos
+------------------------------------------------------------
+Found 3 result(s):
+  1. Tvaroh tučný Pilos
+  2. Tvaroh Pilos
+  3. Tvaroh polotučný Pilos
+
+Using first result: Tvaroh tučný Pilos
+...
+```
+
+#### Option B: Command Line with URL
 
 ```bash
 python fetch_nutrition_data.py "https://www.kaloricketabulky.cz/potraviny/whey-protein-chocolate-a-cocoa-100-nutrend"
@@ -39,7 +61,20 @@ python fetch_nutrition_data.py "https://www.kaloricketabulky.cz/potraviny/whey-p
 }
 ```
 
-#### Option B: Use in Python Code
+#### Option B: Use in Python Code (Product Name)
+
+```python
+from fetch_nutrition_data import fetch_by_product_name
+
+# Search and fetch by product name
+data = fetch_by_product_name("Tvaroh tučný Pilos")
+
+if data:
+    print(f"Product: {data['product_name']}")
+    print(f"Protein per 100g: {data['macros']['protein']}")
+```
+
+#### Option C: Use in Python Code (URL)
 
 ```python
 from fetch_nutrition_data import fetch_nutrition_data
@@ -52,7 +87,7 @@ if data:
     print(f"Protein per 100g: {data['macros']['protein']}")
 ```
 
-#### Option C: With Caching (Recommended)
+#### Option D: With Caching (Recommended)
 
 ```python
 from example_usage import get_nutrition_data, calculate_serving

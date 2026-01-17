@@ -24,6 +24,16 @@ pip install -r requirements.txt
 
 ## Usage
 
+### Fetch nutrition data by product name (NEW!)
+
+```bash
+# Search by product name (Czech language)
+python fetch_nutrition_data.py "Tvaroh tučný Pilos"
+python fetch_nutrition_data.py "Nutrend Whey protein"
+```
+
+The script will search for the product on kaloricketabulky.cz and automatically fetch data from the first result.
+
 ### Fetch nutrition data from a URL
 
 ```bash
@@ -33,8 +43,12 @@ python fetch_nutrition_data.py "https://www.kaloricketabulky.cz/potraviny/whey-p
 ### Use in Python code
 
 ```python
-from fetch_nutrition_data import fetch_nutrition_data
+from fetch_nutrition_data import fetch_nutrition_data, fetch_by_product_name
 
+# Option 1: Search by product name
+data = fetch_by_product_name("Tvaroh tučný Pilos")
+
+# Option 2: Fetch from URL
 url = "https://www.kaloricketabulky.cz/potraviny/whey-protein-chocolate-a-cocoa-100-nutrend"
 data = fetch_nutrition_data(url)
 
@@ -47,6 +61,7 @@ if data:
 
 ## Features
 
+- **Search by product name** - Just provide the Czech product name, no URL needed
 - Fetches product information from kaloricketabulky.cz
 - Parses nutritional data (calories, protein, carbs, fat, fiber, sugar)
 - Outputs data in JSON format
