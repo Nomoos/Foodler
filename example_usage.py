@@ -11,17 +11,30 @@ from datetime import datetime, timedelta
 
 def load_meal_plan_json():
     """Načte jídelníček z JSON souboru"""
-    with open('meal_plan_28_days.json', 'r', encoding='utf-8') as f:
-        return json.load(f)
+    try:
+        with open('meal_plan_28_days.json', 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except FileNotFoundError:
+        print("Chyba: Soubor 'meal_plan_28_days.json' nenalezen!")
+        return None
+    except json.JSONDecodeError as e:
+        print(f"Chyba: Neplatný JSON formát - {e}")
+        return None
 
 def load_meal_plan_csv():
     """Načte jídelníček z CSV souboru"""
-    with open('meal_plan_28_days.csv', 'r', encoding='utf-8') as f:
-        return list(csv.DictReader(f))
+    try:
+        with open('meal_plan_28_days.csv', 'r', encoding='utf-8') as f:
+            return list(csv.DictReader(f))
+    except FileNotFoundError:
+        print("Chyba: Soubor 'meal_plan_28_days.csv' nenalezen!")
+        return None
 
 def get_meal_for_day(day_number):
     """Získá všechna jídla pro daný den"""
     data = load_meal_plan_json()
+    if data is None:
+        return None
     if 1 <= day_number <= 28:
         day = data['meal_plan']['days'][day_number - 1]
         return {
@@ -73,6 +86,8 @@ def print_week_menu(start_day):
 def find_meals_with_ingredient(ingredient):
     """Najde všechna jídla obsahující danou ingredienci"""
     data = load_meal_plan_json()
+    if data is None:
+        return []
     results = []
     
     for day in data['meal_plan']['days']:
@@ -122,16 +137,20 @@ def main():
     
     # Příklad 4: Získat aktuální den v cyklu (od začátku roku)
     print("\n=== PŘÍKLAD 4: Aktuální den v cyklu ===")
-    start_of_year = datetime(datetime.now().year, 1, 1)
-    days_since_start = (datetime.now() - start_of_year).days
+    now = datetime.now()
+    start_of_year = datetime(now.year, 1, 1)
+    days_since_start = (now - start_of_year).days
     current_cycle_day = (days_since_start % 28) + 1
-    print(f"Aktuální datum: {datetime.now().strftime('%Y-%m-%d')}")
+    print(f"Aktuální datum: {now.strftime('%Y-%m-%d')}")
     print(f"Den v 28denním cyklu: {current_cycle_day}")
     print_day_menu(current_cycle_day)
     
     # Příklad 5: Statistiky
     print("\n=== PŘÍKLAD 5: Statistiky ===")
     data = load_meal_plan_json()
+    if data is None:
+        print("Nelze načíst data pro statistiky")
+        return
     
     # Počet vegetariánských možností
     vege_count = sum(1 for day in data['meal_plan']['days'] 
