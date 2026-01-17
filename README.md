@@ -21,6 +21,15 @@ Nástroj pro podporu hubnutí a zdravého stravování pro celou rodinu s důraz
 - **VFA:** 147.2 cm²/level (měření)
 - **Denní cíl:** 1508 kcal, 92g bílkovin, max 60g sacharidů (Ankerl Keto Calculator)
 
+### Kubík
+- **Datum narození:** 1.1.2021
+- **Věk:** 4.5 let
+- **Váha:** 18 kg (průměr pro věk)
+- **Výška:** 106 cm
+- **Zdraví:** Brýle 4 dioptrie, astigmatismus
+- **Denní cíl:** 1400 kcal, 19g bílkovin, 130g sacharidů, důraz na vitamin A pro podporu zraku
+- **Stravování:** Pracovní den: snídaně a večeře doma, svačiny a oběd ve školce; Víkend: všechna jídla doma
+
 ---
 
 ## 📚 Dokumentace
@@ -97,9 +106,11 @@ pip install -r requirements.txt
 # Zobrazit profily
 python osoby/osoba_1/profil.py    # Roman
 python osoby/osoba_2/profil.py    # Pája
+python osoby/osoba_3/profil.py    # Kubík
 
 # Zobrazit preference
 python osoby/osoba_1/preference.py
+python osoby/osoba_3/preference.py  # Kubík - potraviny pro podporu zraku
 
 # Sdílená jídla a meal prep
 python osoby/sdilena_jidla/jidla.py
