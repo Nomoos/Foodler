@@ -21,7 +21,23 @@ Tento repozitář slouží jako **rodinný systém pro hubnutí a řízení stra
 
 ```
 Foodler/
-├── osoby/                        # Personalizované profily
+├── potraviny/                    # 🥩 Čisté potraviny/ingredience
+│   ├── databaze.py              # Databáze potravin s nutričními hodnotami
+│   └── README.md                # Dokumentace
+│
+├── jidla/                        # 🍽️  Hotová jídla ke konzumaci
+│   ├── databaze.py              # Databáze jídel s receptury
+│   └── README.md                # Dokumentace
+│
+├── nakup/                        # 🛒 Nákupní seznamy
+│   ├── seznamy.py               # Správa nákupních seznamů
+│   └── README.md                # Dokumentace
+│
+├── lednice/                      # 🧊 Domácí zásoby
+│   ├── zasoby.py                # Sledování zásob a expirace
+│   └── README.md                # Dokumentace
+│
+├── osoby/                        # 👥 Personalizované profily
 │   ├── osoba_1/                  # Profil muže
 │   │   ├── profil.py            # Antropometrie a cíle
 │   │   └── preference.py         # Preference a omezení
@@ -31,22 +47,22 @@ Foodler/
 │   └── sdilena_jidla/           # Sdílená jídla pro rodinu
 │       └── jidla.py              # Recepty a meal prep
 │
-├── data/                         # Datové soubory
+├── data/                         # 📊 Datové soubory
 │   ├── keto_foods.py            # Keto kategorie potravin
 │   └── meal_plans/              # Jídelní plány
 │       ├── meal_plan_28_days.json
 │       └── meal_plan_28_days.csv
 │
-├── modely/                       # Datové modely (SOLID)
+├── modely/                       # 🔧 Datové modely (SOLID)
 │   └── product.py               # Model produktu
 │
-├── src/                          # Zdrojový kód
+├── src/                          # 💻 Zdrojový kód
 │   ├── scrapers/                # Web scrapers
 │   │   └── kupi_scraper.py      # Kupi.cz scraper
 │   └── assistants/              # Asistenti
 │       └── keto_shopping_assistant.py
 │
-└── dokumentace/                  # Česká dokumentace
+└── dokumentace/                  # 📚 Česká dokumentace
     ├── MACINGOVA_DIETA.md       # Info o Mačingovce
     ├── RYCHLY_START.md          # Rychlý start
     └── ...
@@ -89,6 +105,34 @@ python osoby/osoba_1/preference.py
 python osoby/sdilena_jidla/jidla.py
 ```
 
+### Potraviny a ingredience
+
+```bash
+# Zobrazit databázi čistých potravin
+python potraviny/databaze.py
+```
+
+### Hotová jídla a recepty
+
+```bash
+# Zobrazit databázi hotových jídel
+python jidla/databaze.py
+```
+
+### Nákupní seznamy
+
+```bash
+# Vytvořit a zobrazit týdenní nákupní seznam
+python nakup/seznamy.py
+```
+
+### Domácí zásoby (lednice)
+
+```bash
+# Zobrazit inventář zásob a upozornění na expiraci
+python lednice/zasoby.py
+```
+
 ### Příklad použití jídelníčku
 
 ```bash
@@ -105,6 +149,34 @@ python src/assistants/keto_shopping_assistant.py
 
 ## 💡 Klíčové funkce
 
+### 🥩 Potraviny (čisté ingredience)
+- Databáze 30+ běžných potravin s nutričními hodnotami
+- Kategorizace (bílkoviny, zelenina, mléčné výrobky, tuky, ořechy)
+- Výpočet makronutrientů pro libovolné množství
+- Kontrola low-carb a high-protein potravin
+- Informace o cenách a sezónnosti
+
+### 🍽️ Jídla (hotová jídla)
+- 7 kompletních receptů s detailními ingrediencemi
+- Nutriční hodnoty pro celé jídlo i na porci
+- Postup přípravy a časová náročnost
+- Vhodnost pro meal prep (3-4 dny trvanlivost)
+- Kategorizace podle typu (snídaně, oběd, večeře, svačina)
+
+### 🛒 Nákupní seznamy
+- Automatické vytvoření týdenního nákupního seznamu
+- Odhad cen (1451 Kč/týden)
+- Rozdělení podle obchodů (Lidl, Kaufland)
+- Prioritizace položek (vysoká, normální, nízká)
+- Sledování koupených položek
+
+### 🧊 Domácí zásoby (lednice)
+- Sledování zásob v lednici, mrazáku a spíži
+- Automatické upozornění na expiraci
+- Kontrola čerstvosti potravin
+- Plánování vaření podle dostupných ingrediencí
+- Kalkulace hodnoty zásob
+
 ### ✅ Personalizované profily
 - Individuální cíle pro každou osobu
 - Sledování antropometrických dat
@@ -117,14 +189,14 @@ python src/assistants/keto_shopping_assistant.py
 - Dietní omezení (ketogenní/low-carb)
 - Doporučené časy jídel
 
-### 🍽️ Sdílená jídla
+### 🍴 Sdílená jídla pro rodinu
 - 10 rodinných receptů s makronutrienty
 - Meal prep jídla (vydrží 3-4 dny)
 - Rychlá jídla (≤15 minut)
 - Týdenní plán přípravy
 - Nákupní seznam
 
-### 🛒 Smart nákupní asistent
+### 🏪 Smart nákupní asistent
 - Integrace s Kupi.cz
 - Hledání slev v českých supermarketech
 - Filtrování keto-friendly produktů
