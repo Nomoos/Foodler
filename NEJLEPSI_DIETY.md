@@ -1,7 +1,7 @@
 # Nejlepší dieta na hubnutí – přehled a shrnutí
 
 **Zdroj:** ochutnejorech.cz  
-**Článek:** *Nejlepší dieta na hubnutí: 15 nejúčinnějších diet pro rok 2024*  
+**Článek:** *Nejlepší dieta na hubnutí: 15 nejúčinnějších diet pro rok 2025*  
 **Aktualizace:** září 2025
 
 ---
@@ -600,7 +600,7 @@ Pro praktickou implementaci zdravého stravování v tomto repozitáři naleznet
 
 ## Zdroje a další čtení
 
-- Původní článek: ochutnejorech.cz - "Nejlepší dieta na hubnutí: 15 nejúčinnějších diet pro rok 2024"
+- Původní článek: ochutnejorech.cz - "Nejlepší dieta na hubnutí: 15 nejúčinnějších diet pro rok 2025"
 - Vědecké studie o účinnosti jednotlivých diet
 - Doporučení odborných výživových společností
 
