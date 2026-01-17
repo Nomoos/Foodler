@@ -52,15 +52,49 @@ Program je lékařsky sledován a zahrnuje řízení:
 
 ```
 Foodler/
-├── purpose                 # Original purpose document (Czech)
-├── README.md              # This file - Project overview
-└── PURPOSE_ANALYSIS.md    # Detailed analysis and documentation
+├── purpose                     # Original purpose document (Czech)
+├── README.md                   # This file - Project overview
+├── PURPOSE_ANALYSIS.md         # Detailed analysis and documentation
+├── kupi_scraper.py            # Kupi.cz discount scraper module
+├── keto_shopping_assistant.py # Keto diet shopping assistant tool
+├── KUPI_INTEGRATION.md        # Kupi.cz integration guide
+└── requirements.txt           # Python dependencies
 ```
 
 ## Documentation
 
-For a comprehensive analysis of the repository's purpose, methodology, and detailed breakdown of the dietary plan, see [PURPOSE_ANALYSIS.md](./PURPOSE_ANALYSIS.md).
+- [PURPOSE_ANALYSIS.md](./PURPOSE_ANALYSIS.md) - Comprehensive analysis of dietary plan and methodology
+- [KUPI_INTEGRATION.md](./KUPI_INTEGRATION.md) - Guide for using the Kupi.cz discount scraper
+
+## Features
+
+### 🛒 Smart Shopping Integration
+
+The repository includes tools to connect to **Kupi.cz**, a Czech discount aggregator, to help find the best deals on keto-friendly foods:
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the keto shopping assistant
+python keto_shopping_assistant.py
+
+# Or use the scraper directly
+python kupi_scraper.py
+```
+
+The shopping tools help:
+- Find discounted proteins, dairy, vegetables, and healthy fats
+- Compare prices across Czech supermarkets (Lidl, Kaufland, Albert, etc.)
+- Plan weekly shopping based on current offers
+- Optimize grocery budget while maintaining diet requirements
+
+See [KUPI_INTEGRATION.md](./KUPI_INTEGRATION.md) for detailed usage instructions.
 
 ## Status
 
-This repository is in the planning and documentation phase. The core dietary plan and health objectives have been documented and analyzed.
+**Active Development** - The repository includes:
+- ✅ Documented dietary plan and health objectives
+- ✅ Kupi.cz integration for finding grocery discounts
+- ✅ Keto diet shopping assistant
+- 🚧 Future: Meal tracking, progress monitoring, recipe database
