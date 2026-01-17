@@ -12,8 +12,8 @@ This repository is designed to serve as a **family weight loss assistance and di
 ## Target Audience
 
 ### Primary User
-- **Weight:** 130.2 kg (287 lbs)
-- **Height:** 180 cm (5'11")
+- **Weight:** 134.2 kg
+- **Height:** 183 cm
 - **Age:** 34 years
 - **Body Fat:** 46%
 - **Gender:** Male

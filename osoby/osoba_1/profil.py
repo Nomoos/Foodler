@@ -14,13 +14,13 @@ class OsobniProfil:
     """Osobní profil s antropometrickými daty a dietními cíli."""
     
     jmeno: str = "Roman (Romča)"
-    vaha: float = 130.2  # kg (287 lbs)
-    vyska: int = 180  # cm (5'11")
+    vaha: float = 134.2  # kg (měření 1.9.2026 16:16)
+    vyska: int = 183  # cm
     vek: int = 34  # roky
     pohlavi: str = "muž"
     procento_tuku: float = 46.0  # %
-    tuková_hmota: float = 59.9  # kg (vypočteno: 130.2 × 0.46)
-    svalová_hmota: float = 70.3  # kg (vypočteno: 130.2 - 59.9)
+    tuková_hmota: float = 61.7  # kg (vypočteno: 134.2 × 0.46)
+    svalová_hmota: float = 72.5  # kg (vypočteno: 134.2 - 61.7)
     
     # Dietní cíle (denní příjem) - 20% deficit
     cil_kalorie: int = 2001  # kcal
@@ -105,8 +105,8 @@ class OsobniProfil:
 Profil: {self.jmeno}
 {'=' * 50}
 Antropometrie:
-  Váha: {self.vaha} kg (287 lbs)
-  Výška: {self.vyska} cm (5'11")
+  Váha: {self.vaha} kg
+  Výška: {self.vyska} cm
   Věk: {self.vek} let
   Pohlaví: {self.pohlavi}
   BMI: {bmi}

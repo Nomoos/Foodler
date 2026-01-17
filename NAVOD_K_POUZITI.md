@@ -28,11 +28,11 @@ python osoby/osoba_2/profil.py
 Profil: Roman (Romča)
 ==================================================
 Antropometrie:
-  Váha: 130.2 kg (287 lbs)
-  Výška: 180 cm (5'11")
+  Váha: 134.2 kg
+  Výška: 183 cm
   Věk: 34 let
-  BMI: 40.2
-  Ideální váha (BMI 25): 81.0 kg
+  BMI: 40.1
+  Ideální váha (BMI 25): 83.7 kg
   
 Denní cíle (20% deficit):
   Kalorie: 2001 kcal (6 jídel)

@@ -219,7 +219,7 @@ Jde o **protein-first low-carb režim** s 12:12 intervalovým půstem, optimaliz
 
 | Parametr | Roman | Pája | Poměr |
 |----------|-------|------|-------|
-| Váha | 130.2 kg | 77.3 kg | 0.594 |
+| Váha | 134.2 kg | 77.3 kg | 0.576 |
 | Kalorie | 2001 | 1508 | 0.754 |
 | Bílkoviny | 140g | 92g | 0.657 |
 | Sacharidy | 70g | 60g | 0.857 |
