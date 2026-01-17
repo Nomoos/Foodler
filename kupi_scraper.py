@@ -13,6 +13,7 @@ from typing import List, Optional, Dict, Any
 from dataclasses import dataclass
 from datetime import datetime
 from bs4 import BeautifulSoup
+from urllib.parse import urlencode, quote
 import logging
 
 # Configure logging
@@ -55,7 +56,7 @@ class KupiCzScraper:
         self.session = requests.Session()
         # Set realistic headers to avoid being blocked
         self.session.headers.update({
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
             'Accept-Language': 'cs-CZ,cs;q=0.9,en;q=0.8',
             'Accept-Encoding': 'gzip, deflate, br',
@@ -97,10 +98,15 @@ class KupiCzScraper:
         
         # Build URL with filters
         url = self.BASE_URL
+        params = {}
+        
         if category:
             url += f"/{category}"
         if store:
-            url += f"?store={store}"
+            params['store'] = store
+        
+        if params:
+            url += f"?{urlencode(params)}"
         
         soup = self.fetch_page(url)
         if not soup:
@@ -247,8 +253,9 @@ class KupiCzScraper:
         Returns:
             List of matching Product objects
         """
-        # Build search URL
-        search_url = f"{self.BASE_URL}/vyhledavani?q={query}"
+        # Build search URL with proper URL encoding
+        params = {'q': query}
+        search_url = f"{self.BASE_URL}/vyhledavani?{urlencode(params)}"
         
         soup = self.fetch_page(search_url)
         if not soup:

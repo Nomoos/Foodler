@@ -1,4 +1,4 @@
-.gitignore content for Foodler project
+# .gitignore content for Foodler project
 __pycache__/
 *.py[cod]
 *$py.class
