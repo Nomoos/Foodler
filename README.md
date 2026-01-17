@@ -1,6 +1,8 @@
-# Foodler - 28denní Jídelníček
+# Foodler - 28denní Jídelníček (Mačingovka)
 
 Kompletní jídelní plán na 28 dní pro podporu hubnutí s důrazem na vyváženou stravu.
+
+**Tento jídelníček vychází z diety Antonie Mačingové**, známé jako **"Mačingovka"** - osvědčeného dietního systému zaměřeného na zdravé hubnutí pomocí přirozených potravin.
 
 ## Přehled
 
@@ -155,9 +157,32 @@ Tento jídelníček je určen pro:
 - Rodiny hledající vyváženou stravu
 - Kohokoliv, kdo hledá inspiraci pro pestrou a zdravou kuchyni
 
-## Další informace
+## Další dokumentace
 
-Pro více informací o dietních cílech a makronutrientech viz soubor `purpose`.
+### 📚 Podrobné průvodce:
+- **[MACINGOVA_DIETA.md](MACINGOVA_DIETA.md)** - Podrobné informace o dietě Antonie Mačingové
+  - Všechna jídla a jejich varianty
+  - Principy Mačingovky
+  - Nákupní seznamy
+  - Tipy na přípravu
+
+- **[RECEPTY_SALATY.md](RECEPTY_SALATY.md)** - Kompletní recepty na saláty z jídelníčku
+  - 9 detailních receptů s ingrediencemi
+  - Makronutrienty pro každý salát
+  - Vegetariánské varianty
+  - Tipy na zálivky a dresinky
+
+- **[purpose](purpose)** - Původní dietní cíle a makronutrienty
+
+## Inspirace a použití
+
+Tento jídelníček lze použít jako:
+- **Kompletní plán** - následovat celých 28 dní po cyklu
+- **Zdroj inspirace** - vybrat si oblíbená jídla a kombinovat je
+- **Databáze receptů** - zvláště saláty jsou vhodné pro různé příležitosti
+- **Šablona** - upravit podle vlastních preferencí a alergií
+
+Zvláště se doporučuje inspirovat se **saláty**, které jsou pilířem Mačingovky.
 
 ## Licence
 
