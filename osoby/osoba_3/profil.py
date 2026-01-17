@@ -51,7 +51,7 @@ class DetskyyProfil:
                 "Potřeba podpory zraku - vitamin A, beta-karoten",
                 "Důraz na oranžovou a zelenou zeleninu",
                 "Omega-3 pro zdravý vývoj mozku a očí",
-                "Problémy se zácpou - horší průchodnost anusu",
+                "Problémy se zácpou - obtížná defekace",
                 "Zvýšený příjem vlákniny a tekutin doporučen"
             ]
     

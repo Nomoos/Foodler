@@ -28,7 +28,7 @@ class PreferenceJidel:
     
     # Potraviny pomáhající při zácpě (vysoký obsah vlákniny)
     POTRAVINY_PROTI_ZACPE: List[str] = [
-        "fíky (oblíbené! 2-3 denně)",
+        "fíky (oblíbené! 2-3 denně)",  # DietniOmezeni.FIKY_DENNE_MIN-MAX
         "švestky",
         "sušené meruňky",
         "hrušky",
@@ -192,6 +192,10 @@ class DietniOmezeni:
     # Typ stravy
     TYP_STRAVY: str = "vyvážená dětská strava s podporou zraku a trávení"
     
+    # Doporučené množství fíků
+    FIKY_DENNE_MIN: int = 2  # fíky denně (minimum)
+    FIKY_DENNE_MAX: int = 3  # fíky denně (maximum)
+    
     # Omezení na jedno jídlo
     KALORIE_NA_JIDLO_VIKEND: int = 280  # cca 1400 / 5
     KALORIE_SNIDANE: int = 350  # 25% denní potřeby
@@ -337,7 +341,7 @@ class DietniOmezeni:
                 "hrášek (300g)"
             ],
             "ovoce": [
-                "fíky (14-21 ks pro týden) - PRIORITA!",
+                f"fíky ({DietniOmezeni.FIKY_DENNE_MIN * 7}-{DietniOmezeni.FIKY_DENNE_MAX * 7} ks pro týden) - PRIORITA!",
                 "švestky (500g)",
                 "hrušky (5 ks)",
                 "jablka (1 kg)",
@@ -381,7 +385,7 @@ def main():
     for item in preference["potraviny_pro_zrak"]:
         print(f"  ✓ {item}")
     
-    print("\n💩 POTRAVINY PROTI ZÁCPĚ (důležité!):")
+    print("\n🌾 POTRAVINY PROTI ZÁCPĚ (důležité!):")
     for item in preference["potraviny_proti_zacpe"]:
         print(f"  ✓ {item}")
     
