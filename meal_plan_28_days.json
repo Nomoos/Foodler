@@ -1,0 +1,232 @@
+{
+  "meal_plan": {
+    "title": "28-denní jídelníček",
+    "description": "Kompletní jídelní plán na 28 dní s 5 jídly denně",
+    "days": [
+      {
+        "day": 1,
+        "breakfast": "Mrkev, jablko, med, rozinky, vlašské ořechy",
+        "morning_snack": "Ananas",
+        "lunch": "Brokolice s česnekem, strouhaný sýr",
+        "afternoon_snack": "Zeleninový salát s mandlemi",
+        "dinner": "Salát z červené řepy, strouhaný sýr"
+      },
+      {
+        "day": 2,
+        "breakfast": "Mrkev, jablko, med, rozinky, vlašské ořechy",
+        "morning_snack": "Kiwi",
+        "lunch": "Fazolové lusky s česnekem, strouhaný sýr",
+        "afternoon_snack": "Bílý jogurt, med, vlašské ořechy",
+        "dinner": "Salát z červené řepy, vařené vejce"
+      },
+      {
+        "day": 3,
+        "breakfast": "Mrkev, jablko, med, rozinky, vlašské ořechy",
+        "morning_snack": "Ovocné pyré",
+        "lunch": "Salát z červené řepy, strouhaný sýr",
+        "afternoon_snack": "Zeleninový salát s mandlemi",
+        "dinner": "Mrkvový perkelt, strouhaný sýr"
+      },
+      {
+        "day": 4,
+        "breakfast": "Mrkev, jablko, med, rozinky, vlašské ořechy",
+        "morning_snack": "Hruška",
+        "lunch": "Mrkvový perkelt, strouhaný sýr",
+        "afternoon_snack": "Okurkový salát s jogurtem",
+        "dinner": "Cuketové placky"
+      },
+      {
+        "day": 5,
+        "breakfast": "Mrkev, jablko, med, rozinky, vlašské ořechy",
+        "morning_snack": "Pomelo",
+        "lunch": "Fazolové lusky s česnekem, strouhaný sýr",
+        "afternoon_snack": "Ředkvičkový salát",
+        "dinner": "Cuketové placky"
+      },
+      {
+        "day": 6,
+        "breakfast": "Mrkev, jablko, med, rozinky, vlašské ořechy",
+        "morning_snack": "Jablko",
+        "lunch": "Cuketové placky",
+        "afternoon_snack": "Bílý jogurt, med, mandle",
+        "dinner": "Brokolice s česnekem, vařené vejce"
+      },
+      {
+        "day": 7,
+        "breakfast": "Mrkev, jablko, med, rozinky, vlašské ořechy",
+        "morning_snack": "Meruňky",
+        "lunch": "Salát z červené řepy, vařené vejce",
+        "afternoon_snack": "Bílý jogurt",
+        "dinner": "Mrkvový perkelt, strouhaný sýr"
+      },
+      {
+        "day": 8,
+        "breakfast": "Bílý jogurt, med, vlašské ořechy, skořice",
+        "morning_snack": "Datle",
+        "lunch": "Těstoviny, kedlubna",
+        "afternoon_snack": "Slaný špenátový koláč",
+        "dinner": "Boršč"
+      },
+      {
+        "day": 9,
+        "breakfast": "Kiwi, banán, mandle, med, skořice",
+        "morning_snack": "Ananas",
+        "lunch": "Brokolice s česnekem, zázvor, strouhaný sýr",
+        "afternoon_snack": "Bílý jogurt, med, mandle",
+        "dinner": "Hráškový krém"
+      },
+      {
+        "day": 10,
+        "breakfast": "Mrkev, jablko, med, rozinky, vlašské ořechy",
+        "morning_snack": "Brusinky",
+        "lunch": "Mrkvový perkelt, strouhaný sýr",
+        "afternoon_snack": "Zeleninový salát s mandlemi",
+        "dinner": "Salát z červené řepy, vařené vejce"
+      },
+      {
+        "day": 11,
+        "breakfast": "Kiwi, banán, mandle, med, skořice",
+        "morning_snack": "Jablko",
+        "lunch": "Fazolové lusky s česnekem, vařené vejce",
+        "afternoon_snack": "Bílý jogurt, med, mandle",
+        "dinner": "Brynza s bílky"
+      },
+      {
+        "day": 12,
+        "breakfast": "Bílý jogurt, vlašské ořechy, med, skořice",
+        "morning_snack": "Ovocný salát",
+        "lunch": "Těstoviny, špenát",
+        "afternoon_snack": "Okurkový salát s jogurtem",
+        "dinner": "Hráškový krém"
+      },
+      {
+        "day": 13,
+        "breakfast": "Mrkev, jablko, med, rozinky, vlašské ořechy",
+        "morning_snack": "Švestky",
+        "lunch": "Mrkvový perkelt, strouhaný sýr",
+        "afternoon_snack": "Bílý jogurt, med, mandle",
+        "dinner": "Boršč"
+      },
+      {
+        "day": 14,
+        "breakfast": "Mrkev, jablko, med, rozinky, vlašské ořechy",
+        "morning_snack": "Datle",
+        "lunch": "Kuřecí karbanátky s celerem, zeleninový salát / Vegetarián: Brokolicové karbanátky, zeleninový salát",
+        "afternoon_snack": "Bílý jogurt",
+        "dinner": "Brokolice s česnekem, zázvor, strouhaný sýr"
+      },
+      {
+        "day": 15,
+        "breakfast": "Grahamový rohlík, med, vlašské ořechy, grepová šťáva",
+        "morning_snack": "Ananas",
+        "lunch": "Kuřecí karbanátky s celerem, zeleninový salát / Vegetarián: Tempeh na indický způsob, rýže basmati",
+        "afternoon_snack": "Zeleninový salát s mandlemi",
+        "dinner": "Brynza s bílky"
+      },
+      {
+        "day": 16,
+        "breakfast": "Mrkev, jablko, med, rozinky, vlašské ořechy",
+        "morning_snack": "Kiwi",
+        "lunch": "Fazolová polévka adzuki / Fazolové lusky, salát z červené řepy",
+        "afternoon_snack": "Bílý jogurt, med, vlašské ořechy",
+        "dinner": "Mozzarella, rajčata, bazalka"
+      },
+      {
+        "day": 17,
+        "breakfast": "Vařené jáhly, vlašské ořechy, sušené švestky, med",
+        "morning_snack": "Ovocné pyré",
+        "lunch": "Dýňový krém, Cuketové placky",
+        "afternoon_snack": "Zeleninový salát s mandlemi",
+        "dinner": "Zeleninový krém"
+      },
+      {
+        "day": 18,
+        "breakfast": "Bílý jogurt, vlašské ořechy, med, skořice",
+        "morning_snack": "Hruška",
+        "lunch": "Červená řepa, cibule, tuňák / Vegetarián: Červená řepa, cibule, vejce",
+        "afternoon_snack": "Okurkový salát s jogurtem",
+        "dinner": "Salát z červené řepy, smažená kuřecí prsa obalená ve vlašských ořech. / Vegetarián: Brokolicové karbanátky, salát z červené řepy"
+      },
+      {
+        "day": 19,
+        "breakfast": "Pohankové vločky, sójové mléko, jablko, vlašské ořechy, med",
+        "morning_snack": "Ovocný salát",
+        "lunch": "Treska na másle, celerové pyré / Vegetarián: Indické tofu, celerové pyré",
+        "afternoon_snack": "Ředkvičkový salát",
+        "dinner": "Mrkvový perkelt, strouhaný sýr, brokolice s česnekem"
+      },
+      {
+        "day": 20,
+        "breakfast": "Mrkev, jablko, med, rozinky, vlašské ořechy",
+        "morning_snack": "Jablko",
+        "lunch": "Kuřecí stehno, pečený celer/ Vegetarián: Tofu karbanátek, pečený celer",
+        "afternoon_snack": "Bílý jogurt, med, mandle",
+        "dinner": "Brokolice s česnekem, tuňák"
+      },
+      {
+        "day": 21,
+        "breakfast": "Vařené jáhly, vlašské ořechy, sušené švestky, med",
+        "morning_snack": "Meruňky",
+        "lunch": "Krůtí stehna, pečený celer / Červená řepa, okurek / Vegetarián: Indické tofu, pečený celer",
+        "afternoon_snack": "Bílý jogurt",
+        "dinner": "Brynza s bílky"
+      },
+      {
+        "day": 22,
+        "breakfast": "Pohankové vločky, sójové mléko, jablko, vlašské ořechy, med",
+        "morning_snack": "Datle",
+        "lunch": "Těstoviny, kedlubna",
+        "afternoon_snack": "Slaný špenátový koláč",
+        "dinner": "Kuřecí karbanátky s celerem, zeleninový salát / Vegetarián: Brokolicové karbanátky, zeleninový salát"
+      },
+      {
+        "day": 23,
+        "breakfast": "Mrkev, jablko, med, rozinky, vlašské ořechy",
+        "morning_snack": "Ananas",
+        "lunch": "Mrkvový perkelt, strouhaný sýr, brokolice s česnekem",
+        "afternoon_snack": "Bílý jogurt, med, mandle",
+        "dinner": "Salát z červené řepy, smažená kuřecí prsa obalená ve vlašských ořech. / Vegetarián: Salát z červené řepy, vejce"
+      },
+      {
+        "day": 24,
+        "breakfast": "Vařené jáhly, vlašské ořechy, sušené švestky, med",
+        "morning_snack": "Ovocné pyré",
+        "lunch": "Treska na másle, salát z červené řepy / Vegetarián: Salát z červené řepy, sýr",
+        "afternoon_snack": "Zeleninový salát s mandlemi",
+        "dinner": "Dýňový krém, Cuketové placky"
+      },
+      {
+        "day": 25,
+        "breakfast": "Mrkev, jablko, med, rozinky, vlašské ořechy",
+        "morning_snack": "Jablko",
+        "lunch": "Těstoviny, špenát",
+        "afternoon_snack": "Bílý jogurt, med, mandle",
+        "dinner": "Salát z červené řepy, tuňák / Vegetarián: Salát z červené řepy, vejce"
+      },
+      {
+        "day": 26,
+        "breakfast": "Bílý jogurt, vlašské ořechy, med, skořice",
+        "morning_snack": "Ovocný salát",
+        "lunch": "Brynza s bílky",
+        "afternoon_snack": "Slaný špenátový koláč",
+        "dinner": "Vařené jáhly, vlašské ořechy, sušené švestky, med"
+      },
+      {
+        "day": 27,
+        "breakfast": "Grahamový rohlík, med, vlašské ořechy, grepová šťáva",
+        "morning_snack": "Švestky",
+        "lunch": "Boršč",
+        "afternoon_snack": "Bílý jogurt, med, mandle",
+        "dinner": "Treska na másle, celerové pyré / Vegetarián: Indické tofu, celerové pyré"
+      },
+      {
+        "day": 28,
+        "breakfast": "Vařené jáhly, vlašské ořechy, sušené švestky, med",
+        "morning_snack": "Datle",
+        "lunch": "Kuřecí karbanátky s celerem, zeleninový salát / Vegetarián: Brokolicové karbanátky, zeleninový salát",
+        "afternoon_snack": "Bílý jogurt",
+        "dinner": "Červená řepa, cibule, tuňák / Vegetarián: Červená řepa, cibule, vejce"
+      }
+    ]
+  }
+}

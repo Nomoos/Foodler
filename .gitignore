@@ -1,4 +1,5 @@
 # .gitignore content for Foodler project
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
@@ -34,3 +35,23 @@ htmlcov/
 .DS_Store
 .vscode/
 .idea/
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Cache files
+nutrition_cache.json
+*.cache
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db

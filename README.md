@@ -1,55 +1,43 @@
-# Foodler - Family Weight Loss Assistant
+# Foodler - Nutrition Data Fetcher
 
-## English Summary
+A tool to fetch nutritional data from Czech nutrition database (kaloricketabulky.cz) for diet and meal planning.
 
-**Foodler** is a family health management repository focused on structured weight loss and dietary tracking. It supports a ketogenic/low-carb dietary approach for family members with specific health considerations.
+## Purpose
 
-### Key Features
-- 📊 Structured daily meal planning (6 meals, 2000 kcal)
-- 🥗 Ketogenic macro tracking (140g+ protein, <70g carbs, 129g fat)
-- 💊 Medication and supplement scheduling
-- 🚴 Exercise routine coordination (recumbent cycling)
-- 📈 Health metrics tracking
-- 🔬 Diet methodology research (keto, mackerel diet)
+This project helps with diet tracking and meal planning by fetching nutritional information from online databases. It's designed to support a family diet plan with specific macro targets.
 
-### Health Goals
-- **Primary User:** 135kg → target weight (41% body fat reduction)
-- **Secondary User:** ~80kg → target weight (details TBD)
+## Installation
 
-### Medical Context
-This program is medically supervised and includes management of:
-- Cardiovascular health (blood pressure medications)
-- Digestive health (acid reflux treatment)
-- Overall metabolic health improvement
+1. Install Python 3.7 or higher
+2. (Optional but recommended) Create a virtual environment:
 
----
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 
-## Česky (Czech)
+3. Install required dependencies:
 
-**Foodler** je rodinný zdravotní management systém zaměřený na strukturované hubnutí a sledování stravy. Podporuje ketogenní/nízko-sacharidovou dietu pro členy rodiny se specifickými zdravotními ohledu.
+```bash
+pip install -r requirements.txt
+```
 
-### Klíčové vlastnosti
-- 📊 Strukturované denní plánování jídel (6 jídel, 2000 kcal)
-- 🥗 Sledování ketogenních makr (140g+ bílkovin, <70g sacharidů, 129g tuku)
-- 💊 Plánování léků a suplementů
-- 🚴 Koordinace cvičení (recumbent)
-- 📈 Sledování zdravotních metrik
-- 🔬 Výzkum dietních metodik (keto, mačinková dieta)
+## Usage
 
-### Zdravotní cíle
-- **Primární uživatel:** 135kg → cílová váha (snížení 41% tuku)
-- **Sekundární uživatel:** ~80kg → cílová váha (upřesní se později)
+### Fetch nutrition data by product name (NEW!)
 
-### Lékařský kontext
-Program je lékařsky sledován a zahrnuje řízení:
-- Kardiovaskulárního zdraví (léky na krevní tlak)
-- Trávicího zdraví (léčba refluxu)
-- Celkové zlepšení metabolického zdraví
+```bash
+# Search by product name (Czech language)
+python fetch_nutrition_data.py "Tvaroh tučný Pilos"
+python fetch_nutrition_data.py "Nutrend Whey protein"
+```
 
----
+The script will search for the product on kaloricketabulky.cz and automatically fetch data from the first result.
 
-## Repository Structure
+### Fetch nutrition data from a URL
 
+```bash
+python fetch_nutrition_data.py "https://www.kaloricketabulky.cz/potraviny/whey-protein-chocolate-a-cocoa-100-nutrend"
 ```
 Foodler/
 ├── purpose                     # Original purpose document (Czech)
@@ -59,9 +47,71 @@ Foodler/
 ├── keto_shopping_assistant.py # Keto diet shopping assistant tool
 ├── KUPI_INTEGRATION.md        # Kupi.cz integration guide
 └── requirements.txt           # Python dependencies
+
+### Use in Python code
+
+```python
+from fetch_nutrition_data import fetch_nutrition_data, fetch_by_product_name
+
+# Option 1: Search by product name
+data = fetch_by_product_name("Tvaroh tučný Pilos")
+
+# Option 2: Fetch from URL
+url = "https://www.kaloricketabulky.cz/potraviny/whey-protein-chocolate-a-cocoa-100-nutrend"
+data = fetch_nutrition_data(url)
+
+if data:
+    print(f"Product: {data['product_name']}")
+    print(f"Protein: {data['macros'].get('protein', 'N/A')}")
+    print(f"Carbs: {data['macros'].get('carbohydrates', 'N/A')}")
+    print(f"Fat: {data['macros'].get('fat', 'N/A')}")
 ```
 
-## Documentation
+## Features
+
+- **Search by product name** - Just provide the Czech product name, no URL needed
+- Fetches product information from kaloricketabulky.cz
+- Parses nutritional data (calories, protein, carbs, fat, fiber, sugar)
+- Outputs data in JSON format
+- Handles Czech language nutrition terms
+- Provides formatted summary for diet tracking
+
+## Example Output
+
+```json
+{
+  "product_name": "Whey Protein Chocolate & Cocoa 100% - Nutrend",
+  "url": "https://www.kaloricketabulky.cz/potraviny/whey-protein-chocolate-a-cocoa-100-nutrend",
+  "macros": {
+    "calories": "380 kcal",
+    "protein": "78 g",
+    "carbohydrates": "6 g",
+    "fat": "6 g",
+    "fiber": "2 g"
+  }
+}
+```
+
+## Diet Plan Reference
+
+The `purpose` file contains the original diet plan with daily macro targets:
+- Protein: minimum 140g
+- Carbohydrates: max 70g
+- Fat: 129g
+- Fiber: at least 20g (ideally more)
+- Total: 2000 kcal in 6 meals
+
+## Network Requirements
+
+This script requires internet access to fetch data from kaloricketabulky.cz. If running in a restricted environment, the script will fail gracefully with an error message.
+
+## Error Handling
+
+The script includes error handling for:
+- **Network connection issues**: Returns error message "Error fetching data: [details]" and exits with code 1
+- **Invalid URLs**: Returns HTTP error with status code
+- **Parsing errors**: Returns error message "Error parsing data: [details]" 
+- **Missing data fields**: Fields not found in HTML will be omitted from output JSON
 
 - [PURPOSE_ANALYSIS.md](./PURPOSE_ANALYSIS.md) - Comprehensive analysis of dietary plan and methodology
 - [KUPI_INTEGRATION.md](./KUPI_INTEGRATION.md) - Guide for using the Kupi.cz discount scraper
@@ -90,11 +140,17 @@ The shopping tools help:
 - Optimize grocery budget while maintaining diet requirements
 
 See [KUPI_INTEGRATION.md](./KUPI_INTEGRATION.md) for detailed usage instructions.
+When errors occur, the script will print an error message to stderr and return None (in library mode) or exit with code 1 (in CLI mode).
 
-## Status
+## Contributing
 
 **Active Development** - The repository includes:
 - ✅ Documented dietary plan and health objectives
 - ✅ Kupi.cz integration for finding grocery discounts
 - ✅ Keto diet shopping assistant
 - 🚧 Future: Meal tracking, progress monitoring, recipe database
+Feel free to add support for:
+- Other nutrition databases
+- Additional data fields (vitamins, minerals)
+- Export formats (CSV, Excel)
+- Database storage for tracked foods
