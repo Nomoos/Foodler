@@ -16,17 +16,21 @@ class OsobniProfil:
     jmeno: str = "Roman (Romča)"
     vaha: float = 134.2  # kg (měření 1.9.2026 16:16)
     vyska: int = 183  # cm
+    vek: int = 34  # roky
     pohlavi: str = "muž"
-    procento_tuku: float = 37.5  # % (měření 1.9.2026)
-    tuková_hmota: float = 50.3  # kg (vypočteno: 134.2 × 0.375)
-    svalová_hmota: float = 43.6  # kg (SMM, měření 1.9.2026)
+    procento_tuku: float = 46.0  # %
+    tuková_hmota: float = 61.7  # kg (vypočteno: 134.2 × 0.46)
+    svalová_hmota: float = 72.5  # kg (vypočteno: 134.2 - 61.7)
     
-    # Dietní cíle (denní příjem)
-    cil_kalorie: int = 2000  # kcal
-    cil_bilkoviny: int = 140  # g (minimum)
+    # Dietní cíle (denní příjem) - 20% deficit
+    cil_kalorie: int = 2001  # kcal
+    cil_bilkoviny: int = 140  # g (minimum 93g, maximum 154g)
     cil_sacharidy: int = 70   # g (maximum)
-    cil_tuky: int = 129       # g
+    cil_tuky: int = 129       # g (minimum 30g, maximum 183g)
     cil_vlaknina: int = 20    # g (minimum, ideálně více)
+    
+    # Aktivita a lifestyle
+    uroven_aktivity: str = "sedava"  # Mostly sedentary
     
     # Počet jídel denně
     pocet_jidel: int = 6
@@ -60,7 +64,7 @@ class OsobniProfil:
             aktivita: Úroveň aktivity ("sedava", "lehka", "stredni", "vysoka")
         """
         # Bazální metabolismus (BMR) podle Mifflin-St Jeor
-        bmr = 10 * self.vaha + 6.25 * self.vyska - 5 * 40 + 5  # Předpokládáme věk 40
+        bmr = 10 * self.vaha + 6.25 * self.vyska - 5 * self.vek + 5
         
         # Multiplikátory aktivity
         multiplikatory = {
@@ -103,18 +107,20 @@ Profil: {self.jmeno}
 Antropometrie:
   Váha: {self.vaha} kg
   Výška: {self.vyska} cm
+  Věk: {self.vek} let
   Pohlaví: {self.pohlavi}
   BMI: {bmi}
   Procento tuku: {self.procento_tuku}%
   Tuková hmota: {self.tuková_hmota} kg
-  Svalová hmota (SMM): {self.svalová_hmota} kg
+  Svalová hmota: {self.svalová_hmota} kg
   Ideální váha (BMI 25): {idealni_vaha} kg
+  Úroveň aktivity: {self.uroven_aktivity}
   
-Denní cíle:
+Denní cíle (20% deficit):
   Kalorie: {self.cil_kalorie} kcal ({self.pocet_jidel} jídel)
-  Bílkoviny: min {self.cil_bilkoviny}g
+  Bílkoviny: min {self.cil_bilkoviny}g (range: 93-154g)
   Sacharidy: max {self.cil_sacharidy}g
-  Tuky: {self.cil_tuky}g
+  Tuky: {self.cil_tuky}g (range: 30-183g)
   Vláknina: min {self.cil_vlaknina}g
   
 Zdravotní poznámky:
