@@ -141,7 +141,7 @@ def generate_shopping_list(meals):
 def main():
     """Hlavní funkce - generuje jídelníček na zítra"""
     
-    # Zítra je 18.1.2026
+    # Zítra je 18.1.2026 (jak uvedeno v požadavku)
     tomorrow = datetime(2026, 1, 18)
     
     # Vypočítáme den v cyklu
@@ -155,7 +155,6 @@ def main():
         return
     
     # Vytiskneme jídelníček
-    date_str = tomorrow.strftime("%d.%m.%Y (%A)")
     date_str = "18.01.2026 (sobota)"  # Přesné datum z požadavku
     
     print(format_meal_plan(date_str, cycle_day, meals))
@@ -167,10 +166,10 @@ def main():
     # Pro lepší organizaci rozdělíme ingredience podle typu
     print("\n📝 Ingredience pro přípravu jídel:")
     
-    all_meals_text = []
-    for meal_type, meal_content in meals.items():
-        if meal_type != 'den':
-            all_meals_text.append(meal_content)
+    all_meals_text = " ".join([
+        meal for meal_type, meal in meals.items() 
+        if meal_type != 'den'
+    ]).lower()
     
     # Extrahujeme běžné ingredience
     common_ingredients = [
@@ -181,11 +180,9 @@ def main():
     
     ingredients_found = []
     for ingredient in common_ingredients:
-        for meal in all_meals_text:
-            if ingredient.lower() in meal.lower():
-                if ingredient not in ingredients_found:
-                    ingredients_found.append(ingredient)
-                break
+        if ingredient in all_meals_text:
+            if ingredient not in ingredients_found:
+                ingredients_found.append(ingredient)
     
     for ingredient in sorted(ingredients_found):
         print(f"   ✓ {ingredient}")

@@ -32,21 +32,25 @@ def load_meal_plan_json():
         return None
 
 
-def parse_date_argument(arg):
+def parse_date_argument(arg, base_date=None):
     """
     Parsuje argument s datem.
     
     Args:
         arg: String s datem (např. "tomorrow", "18.1.2026", "2026-01-18")
+        base_date: Základní datum pro relativní výpočty (default: now)
         
     Returns:
         datetime objekt nebo None při chybě
     """
+    if base_date is None:
+        base_date = datetime.now()
+    
     if not arg or arg.lower() == "today":
-        return datetime.now()
+        return base_date
     
     if arg.lower() == "tomorrow":
-        return datetime.now() + timedelta(days=1)
+        return base_date + timedelta(days=1)
     
     # Zkusíme formát DD.M.YYYY nebo D.M.YYYY
     for fmt in ["%d.%m.%Y", "%d.%m.%y", "%Y-%m-%d"]:
