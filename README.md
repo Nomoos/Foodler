@@ -1,140 +1,52 @@
-# Foodler - 28denní Jídelníček (Mačingovka)
+# Foodler - Nutrition Data Fetcher
 
-Kompletní jídelní plán na 28 dní pro podporu hubnutí s důrazem na vyváženou stravu.
+A tool to fetch nutritional data from Czech nutrition database (kaloricketabulky.cz) for diet and meal planning.
 
-**Tento jídelníček vychází z diety Antonie Mačingové**, známé jako **"Mačingovka"** - osvědčeného dietního systému zaměřeného na zdravé hubnutí pomocí přirozených potravin.
+## Purpose
 
-## Přehled
+This project helps with diet tracking and meal planning by fetching nutritional information from online databases. It's designed to support a family diet plan with specific macro targets.
 
-Tento repozitář obsahuje podrobný 28denní jídelníček s pěti jídly denně:
-- **Raňajky** (Snídaně)
-- **Desiata** (Dopolední svačina)
-- **Obed** (Oběd)
-- **Olovrant** (Odpolední svačina)
-- **Večera** (Večeře)
+## Installation
 
-## Dostupné formáty
-
-Jídelníček je dostupný ve dvou formátech:
-
-### 1. CSV formát
-Soubor: `meal_plan_28_days.csv`
-
-Standardní CSV soubor s čárkovým oddělovačem, kde jednotlivé ingredience v jídle jsou odděleny středníkem. Ideální pro import do tabulkových procesorů (Excel, Google Sheets, LibreOffice Calc).
-
-**Struktura:**
-```
-Deň,Raňajky,Desiata,Obed,Olovrant,Večera
-1,Mrkev; jablko; med; rozinky; vlašské ořechy,Ananas,...
-```
-
-### 2. JSON formát
-Soubor: `meal_plan_28_days.json`
-
-Strukturovaný JSON soubor s kompletními daty o jídelníčku. Ideální pro programové zpracování a integraci s aplikacemi.
-
-**Struktura:**
-```json
-{
-  "meal_plan": {
-    "title": "28-denní jídelníček",
-    "description": "Kompletní jídelní plán na 28 dní s 5 jídly denně",
-    "days": [
-      {
-        "day": 1,
-        "breakfast": "...",
-        "morning_snack": "...",
-        "lunch": "...",
-        "afternoon_snack": "...",
-        "dinner": "..."
-      }
-    ]
-  }
-}
-```
-
-## Charakteristika jídelníčku
-
-### Hlavní ingredience a jejich frekvence
-
-**Nejčastější snídaně:**
-- Mrkev, jablko, med, rozinky, vlašské ořechy (16x)
-- Bílý jogurt, vlašské ořechy, med, skořice (4x)
-- Vařené jáhly, vlašské ořechy, sušené švestky, med (4x)
-- Kiwi, banán, mandle, med, skořice (2x)
-- Pohankové vločky, sójové mléko, jablko, vlašské ořechy, med (2x)
-
-**Populární hlavní jídla:**
-- Mrkvový perkelt se strouhaným sýrem (6x)
-- Brokolice s česnekem (různé varianty)
-- Cuketové placky
-- Fazolové lusky s česnekem
-- Salát z červené řepy (různé varianty)
-
-**Vegetariánské alternativy:**
-- Téměř všechna hlavní jídla s masem mají vegetariánskou variantu
-- Běžné náhrady: tempeh, tofu, vejce, brokolicové karbanátky
-
-### Nutriční principy
-
-Jídelníček je navržen s důrazem na:
-- Vysoký obsah bílkovin (ořechy, vejce, sýry, jogurt, luštěniny)
-- Pravidelný příjem vlákniny (zelenina, ovoce, luštěniny)
-- Zdravé tuky (ořechy, mandle, med)
-- Rozmanitost zeleniny a ovoce
-- Možnost vegetariánské varianty
-
-## Použití
-
-### Import do tabulkového procesoru
-
-**Excel / Google Sheets:**
-1. Otevřete soubor `meal_plan_28_days.csv`
-2. Sloupec "Deň" obsahuje číslo dne (1-28)
-3. Každý následující sloupec obsahuje jedno z pěti jídel
-
-**LibreOffice Calc:**
-1. Soubor → Otevřít
-2. Vyberte `meal_plan_28_days.csv`
-3. V dialogu importu nastavte:
-   - Kódování: UTF-8
-   - Oddělovač: čárka
-   - Text delimiter: uvozovky
-
-### Programové zpracování (JSON)
-
-```python
-import json
-
-with open('meal_plan_28_days.json', 'r', encoding='utf-8') as f:
-    meal_plan = json.load(f)
-
-# Získání jídel pro konkrétní den
-day_5 = meal_plan['meal_plan']['days'][4]  # Den 5 (index 4)
-print(f"Snídaně: {day_5['breakfast']}")
-print(f"Oběd: {day_5['lunch']}")
-```
-
-```javascript
-const fs = require('fs');
-
-const mealPlan = JSON.parse(
-  fs.readFileSync('meal_plan_28_days.json', 'utf-8')
-);
-
-// Zobrazení všech snídaní
-mealPlan.meal_plan.days.forEach(day => {
-  console.log(`Den ${day.day}: ${day.breakfast}`);
-});
-```
-
-### Použití ukázkového skriptu
-
-V repozitáři je k dispozici Python skript `example_usage.py`, který ukazuje různé způsoby práce s jídelníčkem:
+1. Install Python 3.7 or higher
+2. (Optional but recommended) Create a virtual environment:
 
 ```bash
-python3 example_usage.py
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
+
+3. Install required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
+### Fetch nutrition data by product name (NEW!)
+
+```bash
+# Search by product name (Czech language)
+python fetch_nutrition_data.py "Tvaroh tučný Pilos"
+python fetch_nutrition_data.py "Nutrend Whey protein"
+```
+
+The script will search for the product on kaloricketabulky.cz and automatically fetch data from the first result.
+
+### Fetch nutrition data from a URL
+
+```bash
+python fetch_nutrition_data.py "https://www.kaloricketabulky.cz/potraviny/whey-protein-chocolate-a-cocoa-100-nutrend"
+```
+Foodler/
+├── purpose                     # Original purpose document (Czech)
+├── README.md                   # This file - Project overview
+├── PURPOSE_ANALYSIS.md         # Detailed analysis and documentation
+├── kupi_scraper.py            # Kupi.cz discount scraper module
+├── keto_shopping_assistant.py # Keto diet shopping assistant tool
+├── KUPI_INTEGRATION.md        # Kupi.cz integration guide
+└── requirements.txt           # Python dependencies
 
 Skript obsahuje příklady:
 - Zobrazení menu pro konkrétní den
@@ -185,99 +97,130 @@ Tento jídelníček je určen pro:
   - Praktické kombinované strategie
 
 ### 📖 O dietě a receptech:
+### 📚 Podrobné průvodce:
+- **[TRAVENI_A_METABOLISMUS.md](TRAVENI_A_METABOLISMUS.md)** - Jak zlepšit trávení a metabolismus
+  - Co reálně pomáhá (bílkoviny, tuky, vláknina)
+  - Kdy co jíst pro optimální metabolismus
+  - Rychlá orientační tabulka
+  - Doporučení pro reflux a trávicí problémy
+
 - **[MACINGOVA_DIETA.md](MACINGOVA_DIETA.md)** - Podrobné informace o dietě Antonie Mačingové
   - Všechna jídla a jejich varianty
   - Principy Mačingovky
   - Nákupní seznamy
   - Tipy na přípravu
+### Use in Python code
 
-- **[RECEPTY_SALATY.md](RECEPTY_SALATY.md)** - Kompletní recepty na saláty z jídelníčku
-  - 9 detailních receptů s ingrediencemi
-  - Makronutrienty pro každý salát
-  - Vegetariánské varianty
-  - Tipy na zálivky a dresinky
+```python
+from fetch_nutrition_data import fetch_nutrition_data, fetch_by_product_name
 
 - **[PURPOSE_ANALYSIS.md](PURPOSE_ANALYSIS.md)** - Analýza účelu repozitáře
   - Dietní cíle a makronutrienty
   - Zdravotní kontext
   - Detailní rozklad plánu
+# Option 1: Search by product name
+data = fetch_by_product_name("Tvaroh tučný Pilos")
 
-## Inspirace a použití
+# Option 2: Fetch from URL
+url = "https://www.kaloricketabulky.cz/potraviny/whey-protein-chocolate-a-cocoa-100-nutrend"
+data = fetch_nutrition_data(url)
 
-Tento jídelníček lze použít jako:
-- **Kompletní plán** - následovat celých 28 dní po cyklu
-- **Zdroj inspirace** - vybrat si oblíbená jídla a kombinovat je
-- **Databáze receptů** - zvláště saláty jsou vhodné pro různé příležitosti
-- **Šablona** - upravit podle vlastních preferencí a alergií
+if data:
+    print(f"Product: {data['product_name']}")
+    print(f"Protein: {data['macros'].get('protein', 'N/A')}")
+    print(f"Carbs: {data['macros'].get('carbohydrates', 'N/A')}")
+    print(f"Fat: {data['macros'].get('fat', 'N/A')}")
+```
 
-Zvláště se doporučuje inspirovat se **saláty**, které jsou pilířem Mačingovky.
+## Features
 
-## Licence
+- **Search by product name** - Just provide the Czech product name, no URL needed
+- Fetches product information from kaloricketabulky.cz
+- Parses nutritional data (calories, protein, carbs, fat, fiber, sugar)
+- Outputs data in JSON format
+- Handles Czech language nutrition terms
+- Provides formatted summary for diet tracking
 
-Tento jídelníček je poskytován jako je, pro osobní použití.
-# Foodler - Family Weight Loss Assistant
+## Example Output
 
-## English Summary
+```json
+{
+  "product_name": "Whey Protein Chocolate & Cocoa 100% - Nutrend",
+  "url": "https://www.kaloricketabulky.cz/potraviny/whey-protein-chocolate-a-cocoa-100-nutrend",
+  "macros": {
+    "calories": "380 kcal",
+    "protein": "78 g",
+    "carbohydrates": "6 g",
+    "fat": "6 g",
+    "fiber": "2 g"
+  }
+}
+```
 
-**Foodler** is a family health management repository focused on structured weight loss and dietary tracking. It supports a ketogenic/low-carb dietary approach for family members with specific health considerations.
+## Diet Plan Reference
 
-### Key Features
-- 📊 Structured daily meal planning (6 meals, 2000 kcal)
-- 🥗 Ketogenic macro tracking (140g+ protein, <70g carbs, 129g fat)
-- 💊 Medication and supplement scheduling
-- 🚴 Exercise routine coordination (recumbent cycling)
-- 📈 Health metrics tracking
-- 🔬 Diet methodology research (keto, mackerel diet)
+The `purpose` file contains the original diet plan with daily macro targets:
+- Protein: minimum 140g
+- Carbohydrates: max 70g
+- Fat: 129g
+- Fiber: at least 20g (ideally more)
+- Total: 2000 kcal in 6 meals
 
-### Health Goals
-- **Primary User:** 135kg → target weight (41% body fat reduction)
-- **Secondary User:** ~80kg → target weight (details TBD)
+## Network Requirements
 
-### Medical Context
-This program is medically supervised and includes management of:
-- Cardiovascular health (blood pressure medications)
-- Digestive health (acid reflux treatment)
-- Overall metabolic health improvement
+This script requires internet access to fetch data from kaloricketabulky.cz. If running in a restricted environment, the script will fail gracefully with an error message.
 
----
+## Error Handling
 
-## Česky (Czech)
+The script includes error handling for:
+- **Network connection issues**: Returns error message "Error fetching data: [details]" and exits with code 1
+- **Invalid URLs**: Returns HTTP error with status code
+- **Parsing errors**: Returns error message "Error parsing data: [details]" 
+- **Missing data fields**: Fields not found in HTML will be omitted from output JSON
 
-**Foodler** je rodinný zdravotní management systém zaměřený na strukturované hubnutí a sledování stravy. Podporuje ketogenní/nízko-sacharidovou dietu pro členy rodiny se specifickými zdravotními ohledu.
+- [PURPOSE_ANALYSIS.md](./PURPOSE_ANALYSIS.md) - Comprehensive analysis of dietary plan and methodology
+- [KUPI_INTEGRATION.md](./KUPI_INTEGRATION.md) - Guide for using the Kupi.cz discount scraper
 
-### Klíčové vlastnosti
-- 📊 Strukturované denní plánování jídel (6 jídel, 2000 kcal)
-- 🥗 Sledování ketogenních makr (140g+ bílkovin, <70g sacharidů, 129g tuku)
-- 💊 Plánování léků a suplementů
-- 🚴 Koordinace cvičení (recumbent)
-- 📈 Sledování zdravotních metrik
-- 🔬 Výzkum dietních metodik (keto, mačinková dieta)
+## Features
 
-### Zdravotní cíle
-- **Primární uživatel:** 135kg → cílová váha (snížení 41% tuku)
-- **Sekundární uživatel:** ~80kg → cílová váha (upřesní se později)
+### 🛒 Smart Shopping Integration
 
 ### Lékařský kontext
 Program je lékařsky sledován a zahrnuje řízení:
 - Kardiovaskulárního zdraví (léky na krevní tlak)
-- Trávicího zdraví (léčba refluxu)
+- Trávicího zdraví (léčba refluxu) - viz [průvodce trávením a metabolismem](TRAVENI_A_METABOLISMUS.md)
 - Celkové zlepšení metabolického zdraví
+The repository includes tools to connect to **Kupi.cz**, a Czech discount aggregator, to help find the best deals on keto-friendly foods:
 
----
+```bash
+# Install dependencies
+pip install -r requirements.txt
 
-## Repository Structure
+# Run the keto shopping assistant
+python keto_shopping_assistant.py
 
+# Or use the scraper directly
+python kupi_scraper.py
 ```
-Foodler/
-├── purpose                 # Original purpose document (Czech)
-├── README.md              # This file - Project overview
-└── PURPOSE_ANALYSIS.md    # Detailed analysis and documentation
-```
 
-## Documentation
+The shopping tools help:
+- Find discounted proteins, dairy, vegetables, and healthy fats
+- Compare prices across Czech supermarkets (Lidl, Kaufland, Albert, etc.)
+- Plan weekly shopping based on current offers
+- Optimize grocery budget while maintaining diet requirements
 
-For a comprehensive analysis of the repository's purpose, methodology, and detailed breakdown of the dietary plan, see [PURPOSE_ANALYSIS.md](./PURPOSE_ANALYSIS.md).
+See [KUPI_INTEGRATION.md](./KUPI_INTEGRATION.md) for detailed usage instructions.
+When errors occur, the script will print an error message to stderr and return None (in library mode) or exit with code 1 (in CLI mode).
 
-## Status
+## Contributing
 
-This repository is in the planning and documentation phase. The core dietary plan and health objectives have been documented and analyzed.
+**Active Development** - The repository includes:
+- ✅ Documented dietary plan and health objectives
+- ✅ Kupi.cz integration for finding grocery discounts
+- ✅ Keto diet shopping assistant
+- 🚧 Future: Meal tracking, progress monitoring, recipe database
+Feel free to add support for:
+- Other nutrition databases
+- Additional data fields (vitamins, minerals)
+- Export formats (CSV, Excel)
+- Database storage for tracked foods
