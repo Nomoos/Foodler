@@ -14,10 +14,12 @@ class OsobniProfil:
     """Osobní profil s antropometrickými daty a dietními cíli."""
     
     jmeno: str = "Osoba 1"
-    vaha: float = 135.0  # kg
+    vaha: float = 135.5  # kg (aktuální měření)
     vyska: int = 183  # cm
     pohlavi: str = "muž"
-    procento_tuku: float = 41.0  # %
+    procento_tuku: float = 37.5  # % (aktuální měření)
+    tuková_hmota: float = 50.8  # kg (vypočteno: 135.5 × 0.375)
+    svalová_hmota: float = 45.3  # kg (SMM, aktuální měření)
     
     # Dietní cíle (denní příjem)
     cil_kalorie: int = 2000  # kcal
@@ -104,6 +106,8 @@ Antropometrie:
   Pohlaví: {self.pohlavi}
   BMI: {bmi}
   Procento tuku: {self.procento_tuku}%
+  Tuková hmota: {self.tuková_hmota} kg
+  Svalová hmota (SMM): {self.svalová_hmota} kg
   Ideální váha (BMI 25): {idealni_vaha} kg
   
 Denní cíle:
