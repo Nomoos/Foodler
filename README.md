@@ -19,7 +19,7 @@ Nástroj pro podporu hubnutí a zdravého stravování pro celou rodinu s důraz
 - **Procento tuku:** 39.6% (měření)
 - **Svalová hmota (SMM):** 25.6 kg (měření)
 - **VFA:** 147.2 cm²/level (měření)
-- **Denní cíl:** 1150 kcal, 80g+ bílkovin, max 40g sacharidů (poměrově z Romana)
+- **Denní cíl:** 1508 kcal, 92g bílkovin, max 60g sacharidů (Ankerl Keto Calculator)
 
 ---
 

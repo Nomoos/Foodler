@@ -22,11 +22,11 @@ class OsobniProfil:
     svalová_hmota: float = 25.6  # kg (SSM, měření 22.12.2025)
     vfa: float = 147.2  # cm2/level (viscerální tuk, měření 22.12.2025)
     
-    # Dietní cíle (denní příjem) - přepočteno poměrově podle váhy
-    cil_kalorie: int = 1150  # kcal (poměr 77.3/134.2 z Romana)
-    cil_bilkoviny: int = 80  # g (minimum, poměr z Romana)
-    cil_sacharidy: int = 40   # g (maximum, poměr z Romana)
-    cil_tuky: int = 74       # g (přepočteno)
+    # Dietní cíle (denní příjem) - vypočteno Ankerl Keto Calculator
+    cil_kalorie: int = 1508  # kcal (10% deficit, Ankerl)
+    cil_bilkoviny: int = 92  # g (minimum 80g, max 100g, Ankerl)
+    cil_sacharidy: int = 60   # g (maximum, Ankerl)
+    cil_tuky: int = 100       # g (60-120g rozmezí, Ankerl)
     cil_vlaknina: int = 20    # g (minimum, ideálně více)
     
     # Počet jídel denně
