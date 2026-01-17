@@ -102,14 +102,14 @@ class PreferenceJidel:
     
     # Ovoce vhodné pro děti (důraz na vlákninu proti zácpě)
     PREFERRED_FRUITS: List[str] = [
-        "sušené fíky (OBLÍBENÉ! 2-3 denně)",
+        "sušené fíky (oblíbené! 2-3 denně)",
         "švestky (sušené)",
         "sušené meruňky",
         "hrušky (čerstvé)",
         "jablka (se slupkou)",
         "meruňky (čerstvé)",
         "broskve",
-        "banány (pouze zralé!)",
+        "banány (zralé)",
         "jahody",
         "borůvky",
         "maliny",
@@ -429,7 +429,7 @@ def main():
     for item in preference["zelenina_pro_traveni"]:
         print(f"  ✓ {item}")
     
-    print("\n⚠️  VYHÝBAT SE PŘI ZÁCPĚ:")
+    print("\n⚠️ VYHÝBAT SE PŘI ZÁCPĚ:")
     for item in preference["vyhybat_se_pri_zacpe"]:
         print(f"  ✗ {item}")
     
