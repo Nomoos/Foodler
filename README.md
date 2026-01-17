@@ -137,6 +137,32 @@ python src/assistants/keto_shopping_assistant.py
   - Kompletní nákupní seznam
   - 2-hodinový meal prep
   - 3 základní recepty krok za krokem
+  - Ideální pro začátečníky
+
+### 📚 Podrobné průvodce meal prepu:
+- **[TYDENNI_PLANOVANI.md](TYDENNI_PLANOVANI.md)** - Kompletní strategie týdenního plánování
+  - Systém "2+5" (2 vaření za týden, 5 minut denně)
+  - Meal prep krok za krokem
+  - Top 5 receptů pro přípravu dopředu
+  - Nákupní seznamy a časové harmonogramy
+  - Strategie mražení a skladování
+  - Úspora 50-65% času stráveného vařením
+
+- **[VYBAVENI_A_TIPY.md](VYBAVENI_A_TIPY.md)** - Maximální využití kuchyňského vybavení
+  - Jak využít tlakový hrnec pro rychlé vaření
+  - Vakuovačka pro prodloužení trvanlivosti 2-3x
+  - Mrazák jako váš spojenec (až 3 měsíce zásoby)
+  - Trouba pro batch cooking (12 porcí za 1 hodinu)
+  - Smoothie meal prep (2minutové snídaně)
+  - Praktické kombinované strategie
+
+### 📖 O dietě a receptech:
+- **[NEJLEPSI_DIETY.md](NEJLEPSI_DIETY.md)** - ⭐ Přehled 15 nejlepších diet na hubnutí
+  - Kompletní shrnutí populárních diet (keto, paleo, středomořská, atd.)
+  - Výhody a nevýhody každé diety
+  - Jak vybrat správnou dietu pro vás
+  - Důležitá doporučení a časté chyby
+  - Srovnání diet podle různých kritérií
 
 ### 📚 Podrobné průvodce:
 - **[TYDENNI_PLANOVANI.md](TYDENNI_PLANOVANI.md)** - Strategie týdenního plánování
