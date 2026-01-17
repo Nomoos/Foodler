@@ -28,13 +28,15 @@ class PreferenceJidel:
     
     # Potraviny pomáhající při zácpě (vysoký obsah vlákniny)
     POTRAVINY_PROTI_ZACPE: List[str] = [
-        "fíky (oblíbené! 2-3 denně)",  # DietniOmezeni.FIKY_DENNE_MIN-MAX
-        "švestky",
+        "sušené fíky (oblíbené! 2-3 denně)",  # DietniOmezeni.FIKY_DENNE_MIN-MAX
+        "švestky (sušené)",
         "sušené meruňky",
         "hrušky",
         "jablka",
-        "brokolice",
+        "brokolice (čerstvá zelenina!)",
         "hrášek",
+        "špenát (čerstvá zelenina!)",
+        "mrkev (čerstvá zelenina!)",
         "ovesné vločky",
         "celozrnné těstoviny",
         "celozrnný chléb",
@@ -43,6 +45,32 @@ class PreferenceJidel:
         "voda (dostatek tekutin!)",
         "lněné semínko",
         "chia semínka"
+    ]
+    
+    # Zelenina čerstvá - doporučená pro zácpu
+    ZELENINA_PRO_TRAVENI: List[str] = [
+        "brokolice",
+        "špenát",
+        "mrkev",
+        "hrášek",
+        "fazolky",
+        "cuketa",
+        "dýně",
+        "květák"
+    ]
+    
+    # Potraviny k omezení při zácpě
+    VYHYBAT_SE_PRI_ZACPE: List[str] = [
+        "banány (zelené, nezralé)",
+        "bílá rýže",
+        "bílý chléb",
+        "sýry (tvrdé, ve velkém množství)",
+        "maso (tučné, ve velkém množství)",
+        "zpracované potraviny",
+        "sladkosti bez vlákniny",
+        "fast food",
+        "smažené jídlo",
+        "čokoláda (ve velkém množství)"
     ]
     
     # Oblíbené dětské zdroje bílkovin
@@ -74,13 +102,14 @@ class PreferenceJidel:
     
     # Ovoce vhodné pro děti (důraz na vlákninu proti zácpě)
     PREFERRED_FRUITS: List[str] = [
-        "fíky (oblíbené! 2-3 denně)",
-        "švestky (čerstvé i sušené)",
-        "hrušky",
+        "sušené fíky (OBLÍBENÉ! 2-3 denně)",
+        "švestky (sušené)",
+        "sušené meruňky",
+        "hrušky (čerstvé)",
         "jablka (se slupkou)",
-        "meruňky",
+        "meruňky (čerstvé)",
         "broskve",
-        "banány (zralé)",
+        "banány (pouze zralé!)",
         "jahody",
         "borůvky",
         "maliny",
@@ -178,6 +207,8 @@ class PreferenceJidel:
         return {
             "potraviny_pro_zrak": PreferenceJidel.POTRAVINY_PRO_ZRAK,
             "potraviny_proti_zacpe": PreferenceJidel.POTRAVINY_PROTI_ZACPE,
+            "zelenina_pro_traveni": PreferenceJidel.ZELENINA_PRO_TRAVENI,
+            "vyhybat_se_pri_zacpe": PreferenceJidel.VYHYBAT_SE_PRI_ZACPE,
             "nepreferovane": PreferenceJidel.NEPREFERRED_FOODS,
             "preferovane_bilkoviny": PreferenceJidel.PREFERRED_PROTEINS,
             "preferovana_zelenina": PreferenceJidel.PREFERRED_VEGETABLES,
@@ -255,29 +286,34 @@ class DietniOmezeni:
     # Příklady jídel pomáhajících při zácpě
     PRIKLADOVA_JIDLA_PROTI_ZACPE: List[Dict[str, str]] = [
         {
-            "nazev": "Ovesná kaše s fíky a hruškou",
-            "ingredience": "ovesné vločky, fíky (2-3 ks), hruška, voda",
-            "benefit": "vysoká vláknina + oblíbené fíky"
+            "nazev": "Ovesná kaše se sušenými fíky a hruškou",
+            "ingredience": "ovesné vločky, sušené fíky (2-3 ks), hruška, voda",
+            "benefit": "vysoká vláknina + oblíbené sušené fíky"
         },
         {
-            "nazev": "Jogurt s probiotiky, švestkami a chia",
-            "ingredience": "jogurt, švestky, chia semínka",
+            "nazev": "Jogurt s probiotiky, sušenými švestkami a chia",
+            "ingredience": "jogurt, sušené švestky, chia semínka",
             "benefit": "probiotika + vláknina"
         },
         {
-            "nazev": "Celozrnný chléb s tvarohem a fíky",
-            "ingredience": "celozrnný chléb, tvaroh, fíky (2-3 ks)",
+            "nazev": "Celozrnný chléb s tvarohem a sušenými fíky",
+            "ingredience": "celozrnný chléb, tvaroh, sušené fíky (2-3 ks)",
             "benefit": "vláknina + oblíbené fíky"
         },
         {
-            "nazev": "Hrušková svačinka s mandlovým máslem",
-            "ingredience": "hruška, mandlové máslo",
-            "benefit": "přírodní vláknina"
+            "nazev": "Parní brokolice s mrkví",
+            "ingredience": "brokolice (čerstvá), mrkev (čerstvá), olivový olej",
+            "benefit": "čerstvá zelenina s vlákninou!"
         },
         {
-            "nazev": "Brokolice s celozrnnými těstovinami",
-            "ingredience": "brokolice, celozrnné těstoviny, olivový olej",
-            "benefit": "zelenina + vláknina"
+            "nazev": "Špenátová omeletka",
+            "ingredience": "vejce, čerstvý špenát, sýr",
+            "benefit": "čerstvá zelenina + bílkoviny"
+        },
+        {
+            "nazev": "Celozrnné těstoviny s hráškem",
+            "ingredience": "celozrnné těstoviny, čerstvý hrášek, olivový olej",
+            "benefit": "vláknina + čerstvá zelenina"
         }
     ]
     
@@ -341,13 +377,13 @@ class DietniOmezeni:
                 "hrášek (300g)"
             ],
             "ovoce": [
-                f"fíky ({DietniOmezeni.FIKY_DENNE_MIN * 7}-{DietniOmezeni.FIKY_DENNE_MAX * 7} ks pro týden) - PRIORITA!",
-                "švestky (500g)",
-                "hrušky (5 ks)",
+                f"SUŠENÉ fíky ({DietniOmezeni.FIKY_DENNE_MIN * 7}-{DietniOmezeni.FIKY_DENNE_MAX * 7} ks pro týden) - PRIORITA!",
+                "sušené švestky (300g)",
+                "sušené meruňky (200g)",
+                "hrušky čerstvé (5 ks)",
                 "jablka (1 kg)",
                 "borůvky (250g)",
                 "jahody (250g)",
-                "meruňky (300g)",
                 "pomeranče (4 ks)"
             ],
             "bilkoviny": [
@@ -388,6 +424,14 @@ def main():
     print("\n🌾 POTRAVINY PROTI ZÁCPĚ (důležité!):")
     for item in preference["potraviny_proti_zacpe"]:
         print(f"  ✓ {item}")
+    
+    print("\n🥬 ČERSTVÁ ZELENINA PRO TRÁVENÍ:")
+    for item in preference["zelenina_pro_traveni"]:
+        print(f"  ✓ {item}")
+    
+    print("\n⚠️  VYHÝBAT SE PŘI ZÁCPĚ:")
+    for item in preference["vyhybat_se_pri_zacpe"]:
+        print(f"  ✗ {item}")
     
     print("\n🍗 Preferované bílkoviny:")
     for item in preference["preferovane_bilkoviny"]:
