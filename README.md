@@ -71,6 +71,32 @@ Tento jídelníček je určen pro:
 
 ## Další dokumentace
 
+### 🚀 Začněte zde:
+- **[RYCHLY_START.md](RYCHLY_START.md)** - ⭐ Začněte TENTO víkend!
+  - Kompletní nákupní seznam
+  - Jednoduchý 2-hodinový meal prep
+  - Přesný časový harmonogram
+  - 3 základní recepty krok za krokem
+  - Ideální pro začátečníky
+
+### 📚 Podrobné průvodce meal prepu:
+- **[TYDENNI_PLANOVANI.md](TYDENNI_PLANOVANI.md)** - Kompletní strategie týdenního plánování
+  - Systém "2+5" (2 vaření za týden, 5 minut denně)
+  - Meal prep krok za krokem
+  - Top 5 receptů pro přípravu dopředu
+  - Nákupní seznamy a časové harmonogramy
+  - Strategie mražení a skladování
+  - Úspora 50-65% času stráveného vařením
+
+- **[VYBAVENI_A_TIPY.md](VYBAVENI_A_TIPY.md)** - Maximální využití kuchyňského vybavení
+  - Jak využít tlakový hrnec pro rychlé vaření
+  - Vakuovačka pro prodloužení trvanlivosti 2-3x
+  - Mrazák jako váš spojenec (až 3 měsíce zásoby)
+  - Trouba pro batch cooking (12 porcí za 1 hodinu)
+  - Smoothie meal prep (2minutové snídaně)
+  - Praktické kombinované strategie
+
+### 📖 O dietě a receptech:
 ### 📚 Podrobné průvodce:
 - **[TRAVENI_A_METABOLISMUS.md](TRAVENI_A_METABOLISMUS.md)** - Jak zlepšit trávení a metabolismus
   - Co reálně pomáhá (bílkoviny, tuky, vláknina)
@@ -88,6 +114,10 @@ Tento jídelníček je určen pro:
 ```python
 from fetch_nutrition_data import fetch_nutrition_data, fetch_by_product_name
 
+- **[PURPOSE_ANALYSIS.md](PURPOSE_ANALYSIS.md)** - Analýza účelu repozitáře
+  - Dietní cíle a makronutrienty
+  - Zdravotní kontext
+  - Detailní rozklad plánu
 # Option 1: Search by product name
 data = fetch_by_product_name("Tvaroh tučný Pilos")
 
