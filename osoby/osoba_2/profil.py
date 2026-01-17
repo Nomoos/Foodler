@@ -14,10 +14,13 @@ class OsobniProfil:
     """Osobní profil s antropometrickými daty a dietními cíli."""
     
     jmeno: str = "Osoba 2"
-    vaha: float = 80.0  # kg
+    vaha: float = 77.3  # kg (měření 22.12.2025)
     vyska: int = 170  # cm
     pohlavi: str = "žena"
-    procento_tuku: float = 35.0  # % (odhad)
+    procento_tuku: float = 39.6  # % (měření 22.12.2025)
+    tuková_hmota: float = 30.6  # kg (měření 22.12.2025)
+    svalová_hmota: float = 25.6  # kg (SSM, měření 22.12.2025)
+    vfa: float = 147.2  # cm2/level (viscerální tuk, měření 22.12.2025)
     
     # Dietní cíle (denní příjem) - budou zpřesněny
     cil_kalorie: int = 1600  # kcal (nižší než osoba 1)
@@ -35,7 +38,12 @@ class OsobniProfil:
     def __post_init__(self):
         if self.zdravotni_poznamky is None:
             self.zdravotni_poznamky = [
-                "Budou doplněny specifické poznámky"
+                "Měření tělesného složení (22.12.2025):",
+                "  • Váha: 77.3 kg, PBF: 39.6%, Tuk: 30.6 kg",
+                "  • SSM: 25.6 kg, VFA: 147.2 cm²/level",
+                "Předchozí měření (19.11.2025):",
+                "  • Váha: 76.7 kg, PBF: 39.1%, Tuk: 30.0 kg",
+                "  • SSM: 25.6 kg, VFA: 143 cm²/level"
             ]
     
     def vypocti_bmi(self) -> float:
@@ -102,6 +110,9 @@ Antropometrie:
   Pohlaví: {self.pohlavi}
   BMI: {bmi}
   Procento tuku: {self.procento_tuku}%
+  Tuková hmota: {self.tuková_hmota} kg
+  Svalová hmota (SSM): {self.svalová_hmota} kg
+  VFA (viscerální tuk): {self.vfa} cm²/level
   Ideální váha (BMI 22): {idealni_vaha} kg
   
 Denní cíle:
