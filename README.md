@@ -122,15 +122,17 @@ Tento jídelníček je určen pro:
   - Závazné denní limity (≤2000 kcal, 140-150g protein, ≤70g carbs)
   - Rozložení makroživin během dne
   - Stravovací okno 6:30-18:30
-### Use in Python code
-
-```python
-from fetch_nutrition_data import fetch_nutrition_data, fetch_by_product_name
 
 - **[PURPOSE_ANALYSIS.md](PURPOSE_ANALYSIS.md)** - Analýza účelu repozitáře
   - Dietní cíle a makronutrienty
   - Zdravotní kontext
   - Detailní rozklad plánu
+
+### Use in Python code
+
+```python
+from fetch_nutrition_data import fetch_nutrition_data, fetch_by_product_name
+
 # Option 1: Search by product name
 data = fetch_by_product_name("Tvaroh tučný Pilos")
 
