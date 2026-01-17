@@ -116,6 +116,14 @@ Tento jídelníček je určen pro:
   - Principy Mačingovky
   - Nákupní seznamy
   - Tipy na přípravu
+
+- **[KETO_12_12_PLAN.md](KETO_12_12_PLAN.md)** - Keto + časově omezené stravování (12:12)
+  - Realistický plán pro ranní vstávání
+  - Kombinace keto s 12hodinovým fastingem
+  - Časování jídel pro optimální metabolismus
+  - Praktické tipy pro GERD a reflux
+  - Udržitelný režim bez extrémů
+
 ### Use in Python code
 
 ```python
