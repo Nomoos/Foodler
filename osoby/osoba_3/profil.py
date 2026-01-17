@@ -26,7 +26,8 @@ class DetskyyProfil:
     cil_bilkoviny: int = 19  # g (doporučeno 0.95-1.1 g/kg)
     cil_sacharidy: int = 130  # g (minimum pro mozek)
     cil_tuky: int = 47  # g (30-35% energie z tuků)
-    cil_vlaknina: int = 14  # g (věk + 5-10g)
+    cil_vlaknina: int = 18  # g (zvýšeno kvůli zácpě, věk + 10-14g)
+    cil_voda: float = 1.3  # l (důležité pro prevenci zácpy)
     
     # Vitamíny a minerály pro zrak
     cil_vitamin_a: int = 400  # mcg (pro 4-8 let)
@@ -49,7 +50,9 @@ class DetskyyProfil:
                 "Astigmatismus",
                 "Potřeba podpory zraku - vitamin A, beta-karoten",
                 "Důraz na oranžovou a zelenou zeleninu",
-                "Omega-3 pro zdravý vývoj mozku a očí"
+                "Omega-3 pro zdravý vývoj mozku a očí",
+                "Problémy se zácpou - horší průchodnost anusu",
+                "Zvýšený příjem vlákniny a tekutin doporučen"
             ]
     
     def vypocti_idealniVahu(self) -> float:
@@ -84,6 +87,7 @@ class DetskyyProfil:
             "sacharidy_g": self.cil_sacharidy,
             "tuky_g": self.cil_tuky,
             "vlaknina_g": self.cil_vlaknina,
+            "voda_l": self.cil_voda,
             "vitamin_a_mcg": self.cil_vitamin_a,
             "vitamin_c_mg": self.cil_vitamin_c,
             "vitamin_e_mg": self.cil_vitamin_e,
@@ -163,7 +167,8 @@ Denní výživové potřeby:
   Bílkoviny: {self.cil_bilkoviny}g
   Sacharidy: {self.cil_sacharidy}g
   Tuky: {self.cil_tuky}g
-  Vláknina: {self.cil_vlaknina}g
+  Vláknina: {self.cil_vlaknina}g (zvýšeno kvůli zácpě)
+  Voda: {self.cil_voda} l/den (důležité!)
   
 Podpora zraku (důležité!):
   Vitamin A: {self.cil_vitamin_a} mcg/den

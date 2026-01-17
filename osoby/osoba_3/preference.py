@@ -26,16 +26,36 @@ class PreferenceJidel:
         "pomeranče"
     ]
     
+    # Potraviny pomáhající při zácpě (vysoký obsah vlákniny)
+    POTRAVINY_PROTI_ZACPE: List[str] = [
+        "fíky (oblíbené! 2-3 denně)",
+        "švestky",
+        "sušené meruňky",
+        "hrušky",
+        "jablka",
+        "brokolice",
+        "hrášek",
+        "ovesné vločky",
+        "celozrnné těstoviny",
+        "celozrnný chléb",
+        "jogurt s probiotiky",
+        "kefír",
+        "voda (dostatek tekutin!)",
+        "lněné semínko",
+        "chia semínka"
+    ]
+    
     # Oblíbené dětské zdroje bílkovin
     PREFERRED_PROTEINS: List[str] = [
         "kuřecí maso",
         "krůtí maso",
         "ryby (losos, treska)",
         "vajíčka",
-        "jogurt",
+        "jogurt s probiotiky",
         "tvaroh",
         "sýr",
-        "mléko"
+        "mléko",
+        "kefír"
     ]
     
     # Dětská zelenina (sladší, měkčí chutě)
@@ -52,16 +72,18 @@ class PreferenceJidel:
         "dýně"
     ]
     
-    # Ovoce vhodné pro děti
+    # Ovoce vhodné pro děti (důraz na vlákninu proti zácpě)
     PREFERRED_FRUITS: List[str] = [
-        "banány",
-        "jablka",
+        "fíky (oblíbené! 2-3 denně)",
+        "švestky (čerstvé i sušené)",
         "hrušky",
+        "jablka (se slupkou)",
+        "meruňky",
+        "broskve",
+        "banány (zralé)",
         "jahody",
         "borůvky",
         "maliny",
-        "meruňky",
-        "broskve",
         "pomeranče",
         "mandarinky"
     ]
@@ -121,6 +143,23 @@ class PreferenceJidel:
         return False
     
     @staticmethod
+    def pomaha_proti_zacpe(jidlo: str) -> bool:
+        """
+        Zkontroluje, zda jídlo obsahuje ingredience pomáhající při zácpě.
+        
+        Args:
+            jidlo: Název nebo popis jídla
+            
+        Returns:
+            True pokud jídlo obsahuje ingredience proti zácpě
+        """
+        jidlo_lower = jidlo.lower()
+        for potravina in PreferenceJidel.POTRAVINY_PROTI_ZACPE:
+            if potravina.lower() in jidlo_lower:
+                return True
+        return False
+    
+    @staticmethod
     def filtruj_jidla(jidla: List[str]) -> List[str]:
         """
         Filtruje seznam jídel a odstraní ta s nepreferovanými ingrediencemi.
@@ -138,6 +177,7 @@ class PreferenceJidel:
         """Vrátí kompletní přehled preferencí."""
         return {
             "potraviny_pro_zrak": PreferenceJidel.POTRAVINY_PRO_ZRAK,
+            "potraviny_proti_zacpe": PreferenceJidel.POTRAVINY_PROTI_ZACPE,
             "nepreferovane": PreferenceJidel.NEPREFERRED_FOODS,
             "preferovane_bilkoviny": PreferenceJidel.PREFERRED_PROTEINS,
             "preferovana_zelenina": PreferenceJidel.PREFERRED_VEGETABLES,
@@ -150,7 +190,7 @@ class DietniOmezeni:
     """Dietní omezení a doporučení pro předškolní dítě."""
     
     # Typ stravy
-    TYP_STRAVY: str = "vyvážená dětská strava s podporou zraku"
+    TYP_STRAVY: str = "vyvážená dětská strava s podporou zraku a trávení"
     
     # Omezení na jedno jídlo
     KALORIE_NA_JIDLO_VIKEND: int = 280  # cca 1400 / 5
@@ -208,6 +248,35 @@ class DietniOmezeni:
         }
     ]
     
+    # Příklady jídel pomáhajících při zácpě
+    PRIKLADOVA_JIDLA_PROTI_ZACPE: List[Dict[str, str]] = [
+        {
+            "nazev": "Ovesná kaše s fíky a hruškou",
+            "ingredience": "ovesné vločky, fíky (2-3 ks), hruška, voda",
+            "benefit": "vysoká vláknina + oblíbené fíky"
+        },
+        {
+            "nazev": "Jogurt s probiotiky, švestkami a chia",
+            "ingredience": "jogurt, švestky, chia semínka",
+            "benefit": "probiotika + vláknina"
+        },
+        {
+            "nazev": "Celozrnný chléb s tvarohem a fíky",
+            "ingredience": "celozrnný chléb, tvaroh, fíky (2-3 ks)",
+            "benefit": "vláknina + oblíbené fíky"
+        },
+        {
+            "nazev": "Hrušková svačinka s mandlovým máslem",
+            "ingredience": "hruška, mandlové máslo",
+            "benefit": "přírodní vláknina"
+        },
+        {
+            "nazev": "Brokolice s celozrnnými těstovinami",
+            "ingredience": "brokolice, celozrnné těstoviny, olivový olej",
+            "benefit": "zelenina + vláknina"
+        }
+    ]
+    
     @staticmethod
     def navrhni_jidla_pro_tyden() -> Dict[str, Dict[str, str]]:
         """
@@ -254,7 +323,7 @@ class DietniOmezeni:
     
     @staticmethod
     def vytvor_nakupni_seznam() -> Dict[str, List[str]]:
-        """Vytvoří nákupní seznam s důrazem na potraviny pro zrak."""
+        """Vytvoří nákupní seznam s důrazem na potraviny pro zrak a trávení."""
         return {
             "zelenina": [
                 "mrkev (1 kg)",
@@ -264,10 +333,13 @@ class DietniOmezeni:
                 "dýně (1 ks)",
                 "okurka (2 ks)",
                 "rajčata (500g)",
-                "paprika (3 ks)"
+                "paprika (3 ks)",
+                "hrášek (300g)"
             ],
             "ovoce": [
-                "banány (5 ks)",
+                "fíky (14-21 ks pro týden) - PRIORITA!",
+                "švestky (500g)",
+                "hrušky (5 ks)",
                 "jablka (1 kg)",
                 "borůvky (250g)",
                 "jahody (250g)",
@@ -278,7 +350,8 @@ class DietniOmezeni:
                 "kuřecí prsa (500g)",
                 "losos (300g)",
                 "vejce (10 ks)",
-                "jogurt (4 ks)",
+                "jogurt s probiotiky (4 ks)",
+                "kefír (1 l)",
                 "tvaroh (2 ks)",
                 "sýr (200g)"
             ],
@@ -287,8 +360,11 @@ class DietniOmezeni:
                 "kokosové mléko",
                 "ovesné vločky",
                 "celozrnné těstoviny",
+                "celozrnný chléb",
                 "hummus",
-                "mandlové máslo"
+                "mandlové máslo",
+                "chia semínka",
+                "lněné semínko (mleté)"
             ]
         }
 
@@ -303,6 +379,10 @@ def main():
     
     print("\n🥕 POTRAVINY PODPORUJÍCÍ ZRAK (priorita!):")
     for item in preference["potraviny_pro_zrak"]:
+        print(f"  ✓ {item}")
+    
+    print("\n💩 POTRAVINY PROTI ZÁCPĚ (důležité!):")
+    for item in preference["potraviny_proti_zacpe"]:
         print(f"  ✓ {item}")
     
     print("\n🍗 Preferované bílkoviny:")
@@ -324,6 +404,14 @@ def main():
         print(f"\n📍 {jidlo['nazev']}")
         print(f"   Ingredience: {jidlo['ingredience']}")
         print(f"   Benefit: {jidlo['vitamin_a']}")
+    
+    print("\n" + "=" * 60)
+    print("PŘÍKLADOVÁ JÍDLA PROTI ZÁCPĚ")
+    print("=" * 60)
+    for jidlo in DietniOmezeni.PRIKLADOVA_JIDLA_PROTI_ZACPE:
+        print(f"\n📍 {jidlo['nazev']}")
+        print(f"   Ingredience: {jidlo['ingredience']}")
+        print(f"   Benefit: {jidlo['benefit']}")
     
     print("\n" + "=" * 60)
     print("NÁVRH JÍDEL NA TÝDEN")
