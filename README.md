@@ -60,6 +60,13 @@ Nástroj pro podporu hubnutí a zdravého stravování pro celou rodinu s důraz
 ### 🛒 Nákupy a slevy
 - **[KUPI_INTEGRATION.md](docs/technical/KUPI_INTEGRATION.md)** - Integrace s Kupi.cz pro sledování slev
 
+### 📊 Plánovač jídelníčků
+- **[MEAL_PLANNER_GUIDE.md](docs/technical/MEAL_PLANNER_GUIDE.md)** - Interaktivní plánovač s fitness funkcemi
+  - Dotazník pro personalizaci
+  - Stavitel denního plánu s optimalizací
+  - Stavitel týdenního plánu
+  - Scoring a threshold systém
+
 ### 🔧 Technická dokumentace
 - **[IMPLEMENTATION_SUMMARY.md](docs/technical/IMPLEMENTATION_SUMMARY.md)** - Shrnutí implementace
 - **[REFACTORING_SUMMARY.md](docs/technical/REFACTORING_SUMMARY.md)** - Historie refaktoringu
@@ -71,6 +78,12 @@ Nástroj pro podporu hubnutí a zdravého stravování pro celou rodinu s důraz
 
 ```
 Foodler/
+├── docs/           # 📚 Dokumentace (strukturovaná do kategorií)
+│   ├── getting-started/  # Rychlé návody a úvody
+│   ├── diet-plans/       # Dietní plány
+│   ├── meal-planning/    # Meal prep a plánování
+│   ├── health/           # Zdraví a metabolismus
+│   └── technical/        # Technická dokumentace
 ├── osoby/          # 👥 Personalizované profily (Roman, Pája)
 ├── potraviny/      # 🥩 Databáze potravin a ingrediencí
 ├── jidla/          # 🍽️  Hotová jídla a recepty
@@ -78,7 +91,10 @@ Foodler/
 ├── lednice/        # 🧊 Správa domácích zásob
 ├── data/           # 📊 Datové soubory a meal plány
 ├── modely/         # 🔧 Datové modely (SOLID)
-└── src/            # 💻 Zdrojový kód (scrapers, assistants)
+└── src/            # 💻 Zdrojový kód
+    ├── assistants/       # Nákupní asistenti
+    ├── scrapers/         # Web scrapers
+    └── planners/         # 🎯 Plánovač jídelníčků (NOVÉ!)
 ```
 
 Podrobnosti o jednotlivých složkách najdete v **[NAVOD_K_POUZITI.md](docs/getting-started/NAVOD_K_POUZITI.md)**.
@@ -125,6 +141,15 @@ python nakup/seznamy.py
 
 # Keto nákupní asistent
 python src/assistants/keto_shopping_assistant.py
+
+# Interaktivní plánovač jídelníčků
+python src/planners/questionnaire.py
+
+# Demo denního plánovače
+python src/planners/day_plan_builder.py
+
+# Demo týdenního plánovače
+python src/planners/week_plan_builder.py
 ```
 
 Více příkladů použití v **[NAVOD_K_POUZITI.md](docs/getting-started/NAVOD_K_POUZITI.md)**.
