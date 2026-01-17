@@ -5,12 +5,14 @@ Nástroj pro podporu hubnutí a zdravého stravování pro celou rodinu s důraz
 ## 👥 Cílová skupina
 
 ### Roman (Romča)
-- **Váha:** 134.2 kg (měření 1.9.2026)
-- **Výška:** 183 cm
-- **BMI:** 40.1
-- **Procento tuku:** 37.5% (měření)
-- **Svalová hmota (SMM):** 43.6 kg (měření)
-- **Denní cíl:** 2000 kcal, 140g+ bílkovin, max 70g sacharidů
+- **Váha:** 130.2 kg (287 lbs)
+- **Výška:** 180 cm (5'11")
+- **Věk:** 34 let
+- **BMI:** 40.2
+- **Procento tuku:** 46%
+- **Svalová hmota:** 70.3 kg
+- **Úroveň aktivity:** Sedavá (mostly sedentary)
+- **Denní cíl:** 2001 kcal (20% deficit), 140g+ bílkovin, max 70g sacharidů
 
 ### Pája (Pavla)
 - **Váha:** 77.3 kg (měření 22.12.2025)
