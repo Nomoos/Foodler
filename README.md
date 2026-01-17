@@ -48,6 +48,41 @@ Foodler/
 ├── KUPI_INTEGRATION.md        # Kupi.cz integration guide
 └── requirements.txt           # Python dependencies
 
+Skript obsahuje příklady:
+- Zobrazení menu pro konkrétní den
+- Zobrazení menu na celý týden
+- Vyhledávání jídel podle ingredience
+- Automatické určení aktuálního dne v cyklu
+- Statistiky o jídelníčku
+
+## Poznámky
+
+- Jídelníček je navržen jako flexibilní plán - lze přizpůsobit individuálním potřebám
+- Některá jídla se opakují, což usnadňuje nákup a přípravu
+- Každý den obsahuje 5 jídel pro optimální rozložení příjmu energie během dne
+- Všechna data jsou v UTF-8 kódování pro správné zobrazení českých znaků
+
+## Cílová skupina
+
+Tento jídelníček je určen pro:
+- Osoby, které chtějí hubnout zdravým způsobem
+- Rodiny hledající vyváženou stravu
+- Kohokoliv, kdo hledá inspiraci pro pestrou a zdravou kuchyni
+
+## Další dokumentace
+
+### 📚 Podrobné průvodce:
+- **[TRAVENI_A_METABOLISMUS.md](TRAVENI_A_METABOLISMUS.md)** - Jak zlepšit trávení a metabolismus
+  - Co reálně pomáhá (bílkoviny, tuky, vláknina)
+  - Kdy co jíst pro optimální metabolismus
+  - Rychlá orientační tabulka
+  - Doporučení pro reflux a trávicí problémy
+
+- **[MACINGOVA_DIETA.md](MACINGOVA_DIETA.md)** - Podrobné informace o dietě Antonie Mačingové
+  - Všechna jídla a jejich varianty
+  - Principy Mačingovky
+  - Nákupní seznamy
+  - Tipy na přípravu
 ### Use in Python code
 
 ```python
@@ -120,6 +155,11 @@ The script includes error handling for:
 
 ### 🛒 Smart Shopping Integration
 
+### Lékařský kontext
+Program je lékařsky sledován a zahrnuje řízení:
+- Kardiovaskulárního zdraví (léky na krevní tlak)
+- Trávicího zdraví (léčba refluxu) - viz [průvodce trávením a metabolismem](TRAVENI_A_METABOLISMUS.md)
+- Celkové zlepšení metabolického zdraví
 The repository includes tools to connect to **Kupi.cz**, a Czech discount aggregator, to help find the best deals on keto-friendly foods:
 
 ```bash
