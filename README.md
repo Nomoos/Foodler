@@ -56,6 +56,9 @@ Nástroj pro podporu hubnutí a zdravého stravování pro celou rodinu s důraz
 ### 🏥 Zdraví a metabolismus
 - **[TRAVENI_A_METABOLISMUS.md](docs/health/TRAVENI_A_METABOLISMUS.md)** - Trávení a metabolismus
 - **[PURPOSE_ANALYSIS.md](docs/health/PURPOSE_ANALYSIS.md)** - Analýza účelu a zdravotního kontextu
+- **[TRAVENI_A_METABOLISMUS.md](TRAVENI_A_METABOLISMUS.md)** - Trávení a metabolismus
+- **[LOW_CARB_IMPACT.md](LOW_CARB_IMPACT.md)** - Vliv nízkosacharidového/keto stravování na trávení, GERD a psychiku
+- **[PURPOSE_ANALYSIS.md](PURPOSE_ANALYSIS.md)** - Analýza účelu a zdravotního kontextu
 
 ### 🛒 Nákupy a slevy
 - **[KUPI_INTEGRATION.md](docs/technical/KUPI_INTEGRATION.md)** - Integrace s Kupi.cz pro sledování slev
