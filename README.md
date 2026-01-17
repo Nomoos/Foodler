@@ -126,6 +126,21 @@ mealPlan.meal_plan.days.forEach(day => {
 });
 ```
 
+### Použití ukázkového skriptu
+
+V repozitáři je k dispozici Python skript `example_usage.py`, který ukazuje různé způsoby práce s jídelníčkem:
+
+```bash
+python3 example_usage.py
+```
+
+Skript obsahuje příklady:
+- Zobrazení menu pro konkrétní den
+- Zobrazení menu na celý týden
+- Vyhledávání jídel podle ingredience
+- Automatické určení aktuálního dne v cyklu
+- Statistiky o jídelníčku
+
 ## Poznámky
 
 - Jídelníček je navržen jako flexibilní plán - lze přizpůsobit individuálním potřebám
