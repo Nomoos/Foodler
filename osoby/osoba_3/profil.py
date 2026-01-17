@@ -6,7 +6,7 @@ Obsahuje osobní údaje a výživové potřeby pro předškolní dítě
 """
 
 from dataclasses import dataclass
-from typing import List, Dict
+from typing import List, Dict, Any, Union
 from datetime import date
 
 
@@ -76,7 +76,7 @@ class DetskyyProfil:
         
         return zakladni_potreba.get(aktivita, 1400)
     
-    def ziskej_denni_rozlozeni(self) -> Dict[str, any]:
+    def ziskej_denni_rozlozeni(self) -> Dict[str, Union[int, float]]:
         """Vrátí denní rozložení živin."""
         return {
             "kalorie": self.cil_kalorie,
@@ -90,7 +90,7 @@ class DetskyyProfil:
             "omega_3_g": self.cil_omega_3
         }
     
-    def ziskej_rozlozeni_pracovni_den(self) -> Dict[str, any]:
+    def ziskej_rozlozeni_pracovni_den(self) -> Dict[str, Dict[str, Union[str, float]]]:
         """
         Rozložení jídel během pracovního týdne.
         Snídaně a večeře doma, oběd a svačiny ve školce.

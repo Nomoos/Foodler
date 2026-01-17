@@ -78,11 +78,11 @@ class PreferenceJidel:
     
     # Potraviny k omezení/vyhnutí
     NEPREFERRED_FOODS: List[str] = [
-        "processed foods",
+        "zpracované potraviny",
         "sladkosti",
         "chipsy",
         "slazené nápoje",
-        "fast food",
+        "rychlé občerstvení",
         "příliš kořeněná jídla"
     ]
     
@@ -209,7 +209,7 @@ class DietniOmezeni:
     ]
     
     @staticmethod
-    def navrhni_jidla_pro_tyden() -> Dict[str, List[str]]:
+    def navrhni_jidla_pro_tyden() -> Dict[str, Dict[str, str]]:
         """
         Navrhne jídla na týden s důrazem na podporu zraku.
         Pracovní dny: snídaně a večeře doma
@@ -237,7 +237,7 @@ class DietniOmezeni:
                 "vecere_doma": "Losos s cuketou a kukuřicí"
             },
             "sobota": {
-                "snidane": "Французские тосты s borůvkami",
+                "snidane": "Francouzské toasty s borůvkami",
                 "svacina": "Mrkev s hummusem",
                 "obed": "Kuřecí řízek s bramborovou kaší a okurkou",
                 "svacina": "Jablko s mandlovým máslem",
