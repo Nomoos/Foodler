@@ -72,7 +72,9 @@ Vytvoří strukturovaný nákupní seznam specificky pro Globus s checkboxy:
 - Koření a doplňky
 - Doplňky stravy
 
-**Výstup**: `/tmp/nakupni_seznam_globus.txt`
+**Výstup**: Nákupní seznam je uložen v dočasném adresáři systému:
+- **Linux/Mac**: `/tmp/nakupni_seznam_globus.txt`
+- **Windows**: `%TEMP%\nakupni_seznam_globus.txt`
 
 ### KROK 6: Komplexní rodinný plán
 
@@ -86,7 +88,10 @@ Poskytne:
 
 ### Soubory vytvořené skriptem:
 
-1. **`/tmp/nakupni_seznam_globus.txt`** - Tisknutelný nákupní seznam pro Globus
+1. **Nákupní seznam pro Globus** - Tisknutelný nákupní seznam
+   - **Lokace**: Dočasný adresář systému
+     - Linux/Mac: `/tmp/nakupni_seznam_globus.txt`
+     - Windows: `%TEMP%\nakupni_seznam_globus.txt`
    - Strukturováno podle kategorií
    - Checkbox formát (☐) pro zaškrtávání
    - Datum vytvoření

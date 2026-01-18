@@ -16,7 +16,6 @@ import sys
 import os
 from datetime import datetime, timedelta
 from typing import Dict, List, Any
-import json
 
 # Přidat cesty pro importy
 project_root = os.path.dirname(os.path.abspath(__file__))
@@ -36,6 +35,7 @@ class RodinnyPlanSystem:
         self.kubik_profil = DetskyyProfil()
         self.meal_prep_plan = {}
         self.shopping_plan = {}
+        self.output_file_path = None  # Uložíme cestu k výstupnímu souboru
         
     def nacti_dotazniky(self):
         """Načte existující vyplněné dotazníky nebo použije výchozí profily."""
@@ -441,7 +441,6 @@ class RodinnyPlanSystem:
         
         # Uložit seznam do souboru
         import tempfile
-        import os
         
         # Použít tempfile pro cross-platform kompatibilitu
         output_dir = tempfile.gettempdir()
@@ -461,6 +460,9 @@ class RodinnyPlanSystem:
         
         print(f"💾 Seznam uložen do: {output_path}")
         print()
+        
+        # Uložit cestu pro použití v závěrečné zprávě
+        self.output_file_path = output_path
         
     def shrnout_personalizovana_doporuceni(self):
         """Shrne personalizovaná doporučení pro celou rodinu."""
@@ -620,7 +622,7 @@ class RodinnyPlanSystem:
         print("=" * 80)
         print()
         print("📁 Vytvořené soubory:")
-        print("  • /tmp/nakupni_seznam_globus.txt")
+        print(f"  • {self.output_file_path}")
         print()
         print("📚 Další kroky:")
         print("  1. Vytiskněte/stáhněte nákupní seznam pro Globus")
