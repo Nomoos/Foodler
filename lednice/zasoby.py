@@ -201,6 +201,13 @@ class SpravceZasob:
             umisteni="lednice",
             poznamky="Hlávka (~500g)"
         ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Kysané zelí", 500, "g", "zelenina",
+            datum_nakupu=dnes - timedelta(days=3),
+            datum_expirace=dnes + timedelta(days=30),
+            umisteni="lednice",
+            poznamky="Fermentované, probiotické"
+        ))
         
         # Tuky a ořechy
         self.lednice.pridat_polozku(ZasobaPolozka(

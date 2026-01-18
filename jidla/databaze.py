@@ -341,6 +341,30 @@ class DatabzeJidel:
             vydrzi_dni=3,
             poznamky="Tradiční jídlo, hodně vlákniny"
         ),
+        Jidlo(
+            nazev="RaPaCiSo salát (zeleninový mix)",
+            typ="priloha",
+            ingredience=[
+                Ingredience("Rajčata", 60, "priloha"),
+                Ingredience("Paprika", 25, "priloha"),
+                Ingredience("Sladká paprika", 25, "priloha"),
+                Ingredience("Cibule", 20, "priloha"),
+                Ingredience("Olej slunečnicový", 5, "omacka"),
+                Ingredience("Makadamiový olej", 5, "omacka"),
+            ],
+            kalorie_celkem=121,
+            bilkoviny_celkem=1.3,
+            sacharidy_celkem=6.1,
+            tuky_celkem=9.9,
+            vlaknina_celkem=2.4,
+            priprava_cas_min=10,
+            priprava_postup="1. Rajčata a papriky nakrájet na kostky. 2. Cibuli najemno nakrájet. 3. Vše smíchat s oleji. 4. Podle chuti dochutit.",
+            obtiznost="snadna",
+            porce=1,
+            vhodne_pro_meal_prep=True,
+            vydrzi_dni=2,
+            poznamky="Lehká zeleninová příloha, bohatá na zdravé tuky, 140g porce"
+        ),
     ]
     
     @classmethod

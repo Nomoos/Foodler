@@ -197,6 +197,17 @@ class DatabazePotravIn:
             sezona=["9", "10", "11", "12", "1", "2", "3"]
         ),
         Potravina(
+            nazev="Kysané zelí",
+            kategorie="zelenina",
+            kalorie=19,
+            bilkoviny=0.9,
+            sacharidy=4.3,
+            tuky=0.1,
+            vlaknina=2.9,
+            cena_za_kg=30.0,
+            poznamky="Fermentované, probiotické, nízkokalorické"
+        ),
+        Potravina(
             nazev="Ledový salát",
             kategorie="zelenina",
             kalorie=16.1,
