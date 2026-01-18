@@ -194,6 +194,13 @@ class SpravceZasob:
             datum_expirace=dnes + timedelta(days=6),
             umisteni="lednice"
         ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Ledový salát", 1, "ks", "zelenina",
+            datum_nakupu=dnes - timedelta(days=1),
+            datum_expirace=dnes + timedelta(days=4),
+            umisteni="lednice",
+            poznamky="Hlávka (~500g)"
+        ))
         
         # Tuky a ořechy
         self.lednice.pridat_polozku(ZasobaPolozka(

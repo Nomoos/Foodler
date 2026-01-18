@@ -197,6 +197,17 @@ class DatabazePotravIn:
             sezona=["9", "10", "11", "12", "1", "2", "3"]
         ),
         Potravina(
+            nazev="Ledový salát",
+            kategorie="zelenina",
+            kalorie=16.1,
+            bilkoviny=0.7,
+            sacharidy=2.0,
+            tuky=0.14,
+            vlaknina=1.2,
+            cena_za_kg=35.0,
+            poznamky="Nízkokalorický, hodně vody, cukry 1.97g/100g"
+        ),
+        Potravina(
             nazev="Cuketa",
             kategorie="zelenina",
             kalorie=17,
