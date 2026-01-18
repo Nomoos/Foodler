@@ -102,7 +102,7 @@ class TestKupiCzScraper(unittest.TestCase):
         self.assertIn("99.9", product_str)
         self.assertIn("Lidl", product_str)
     
-    @patch('kupi_scraper.requests.Session.get')
+    @patch('src.scrapers.kupi_scraper.requests.Session.get')
     def test_fetch_page_success(self, mock_get):
         """Test successful page fetch."""
         # Mock successful response
@@ -115,7 +115,7 @@ class TestKupiCzScraper(unittest.TestCase):
         self.assertIsNotNone(soup)
         self.assertEqual(soup.body.text, "Test")
     
-    @patch('kupi_scraper.requests.Session.get')
+    @patch('src.scrapers.kupi_scraper.requests.Session.get')
     def test_fetch_page_failure(self, mock_get):
         """Test handling of failed page fetch."""
         # Mock failed response - need to mock raise_for_status as well
@@ -125,7 +125,7 @@ class TestKupiCzScraper(unittest.TestCase):
         soup = self.scraper.fetch_page("https://test.com")
         self.assertIsNone(soup)
     
-    @patch('kupi_scraper.KupiCzScraper.fetch_page')
+    @patch('src.scrapers.kupi_scraper.KupiCzScraper.fetch_page')
     def test_get_current_discounts_with_filters(self, mock_fetch):
         """Test getting discounts with filters."""
         # Mock response
