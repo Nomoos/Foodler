@@ -13,8 +13,7 @@ Obsahuje:
 - ReakceTela: tělesné reakce na jídlo (nadýmání, únava, chutě)
 """
 
-from typing import List, Dict, Optional
-from dataclasses import dataclass
+from typing import List, Dict, Optional, Any, Union
 
 
 class PreferenceJidel:
@@ -221,7 +220,7 @@ class HladAEnergie:
     ]
     
     @staticmethod
-    def ziskej_prehled() -> Dict[str, any]:
+    def ziskej_prehled() -> Dict[str, Any]:
         """Vrátí přehled vzorců hladu a energie."""
         return {
             "nejvyssi_hlad": HladAEnergie.NEJVYSSI_HLAD,
@@ -254,7 +253,7 @@ class StrukturaJidel:
     ]
     
     @staticmethod
-    def ziskej_doporuceni_porci() -> Dict[str, str]:
+    def ziskej_doporuceni_porci() -> Dict[str, Union[str, List[str]]]:
         """Vrátí doporučení pro velikost porcí."""
         return {
             "problematicke_jidlo": StrukturaJidel.NEJPROBLEMATICTEJSI_JIDLO,
