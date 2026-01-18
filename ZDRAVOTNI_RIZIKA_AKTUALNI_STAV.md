@@ -403,6 +403,9 @@ Vždy s komunikací a respektem
 - 📈 **Zlepšení při práci**: V týdnu chodí do práce, což ji zvedne
 - 😡 **Premenstruační agresivita**: Cca týden před periodou (PMS/PMDD)
 - 🔄 **Začarovaný kruh**: Deprese → nízká aktivita → horší deprese
+- 💊 **Změna medikace**: Původní antipsychotika + regulátor nálady nefungovaly dobře (i když "fungovala"), čeká na nové léky
+- 🛏️ **Frekvence sexu**: Aktuálně 1x za 3 týdny (velmi nízká, přispívá k depresi)
+- ⏰ **Nový společný čas**: Nastaveno 21-22h společně v posteli (dobrý začátek!)
 
 **Možné příčiny**:
 - ❌ **Hormonální dysbalance**:
@@ -426,42 +429,75 @@ Vždy s komunikací a respektem
   - Práce
   - Nedostatek času pro sebe
 
+**AKTUÁLNÍ SITUACE** (pozitivní):
+- ✅ **Už chodí na terapii 1x týdně** - SKVĚLÝ krok!
+- ⏳ **Čeká na nové léky od psychiatra** - původní léky (antipsychotika + regulátor nálady) nefungovaly dobře
+- 🛏️ **Nastavený společný čas**: 21-22h v posteli (dobrý základ pro intimitu!)
+- 🔄 **Aktuální frekvence sexu**: 1x za 3 týdny (výrazně nedostatečné pro psychiku)
+
 **VAROVÁNÍ - Vážné signály**:
 - 🚨 Neschopnost vstát z postele = středně těžká deprese
 - 🚨 Pocity bezcennosti ("jsem k ničemu") = depresivní myšlenky
 - 🚨 Zlepšení jen při vnější struktuře (práce) = závislost na externích faktorech
 - ⚠️ PMS agresivita = možné PMDD (premenstruační dysforická porucha)
+- ⚠️ Předchozí léky nefungovaly = potřeba správné medikace
 
-**URGENTNÍ doporučení**:
-- 🏥 **Návštěva psychiatra/psychologa** - co nejdříve!
-  - Možná potřeba antidepresiv (SSRI) krátkodobě
-  - Terapie (CBT - kognitivně-behaviorální)
-  - Vyšetření hormonů (estrogen, progesteron, testosteron, TSH)
+**URGENTNÍ doporučení** (doplňky k již probíhající terapii):
 - 🌞 **Vitamin D3**: 4000-5000 IU denně (KLÍČOVÉ v zimě!)
   - Nedostatek D3 = deprese, únava, špatná nálada
   - Vyšetřit hladiny (ideální 50-80 ng/ml)
+  - Pravděpodobně má nedostatek (zimní deprese)
 - 🐟 **Omega-3**: 2-3g denně (EPA důležité pro depresi)
   - Prokazatelný antidepresivní efekt
   - Zlepšuje hormonální rovnováhu
+  - Doplňuje účinek léků
 - 💊 **Hořčík**: 400mg denně (večer)
   - Snižuje úzkost
   - Pomáhá se spánkem
   - Zmírňuje PMS
-- 🌿 **Šafrán nebo Třezalka** (Hypericum):
-  - Přírodní antidepresiva
-  - POUZE po konzultaci s lékařem!
+- 💬 **Komunikace s psychiatrem**:
+  - Zmínit nedostatek D3 a Omega-3
+  - Požádat o vyšetření hormonů (estrogen, progesteron, testosteron, TSH)
+  - Diskutovat možnost PMDD (ne jen PMS)
 
 **Doporučení specifická pro Pavlu**:
 
-1. **PRAVIDELNÝ SEX - KLÍČOVÉ PRO PSYCHIKU!**
+1. **POSTUPNÉ ZVYŠOVÁNÍ INTIMITY - REALISTICKÝ PŘÍSTUP**
+   
+   **AKTUÁLNĚ**: 1x za 3 týdny (každých 21 dní)
+   
+   **Cíl není okamžitá změna, ale postupné zlepšování**:
+   
+   - 📅 **Fáze 1 (týdny 1-2)**: 1x týdně (každých 7 dní)
+     - Využít společný čas 21-22h v posteli
+     - Žádný tlak, jen přirozené momenty
+     - Důraz na něžnost a intimitu (ne jen sex)
+   
+   - 📅 **Fáze 2 (týdny 3-4)**: 2x za 2 týdny (každých 7 dní)
+     - Pokud Fáze 1 fungovala dobře
+     - Například: Středa večer + víkend ráno
+   
+   - 📅 **Fáze 3 (měsíce 2-3)**: 2x týdně (ideální pro zdraví)
+     - Například: Pondělí 21h + Čtvrtek 21h
+     - Nebo: Středa večer + Sobota ráno
+   
+   - 📅 **Dlouhodobý cíl**: 2-3x týdně standardně
+   
+   **KLÍČOVÉ**: 
+   - ❤️ Žádný tlak nebo povinnost
+   - ❤️ Kvalita důležitější než kvantita
+   - ❤️ Společný čas 21-22h je skvělý základ
+   - ❤️ Může to být i jen objímání, mazlení, intimita bez sexu
+   - ❤️ Postupné budování, ne nutit se
+   
+   **Proč je to důležité**:
    - ❤️ **Oxytocin**: Nejsilnější přírodní antidepresivum
      - Snižuje úzkost a depresi
      - Zvyšuje pocit spokojenosti
      - Posiluje emoční spojení
    - 😊 **Endorfiny**: Přírodní analgetikum a antidepresivum
    - 💪 **Testosteron**: Více energie, méně deprese
-   - 🎯 **Cíl**: 2-3x týdně MINIMÁLNĚ (v akutní fázi i 4-5x!)
-   - 📅 **Pevný plán**: Pondělí, středa, sobota ráno (struktura pomáhá)
+   - 🔄 **Pozitivní cyklus**: Více sexu → lepší nálada → více libida → více sexu
 
 2. **RANNÍ RUTINA O VÍKENDECH** (boj proti víkendové depresi):
    - ⏰ **Pevný čas vstávání**: Stejně jako v týdnu (např. 8:00)
@@ -507,37 +543,45 @@ Vždy s komunikací a respektem
      - Zlepšuje náladu (theobromin)
      - Max 20g denně
 
-**Očekávané zlepšení**:
+**Očekávané zlepšení** (s novou medikací + terapie + suplementy + postupně více intimity):
 
-**Po 2 týdnech** (s pravidelným sexem + D3 + pohyb):
+**Po 2-4 týdnech** (nové léky začínají působit + D3 + Omega-3):
 - ✅ Mírnější deprese
 - ✅ Schopnost vstát o víkendech s menším úsilím
 - ✅ Trochu více energie
+- ✅ Postupné zvyšování intimity z 1x za 3 týdny na 1x týdně
 
-**Po 1 měsíci**:
+**Po 1-2 měsících** (léky plně účinkují + pravidelná terapie):
 - ✅ Výrazně lepší nálada
 - ✅ Víkendy zvládnutelné
 - ✅ Mírnější PMS (s hořčíkem a B6)
 - ✅ Pocit, že "nejsem k ničemu" pryč
+- ✅ Intimita 2x za 2 týdny funguje přirozeně
 
-**Po 3 měsících** (s terapií):
+**Po 3 měsících** (stabilizace medikace + pravidelná intimita 2x týdně):
 - ✅ Stabilní nálada většinu času
 - ✅ Víkendy jako pozitivní čas (ne deprese)
 - ✅ PMS agresivita výrazně nižší
 - ✅ Pocit smysluplnosti a hodnoty
+- ✅ Pravidelný sex 2x týdně přirozená část života
 
 **Po 6 měsících**:
 - ✅ Deprese pod kontrolou nebo pryč
-- ✅ Zdravý vztah se sexem a intimitou
+- ✅ Zdravý vztah se sexem a intimitou (2-3x týdně)
 - ✅ PMS zvládnutelné
 - ✅ Vysoká kvalita života
+- ✅ Možná diskuse o postupném snižování medikace (s psychiatrem!)
 
 **DŮLEŽITÉ POZNÁMKY**:
-- 🚨 **Psycholog/psychiatr je NUTNOST**, ne volba
-- 🚨 Pravidelný sex není řešení všeho, ale je KLÍČOVÁ součást léčby
-- 🚨 Antidepresiva mohou krátkodobě pomoci (3-6 měsíců), pak postupně vysadit
-- 🚨 Bez léčby se stav bude jen zhoršovat
-- ✅ S komplexní léčbou (terapie + sex + pohyb + suplementace) je prognóza VYNIKAJÍCÍ
+- ✅ **Pája už chodí na terapii 1x týdně** - skvělý krok!
+- ✅ **Čeká na nové léky od psychiatra** - předchozí medikace nefungovala dobře
+- ✅ **Společný čas 21-22h v posteli** - dobrý základ pro budování intimity
+- 💡 **Postupnost je klíč**: Z 1x za 3 týdny → 1x týdně → 2x za 2 týdny → 2x týdně
+- ❤️ **Žádný tlak**: Kvalita důležitější než kvantita, i mazlení/objímání pomáhá
+- 🚨 **Pravidelná intimita není řešení všeho**, ale je KLÍČOVÁ součást léčby deprese
+- 🚨 **Nové antidepresiva jsou důležitá** - předchozí nefungovala, správná medikace je zásadní
+- 🚨 **Vitamin D3 a Omega-3 doplňují léky** - ne náhrada, ale důležitá podpora
+- ✅ **S komplexní léčbou** (správné léky + terapie + postupně více intimity + pohyb + suplementace) je prognóza VYNIKAJÍCÍ
 
 #### 3. Emoční stravování a stress eating
 
@@ -705,13 +749,18 @@ NEDĚLE:    Meal prep společně (lehká aktivita)
 - 💪 **Fyzická aktivita**: 300-600 kcal týdně spalování navíc
 - 🧠 **Hormonální optimalizace**: Lepší spalování tuků u obou
 
-**Praktický plán**:
-1. **Sobota ráno**: Kontrola slev Kupi.cz + nákup
-2. **Sobota večer**: Intimita (odměna za nákup)
-3. **Neděle**: Meal prep společně (bonding aktivita)
-4. **Pondělí večer**: Intimita (začátek týdne s pozitivem)
-5. **Středa večer**: Intimita (polovina týdne = boost)
-6. **Každý den**: Komunikace, objetí, malé projevy lásky
+**Praktický plán intimity** (využívá společný čas 21-22h):
+1. **Pondělí 21h**: Intimita v posteli (začátek týdne)
+2. **Středa 21h**: Intimita v posteli (polovina týdne)
+3. **Sobota ráno**: Meal prep společně (bonding) + intimita odpoledne/večer
+4. **Každý den 21-22h**: Společný čas v posteli - i jen objímání pomáhá!
+5. **Komunikace**: Denně mluvit o pocitec, podpora, láska
+
+**Postupné zvyšování** (z aktuálního stavu 1x za 3 týdny):
+- **Týdny 1-2**: 1x týdně (zvolte den, kdy je Pája v lepší náladě)
+- **Týdny 3-4**: 2x za 2 týdny (přidat druhý den)
+- **Měsíce 2-3**: 2x týdně (standardní frekvence)
+- **Dlouhodobě**: 2-3x týdně (ideální pro oba)
 
 ---
 
@@ -729,38 +778,41 @@ NEDĚLE:    Meal prep společně (lehká aktivita)
 - [ ] **Ledové obklady na krk** - 3x denně po 15 minut
 
 **Pája** (KRITICKÉ!):
-- [ ] **🚨 Objednat se k psychiatrovi/psychologovi** - NEJVYŠŠÍ PRIORITA!
-  - Víkendová deprese je vážný signál
-  - Možná potřeba antidepresiv krátkodobě
-  - Vyšetření hormonů (estrogen, progesteron, testosteron, TSH)
-- [ ] **Zakoupit Vitamin D3** - 4000-5000 IU denně (klíčové pro psychiku v zimě!)
-- [ ] **Zakoupit Omega-3** - 2-3g denně (EPA pro depresi)
+- [x] **Terapie 1x týdně** - UŽ PROBÍHÁ! ✅
+- [x] **Čeká na nové léky od psychiatra** - v procesu! ✅
+- [x] **Společný čas 21-22h v posteli** - UŽ NASTAVENO! ✅
+- [ ] **Zakoupit Vitamin D3** - 4000-5000 IU denně (URGENTNĚ! Pravděpodobně má nedostatek)
+- [ ] **Zakoupit Omega-3** - 2-3g denně (EPA pro depresi - doplňuje léky)
 - [ ] **Zakoupit Hořčík** - 400mg denně (večer, na úzkost a PMS)
 - [ ] **Začít ranní rutinu o víkendech** - pevný čas vstávání 8:00
+- [ ] **Zmínit psychiatrovi**: Vitamin D, Omega-3, možné PMDD (ne jen PMS)
 
 **Společné**:
-- [ ] **Začít pravidelný sex** - MINIMÁLNĚ 2-3x týdně (klíčové pro oba!)
-  - Plán: Pondělí večer, Středa večer, Sobota ráno
+- [ ] **Postupně zvyšovat intimitu**: Z 1x za 3 týdny → cíl 1x týdně (první krok)
+  - Využít společný čas 21-22h v posteli
+  - Žádný tlak, postupně, přirozeně
+  - I jen objímání a mazlení pomáhá!
 
 ### 2. KRÁTKODOBÉ (tento měsíc)
 - [ ] **Začít keto/low-carb dietu** (už implementováno v systému!)
 - [ ] **Meal prep systém** - neděle 3 hodiny (usnadní dodržování diety)
-- [ ] **Pravidelný sex 2-3x týdně** - pevně zařazeno do rutiny
+- [ ] **Postupně zvyšovat intimitu** - z 1x za 3 týdny na 1x týdně
 - [ ] **Roman: Objednat se k ortopedovi** - vyšetření kolene
 - [ ] **Roman: Objednat se k fyzioterapeutovi** - cvičení na záda
 - [ ] **Roman: Zakoupit lehací kolo** nebo zkusit v posilovně
-- [ ] **Pája: Začít terapii** - individuální nebo párová
+- [ ] **Pája: Pokračovat v terapii** - 1x týdně minimálně
 - [ ] **Pája: Začít plavat** - 2x týdně po 30-45 minutách (antidepresivum!)
 - [ ] **Pája: Tracking menstruačního cyklu** - app pro sledování PMS
-- [ ] **Společně: Denní check-in** - 10 minut komunikace večer
+- [ ] **Pája: Začít brát nové léky od psychiatra** - jakmile je předepíše
+- [ ] **Společně: Denní check-in** - 10 minut komunikace večer během 21-22h
 
 ### 3. STŘEDNĚDOBÉ (3 měsíce) - Roman a Pája
 - [ ] **Roman: Úbytek 10-15 kg** - snížení tlaku na koleno a páteř
 - [ ] **Pája: Úbytek 6-9 kg** - lepší energie a sebevědomí
-- [ ] **Pája: Stabilní nálada** - deprese pod kontrolou s terapií
+- [ ] **Pája: Stabilní nálada** - deprese pod kontrolou s novými léky + terapií
 - [ ] **Pája: PMS pod kontrolou** - s hořčíkem, B6 a sledováním cyklu
 - [ ] **Pravidelné cvičení SPOLEČNĚ** - 3x týdně (plavání, chůze)
-- [ ] **Sex 2-3x týdně standardně** - rutina je klíč
+- [ ] **Intimita 2x týdně funguje přirozeně** - standardní rutina
 - [ ] **Kontrolní vyšetření** - sledování pokroku (oba)
 - [ ] **Nová matrace** - investice do kvality spánku a zdraví zad
 - [ ] **Víkendová rutina funguje** - Pája vstává bez problémů
@@ -768,12 +820,12 @@ NEDĚLE:    Meal prep společně (lehká aktivita)
 ### 4. DLOUHODOBÉ (6-12 měsíců) - Roman a Pája
 - [ ] **Roman: Úbytek 30-40 kg** - cílová váha 95 kg
 - [ ] **Pája: Úbytek 15-20 kg** - cílová váha 57 kg
-- [ ] **Pája: Deprese pryč nebo výrazně lepší** - možné vysazení antidepresiv
+- [ ] **Pája: Deprese pod kontrolou nebo pryč** - možná diskuse o snížení medikace (POUZE s psychiatrem!)
 - [ ] **Pravidelný pohyb** - součást životního stylu (oba)
 - [ ] **Udržení váhy** - dlouhodobá změna stravování (oba)
 - [ ] **Roman: Zlepšení zdraví kolene** - možné zlepšení chrupavky
-- [ ] **Pája: Optimální hormonální rovnováha** - vysoké libido, výborná nálada, žádná deprese
-- [ ] **Silný vztah** - intimita jako základ štěstí
+- [ ] **Pája: Optimální hormonální rovnováha** - vysoké libido, výborná nálada, minimální/žádná deprese
+- [ ] **Silný vztah** - intimita 2-3x týdně jako základ štěstí
 - [ ] **Vysoká kvalita života** - oba šťastní, zdraví, plní energie
 
 ---
