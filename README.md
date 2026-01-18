@@ -71,6 +71,8 @@ Nástroj pro podporu hubnutí a zdravého stravování pro celou rodinu s důraz
   - Scoring a threshold systém
 
 ### 🔧 Technická dokumentace
+- **[LANGUAGE_DECISION.md](LANGUAGE_DECISION.md)** - ⭐ Rozhodnutí o programovacím jazyce (Python vs C# vs TypeScript)
+- **[LANGUAGE_EVALUATION.md](docs/technical/LANGUAGE_EVALUATION.md)** - Podrobná analýza jazyků
 - **[IMPLEMENTATION_SUMMARY.md](docs/technical/IMPLEMENTATION_SUMMARY.md)** - Shrnutí implementace
 - **[REFACTORING_SUMMARY.md](docs/technical/REFACTORING_SUMMARY.md)** - Historie refaktoringu
 - **[osoby/README.md](osoby/README.md)** - Práce s profily a preferencemi
