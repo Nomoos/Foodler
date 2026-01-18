@@ -183,40 +183,15 @@ The script includes error handling for:
 - **Parsing errors**: Returns error message "Error parsing data: [details]" 
 - **Missing data fields**: Fields not found in HTML will be omitted from output JSON
 
+When errors occur, the script will print an error message to stderr and return None (in library mode) or exit with code 1 (in CLI mode).
+
+## Technical Documentation
+
+- **[LANGUAGE_DECISION.md](LANGUAGE_DECISION.md)** - ⭐ Programming language evaluation (Python vs C# vs TypeScript)
+- **[LANGUAGE_EVALUATION.md](docs/technical/LANGUAGE_EVALUATION.md)** - Comprehensive language analysis
 - [PURPOSE_ANALYSIS.md](./docs/health/PURPOSE_ANALYSIS.md) - Comprehensive analysis of dietary plan and methodology
 - [KUPI_INTEGRATION.md](./docs/technical/KUPI_INTEGRATION.md) - Guide for using the Kupi.cz discount scraper
 - [GITHUB_COPILOT_WEB_ACCESS.md](./docs/technical/GITHUB_COPILOT_WEB_ACCESS.md) - ⭐ Guide for GitHub Copilot Pro+ and testing web scrapers
-
-## Features
-
-### 🛒 Smart Shopping Integration
-
-### Lékařský kontext
-Program je lékařsky sledován a zahrnuje řízení:
-- Kardiovaskulárního zdraví (léky na krevní tlak)
-- Trávicího zdraví (léčba refluxu) - viz [průvodce trávením a metabolismem](docs/health/TRAVENI_A_METABOLISMUS.md)
-- Celkové zlepšení metabolického zdraví
-The repository includes tools to connect to **Kupi.cz**, a Czech discount aggregator, to help find the best deals on keto-friendly foods:
-
-```bash
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the keto shopping assistant
-python keto_shopping_assistant.py
-
-# Or use the scraper directly
-python kupi_scraper.py
-```
-
-The shopping tools help:
-- Find discounted proteins, dairy, vegetables, and healthy fats
-- Compare prices across Czech supermarkets (Lidl, Kaufland, Albert, etc.)
-- Plan weekly shopping based on current offers
-- Optimize grocery budget while maintaining diet requirements
-
-See [KUPI_INTEGRATION.md](./docs/technical/KUPI_INTEGRATION.md) for detailed usage instructions.
-When errors occur, the script will print an error message to stderr and return None (in library mode) or exit with code 1 (in CLI mode).
 
 ## Contributing
 
