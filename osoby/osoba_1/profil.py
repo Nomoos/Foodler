@@ -22,12 +22,16 @@ class OsobniProfil:
     tuková_hmota: float = 49.43  # kg (měřeno smart váhou)
     svalová_hmota: float = 84.17  # kg (vypočteno: 133.6 - 49.43)
     
-    # Dietní cíle (denní příjem) - 20% deficit
-    cil_kalorie: int = 2001  # kcal
-    cil_bilkoviny: int = 140  # g (minimum 93g, maximum 154g)
-    cil_sacharidy: int = 70   # g (maximum)
-    cil_tuky: int = 129       # g (minimum 30g, maximum 183g)
-    cil_vlaknina: int = 20    # g (minimum, ideálně více)
+    # Metabolismus
+    bazalni_metabolismus: int = 2300  # kcal (vlastní BMR)
+    
+    # Dietní cíle (denní příjem) - udržitelná keto/low-carb dieta
+    cil_kalorie: int = 2000  # kcal
+    cil_bilkoviny: int = 140  # g (32%, minimum 93g, maximum 154g)
+    cil_sacharidy: int = 70   # g (12%, maximum)
+    cil_tuky: int = 129       # g (56%, minimum 30g, maximum 183g)
+    cil_vlaknina: int = 50    # g (zvýšeno pro trávení tuků a udržitelnost)
+    cil_cukry: int = 10       # g (maximum)
     
     # Aktivita a lifestyle
     uroven_aktivity: str = "sedava"  # Mostly sedentary
@@ -83,7 +87,8 @@ class OsobniProfil:
             "bilkoviny_g": self.cil_bilkoviny,
             "sacharidy_g": self.cil_sacharidy,
             "tuky_g": self.cil_tuky,
-            "vlaknina_g": self.cil_vlaknina
+            "vlaknina_g": self.cil_vlaknina,
+            "cukry_g": self.cil_cukry
         }
     
     def ziskej_rozlozeni_na_jidlo(self) -> Dict[str, float]:
@@ -116,12 +121,16 @@ Antropometrie:
   Ideální váha (BMI 25): {idealni_vaha} kg
   Úroveň aktivity: {self.uroven_aktivity}
   
-Denní cíle (20% deficit):
+Metabolismus:
+  Bazální metabolismus: {self.bazalni_metabolismus} kcal
+  
+Denní cíle (udržitelná keto/low-carb dieta):
   Kalorie: {self.cil_kalorie} kcal ({self.pocet_jidel} jídel)
-  Bílkoviny: min {self.cil_bilkoviny}g (range: 93-154g)
-  Sacharidy: max {self.cil_sacharidy}g
-  Tuky: {self.cil_tuky}g (range: 30-183g)
-  Vláknina: min {self.cil_vlaknina}g
+  Bílkoviny: {self.cil_bilkoviny}g (32%, range: 93-154g)
+  Sacharidy: max {self.cil_sacharidy}g (12%)
+  Tuky: {self.cil_tuky}g (56%, range: 30-183g)
+  Vláknina: min {self.cil_vlaknina}g (zvýšeno pro lepší trávení)
+  Cukry: max {self.cil_cukry}g
   
 Zdravotní poznámky:
   {chr(10).join(f'• {p}' for p in self.zdravotni_poznamky)}
