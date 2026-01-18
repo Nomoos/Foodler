@@ -341,6 +341,8 @@ class DatabzeJidel:
             vhodne_pro_meal_prep=True,
             vydrzi_dni=5,
             poznamky="Keto chléb s velmi nízkými sacharidy (2,4g na krajíček). Vysoký obsah vlákniny. Bez lepku. Lze zmrazit."
+        ),
+        Jidlo(
             nazev="Keto pizza",
             typ="obed",
             ingredience=[
@@ -360,6 +362,8 @@ class DatabzeJidel:
             vhodne_pro_meal_prep=True,
             vydrzi_dni=2,
             poznamky="Nízkokalorická keto pizza bez mouky, skvělá varianta pro low-carb stravu"
+        ),
+        Jidlo(
             nazev="Avokádová pomazánka z tvarohu",
             typ="svacina",
             ingredience=[
@@ -382,6 +386,8 @@ class DatabzeJidel:
             vhodne_pro_meal_prep=False,
             vydrzi_dni=1,
             poznamky="Rychlá pomazánka, nejlepší čerstvá, bohatá na zdravé tuky"
+        ),
+        Jidlo(
             nazev="Keto chléb Mark 2 by Nomoos",
             typ="snidane",
             ingredience=[
@@ -405,6 +411,7 @@ class DatabzeJidel:
             vhodne_pro_meal_prep=True,
             vydrzi_dni=5,
             poznamky="Ketogenní chléb s vysokým obsahem vlákniny a bílkovin, ideální pro low-carb dietu. Vydrží až 5 dní v lednici."
+        ),
         # New egg-based meals to use the 40 eggs in fridge
         Jidlo(
             nazev="Vařená vejce na tvrd (3 ks)",
