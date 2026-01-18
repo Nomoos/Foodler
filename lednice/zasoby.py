@@ -175,6 +175,13 @@ class SpravceZasob:
             umisteni="lednice",
             otevreno=True
         ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Sýr gouda 45%", 300, "g", "mlecne_vyrobky",
+            datum_nakupu=dnes - timedelta(days=2),
+            datum_expirace=dnes + timedelta(days=14),
+            umisteni="lednice",
+            poznamky="Polotvrdý sýr"
+        ))
         
         # Zelenina
         self.lednice.pridat_polozku(ZasobaPolozka(

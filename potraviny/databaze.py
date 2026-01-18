@@ -173,6 +173,17 @@ class DatabazePotravIn:
             vlaknina=0.0,
             cena_za_kg=180.0
         ),
+        Potravina(
+            nazev="Sýr gouda 45%",
+            kategorie="mlecne_vyrobky",
+            kalorie=344,
+            bilkoviny=26.0,
+            sacharidy=0.0,
+            tuky=27.0,
+            vlaknina=0.0,
+            cena_za_kg=180.0,
+            poznamky="Polotvrdý sýr, 45% tuku, nulové sacharidy"
+        ),
         
         # Zelenina
         Potravina(
