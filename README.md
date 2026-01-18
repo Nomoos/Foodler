@@ -71,6 +71,9 @@ Nástroj pro podporu hubnutí a zdravého stravování pro celou rodinu s důraz
   - Scoring a threshold systém
 
 ### 🔧 Technická dokumentace
+- **[GITHUB_COPILOT_WEB_ACCESS.md](docs/technical/GITHUB_COPILOT_WEB_ACCESS.md)** - ⭐ Návod pro GitHub Copilot Pro+ a testování scraperů
+- **[LANGUAGE_DECISION.md](LANGUAGE_DECISION.md)** - ⭐ Rozhodnutí o programovacím jazyce (Python vs C# vs TypeScript)
+- **[LANGUAGE_EVALUATION.md](docs/technical/LANGUAGE_EVALUATION.md)** - Podrobná analýza jazyků
 - **[IMPLEMENTATION_SUMMARY.md](docs/technical/IMPLEMENTATION_SUMMARY.md)** - Shrnutí implementace
 - **[REFACTORING_SUMMARY.md](docs/technical/REFACTORING_SUMMARY.md)** - Historie refaktoringu
 - **[osoby/README.md](osoby/README.md)** - Práce s profily a preferencemi
