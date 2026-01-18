@@ -153,6 +153,14 @@ python src/planners/day_plan_builder.py
 
 # Demo týdenního plánovače
 python src/planners/week_plan_builder.py
+
+# Generátor jídelníčku na konkrétní datum (z 28denního cyklu)
+python generate_meal_plan_date.py tomorrow      # Zítra
+python generate_meal_plan_date.py today         # Dnes
+python generate_meal_plan_date.py 18.1.2026     # Konkrétní datum
+
+# Jídelníček na zítra (18.1.2026)
+python generate_meal_plan_tomorrow.py
 ```
 
 Více příkladů použití v **[NAVOD_K_POUZITI.md](docs/getting-started/NAVOD_K_POUZITI.md)**.
