@@ -1,0 +1,34 @@
+nazev: RaPaCiSo salát (zeleninový mix)
+typ: priloha
+ingredience:
+- nazev: Rajčata
+  mnozstvi_g: 60
+  kategorie: priloha
+- nazev: Paprika
+  mnozstvi_g: 25
+  kategorie: priloha
+- nazev: Sladká paprika
+  mnozstvi_g: 25
+  kategorie: priloha
+- nazev: Cibule
+  mnozstvi_g: 20
+  kategorie: priloha
+- nazev: Olej slunečnicový
+  mnozstvi_g: 5
+  kategorie: omacka
+- nazev: Makadamiový olej
+  mnozstvi_g: 5
+  kategorie: omacka
+kalorie_celkem: 121
+bilkoviny_celkem: 1.3
+sacharidy_celkem: 6.1
+tuky_celkem: 9.9
+vlaknina_celkem: 2.4
+priprava_cas_min: 10
+priprava_postup: 1. Rajčata a papriky nakrájet na kostky. 2. Cibuli najemno nakrájet.
+  3. Vše smíchat s oleji. 4. Podle chuti dochutit.
+obtiznost: snadna
+porce: 1
+vhodne_pro_meal_prep: true
+vydrzi_dni: 2
+poznamky: Lehká zeleninová příloha, bohatá na zdravé tuky, 140g porce

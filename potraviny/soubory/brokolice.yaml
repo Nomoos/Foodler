@@ -1,0 +1,17 @@
+nazev: Brokolice
+kategorie: zelenina
+kalorie: 34
+bilkoviny: 2.8
+sacharidy: 7.0
+tuky: 0.4
+vlaknina: 2.6
+cena_za_kg: 50.0
+sezona:
+- '9'
+- '10'
+- '11'
+- '12'
+- '1'
+- '2'
+- '3'
+- '4'

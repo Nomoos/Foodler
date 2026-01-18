@@ -1,0 +1,31 @@
+nazev: Vaječný salát s cottage cheese
+typ: obed
+ingredience:
+- nazev: Vejce slepičí M
+  mnozstvi_g: 110
+  kategorie: hlavni
+- nazev: Cottage cheese
+  mnozstvi_g: 150
+  kategorie: hlavni
+- nazev: Zelený salát
+  mnozstvi_g: 100
+  kategorie: priloha
+- nazev: Okurka
+  mnozstvi_g: 50
+  kategorie: priloha
+- nazev: Olivový olej
+  mnozstvi_g: 10
+  kategorie: omacka
+kalorie_celkem: 402
+bilkoviny_celkem: 34.6
+sacharidy_celkem: 8.54
+tuky_celkem: 25.96
+vlaknina_celkem: 2.0
+priprava_cas_min: 15
+priprava_postup: 1. Vejce uvařit natvrdo (10 min). 2. Nakrájet vejce a zeleninu. 3.
+  Smíchat s cottage cheese a olivovým olejem.
+obtiznost: snadna
+porce: 1
+vhodne_pro_meal_prep: true
+vydrzi_dni: 2
+poznamky: Lehký oběd s vysokým obsahem bílkovin

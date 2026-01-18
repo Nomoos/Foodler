@@ -5,10 +5,14 @@ Potraviny - Modul pro správu čistých potravin (ingrediencí)
 
 Tento modul spravuje jednotlivé potraviny/ingredience, které lze použít
 k přípravě jídel. Obsahuje nutriční hodnoty a další metadata.
+
+Potraviny jsou nyní ukládány jako jednotlivé YAML soubory v adresáři potraviny/soubory/
 """
 
 from dataclasses import dataclass
 from typing import Optional, List
+from pathlib import Path
+import yaml
 
 
 @dataclass
@@ -51,8 +55,23 @@ class Potravina:
 
 
 class DatabazePotravIn:
-    """Databáze běžných potravin použitých v dietě."""
+    """Databáze běžných potravin použitých v dietě.
     
+    Potraviny jsou načítány z jednotlivých YAML souborů v adresáři potraviny/soubory/.
+    To umožňuje přidávat nové potraviny bez konfliktů při spolupráci více lidí.
+    """
+    
+    _cache: Optional[List[Potravina]] = None
+    
+    @classmethod
+    def _load_from_yaml_files(cls) -> List[Potravina]:
+        """Načte potraviny z YAML souborů."""
+        potraviny = []
+        potraviny_dir = Path(__file__).parent / "soubory"
+        
+        if not potraviny_dir.exists():
+            print(f"Warning: Directory {potraviny_dir} does not exist. No ingredients loaded.")
+            return []
     POTRAVINY: List[Potravina] = [
         # Bílkoviny - maso a ryby
         Potravina(
@@ -383,77 +402,58 @@ class DatabazePotravIn:
             poznamky="Hodnoty platí pro vařenou řepu"
         ),
         
-        # Zdravé tuky
-        Potravina(
-            nazev="Olivový olej",
-            kategorie="tuky",
-            kalorie=884,
-            bilkoviny=0.0,
-            sacharidy=0.0,
-            tuky=100.0,
-            vlaknina=0.0,
-            cena_za_kg=180.0
-        ),
-        Potravina(
-            nazev="Avokádo",
-            kategorie="tuky",
-            kalorie=160,
-            bilkoviny=2.0,
-            sacharidy=8.5,
-            tuky=15.0,
-            vlaknina=6.7,
-            cena_za_kg=100.0,
-            poznamky="Výborný zdroj zdravých tuků"
-        ),
+        # Načte všechny YAML soubory
+        for yaml_file in sorted(potraviny_dir.glob("*.yaml")):
+            try:
+                with open(yaml_file, "r", encoding="utf-8") as f:
+                    data = yaml.safe_load(f)
+                
+                if not data:
+                    continue
+                
+                # Vytvoří objekt Potravina
+                potravina = Potravina(
+                    nazev=data["nazev"],
+                    kategorie=data["kategorie"],
+                    kalorie=float(data["kalorie"]),
+                    bilkoviny=float(data["bilkoviny"]),
+                    sacharidy=float(data["sacharidy"]),
+                    tuky=float(data["tuky"]),
+                    vlaknina=float(data["vlaknina"]),
+                    cena_za_kg=data.get("cena_za_kg"),
+                    sezona=data.get("sezona"),
+                    poznamky=data.get("poznamky")
+                )
+                potraviny.append(potravina)
+                
+            except Exception as e:
+                print(f"Warning: Failed to load {yaml_file.name}: {e}")
+                continue
         
-        # Ořechy a semínka
-        Potravina(
-            nazev="Mandle",
-            kategorie="orechy",
-            kalorie=579,
-            bilkoviny=21.0,
-            sacharidy=22.0,
-            tuky=50.0,
-            vlaknina=12.0,
-            cena_za_kg=280.0
-        ),
-        Potravina(
-            nazev="Vlašské ořechy",
-            kategorie="orechy",
-            kalorie=654,
-            bilkoviny=15.0,
-            sacharidy=14.0,
-            tuky=65.0,
-            vlaknina=6.7,
-            cena_za_kg=250.0
-        ),
-        Potravina(
-            nazev="Lněné semínko (mleté)",
-            kategorie="orechy",
-            kalorie=534,
-            bilkoviny=18.0,
-            sacharidy=29.0,
-            tuky=42.0,
-            vlaknina=27.0,
-            cena_za_kg=120.0,
-            poznamky="Vysoký obsah vlákniny a Omega-3"
-        ),
-        Potravina(
-            nazev="Chia semínka",
-            kategorie="orechy",
-            kalorie=486,
-            bilkoviny=17.0,
-            sacharidy=42.0,
-            tuky=31.0,
-            vlaknina=34.0,
-            cena_za_kg=200.0
-        ),
-    ]
+        return potraviny
+    
+    @classmethod
+    def get_all(cls) -> List[Potravina]:
+        """Vrátí všechny potraviny (s cachováním). Preferovaný způsob přístupu."""
+        if cls._cache is None:
+            cls._cache = cls._load_from_yaml_files()
+        return cls._cache
+    
+    # Backward compatibility - can also be accessed as class attribute
+    @property
+    def POTRAVINY(self) -> List[Potravina]:
+        """Property for backward compatibility. Use get_all() classmethod instead."""
+        return self.__class__.get_all()
+    
+    @classmethod
+    def reload(cls):
+        """Znovu načte potraviny ze souborů (užitečné po přidání nových souborů)."""
+        cls._cache = None
     
     @classmethod
     def najdi_podle_nazvu(cls, nazev: str) -> Optional[Potravina]:
         """Najde potravinu podle názvu."""
-        for potravina in cls.POTRAVINY:
+        for potravina in cls.get_all():
             if potravina.nazev.lower() == nazev.lower():
                 return potravina
         return None
@@ -461,17 +461,27 @@ class DatabazePotravIn:
     @classmethod
     def najdi_podle_kategorie(cls, kategorie: str) -> List[Potravina]:
         """Najde všechny potraviny v dané kategorii."""
-        return [p for p in cls.POTRAVINY if p.kategorie == kategorie]
+        return [p for p in cls.get_all() if p.kategorie == kategorie]
     
     @classmethod
     def najdi_low_carb(cls, max_sacharidy: float = 10.0) -> List[Potravina]:
         """Najde nízkosacharidové potraviny."""
-        return [p for p in cls.POTRAVINY if p.je_low_carb(max_sacharidy)]
+        return [p for p in cls.get_all() if p.je_low_carb(max_sacharidy)]
     
     @classmethod
     def najdi_high_protein(cls, min_bilkoviny: float = 15.0) -> List[Potravina]:
         """Najde vysokobílkovinové potraviny."""
-        return [p for p in cls.POTRAVINY if p.je_high_protein(min_bilkoviny)]
+        return [p for p in cls.get_all() if p.je_high_protein(min_bilkoviny)]
+
+
+# For backward compatibility with code that accesses DatabazePotravIn.POTRAVINY directly
+# This creates a class variable that lazy-loads the data
+class _PotravinyDescriptor:
+    """Descriptor for lazy loading POTRAVINY as a class attribute."""
+    def __get__(self, obj, objtype=None):
+        return objtype.get_all()
+
+DatabazePotravIn.POTRAVINY = _PotravinyDescriptor()
 
 
 def main():
@@ -481,9 +491,10 @@ def main():
     print("=" * 70)
     
     # Ukázka kategorií
+    all_potraviny = DatabazePotravIn.get_all()
     print("\n📊 KATEGORIE POTRAVIN:\n")
     kategorie = {}
-    for potravina in DatabazePotravIn.POTRAVINY:
+    for potravina in all_potraviny:
         if potravina.kategorie not in kategorie:
             kategorie[potravina.kategorie] = []
         kategorie[potravina.kategorie].append(potravina.nazev)
