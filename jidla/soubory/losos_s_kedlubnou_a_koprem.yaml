@@ -1,0 +1,31 @@
+nazev: Losos s kedlubnou a koprem
+typ: vecere
+ingredience:
+- nazev: Losos
+  mnozstvi_g: 200
+  kategorie: hlavni
+- nazev: Kedlubna
+  mnozstvi_g: 200
+  kategorie: priloha
+- nazev: Olivový olej
+  mnozstvi_g: 10
+  kategorie: omacka
+- nazev: Citrón
+  mnozstvi_g: 20
+  kategorie: koření
+- nazev: Kopr
+  mnozstvi_g: 5
+  kategorie: koření
+kalorie_celkem: 524
+bilkoviny_celkem: 43.4
+sacharidy_celkem: 13.2
+tuky_celkem: 35.2
+vlaknina_celkem: 7.2
+priprava_cas_min: 25
+priprava_postup: 1. Losos pokapat citrónem a posypat koprem. 2. Péct v troubě 15 min
+  při 180°C. 3. Kedlubnu nakrájet a opéct na pánvi.
+obtiznost: stredni
+porce: 1
+vhodne_pro_meal_prep: true
+vydrzi_dni: 2
+poznamky: Bohatý na Omega-3, vhodné 2x týdně

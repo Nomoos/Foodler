@@ -1,0 +1,24 @@
+nazev: Tvaroh s lněným semínkem a skořicí
+typ: svacina
+ingredience:
+- nazev: Tvaroh polotučný
+  mnozstvi_g: 200
+  kategorie: hlavni
+- nazev: Lněné semínko mleté
+  mnozstvi_g: 20
+  kategorie: priloha
+- nazev: Skořice
+  mnozstvi_g: 2
+  kategorie: koření
+kalorie_celkem: 313
+bilkoviny_celkem: 35.6
+sacharidy_celkem: 12.8
+tuky_celkem: 16.4
+vlaknina_celkem: 5.4
+priprava_cas_min: 2
+priprava_postup: 1. Tvaroh smíchat s mletým lněným semínkem. 2. Posypat skořicí.
+obtiznost: snadna
+porce: 1
+vhodne_pro_meal_prep: true
+vydrzi_dni: 2
+poznamky: Rychlá proteinová svačina

@@ -1,0 +1,12 @@
+nazev: Paprika
+kategorie: zelenina
+kalorie: 31
+bilkoviny: 1.0
+sacharidy: 6.0
+tuky: 0.3
+vlaknina: 2.1
+cena_za_kg: 60.0
+sezona:
+- '7'
+- '8'
+- '9'

@@ -1,0 +1,28 @@
+nazev: Vajíčka v kapustě (3 vejce)
+typ: obed
+ingredience:
+- nazev: Vejce slepičí M
+  mnozstvi_g: 165
+  kategorie: hlavni
+- nazev: Zelí
+  mnozstvi_g: 200
+  kategorie: priloha
+- nazev: Cibule
+  mnozstvi_g: 50
+  kategorie: priloha
+- nazev: Olivový olej
+  mnozstvi_g: 10
+  kategorie: omacka
+kalorie_celkem: 418
+bilkoviny_celkem: 23.5
+sacharidy_celkem: 15.5
+tuky_celkem: 29.3
+vlaknina_celkem: 5.7
+priprava_cas_min: 20
+priprava_postup: 1. Zelí a cibuli nakrájet a podusit na oleji. 2. Udělat jamky a do
+  každé rozbít vejce. 3. Péct pod pokličkou 10 min.
+obtiznost: snadna
+porce: 1
+vhodne_pro_meal_prep: true
+vydrzi_dni: 3
+poznamky: Tradiční jídlo, hodně vlákniny

@@ -1,0 +1,31 @@
+nazev: Hovězí maso s cuketou
+typ: vecere
+ingredience:
+- nazev: Hovězí maso libové
+  mnozstvi_g: 200
+  kategorie: hlavni
+- nazev: Cuketa
+  mnozstvi_g: 200
+  kategorie: priloha
+- nazev: Cibule
+  mnozstvi_g: 50
+  kategorie: priloha
+- nazev: Rajčata
+  mnozstvi_g: 100
+  kategorie: priloha
+- nazev: Olivový olej
+  mnozstvi_g: 10
+  kategorie: omacka
+kalorie_celkem: 660
+bilkoviny_celkem: 54.6
+sacharidy_celkem: 16.3
+tuky_celkem: 43.1
+vlaknina_celkem: 4.5
+priprava_cas_min: 30
+priprava_postup: 1. Hovězí nakrájet na kostky. 2. Opéct na oleji s cibulí. 3. Přidat
+  cuketu a rajčata, dusit 15 min.
+obtiznost: stredni
+porce: 1
+vhodne_pro_meal_prep: true
+vydrzi_dni: 4
+poznamky: Výborné pro víkendový meal prep

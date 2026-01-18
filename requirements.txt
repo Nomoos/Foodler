@@ -5,6 +5,7 @@ lxml>=4.9.0
 
 # Data handling
 pydantic>=2.0.0
+PyYAML>=6.0
 
 # Optional: for async requests
 aiohttp>=3.9.0

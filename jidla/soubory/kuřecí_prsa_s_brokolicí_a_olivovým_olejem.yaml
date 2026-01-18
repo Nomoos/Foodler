@@ -1,0 +1,28 @@
+nazev: Kuřecí prsa s brokolicí a olivovým olejem
+typ: obed
+ingredience:
+- nazev: Kuřecí prsa
+  mnozstvi_g: 200
+  kategorie: hlavni
+- nazev: Brokolice
+  mnozstvi_g: 200
+  kategorie: priloha
+- nazev: Olivový olej
+  mnozstvi_g: 10
+  kategorie: omacka
+- nazev: Česnek
+  mnozstvi_g: 5
+  kategorie: koření
+kalorie_celkem: 428
+bilkoviny_celkem: 67.6
+sacharidy_celkem: 14.7
+tuky_celkem: 15.8
+vlaknina_celkem: 5.2
+priprava_cas_min: 25
+priprava_postup: 1. Kuřecí prsa nakrájet a osolit. 2. Opéct na olivovém oleji s česnekem.
+  3. Brokolici uvařit na páře nebo blanšírovat.
+obtiznost: snadna
+porce: 1
+vhodne_pro_meal_prep: true
+vydrzi_dni: 3
+poznamky: Ideální pro meal prep, lze připravit 3-4 porce najednou

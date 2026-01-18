@@ -5,11 +5,15 @@ Jídla - Modul pro správu hotových jídel složených z více potravin
 
 Tento modul spravuje kompletní jídla připravená ke konzumaci,
 která jsou složena z více potravin/ingrediencí.
+
+Jídla jsou nyní ukládána jako jednotlivé YAML soubory v adresáři jidla/soubory/
 """
 
 from dataclasses import dataclass
 from typing import List, Dict, Optional
 from datetime import datetime
+from pathlib import Path
+import yaml
 
 
 @dataclass
@@ -76,8 +80,87 @@ class Jidlo:
 
 
 class DatabzeJidel:
-    """Databáze připravených jídel."""
+    """Databáze připravených jídel.
     
+    Jídla jsou načítána z jednotlivých YAML souborů v adresáři jidla/soubory/.
+    To umožňuje přidávat nová jídla bez konfliktů při spolupráci více lidí.
+    """
+    
+    _cache: Optional[List[Jidlo]] = None
+    
+    @classmethod
+    def _load_from_yaml_files(cls) -> List[Jidlo]:
+        """Načte jídla z YAML souborů."""
+        jidla = []
+        jidla_dir = Path(__file__).parent / "soubory"
+        
+        if not jidla_dir.exists():
+            print(f"Warning: Directory {jidla_dir} does not exist. No dishes loaded.")
+            return []
+        
+        # Načte všechny YAML soubory
+        for yaml_file in sorted(jidla_dir.glob("*.yaml")):
+            try:
+                with open(yaml_file, "r", encoding="utf-8") as f:
+                    data = yaml.safe_load(f)
+                
+                if not data:
+                    continue
+                
+                # Převede ingredience na objekty
+                ingredience = [
+                    Ingredience(
+                        nazev=ing["nazev"],
+                        mnozstvi_g=float(ing["mnozstvi_g"]),
+                        kategorie=ing["kategorie"]
+                    )
+                    for ing in data.get("ingredience", [])
+                ]
+                
+                # Vytvoří objekt Jidlo
+                jidlo = Jidlo(
+                    nazev=data["nazev"],
+                    typ=data["typ"],
+                    ingredience=ingredience,
+                    kalorie_celkem=float(data["kalorie_celkem"]),
+                    bilkoviny_celkem=float(data["bilkoviny_celkem"]),
+                    sacharidy_celkem=float(data["sacharidy_celkem"]),
+                    tuky_celkem=float(data["tuky_celkem"]),
+                    vlaknina_celkem=float(data["vlaknina_celkem"]),
+                    priprava_cas_min=int(data["priprava_cas_min"]),
+                    priprava_postup=data["priprava_postup"],
+                    obtiznost=data["obtiznost"],
+                    porce=int(data.get("porce", 1)),
+                    vhodne_pro_meal_prep=bool(data.get("vhodne_pro_meal_prep", False)),
+                    vydrzi_dni=data.get("vydrzi_dni"),
+                    poznamky=data.get("poznamky"),
+                    datum_pripravy=None
+                )
+                jidla.append(jidlo)
+                
+            except Exception as e:
+                print(f"Warning: Failed to load {yaml_file.name}: {e}")
+                continue
+        
+        return jidla
+    
+    @classmethod
+    def get_all(cls) -> List[Jidlo]:
+        """Vrátí všechna jídla (s cachováním). Preferovaný způsob přístupu."""
+        if cls._cache is None:
+            cls._cache = cls._load_from_yaml_files()
+        return cls._cache
+    
+    # Backward compatibility - can also be accessed as instance attribute
+    @property  
+    def JIDLA(self) -> List[Jidlo]:
+        """Property for backward compatibility. Use get_all() classmethod instead."""
+        return self.__class__.get_all()
+    
+    @classmethod
+    def reload(cls):
+        """Znovu načte jídla ze souborů (užitečné po přidání nových souborů)."""
+        cls._cache = None
     JIDLA: List[Jidlo] = [
         Jidlo(
             nazev="Kuřecí prsa s brokolicí a olivovým olejem",
@@ -258,6 +341,8 @@ class DatabzeJidel:
             vhodne_pro_meal_prep=True,
             vydrzi_dni=5,
             poznamky="Keto chléb s velmi nízkými sacharidy (2,4g na krajíček). Vysoký obsah vlákniny. Bez lepku. Lze zmrazit."
+        ),
+        Jidlo(
             nazev="Keto pizza",
             typ="obed",
             ingredience=[
@@ -277,6 +362,8 @@ class DatabzeJidel:
             vhodne_pro_meal_prep=True,
             vydrzi_dni=2,
             poznamky="Nízkokalorická keto pizza bez mouky, skvělá varianta pro low-carb stravu"
+        ),
+        Jidlo(
             nazev="Avokádová pomazánka z tvarohu",
             typ="svacina",
             ingredience=[
@@ -299,6 +386,8 @@ class DatabzeJidel:
             vhodne_pro_meal_prep=False,
             vydrzi_dni=1,
             poznamky="Rychlá pomazánka, nejlepší čerstvá, bohatá na zdravé tuky"
+        ),
+        Jidlo(
             nazev="Keto chléb Mark 2 by Nomoos",
             typ="snidane",
             ingredience=[
@@ -322,6 +411,7 @@ class DatabzeJidel:
             vhodne_pro_meal_prep=True,
             vydrzi_dni=5,
             poznamky="Ketogenní chléb s vysokým obsahem vlákniny a bílkovin, ideální pro low-carb dietu. Vydrží až 5 dní v lednici."
+        ),
         # New egg-based meals to use the 40 eggs in fridge
         Jidlo(
             nazev="Vařená vejce na tvrd (3 ks)",
@@ -458,7 +548,7 @@ class DatabzeJidel:
     @classmethod
     def najdi_podle_nazvu(cls, nazev: str) -> Optional[Jidlo]:
         """Najde jídlo podle názvu."""
-        for jidlo in cls.JIDLA:
+        for jidlo in cls.get_all():
             if jidlo.nazev.lower() == nazev.lower():
                 return jidlo
         return None
@@ -466,27 +556,37 @@ class DatabzeJidel:
     @classmethod
     def najdi_podle_typu(cls, typ: str) -> List[Jidlo]:
         """Najde všechna jídla daného typu."""
-        return [j for j in cls.JIDLA if j.typ == typ]
+        return [j for j in cls.get_all() if j.typ == typ]
     
     @classmethod
     def najdi_meal_prep(cls) -> List[Jidlo]:
         """Najde jídla vhodná pro meal prep."""
-        return [j for j in cls.JIDLA if j.vhodne_pro_meal_prep]
+        return [j for j in cls.get_all() if j.vhodne_pro_meal_prep]
     
     @classmethod
     def najdi_rychla(cls, max_minut: int = 15) -> List[Jidlo]:
         """Najde rychlá jídla."""
-        return [j for j in cls.JIDLA if j.priprava_cas_min <= max_minut]
+        return [j for j in cls.get_all() if j.priprava_cas_min <= max_minut]
     
     @classmethod
     def najdi_low_carb(cls, max_sacharidy: float = 15.0) -> List[Jidlo]:
         """Najde nízkosacharidová jídla."""
-        return [j for j in cls.JIDLA if j.je_low_carb(max_sacharidy)]
+        return [j for j in cls.get_all() if j.je_low_carb(max_sacharidy)]
     
     @classmethod
     def najdi_high_protein(cls, min_bilkoviny: float = 25.0) -> List[Jidlo]:
         """Najde vysokobílkovinová jídla."""
-        return [j for j in cls.JIDLA if j.je_high_protein(min_bilkoviny)]
+        return [j for j in cls.get_all() if j.je_high_protein(min_bilkoviny)]
+
+
+# For backward compatibility with code that accesses DatabzeJidel.JIDLA directly
+# This creates a class variable that lazy-loads the data
+class _JidlaDescriptor:
+    """Descriptor for lazy loading JIDLA as a class attribute."""
+    def __get__(self, obj, objtype=None):
+        return objtype.get_all()
+
+DatabzeJidel.JIDLA = _JidlaDescriptor()
 
 
 def main():
@@ -496,8 +596,9 @@ def main():
     print("=" * 70)
     
     # Všechna jídla
+    all_jidla = DatabzeJidel.get_all()
     print("\n🍽️  VŠECHNA JÍDLA:\n")
-    for i, jidlo in enumerate(DatabzeJidel.JIDLA, 1):
+    for i, jidlo in enumerate(all_jidla, 1):
         makra = jidlo.vypocitej_makra_na_porci()
         print(f"{i}. {jidlo.nazev} ({jidlo.typ})")
         print(f"   Čas: {jidlo.priprava_cas_min} min | Makra: B:{makra['bilkoviny']}g S:{makra['sacharidy']}g T:{makra['tuky']}g")

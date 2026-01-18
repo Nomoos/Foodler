@@ -1,0 +1,34 @@
+nazev: Salát s tuňákem, vejcem a zeleninou
+typ: obed
+ingredience:
+- nazev: Tuňák konzervovaný
+  mnozstvi_g: 100
+  kategorie: hlavni
+- nazev: Vejce
+  mnozstvi_g: 100
+  kategorie: hlavni
+- nazev: Zelený salát
+  mnozstvi_g: 100
+  kategorie: priloha
+- nazev: Okurka
+  mnozstvi_g: 50
+  kategorie: priloha
+- nazev: Rajčata
+  mnozstvi_g: 50
+  kategorie: priloha
+- nazev: Olivový olej
+  mnozstvi_g: 10
+  kategorie: omacka
+kalorie_celkem: 373
+bilkoviny_celkem: 42.4
+sacharidy_celkem: 5.6
+tuky_celkem: 21.4
+vlaknina_celkem: 2.4
+priprava_cas_min: 15
+priprava_postup: 1. Vejce uvařit natvrdo (10 min). 2. Zeleninu omýt a nakrájet. 3.
+  Smíchat s tuňákem, vejcem a olivovým olejem.
+obtiznost: snadna
+porce: 1
+vhodne_pro_meal_prep: true
+vydrzi_dni: 1
+poznamky: Nejlepší čerstvý, lze připravit den dopředu

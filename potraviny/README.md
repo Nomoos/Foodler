@@ -5,6 +5,22 @@ Tento modul spravuje **čisté potraviny** (ingredience), které lze použít k 
 ## Obsah
 
 - `databaze.py` - Databáze běžných potravin s nutričními hodnotami
+- `soubory/` - Adresář s jednotlivými YAML soubory pro každou potravinu
+- `JAK_PRIDAT_POTRAVINU.md` - Návod pro přidání nové potraviny
+
+## Struktura databáze
+
+Od verze 2026-01 jsou potraviny ukládány jako **jednotlivé YAML soubory** v adresáři `soubory/`.
+To umožňuje:
+- ✅ Přidávat nové potraviny bez konfliktů při spolupráci více lidí
+- ✅ Snadno spravovat a verzovat jednotlivé potraviny
+- ✅ Přehledně organizovat databázi ingrediencí
+
+## Přidání nové potraviny
+
+Viz podrobný návod v souboru [JAK_PRIDAT_POTRAVINU.md](JAK_PRIDAT_POTRAVINU.md).
+
+Stručně: vytvořte nový YAML soubor v adresáři `soubory/` s nutričními hodnotami.
 
 ## Použití
 
