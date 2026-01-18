@@ -34,54 +34,54 @@ Tento dotazník se zaměřuje na **týdenní meal prep** (příprava 1x za týde
 ## 1️⃣ ŽIVOTNÍ STYL A DENNÍ RUTINA
 
 ### Pracovní režim
-1. **Kolik dní v týdnu pracuješ?** _____________
-2. **V kolik hodin obvykle začínáš práci?** _____________
-3. **V kolik hodin obvykle končíš práci?** _____________
-4. **Pracuješ z domu nebo dojíždíš?** _____________
+1. **Kolik dní v týdnu pracuješ?** 5
+2. **V kolik hodin obvykle začínáš práci?** 7-8
+3. **V kolik hodin obvykle končíš práci?** 15-16
+4. **Pracuješ z domu nebo dojíždíš?** dojíždím cca 20 minut + 65 minut, když vezu Kubíka  
 
 ### Spánek a rytmus
-5. **V kolik hodin obvykle vstáváš?** _____________
-6. **V kolik hodin obvykle jdeš spát?** _____________
+5. **V kolik hodin obvykle vstáváš?** 6-7
+6. **V kolik hodin obvykle jdeš spát?** 22-23
 7. **Jaká je tvoje kvalita spánku?**
    - [ ] Výborná - usínám snadno, spím celou noc
-   - [ ] Dobrá - občas se probudím, ale většinou dobře spím
+   - [X] Dobrá - občas se probudím, ale většinou dobře spím
    - [ ] Střední - často se probouzím, občas problémy s usínáním
    - [ ] Špatná - pravidelně nespím dobře
 
 ### Energetické hladiny
 8. **Jaká je tvoje energie RÁNO po probuzení?**
    - [ ] Vysoká - hned po probuzení jsem plný energie
-   - [ ] Střední - potřebuji chvíli, ale pak je to OK
+   - [X] Střední - potřebuji chvíli, ale pak je to OK
    - [ ] Nízká - ráno je pro mě nejtěžší část dne
 
 9. **Jaká je tvoje energie O POLEDNI (kolem 12-14h)?**
-   - [ ] Vysoká
+   - [X] Vysoká
    - [ ] Střední
    - [ ] Nízká (mívám poobědové unavení)
 
 10. **Jaká je tvoje energie VEČER (po práci)?**
     - [ ] Vysoká
-    - [ ] Střední
-    - [ ] Nízká
+    - [X] Střední
+    - [X] Nízká
 
 ### Hlad a chutě
 11. **Kdy během dne pociťuješ největší hlad?**
     - [ ] Ráno (po probuzení)
     - [ ] Dopoledne (9-11h)
     - [ ] Kolem oběda (12-14h)
-    - [ ] Odpoledne (15-17h)
+    - [X] Odpoledne (15-17h)
     - [ ] Večer (18-20h)
     - [ ] V noci
 
 ### Stres a zdraví
 12. **Jaká je tvoje obvyklá úroveň stresu?**
-    - [ ] Nízká - většinou jsem v pohodě
+    - [X] Nízká - většinou jsem v pohodě
     - [ ] Střední - občas se cítím ve stresu
     - [ ] Vysoká - často jsem ve stresu
 
 13. **Máš nějaké problémy s trávením?** (vyber všechny, které platí)
     - [ ] Nadýmání
-    - [ ] Pálení žáhy / reflux / GERD
+    - [X] Pálení žáhy / reflux / GERD
     - [ ] Zácpa
     - [ ] Průjem
     - [ ] Pocit plnosti po jídle
@@ -95,55 +95,55 @@ Tento dotazník se zaměřuje na **týdenní meal prep** (příprava 1x za týde
 14. **Kolik času máš celkem na meal prep týdně?** (v minutách)
     - [ ] Méně než 60 minut (1 hodina)
     - [ ] 60-120 minut (1-2 hodiny)
-    - [ ] 120-180 minut (2-3 hodiny)
+    - [X] 120-180 minut (2-3 hodiny)
     - [ ] 180-240 minut (3-4 hodiny)
     - [ ] Více než 240 minut (4+ hodiny)
     - Přesně: _____________ minut
 
 15. **Který den ti nejvíce vyhovuje pro velký meal prep?**
     - [ ] Sobota
-    - [ ] Neděle
+    - [X] Neděle
     - [ ] Jiný den: _____________
 
 16. **V jakou denní dobu je pro tebe nejlepší čas na meal prep?**
-    - [ ] Ráno (6-9h)
-    - [ ] Dopoledne (9-12h)
-    - [ ] Odpoledne (12-17h)
+    - [X] Ráno (6-9h)
+    - [X] Dopoledne (9-12h)
+    - [X] Odpoledne (12-17h)
     - [ ] Večer (17-21h)
 
 ### Strategie přípravy
 17. **Na kolik dní dopředu chceš připravovat jídla?**
     - [ ] 2-3 dny
     - [ ] 4-5 dní
-    - [ ] Celý týden (7 dní)
-    - [ ] Více než týden
+    - [X] Celý týden (7 dní)
+    - [X] Více než týden
 
 18. **Kolik různých jídel chceš mít v rotaci?**
     - [ ] 2 jídla (stejné jídlo několik dní po sobě)
-    - [ ] 3-4 jídla
+    - [X] 3-4 jídla
     - [ ] 5-6 jídel
     - [ ] 7+ jídel (každý den něco jiného)
 
 19. **Jaká jídla jsi ochoten připravovat dopředu?** (vyber všechny)
-    - [ ] Hlavní jídla (obědy, večeře)
-    - [ ] Snídaně
-    - [ ] Svačiny
-    - [ ] Saláty
-    - [ ] Polévky
-    - [ ] Protein (jen maso/ryby)
-    - [ ] Zelenina
+    - [X] Hlavní jídla (obědy, večeře)
+    - [X] Snídaně
+    - [X] Svačiny
+    - [X] Saláty
+    - [X] Polévky
+    - [X] Protein (jen maso/ryby)
+    - [X] Zelenina
 
 ### Skladování
 20. **Jak preferuješ skladovat připravená jídla?** (vyber všechny)
-    - [ ] V lednici (3-5 dní)
-    - [ ] V mrazáku (týdny/měsíce)
-    - [ ] Vakuované (delší trvanlivost)
-    - [ ] Meal prep krabičky
+    - [X] V lednici (3-5 dní)
+    - [X] V mrazáku (týdny/měsíce)
+    - [X] Vakuované (delší trvanlivost)
+    - [X] Meal prep krabičky/skleničky
     - [ ] Jinak: _____________
 
 21. **Kolik času máš denně na vaření/ohřívání?** (ve všední den)
     - [ ] 0-10 minut (pouze ohřátí)
-    - [ ] 10-30 minut
+    - [X] 10-30 minut
     - [ ] 30-60 minut
     - [ ] Více než 60 minut
 
@@ -156,70 +156,70 @@ Tento dotazník se zaměřuje na **týdenní meal prep** (příprava 1x za týde
     - [ ] Méně než 1500 Kč
     - [ ] 1500-2000 Kč
     - [ ] 2000-2500 Kč
-    - [ ] 2500-3000 Kč
+    - [X] 2500-3000 Kč
     - [ ] Více než 3000 Kč
     - Přesně: _____________ Kč/týden
 
 23. **Je pro tebe důležitá cena nebo kvalita?**
     - [ ] Primárně cena - vybírám nejlevnější
-    - [ ] Vyvážené - kvalita za rozumnou cenu
+    - [X] Vyvážené - kvalita za rozumnou cenu, ideálně co nejnižší cena za jednotku s dobrou kvalitou
     - [ ] Primárně kvalita - cena není až tak důležitá
 
 ### Nákupní návyky
-24. **Kde nejčastěji nakupuješ?** (vyber všechny)
-    - [ ] Lidl
-    - [ ] Kaufland
-    - [ ] Albert
+24. **Kde nejčastěji nakupuješ?** (vyber všechny) všude, ale toto jsou preferované
+    - [X] Lidl
+    - [X] Kaufland
+    - [X] Albert
     - [ ] Penny
-    - [ ] Billa
+    - [X] Billa
     - [ ] Tesco
-    - [ ] Makro
-    - [ ] Jiné: _____________
+    - [X] Makro
+    - [X] Jiné: Rohlík, Alza, Košík, Profikoření
 
 25. **Jak často nakupuješ?**
     - [ ] Denně
-    - [ ] 2-3x týdně
+    - [X] 2-3x týdně
     - [ ] 1x týdně
     - [ ] Méně než 1x týdně
 
 26. **Který den nejčastěji nakupuješ?**
-    - [ ] Pondělí
+    - [X] Pondělí
     - [ ] Úterý
     - [ ] Středa
-    - [ ] Čtvrtek
+    - [X] Čtvrtek
     - [ ] Pátek
-    - [ ] Sobota
-    - [ ] Neděle
+    - [X] Sobota
+    - [X] Neděle
 
 ### Strategie nákupů
 27. **Sleduješ aktivně slevy a akce?**
-    - [ ] Ano, pravidelně kontroluji letáky/weby
+    - [X] Ano, pravidelně kontroluji letáky/weby
     - [ ] Občas, když mám čas
     - [ ] Ne, nakupuji co potřebuji
 
 28. **Jsi ochoten nakupovat ve více obchodech kvůli slevám?**
-    - [ ] Ano, rád objíždím více obchodů
-    - [ ] Záleží na slevě - pokud je výrazná
+    - [X] Ano, rád objíždím více obchodů
+    - [X] Záleží na slevě - pokud je výrazná, případně je tam více produktů
     - [ ] Ne, preferuji jeden obchod
 
 29. **Děláš nákupní seznam?**
-    - [ ] Ano, vždy
+    - [X] Ano, vždy (bude jej sestavovat AI podle aktuálních letáků a jídelníčku)
     - [ ] Občas
     - [ ] Ne, nakupuji dle potřeby
 
 30. **Plánuješ nákup podle týdenního jídelníčku?**
-    - [ ] Ano, nejdřív jídelníček, pak nákup
+    - [X] Ano, nejdřív jídelníček, pak nákup
     - [ ] Občas
     - [ ] Ne, nakupuji co se mi líbí
 
 31. **Jsi ochoten nakupovat levnější kusy masa?**
-    - [ ] Ano (např. kuřecí stehna místo prsou)
-    - [ ] Záleží na receptu
+    - [X] Ano (např. kuřecí stehna místo prsou, ale jen při výrazné slevě nechci platit kosti)
+    - [X] Záleží na receptu
     - [ ] Ne, preferuji kvalitní kusy
 
 32. **Nakupuješ do zásoby?** (např. mražené maso, konzervy)
     - [ ] Ano, pravidelně
-    - [ ] Občas, když je akce
+    - [X] Občas, když je akce
     - [ ] Ne, nakupuji čerstvé
 
 ---
@@ -228,58 +228,58 @@ Tento dotazník se zaměřuje na **týdenní meal prep** (příprava 1x za týde
 
 ### Vztah k vaření
 33. **Jak rád vaříš?**
-    - [ ] Velmi rád - baví mě experimentovat
-    - [ ] Rád - je to OK
+    - [X] Velmi rád - baví mě experimentovat
+    - [X] Rád - je to OK
     - [ ] Neutrálně - musím
     - [ ] Nerád - je to nutnost
 
 34. **Jaká je tvoje úroveň vaření?**
     - [ ] Začátečník - základní recepty
     - [ ] Střední - zvládám běžné recepty
-    - [ ] Pokročilý - zkouším nové věci
+    - [X] Pokročilý - zkouším nové věci
     - [ ] Expert - vaření je můj koníček
 
 ### Kuchyňské vybavení
 35. **Jaké kuchyňské vybavení máš?** (vyber všechny)
-    - [ ] Tlakový hrnec
+    - [X] Tlakový hrnec
     - [ ] Airfryer
-    - [ ] Trouba
+    - [X] Trouba
     - [ ] Multicooker (např. Instant Pot)
     - [ ] Pomalý hrnec (slow cooker)
-    - [ ] Vakuovačka
-    - [ ] Mixér/smoothie maker
+    - [X] Vakuovačka
+    - [X] Mixér/smoothie maker
     - [ ] Gril
-    - [ ] Jiné: _____________
+    - [X] Jiné: Wok, preferuju dušená jídla
 
-36. **Kolik meal prep krabiček máš?**
+36. **Kolik meal prep krabiček máš?** preferuji možnost dávat jídla do skleniček, treba chia puddingy na svačiny apod.
     - [ ] Méně než 10
-    - [ ] 10-20
+    - [X] 10-20
     - [ ] 20-30
     - [ ] Více než 30
     - Přesně: _____________ kusů
 
 37. **Máš vakuovačku?**
-    - [ ] Ano
+    - [X] Ano
     - [ ] Ne, ale plánuji koupit
     - [ ] Ne, nepotřebuji
 
 ### Metody přípravy
 38. **Jaké metody přípravy preferuješ?** (vyber všechny)
-    - [ ] Pečení na plechu (více jídel najednou)
-    - [ ] Tlakový hrnec (rychlá příprava)
+    - [X] Pečení na plechu (více jídel najednou)
+    - [X] Tlakový hrnec (rychlá příprava)
     - [ ] Airfryer (zdravější smažení)
-    - [ ] Grilování
-    - [ ] Vaření v hrnci
-    - [ ] Dušení
+    - [X] Grilování
+    - [X] Vaření v hrnci
+    - [X] Dušení
     - [ ] Jiné: _____________
 
 39. **Preferuješ batch cooking?** (připravit hodně najednou)
-    - [ ] Ano, chci připravit vše najednou
+    - [X] Ano, chci připravit vše najednou
     - [ ] Částečně - kombinuji s denním vařením
     - [ ] Ne, raději vařím čerstvé
 
 40. **Jsi ochoten vařit složitější recepty?**
-    - [ ] Ano, baví mě výzva
+    - [X] Ano, baví mě výzva, ale nemám čas
     - [ ] Občas, pokud mám čas
     - [ ] Ne, preferuji jednoduché (do 5 ingrediencí)
 
@@ -289,75 +289,76 @@ Tento dotazník se zaměřuje na **týdenní meal prep** (příprava 1x za týde
 
 ### Oblíbená jídla
 41. **Jaká jsou tvoje TOP 5 oblíbených jídel?**
-    1. _______________________________
-    2. _______________________________
-    3. _______________________________
-    4. _______________________________
-    5. _______________________________
+    1. Gyros, Kebab - jakékoliv maso na drobnější kusy upravené do trouby nebo na dušení
+    2. Tzatziki a podobné saláty
+    3. Těstoviny s ruznou variací omáček, alio olio peperocino apod.
+    4. Pizza klidně alternativa ve formě keto pizzy vejce, sýr
+    5. Sýry, vejce, nakládaná zelenina(červená řepa, okurky, zelí)
 
 42. **Jaká jídla jsou podle tebe ideální pro meal prep?**
-    - _______________________________
-    - _______________________________
-    - _______________________________
-    - _______________________________
+    - rychlá
+    - dlouho trvanlivá - vydrží v lednici týden třeba nějáké snídaně typu chio pudding co půjde udělat ve větším a pak průběžně odebírat
+    - minimální vstup ode mě, ale klidně může bublat v tlakáči
+    - chutná
 
 43. **Ze kterých jídel jsi už unavený?** (nechtěl bys je na jídelníčku)
-    - _______________________________
+    - aktuálně asi nic
     - _______________________________
     - _______________________________
 
 ### Zdroje bílkovin
 44. **Jaké jsou tvoje oblíbené zdroje bílkovin?** (seřaď podle preference)
-    - [ ] Kuřecí prsa
-    - [ ] Kuřecí stehna
-    - [ ] Krůtí maso
-    - [ ] Vepřové maso
-    - [ ] Hovězí maso
+    - [X] Kuřecí prsa
+    - [X] Kuřecí stehna, když jsou využité na vývar
+    - [X] Krůtí maso preferované, když je za doborou cenu
+    - [X] Vepřové maso
+    - [X] Hovězí maso
     - [ ] Losos
-    - [ ] Tuňák
-    - [ ] Vejce
-    - [ ] Tvaroh
-    - [ ] Řecký jogurt
-    - [ ] Jiné: _____________
-
+    - [X] Tuňák
+    - [X] Vejce
+    - [X] Tvaroh
+    - [X] Řecký jogurt
+    - [X] Jiné: jogurty, luštěniny, jiné sekundární zdroje bílkovin
+    - [X] ořechy/semena
+    - [X] tofu apod. 
 ### Zelenina
 45. **Jakou zeleninu nejraději jíš?**
     - [ ] Brokolice
-    - [ ] Květák
-    - [ ] Špenát
-    - [ ] Salát
-    - [ ] Rajčata
-    - [ ] Paprika
-    - [ ] Okurka
-    - [ ] Cuketa
-    - [ ] Zelené fazolky
-    - [ ] Jiné: _____________
+    - [X] Květák
+    - [X] Špenát
+    - [X] Salát
+    - [X] Rajčata
+    - [X] Paprika
+    - [X] Okurka
+    - [ ] Cuketa tu ideálně vůbec nezařazuj nemám rád slizké konzistence
+    - [X] Zelené fazolky
+    - [X] Jiné: ředkve, kedlubny, řeřicha, mrkev, celer, petržel
 
 ### Preference přípravy
 46. **Preferuješ teplá nebo studená jídla?**
     - [ ] Pouze teplá
-    - [ ] Preferuji teplá, ale studené nevadí
-    - [ ] Nevadí mi studená meal prep jídla
+    - [X] Preferuji teplá, ale studené nevadí
+    - [X] Nevadí mi studená meal prep jídla
     - [ ] Preferuji studená
 
 47. **Jsi ochoten jíst studené předpřipravené maso?** (např. kuřecí prsa)
-    - [ ] Ano, bez problému
+    - [X] Ano, bez problému (myslíš uvařené, ale konzumuju studené třeba dušené?)
     - [ ] Záleží na jídle
     - [ ] Ne, raději ohřeji
 
 48. **Preferuješ jednoduché recepty?** (do 5 ingrediencí)
-    - [ ] Ano, čím jednodušší tím lépe
-    - [ ] Záleží na čase
+    - [X] Ano, čím jednodušší tím lépe
+    - [X] Záleží na čase
     - [ ] Ne, rád zkouším složitější
 
 49. **Oblíbuješ "jednohrnce"?** (one-pot meals)
-    - [ ] Ano, méně nádobí = super
-    - [ ] Neutrálně
+    - [X] Ano, méně nádobí = super
+    - [X] Neutrálně
     - [ ] Ne, preferuji oddělené komponenty
 
 50. **Jak moc jsi ochoten zkoušet nové recepty?**
-    - [ ] Vysoká - rád experimentuji
-    - [ ] Střední - občas něco nového
+    - [X] Vysoká - rád experimentuji
+    - [X] Střední - občas něco nového
     - [ ] Nízká - raději osvědčené
 
 ---
@@ -367,35 +368,35 @@ Tento dotazník se zaměřuje na **týdenní meal prep** (příprava 1x za týde
 ### Váhové cíle
 51. **Aktuální váha:** 134.2 kg (měření 9.1.2026)
 
-52. **Jaká je tvoje cílová váha za 1 měsíc?** _____________ kg
+52. **Jaká je tvoje cílová váha za 1 měsíc?** 130 kg
 
-53. **Jaká je tvoje cílová váha za 3 měsíce?** _____________ kg
+53. **Jaká je tvoje cílová váha za 3 měsíce?** 120 kg
 
-54. **Jaká je tvoje cílová váha za 6 měsíců?** _____________ kg
+54. **Jaká je tvoje cílová váha za 6 měsíců?** 110 kg
 
-55. **Jaká je tvoje konečná cílová váha?** _____________ kg
+55. **Jaká je tvoje konečná cílová váha?** 85 kg
 
 ### Problémové oblasti
 56. **Jaké jsou tvoje problémové oblasti?** (vyber všechny)
-    - [ ] Břicho
-    - [ ] Boky
-    - [ ] Stehna
-    - [ ] Paže
-    - [ ] Záda
+    - [X] Břicho
+    - [X] Boky
+    - [X] Stehna
+    - [X] Paže
+    - [X] Záda
     - [ ] Jiné: _____________
 
 ### Zdravotní problémy
 57. **Máš nějaké zdravotní problémy související se stravou?**
-    - [ ] Pálení žáhy / GERD
+    - [X] Pálení žáhy / GERD, jen vyjímečně, když nezapomenu omeprazol tak ne
     - [ ] Únava po jídle
-    - [ ] Problémy se spaním
-    - [ ] Kolísání nálad
-    - [ ] Bolesti kloubů
-    - [ ] Jiné: _____________
+    - [X] Problémy se spaním
+    - [X] Kolísání nálad
+    - [X] Bolesti kloubů
+    - [X] Jiné: Bolesti zad
 
 58. **Užíváš nějaké doplňky stravy?**
-    - _______________________________
-    - _______________________________
+    - Občas omega-3, občas multivitamín, občas C
+    - Někdy magnesium, někdy protein
 
 ---
 
@@ -403,35 +404,35 @@ Tento dotazník se zaměřuje na **týdenní meal prep** (příprava 1x za týde
 
 ### Vaření pro rodinu
 59. **Vaříš pro celou rodinu?**
-    - [ ] Ano, denně
-    - [ ] Ano, o víkendech
+    - [X] Ano, denně
+    - [X] Ano, o víkendech
     - [ ] Občas
     - [ ] Ne
 
 60. **Sdílí rodina stejné jídlo?**
-    - [ ] Ano, všichni jíme to samé
+    - [X] Ano, všichni jíme to samé
     - [ ] Částečně - některá jídla ano
     - [ ] Ne, každý má jiné potřeby
 
 61. **Kdo z rodiny sdílí jídlo s tebou?**
-    - [ ] Pája (částečně - nižší porce)
-    - [ ] Kubík (jiné nutriční potřeby)
+    - [X] Pája (částečně - nižší porce)
+    - [X] Kubík (jiné nutriční potřeby)
     - [ ] Nikdo - všichni jinak
 
 ### Spolupráce
 62. **Pomáhá ti Pája s meal prepem?**
     - [ ] Ano, děláme to společně
-    - [ ] Částečně - pomáhá s úklidem
+    - [X] Částečně - bude úklizet
     - [ ] Ne, vaří Roman
 
 63. **Pomáhá ti Pája s nákupem?**
     - [ ] Ano, nakupujeme společně
-    - [ ] Částečně
+    - [X] Částečně - doporučuje občas věci
     - [ ] Ne, nakupuje Roman
 
 64. **Vaříš zvlášť pro Kubíka?**
     - [ ] Ano, má úplně jiný jídelníček
-    - [ ] Částečně - některá jídla sdílíme
+    - [X] Částečně - některá jídla sdílíme, spíš je to o příloze pro kubíka
     - [ ] Ne, jí to samé jako my
 
 ---
@@ -440,21 +441,13 @@ Tento dotazník se zaměřuje na **týdenní meal prep** (příprava 1x za týde
 
 65. **Máš nějaké speciální požadavky nebo poznámky?**
 
-_____________________________________________________________
-_____________________________________________________________
-_____________________________________________________________
-_____________________________________________________________
+Chtěl bych zvýšit libido Páji. Dlouhodobě nemá náladu apod. Chtělo by to nějáké koření, jídla a pití vhodné k podpoření správného fungování hormonů. Primárně estrogen a ostatní spojené s cyklem.
 
 66. **Co je pro tebe největší výzva v meal prepu?**
-
-_____________________________________________________________
-_____________________________________________________________
+Udržet pravidelnost.
 
 67. **Co by ti nejvíce pomohlo v meal prepu?**
-
-_____________________________________________________________
-_____________________________________________________________
-
+Mít na něj nerušený prostor a čisto v kuchyni.
 ---
 
 ## ✅ Co dál?
