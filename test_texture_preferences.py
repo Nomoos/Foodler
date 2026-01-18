@@ -90,8 +90,8 @@ def test_slimy_food_filtering():
     print("🧪 Testing with texture checking DISABLED:")
     print("-" * 70)
     
-    print("\nNote: Only items in NEPREFERRED_FOODS should be filtered")
-    print("(houby, hříbky, žampiony, hlíva, shiitake)")
+    print("\nNote: With texture checking disabled, only items in NEPREFERRED_FOODS")
+    print("are filtered (i.e., mushroom types: houby, hříbky, žampiony, hlíva, shiitake).")
     print()
     
     for meal in rejected_meals[:3]:  # Test a few examples

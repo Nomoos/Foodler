@@ -20,6 +20,8 @@ class PreferenceJidel:
     ]
     
     # Potraviny se slizkou/kluzkou konzistencí (texture preference)
+    # Note: Includes items from NEPREFERRED_FOODS plus additional slimy-textured foods
+    # This allows for granular control via the kontrolovat_texturu parameter
     SLIMY_TEXTURED_FOODS: List[str] = [
         "houby",           # všechny druhy hub
         "houb",            # variace (houbová omáčka)
