@@ -2,6 +2,12 @@
 
 ## 📊 Přehled spotřebovaných položek ze zásob
 
+### 🟢 Střednědobé zásoby (priorita - čerstvé)
+
+| Položka | Množství | Datum balení | Použití |
+|---------|----------|--------------|---------|
+| **Borůvky** | 125g / 125g | 17.01.2026 | Dopolední svačina (R: 40g, P: 40g, K: 45g) |
+
 ### 🟢 Střednědobé zásoby (priorita)
 
 | Položka | Množství | Expirace | Použití |
@@ -49,7 +55,8 @@
 
 ## 📝 Poznámky
 
-- **Borůvky VYJMUTY**: Expirované 17.01.2026 - nelze použít
+- **Borůvky POUŽITY**: Balené 17.01.2026 - čerstvé, použito 100% (125g)
+  - Rozděleno: Roman 40g, Pája 40g, Kubík 45g
 - **Aktualizované expirace podle skutečných dat:**
   - Cottage cheese s pažitkou: minimální trvanlivost do 5.2.2026
   - Milko jogurty (jahoda, borůvka): minimální trvanlivost do 2.2.2026
