@@ -234,6 +234,31 @@ class DatabzeJidel:
             vydrzi_dni=1,
             poznamky="Rychlá proteinová svačina"
         ),
+        Jidlo(
+            nazev="Keto chléb (mandlová mouka + psylium)",
+            typ="svacina",
+            ingredience=[
+                Ingredience("Mandlová mouka 100%", 150, "hlavni"),
+                Ingredience("Psylium pravé indické", 40, "hlavni"),
+                Ingredience("Kypřící prášek do pečiva", 10, "koření"),
+                Ingredience("Sůl kuchyňská", 5, "koření"),
+                Ingredience("Vaječný bílek", 99, "hlavni"),
+                Ingredience("Jablečný ocet", 15, "koření"),
+                Ingredience("Voda čistá", 220, "koření"),
+            ],
+            kalorie_celkem=1064,
+            bilkoviny_celkem=45.5,
+            sacharidy_celkem=23.5,
+            tuky_celkem=83.2,
+            vlaknina_celkem=47.2,
+            priprava_cas_min=70,
+            priprava_postup="1. Suché suroviny smícháme. 2. Přidáme bílky a jablečný ocet a zapracujeme. 3. Postupně přiléváme vodu ohřátou na cca 80°C a zapracujeme do těsta. 4. Hotové tuhé, lehce lepivé těsto nechat 5 min odpočinout. 5. Navlhčenýma rukama vytvarujeme bochník (můžeme posypat semínky). 6. Pečeme v troubě na 175°C přibližně 50-60 min. 7. Chléb krájíme až po úplném vychladnutí.",
+            obtiznost="stredni",
+            porce=10,
+            vhodne_pro_meal_prep=True,
+            vydrzi_dni=5,
+            poznamky="Keto chléb s velmi nízkými sacharidy (2,4g na krajíček). Vysoký obsah vlákniny. Bez lepku. Lze zmrazit."
+        ),
     ]
     
     @classmethod
