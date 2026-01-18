@@ -6,7 +6,7 @@ Tento modul se zabývá pouze scrapováním dat z webu (Single Responsibility)
 import requests
 from typing import List, Optional
 from bs4 import BeautifulSoup
-from urllib.parse import urlencode
+from urllib.parse import urlencode, quote_plus
 import logging
 
 from modely.product import Product
@@ -31,11 +31,11 @@ class KupiCzScraper:
         self.timeout = timeout
         self.session = requests.Session()
         # Nastavení realistických hlaviček pro zabránění blokování
+        # Poznámka: Accept-Encoding odstraněno, protože způsobovalo problémy s kupi.cz
         self.session.headers.update({
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
             'Accept-Language': 'cs-CZ,cs;q=0.9,en;q=0.8',
-            'Accept-Encoding': 'gzip, deflate, br',
             'Connection': 'keep-alive',
             'Upgrade-Insecure-Requests': '1'
         })
@@ -110,17 +110,11 @@ class KupiCzScraper:
         """
         products = []
         
-        # Toto je šablonová struktura, která musí být upravena
-        # podle skutečné HTML struktury kupi.cz
+        # Kupi.cz používá div s třídou 'product--wrap' pro produktové kontejnery
+        product_elements = soup.find_all('div', class_='product--wrap')
         
-        # Běžné vzory k hledání:
-        # - Karty/dlaždice produktů (často div s třídou jako 'product', 'offer', 'item')
-        # - Cenové informace (obvykle v span/div s třídou jako 'price', 'discount-price')
-        # - Název obchodu (často v badge nebo tag)
-        # - Obrázky a odkazy produktů
-        
-        # Příklad parsovací logiky (potřebuje úpravu podle reálného webu):
-        product_elements = soup.find_all('div', class_='product-item')  # Zástupný selektor
+        if not product_elements:
+            logger.debug("No products found with class 'product--wrap'")
         
         for elem in product_elements:
             try:
@@ -143,53 +137,99 @@ class KupiCzScraper:
         Returns:
             Product objekt nebo None
         """
-        # Toto je šablona, která musí být přizpůsobena podle
-        # skutečné HTML struktury kupi.cz
-        
         try:
-            # Příklad extrakce (zástupné hodnoty):
-            name = element.find('h3', class_='product-name')
-            name = name.get_text(strip=True) if name else "Unknown"
+            # Extrakce názvu produktu z div s třídou 'product_name'
+            name_elem = element.find('div', class_='product_name')
+            if name_elem:
+                # Vyčistit název od extra textu (např. "Přidat produkt do oblíbených")
+                name = name_elem.get_text(strip=True)
+                # Odstraň nežádoucí části textu
+                for unwanted in ['Přidat produkt do oblíbených', 'Zapněte si oblíbené', 
+                                'a upozorníme vás na novou akci', 'Běžná cena:', 'Není v akci']:
+                    name = name.replace(unwanted, '')
+                
+                # Odstraň cenové informace z názvu (např. "243,77Kč" nebo "243,77 Kč")
+                import re
+                name = re.sub(r'\d+[,\.]\d+\s*Kč', '', name)
+                name = re.sub(r'\d+\s*Kč', '', name)
+                name = name.strip()
+            else:
+                name = "Unknown"
             
-            price_elem = element.find('span', class_='price')
+            # Extrakce průměrné ceny z div s třídou 'avg_price'
+            avg_price_elem = element.find('div', class_='avg_price')
             discount_price = 0.0
-            if price_elem:
-                # Extrahovat číselnou cenu z textu jako "49,90 Kč"
-                price_text = price_elem.get_text(strip=True)
-                discount_price = self._parse_price(price_text)
-            
-            original_price_elem = element.find('span', class_='original-price')
             original_price = None
-            if original_price_elem:
-                original_price = self._parse_price(original_price_elem.get_text(strip=True))
             
+            if avg_price_elem:
+                # Získej text jako "Běžná cena:243,77Kč"
+                price_text = avg_price_elem.get_text(strip=True)
+                # Extrahuj pouze číslo
+                price_text = price_text.replace('Běžná cena:', '').replace('Není v akci', '')
+                if price_text:
+                    discount_price = self._parse_price(price_text)
+                    original_price = discount_price  # Pro zobrazení běžné ceny
+            
+            # Pokusit se najít akční cenu
+            discounts_div = element.find('div', class_='product_discounts')
+            if discounts_div:
+                price_divs = discounts_div.find_all('div', class_=lambda x: x and 'price' in str(x).lower())
+                if price_divs:
+                    # Použij první nalezenou cenu jako akční cenu
+                    for price_div in price_divs:
+                        price_text = price_div.get_text(strip=True)
+                        if price_text and 'Kč' in price_text:
+                            parsed_price = self._parse_price(price_text)
+                            if parsed_price > 0 and parsed_price < discount_price:
+                                discount_price = parsed_price
+                                break
+            
+            # Vypočítat procento slevy
             discount_percentage = None
-            if original_price and discount_price:
+            if original_price and discount_price and original_price > discount_price:
                 discount_percentage = round(((original_price - discount_price) / original_price) * 100, 1)
             
-            store_elem = element.find('span', class_='store-name')
-            store = store_elem.get_text(strip=True) if store_elem else "Unknown"
+            # Hledat název obchodu v odkazech na letáky
+            store = "Různé obchody"  # Výchozí hodnota
+            store_links = element.find_all('a', href=lambda x: x and '/letaky/' in str(x))
+            if store_links:
+                # Vezmi první obchod
+                store_text = store_links[0].get_text(strip=True)
+                if store_text:
+                    store = store_text
             
+            # Obrázek produktu
             img_elem = element.find('img')
-            image_url = img_elem.get('src') if img_elem else None
+            image_url = None
+            if img_elem:
+                image_url = img_elem.get('src') or img_elem.get('data-src')
+                if image_url and not image_url.startswith('http'):
+                    image_url = self.BASE_URL + image_url
             
-            link_elem = element.find('a')
-            product_url = link_elem.get('href') if link_elem else None
-            if product_url and not product_url.startswith('http'):
-                product_url = self.BASE_URL + product_url
+            # Link na detail produktu
+            link_elem = element.find('a', href=True)
+            product_url = None
+            if link_elem:
+                product_url = link_elem.get('href')
+                if product_url and not product_url.startswith('http'):
+                    product_url = self.BASE_URL + product_url
             
-            return Product(
-                name=name,
-                original_price=original_price,
-                discount_price=discount_price,
-                discount_percentage=discount_percentage,
-                store=store,
-                valid_from=None,  # Bylo by třeba parsovat ze stránky
-                valid_until=None,  # Bylo by třeba parsovat ze stránky
-                image_url=image_url,
-                product_url=product_url,
-                category=None  # Bylo by třeba parsovat ze stránky
-            )
+            # Pouze vracet produkt pokud má smysluplný název
+            if name and name != "Unknown" and len(name) > 2:
+                return Product(
+                    name=name,
+                    original_price=original_price,
+                    discount_price=discount_price,
+                    discount_percentage=discount_percentage,
+                    store=store,
+                    valid_from=None,
+                    valid_until=None,
+                    image_url=image_url,
+                    product_url=product_url,
+                    category=None
+                )
+            return None
+            
         except Exception as e:
             logger.debug(f"Error extracting product info: {e}")
             return None
@@ -204,12 +244,14 @@ class KupiCzScraper:
         Returns:
             Číselná hodnota ceny
         """
-        # Odstranění měnových symbolů a mezer
-        price_text = price_text.replace('Kč', '').replace(',-', '').strip()
+        # Odstranění nechtěného textu
+        price_text = price_text.replace('Běžná cena:', '').replace('Běžnácena:', '')
+        price_text = price_text.replace('cena', '').replace('Kč', '').replace(',-', '').strip()
+        
         # Nahrazení českého desetinného oddělovače
         price_text = price_text.replace(',', '.')
-        # Odstranění oddělovačů tisíců
-        price_text = price_text.replace(' ', '')
+        # Odstranění oddělovačů tisíců a mezer
+        price_text = price_text.replace(' ', '').replace('\xa0', '')
         
         try:
             return float(price_text)
@@ -227,9 +269,10 @@ class KupiCzScraper:
         Returns:
             Seznam odpovídajících Product objektů
         """
-        # Sestavení vyhledávací URL s odpovídajícím URL kódováním
-        params = {'q': query}
-        search_url = f"{self.BASE_URL}/vyhledavani?{urlencode(params)}"
+        # Kupi.cz používá parametr 'f' pro vyhledávání
+        # Použijeme quote_plus pro správné kódování českých znaků
+        encoded_query = quote_plus(query)
+        search_url = f"{self.BASE_URL}/hledej?f={encoded_query}"
         
         soup = self.fetch_page(search_url)
         if not soup:

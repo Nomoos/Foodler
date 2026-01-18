@@ -31,7 +31,8 @@ def search_product(product_name: str) -> List[Dict]:
         
         # Encode the search query
         search_query = quote_plus(product_name)
-        search_url = f"https://www.kaloricketabulky.cz/vyhledavani/?q={search_query}"
+        # Use the correct search URL pattern
+        search_url = f"https://www.kaloricketabulky.cz/?s={search_query}"
         
         print(f"Searching for: {product_name}", file=sys.stderr)
         print(f"Search URL: {search_url}", file=sys.stderr)
@@ -46,13 +47,14 @@ def search_product(product_name: str) -> List[Dict]:
         results = []
         
         # Look for search result links - adjust selectors based on actual site structure
-        # Common patterns: links in result listings, product cards, etc.
+        # The site might use JavaScript for search results, so we may get limited results
         links = soup.find_all('a', href=True)
         
         for link in links:
             href = link.get('href', '')
             # Filter for product links (typically contain /potraviny/)
-            if '/potraviny/' in href and href not in [r['url'] for r in results]:
+            # Exclude template variables
+            if '/potraviny/' in href and '{{' not in href and href not in [r['url'] for r in results]:
                 # Get the product name from the link text or title
                 name = link.get_text(strip=True)
                 if not name:
@@ -75,6 +77,11 @@ def search_product(product_name: str) -> List[Dict]:
             if result['url'] not in seen_urls:
                 seen_urls.add(result['url'])
                 unique_results.append(result)
+        
+        # If no results found, print a helpful message
+        if not unique_results:
+            print(f"No search results found. The site may use JavaScript for search.", file=sys.stderr)
+            print(f"Try using a direct product URL instead.", file=sys.stderr)
         
         return unique_results[:10]  # Return top 10 results
         
@@ -124,35 +131,71 @@ def fetch_nutrition_data(url: str) -> Optional[Dict]:
             'minerals': {}
         }
         
-        # Find nutrition table - typically in a table with class containing 'nutritional' or 'tabulka'
-        # Czech sites often use specific table structures
-        tables = soup.find_all('table')
+        # Try to extract data from JSON-LD structured data (primary method)
+        json_ld_scripts = soup.find_all('script', type='application/ld+json')
+        for script in json_ld_scripts:
+            try:
+                data = json.loads(script.string)
+                if data.get('@type') == 'Dataset' and 'keywords' in data:
+                    # Parse nutrition from keywords array
+                    for keyword in data['keywords']:
+                        keyword_lower = keyword.lower()
+                        # Split by colon to get nutrient and value
+                        if ':' in keyword:
+                            nutrient_name, value = keyword.split(':', 1)
+                            nutrient_name = nutrient_name.strip()
+                            value = value.strip()
+                            
+                            # Map Czech terms to English
+                            nutrient_lower = nutrient_name.lower()
+                            
+                            if 'energie' in nutrient_lower or 'energetick' in nutrient_lower:
+                                nutrition_data['macros']['calories'] = value
+                            elif 'lkovin' in nutrient_lower or 'protein' in nutrient_lower:
+                                # Match "lkovin" to handle encoding issues with "Bílkoviny"
+                                nutrition_data['macros']['protein'] = value
+                            elif 'sacharid' in nutrient_lower:
+                                nutrition_data['macros']['carbohydrates'] = value
+                            elif 'tuk' in nutrient_lower and 'mastn' not in nutrient_lower:
+                                nutrition_data['macros']['fat'] = value
+                            elif 'lknin' in nutrient_lower:
+                                # Match "lknin" to handle encoding issues with "Vláknina"
+                                nutrition_data['macros']['fiber'] = value
+                            elif 'cukr' in nutrient_lower:
+                                nutrition_data['macros']['sugar'] = value
+            except (json.JSONDecodeError, KeyError):
+                continue
         
-        for table in tables:
-            rows = table.find_all('tr')
-            for row in rows:
-                cells = row.find_all(['td', 'th'])
-                if len(cells) >= 2:
-                    # Extract nutrient name and value
-                    nutrient = cells[0].get_text(strip=True)
-                    value = cells[1].get_text(strip=True)
-                    
-                    # Map common Czech terms to English
-                    nutrient_lower = nutrient.lower()
-                    
-                    # Macros
-                    if 'energie' in nutrient_lower or 'kalorie' in nutrient_lower:
-                        nutrition_data['macros']['calories'] = value
-                    elif 'bílkovin' in nutrient_lower or 'protein' in nutrient_lower:
-                        nutrition_data['macros']['protein'] = value
-                    elif 'sacharid' in nutrient_lower or 'carbohydrate' in nutrient_lower:
-                        nutrition_data['macros']['carbohydrates'] = value
-                    elif 'tuk' in nutrient_lower or 'fat' in nutrient_lower:
-                        nutrition_data['macros']['fat'] = value
-                    elif 'vláknin' in nutrient_lower or 'fiber' in nutrient_lower:
-                        nutrition_data['macros']['fiber'] = value
-                    elif 'cukr' in nutrient_lower or 'sugar' in nutrient_lower:
-                        nutrition_data['macros']['sugar'] = value
+        # Fallback: Find nutrition table - typically in a table with class containing 'nutritional' or 'tabulka'
+        # Czech sites often use specific table structures
+        if not nutrition_data['macros']:
+            tables = soup.find_all('table')
+            
+            for table in tables:
+                rows = table.find_all('tr')
+                for row in rows:
+                    cells = row.find_all(['td', 'th'])
+                    if len(cells) >= 2:
+                        # Extract nutrient name and value
+                        nutrient = cells[0].get_text(strip=True)
+                        value = cells[1].get_text(strip=True)
+                        
+                        # Map common Czech terms to English
+                        nutrient_lower = nutrient.lower()
+                        
+                        # Macros
+                        if 'energie' in nutrient_lower or 'kalorie' in nutrient_lower:
+                            nutrition_data['macros']['calories'] = value
+                        elif 'bílkovin' in nutrient_lower or 'protein' in nutrient_lower:
+                            nutrition_data['macros']['protein'] = value
+                        elif 'sacharid' in nutrient_lower or 'carbohydrate' in nutrient_lower:
+                            nutrition_data['macros']['carbohydrates'] = value
+                        elif 'tuk' in nutrient_lower or 'fat' in nutrient_lower:
+                            nutrition_data['macros']['fat'] = value
+                        elif 'vláknin' in nutrient_lower or 'fiber' in nutrient_lower:
+                            nutrition_data['macros']['fiber'] = value
+                        elif 'cukr' in nutrient_lower or 'sugar' in nutrient_lower:
+                            nutrition_data['macros']['sugar'] = value
         
         return nutrition_data
         
