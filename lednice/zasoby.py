@@ -232,6 +232,20 @@ class SpravceZasob:
             otevreno=True
         ))
         self.lednice.pridat_polozku(ZasobaPolozka(
+            "Olej řepkový", 500, "ml", "tuky",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=365),
+            umisteni="spiz",
+            poznamky="Pro vaření a pečení"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "MCT olej v prášku", 250, "g", "tuky",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=180),
+            umisteni="spiz",
+            poznamky="Keto doplněk stravy"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
             "Mandle", 150, "g", "orechy",
             datum_nakupu=dnes - timedelta(days=10),
             datum_expirace=dnes + timedelta(days=80),
@@ -243,6 +257,108 @@ class SpravceZasob:
             datum_expirace=dnes + timedelta(days=25),
             umisteni="spiz",
             otevreno=True
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Chia semínka", 200, "g", "orechy",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=180),
+            umisteni="spiz",
+            poznamky="Bohaté na omega-3 a vlákninu"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Sezam bílý", 150, "g", "orechy",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=90),
+            umisteni="spiz",
+            poznamky="Zdroj vápníku"
+        ))
+        
+        # Mléčné výrobky a ostatní
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Mléko polotučné", 1000, "ml", "mlecne_vyrobky",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=5),
+            umisteni="lednice",
+            poznamky="1.5% tuku"
+        ))
+        
+        # Ovoce
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Mango", 1, "ks", "ovoce",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=5),
+            umisteni="lednice",
+            poznamky="~300g"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Avokádo", 2, "ks", "ovoce",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=4),
+            umisteni="lednice",
+            poznamky="Zdroj zdravých tuků"
+        ))
+        
+        # Sacharidy a ostatní
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Těstoviny", 500, "g", "sacharidy",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=365),
+            umisteni="spiz"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Brambory", 2000, "g", "sacharidy",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=14),
+            umisteni="spiz",
+            poznamky="Pro Kubíka"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Krupice", 500, "g", "sacharidy",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=180),
+            umisteni="spiz"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Mouka hladká", 1000, "g", "sacharidy",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=180),
+            umisteni="spiz"
+        ))
+        
+        # Ostatní
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Med", 500, "g", "ostatni",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=365),
+            umisteni="spiz",
+            poznamky="Přírodní sladidlo"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Drožní čerstvé", 84, "g", "ostatni",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=14),
+            umisteni="lednice",
+            poznamky="2 ks x 42g"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Cukr", 1000, "g", "ostatni",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=365),
+            umisteni="spiz"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Iso whey prozero Nutrend", 1000, "g", "bilkoviny",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=365),
+            umisteni="spiz",
+            poznamky="Chocolate brownies, proteinový prášek"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Mana", 400, "g", "ostatni",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=180),
+            umisteni="spiz",
+            poznamky="Kompletní jídlo v prášku"
         ))
     
     def vypis_inventar(self):
