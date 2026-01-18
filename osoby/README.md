@@ -43,6 +43,31 @@ jidla = ["Kuřecí prsa", "Žampionová omáčka", "Losos"]
 filtrovana = PreferenceJidel.filtruj_jidla(jidla)
 ```
 
+### 📋 Personalizační dotazník (Pája - osoba_2)
+
+Pro lepší přizpůsobení jídelníčku je k dispozici podrobný dotazník:
+
+```bash
+# Zobrazit seznam otázek
+python osoby/osoba_2/dotaznik_paja.py --seznam
+
+# Spustit interaktivní dotazník
+python osoby/osoba_2/dotaznik_paja.py
+```
+
+**Dokumentace dotazníku:**
+- `osoby/osoba_2/DOTAZNIK_OTAZKY.md` - 62 otázek v přehledném formátu
+- `osoby/osoba_2/README_DOTAZNIK.md` - Návod k použití
+- `osoby/osoba_2/PRIKLAD_DOPORUCENI.md` - Ukázka personalizovaných doporučení
+
+**Kategorie otázek:**
+- Životní styl a denní rutina (14 otázek)
+- Časové preference (5 otázek)
+- Jídelní preference (9 otázek)
+- Zdravotní cíle (12 otázek)
+- Praktická omezení (12 otázek)
+- Emoční stravování (9 otázek)
+
 ### Sdílená jídla
 
 ```python
