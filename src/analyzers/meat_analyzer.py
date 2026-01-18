@@ -11,7 +11,9 @@ from typing import List, Dict, Optional
 from datetime import datetime
 import logging
 
-# Přidání rodičovské složky do cesty pro importy
+# Add parent directory to path for imports when running as standalone script
+# This allows the script to be run directly (python3 src/analyzers/meat_analyzer.py)
+# For proper package imports, use: python3 -m src.analyzers.meat_analyzer
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
 from src.scrapers.kupi_scraper import KupiCzScraper

@@ -6,9 +6,9 @@ Test script pro novou funkcionalitu vyhledávání masa a generování nákupní
 
 import sys
 import os
-from datetime import datetime
 
-# Přidání cesty pro importy
+# Add parent directory to path for test imports
+# This is acceptable for test files to allow flexible test execution
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from src.scrapers.kupi_scraper import KupiCzScraper

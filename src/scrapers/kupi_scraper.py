@@ -351,7 +351,7 @@ class KupiCzScraper:
                     parts = re.findall(r'\d+', date_text)
                     if len(parts) >= 2:
                         den = int(parts[0])
-                        rok = int(parts[1]) if len(parts) > 1 else datetime.now().year
+                        rok = int(parts[1])
                         return datetime(rok, mesic_cislo, den)
                 except (ValueError, IndexError):
                     pass
