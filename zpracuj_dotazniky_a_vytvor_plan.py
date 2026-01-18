@@ -573,6 +573,465 @@ class RodinnyPlanSystem:
         print("  • Jednoduché, rychlé ohřátí")
         print()
         
+    def generovat_ai_prompt_templates(self):
+        """Vygeneruje prompt templates pro AI generování jídelníčků a jídel."""
+        print("=" * 80)
+        print("🤖 KROK 7: Generování AI Prompt Templates")
+        print("=" * 80)
+        print()
+        
+        # Připravíme 3 typy prompt templates:
+        # 1. Template pro generování týdenního jídelníčku
+        # 2. Template pro generování jednotlivých receptů
+        # 3. Template pro generování meal prep plánu
+        
+        templates = {}
+        
+        # Template 1: Generování týdenního jídelníčku
+        templates['jidelnicek'] = self._vytvorit_jidelnicek_template()
+        
+        # Template 2: Generování receptů
+        templates['recepty'] = self._vytvorit_recepty_template()
+        
+        # Template 3: Generování meal prep plánu
+        templates['meal_prep'] = self._vytvorit_meal_prep_template()
+        
+        # Uložit templates do souboru
+        import tempfile
+        output_dir = tempfile.gettempdir()
+        templates_path = os.path.join(output_dir, "ai_prompt_templates.txt")
+        
+        with open(templates_path, 'w', encoding='utf-8') as f:
+            f.write("=" * 80 + "\n")
+            f.write("AI PROMPT TEMPLATES - FOODLER MEAL PLANNING SYSTEM\n")
+            f.write(f"Vygenerováno: {datetime.now().strftime('%d.%m.%Y %H:%M')}\n")
+            f.write("=" * 80 + "\n\n")
+            
+            for template_name, template_content in templates.items():
+                f.write(f"\n{'=' * 80}\n")
+                f.write(f"TEMPLATE: {template_name.upper()}\n")
+                f.write(f"{'=' * 80}\n\n")
+                f.write(template_content)
+                f.write("\n\n")
+        
+        print("✅ AI Prompt Templates vytvořeny:")
+        print()
+        print("1. 📅 TEMPLATE PRO TÝDENNÍ JÍDELNÍČEK")
+        print("   - Personalizovaný pro každého člena rodiny")
+        print("   - Zahrnuje nutriční cíle a preference")
+        print()
+        print("2. 🍳 TEMPLATE PRO GENEROVÁNÍ RECEPTŮ")
+        print("   - Keto/low-carb zaměření")
+        print("   - Jednoduché recepty (3-5 ingrediencí)")
+        print()
+        print("3. 📦 TEMPLATE PRO MEAL PREP PLÁN")
+        print("   - Batch cooking strategie")
+        print("   - Optimalizace pro 3 hodiny přípravy")
+        print()
+        print(f"💾 Uloženo do: {templates_path}")
+        print()
+        
+        # Zobrazit náhled prvního template
+        print("=" * 80)
+        print("📋 NÁHLED - Template pro týdenní jídelníček:")
+        print("=" * 80)
+        print()
+        # Zobrazit prvních 30 řádků
+        lines = templates['jidelnicek'].split('\n')[:30]
+        for line in lines:
+            print(line)
+        if len(templates['jidelnicek'].split('\n')) > 30:
+            print("\n... (zkráceno, úplný obsah v souboru)")
+        print()
+        
+        return templates_path
+    
+    def _vytvorit_jidelnicek_template(self):
+        """Vytvoří prompt template pro generování týdenního jídelníčku."""
+        template = f"""# PROMPT TEMPLATE: Generování týdenního jídelníčku
+
+## Kontext
+
+Jsi expert na výživu a keto/low-carb dietu. Tvým úkolem je vytvořit týdenní jídelníček pro českou rodinu se specifickými výživovými potřebami.
+
+## Rodinné profily
+
+### Roman (34 let, muž)
+- **Aktuální váha**: {self.roman_dotaznik['vaha']} kg
+- **Cílová váha**: {self.roman_dotaznik['cilova_vaha']} kg
+- **Denní kalorický cíl**: {self.roman_dotaznik['kalorie_den']} kcal
+- **Makra**: {self.roman_dotaznik['bilkoviny']}g bílkovin / {self.roman_dotaznik['sacharidy']}g sacharidů / {self.roman_dotaznik['tuky']}g tuků
+- **Dietní přístup**: Protein-first, keto/low-carb
+- **Počet jídel denně**: 6 (snídaně, svačina, oběd, svačina, večeře, druhá večeře)
+
+### Pája (žena)
+- **Aktuální váha**: {self.paja_dotaznik['vaha']} kg
+- **Cílová váha**: {self.paja_dotaznik['cilova_vaha']} kg
+- **Denní kalorický cíl**: {self.paja_dotaznik['kalorie_den']} kcal
+- **Makra**: {self.paja_dotaznik['bilkoviny']}g bílkovin / {self.paja_dotaznik['sacharidy']}g sacharidů
+- **Dietní přístup**: Low-carb s hormonální podporou
+- **Počet jídel denně**: 5 (snídaně, svačina, oběd, svačina, večeře)
+- **Speciální požadavky**: Podpora libida (avokádo, omega-3, kvalitní tuky)
+
+### Kubík (4.5 let, chlapec)
+- **Věk**: 4.5 let
+- **Váha**: {self.kubik_profil.vaha} kg
+- **Denní kalorický cíl**: {self.kubik_profil.cil_kalorie} kcal
+- **Makra**: {self.kubik_profil.cil_bilkoviny}g bílkovin / {self.kubik_profil.cil_sacharidy}g sacharidů / {self.kubik_profil.cil_tuky}g tuků
+- **Zdravotní priority**: Vitamin A (zrak - brýle 4 dioptrie), vláknina (problémy s trávením), omega-3
+- **Jídla doma**: Snídaně + večeře (všední dny), všechna jídla (víkend)
+- **Oblíbené**: Sýr, mrkev, fíky
+
+## Týdenní rozpočet
+
+**Celkem**: 2710 Kč/týden
+- Proteiny: 1370 Kč
+- Zelenina: 510 Kč
+- Pro Kubíka: 370 Kč
+- Tuky a další: 460 Kč
+
+## Preference a omezení
+
+### Co ZAHRNOUT:
+- **High-protein zdroje**: Kuřecí prsa, krůtí maso, vejce, tvaroh, řecký jogurt, losos
+- **Low-carb zelenina**: Brokolice, špenát, paprika, salát, okurky
+- **Zdravé tuky**: Olivový olej, avokádo, ořechy, semínka
+- **Pro Kubíka**: Ovoce (vitamin A), celozrnné pečivo, rýže/těstoviny jako přílohy
+
+### Co VYNECHAT:
+- Cukr a sladkosti (kromě Kubíka)
+- Bílé pečivo, těstoviny, rýže pro dospělé
+- Brambory pro dospělé
+- Cuketu (Roman nemá rád slizkou konzistenci)
+
+### Styl přípravy:
+- **Jednoduché recepty**: 3-5 ingrediencí
+- **Batch cooking**: Meal prep 1x týdně (neděle)
+- **Metody**: Pečení na plechu, tlakový hrnec, dušení
+- **Vakuování**: Pro delší trvanlivost
+
+## Úkol
+
+Vytvoř týdenní jídelníček (pondělí-neděle) s následující strukturou:
+
+### Pro každý den specifikuj:
+
+**ROMAN** (6 jídel):
+1. Snídaně (370 kcal)
+2. Dopolední svačina (370 kcal)
+3. Oběd (370 kcal)
+4. Odpolední svačina (370 kcal)
+5. Večeře (370 kcal)
+6. Druhá večeře (158 kcal)
+
+**PÁJA** (5 jídel):
+1. Snídaně (~300 kcal)
+2. Dopolední svačina (~300 kcal)
+3. Oběd (~300 kcal)
+4. Odpolední svačina (~300 kcal)
+5. Večeře (~300 kcal)
+
+**KUBÍK** (jídla doma):
+- Všední dny: Snídaně + večeře
+- Víkend: Všechna jídla
+
+### Formát výstupu:
+
+Pro každý den uveď:
+- Název jídla
+- Hlavní ingredience
+- Přibližné makra (P/C/F)
+- Kalorie
+- Poznámka (sdílené s rodinou / speciální pro osobu)
+
+### Příklad výstupu:
+
+**PONDĚLÍ**
+
+ROMAN - Snídaně (370 kcal):
+- Omeleta se špenátem a sýrem
+- Ingredience: 3 vejce, 50g špenátu, 30g sýru
+- Makra: 28g P / 3g C / 26g F
+- Poznámka: Rychlá příprava, vysoký protein
+
+[... pokračuj pro všechna jídla a všechny dny ...]
+
+## Důležité zásady:
+
+1. **Protein first**: Každé jídlo začíná bílkovinou
+2. **Varieta**: Neopakuj stejné jídlo více než 2x týdně
+3. **Meal prep friendly**: Minimálně 4 jídla by měla být vhodná k předpřipravení
+4. **Sdílení**: Kde možno, navrhni jídla, která mohou sdílet (úprava porcí)
+5. **Kubík**: Vždy zahrň zdroje vitaminu A (mrkev, dýně, sladké brambory)
+
+Začni generovat jídelníček!"""
+        
+        return template
+    
+    def _vytvorit_recepty_template(self):
+        """Vytvoří prompt template pro generování receptů."""
+        template = f"""# PROMPT TEMPLATE: Generování keto/low-carb receptů
+
+## Kontext
+
+Jsi kuchař specializující se na keto a low-carb recepty vhodné pro českou kuchyni. Tvým úkolem je vytvořit jednoduché recepty pro meal prep.
+
+## Cílová skupina
+
+- **Dospělí**: Keto/low-carb dieta (max {self.roman_dotaznik['sacharidy']}g sacharidů denně)
+- **Dítě**: Normální dětská strava s důrazem na vitamin A a vlákninu
+- **Časové omezení**: Meal prep 3 hodiny (neděle)
+- **Úroveň vaření**: Pokročilý, ale preferuje jednoduché recepty
+
+## Dostupné vybavení
+
+- Tlakový hrnec
+- Trouba
+- Wok
+- Vakuovačka
+- Mixér
+- Standardní hrnce a pánve
+
+## Požadavky na recepty
+
+### MUST HAVE:
+- ✅ Max 5 ingrediencí (kromě koření)
+- ✅ Příprava: Max 30 minut aktivního času
+- ✅ Vhodné k meal prepu (vydrží 5-7 dní)
+- ✅ Vysoký obsah bílkovin (min 25g na porci)
+- ✅ Nízké sacharidy (max 15g na porci pro dospělé)
+- ✅ Czech-friendly ingredience (dostupné v běžných obchodech)
+
+### PREFEROVANÉ:
+- Batch cooking (velké množství najednou)
+- Vakuovatelné
+- Mrazitelné
+- Jednoduché ohřátí
+
+### VYHNĚTE SE:
+- Složité techniky (sous-vide, fermentace)
+- Exotické ingredience
+- Cuketě (slizká textura)
+- Cukru a umělým sladidlům
+
+## Kategorie receptů
+
+Vytvoř recepty pro následující kategorie:
+
+1. **SNÍDANĚ** (vysoký protein)
+   - Vejce, tvaroh, řecký jogurt
+   - Chia pudding
+   - Protein smoothie
+
+2. **OBĚDY** (hlavní jídla)
+   - Kuřecí prsa (různé způsoby přípravy)
+   - Mleté maso s rajčaty
+   - Losos se zeleninou
+
+3. **VEČEŘE** (lehčí, sdílené s rodinou)
+   - Proteiny + zelenina
+   - Příloha separátně pro Kubíka
+
+4. **SVAČINY** (quick & easy)
+   - Tvaroh s ořechy
+   - Vejce natvrdo
+   - Zelenina s dipem
+
+## Formát receptu
+
+Pro každý recept uveď:
+
+**Název receptu**
+
+**Kategorie**: [Snídaně/Oběd/Večeře/Svačina]
+
+**Porce**: [počet] (specifikuj pro koho)
+
+**Čas přípravy**: [X] minut aktivně + [Y] minut vaření
+
+**Nutriční hodnoty (na porci)**:
+- Kalorie: [X] kcal
+- Bílkoviny: [X]g
+- Sacharidy: [X]g
+- Tuky: [X]g
+
+**Ingredience**:
+1. [množství] [ingredience]
+2. [...]
+
+**Postup**:
+1. [krok]
+2. [...]
+
+**Meal prep tipy**:
+- Jak skladovat: [lednice/mrazák/vakuovat]
+- Trvanlivost: [X] dní
+- Jak ohřát: [mikrovlnka/trouba/studené]
+
+**Variace**:
+- [alternativní ingredience nebo úpravy]
+
+## Příklad receptu
+
+**Pečená kuřecí prsa s brokolicí**
+
+**Kategorie**: Oběd
+
+**Porce**: 7 (meal prep na týden)
+
+**Čas přípravy**: 10 minut aktivně + 25 minut pečení
+
+**Nutriční hodnoty (na porci)**:
+- Kalorie: 320 kcal
+- Bílkoviny: 45g
+- Sacharidy: 8g
+- Tuky: 12g
+
+**Ingredience**:
+1. 2.5 kg kuřecích prsou
+2. 1.5 kg brokolice
+3. 100ml olivového oleje
+4. Sůl, pepř, česnek (koření)
+
+**Postup**:
+1. Předehřej troubu na 200°C
+2. Kuřecí prsa nakrájej na porce, okořeň
+3. Brokolici rozděl na růžičky
+4. Polej olejem, rozmísti na 2 plechy
+5. Peč 25 minut
+
+**Meal prep tipy**:
+- Skladování: Vakuovat nebo meal prep krabičky
+- Trvanlivost: 5 dní v lednici, 3 měsíce v mrazáku
+- Ohřát: Mikrovlnka 2-3 minuty
+
+**Variace**:
+- Místo brokolice: špenát, zelené fazolky, paprika
+- Koření: curry, paprika, bylinkové
+
+---
+
+Nyní vytvoř 10 receptů podle výše uvedených pokynů, zaměř se na jednoduchost a meal prep využitelnost!"""
+        
+        return template
+    
+    def _vytvorit_meal_prep_template(self):
+        """Vytvoří prompt template pro generování meal prep plánu."""
+        template = f"""# PROMPT TEMPLATE: Generování meal prep plánu
+
+## Kontext
+
+Jsi expert na meal prep a efektivní organizaci kuchyně. Tvým úkolem je vytvořit detailní 3-hodinový meal prep plán pro neděli.
+
+## Cíl
+
+Připravit **28 jídel** za 3 hodiny:
+- 14 obědů (7 pro Romana + 7 pro Páju)
+- 14 večeří (7 pro Romana + 7 pro Páju)
+- Plus snídaně a svačiny (podle potřeby)
+
+## Dostupné vybavení
+
+- **Trouba**: 2 plechy (lze péct současně)
+- **Tlakový hrnec**: 1 velký (6L)
+- **Sporáky**: 4 plotýnky
+- **Wok**: 1 velký
+- **Vakuovačka**: Pro balení hotových jídel
+- **Meal prep krabičky**: 58 kusů
+
+## Meal prep strategie
+
+### KROK 1: Příprava (15 minut)
+- Rozplánovat timeline
+- Připravit všechny ingredience
+- Předehřát troubu
+- Naplnit tlakový hrnec vodou
+
+### KROK 2: Start vícero procesů současně (2 hodiny)
+**Batch cooking princip**:
+- Trouba: 2 plechy současně (rotace každých 25 min)
+- Tlakový hrnec: Dlouhé vaření (40-60 min)
+- Sporáky: 2 hrnce/pánve současně
+- Příprava: Krájení zeleniny během vaření
+
+### KROK 3: Balení a organizace (45 minut)
+- Vakuování hotových jídel
+- Plnění meal prep krabiček
+- Označení (datum, obsah)
+- Organizace v lednici/mrazáku
+
+## Meal prep timeline template
+
+Vytvoř časový harmonogram ve formátu:
+
+**09:00-09:15 | PŘÍPRAVA**
+- [ ] Předehřát troubu na 200°C
+- [ ] Připravit 2.5kg kuřecích prsou
+- [ ] Nakrájet zeleninu: brokolice, paprika, rajčata
+- [ ] Naplnit tlakový hrnec vodou
+
+**09:15-09:40 | START BATCH 1**
+- [ ] TROUBA: Plech 1 - Kuřecí prsa (25 min)
+- [ ] TROUBA: Plech 2 - Zelenina (25 min)
+- [ ] TLAKÁK: Mleté maso + rajčatová omáčka (40 min)
+- [ ] SPORÁK 1: Vaření vajec (15 ks, 10 min)
+
+**09:40-10:05 | BATCH 2**
+- [ ] TROUBA: Plech 1 - Losos (20 min)
+- [ ] TROUBA: Plech 2 - Špenát (15 min)
+- [ ] SPORÁK 2: Dušená zelenina (paprika, cuketa)
+- [ ] PŘÍPRAVA: Krájení salátu
+
+[... pokračuj až do 12:00 ...]
+
+## Požadavky na plán
+
+1. **Maximální efektivita**: Vždy něco vaří/peče současně
+2. **Časová rezerva**: Nepřeplánuj, nech 10% buffer
+3. **Logická posloupnost**: Začni tím, co trvá nejdéle
+4. **Batch cooking**: Připrav stejné jídlo pro více dní najednou
+5. **Rotace**: Míchej metody (pečení/vaření/dušení)
+
+## Poznámky pro optimalizaci
+
+### Časové triky:
+- Zatímco něco peče, připravuj další várku
+- Využij čekání na tlakový hrnec k přípravě zeleniny
+- Vakuuj horká jídla (ale ne pálivá)
+- Měření porcí: Použij kuchyňskou váhu
+
+### Organizace:
+- **Lednice** (3-4 dny): Jídla na pondělí-čtvrtek
+- **Mrazák** (zbytek): Jídla na pátek-neděli
+- **Přemístění**: Ve středu večer přesun z mrazáku do lednice
+
+## Výstup
+
+Vytvoř:
+
+1. **Kompletní timeline** (09:00-12:00) s 15-minutovými bloky
+2. **Checklist ingrediencí** (co připravit předem)
+3. **Finální inventář** (kolik čeho bylo vyrobeno)
+4. **Organizační plán** (co kam v lednici/mrazáku)
+
+## Kalkulace času (reference)
+
+Typické časy přípravy:
+- Kuřecí prsa pečení: 25 min
+- Mleté maso v tlakáči: 40 min
+- Losos pečení: 20 min
+- Zelenina pečení: 20-25 min
+- Zelenina dušení: 15 min
+- Vejce vaření: 10 min
+- Vakuování 1 porce: 2 min
+- Plnění krabičky: 1 min
+
+---
+
+Nyní vytvoř kompletní meal prep plán pro přípravu 28 jídel za 3 hodiny!"""
+        
+        return template
+    
     def spustit_kompletni_zpracovani(self, interactive=True):
         """Spustí kompletní zpracování všech úkolů.
         
@@ -614,6 +1073,11 @@ class RodinnyPlanSystem:
         
         # Krok 6: Personalizovaná doporučení
         self.shrnout_personalizovana_doporuceni()
+        if interactive:
+            input("\n⏸️  Stiskněte Enter pro pokračování...")
+        
+        # Krok 7: Generovat AI prompt templates
+        templates_path = self.generovat_ai_prompt_templates()
         
         # Závěr
         print()
@@ -622,13 +1086,20 @@ class RodinnyPlanSystem:
         print("=" * 80)
         print()
         print("📁 Vytvořené soubory:")
-        print(f"  • {self.output_file_path}")
+        print(f"  • {self.output_file_path} (Nákupní seznam)")
+        print(f"  • {templates_path} (AI Prompt Templates)")
         print()
         print("📚 Další kroky:")
         print("  1. Vytiskněte/stáhněte nákupní seznam pro Globus")
         print("  2. V sobotu zkontrolujte slevy na Kupi.cz")
         print("  3. Naplánujte neděli pro meal prep (3 hodiny)")
         print("  4. Užijte si celý týden bez vaření!")
+        print()
+        print("🤖 AI Prompt Templates:")
+        print("  • Použijte templates s ChatGPT/Claude pro generování:")
+        print("    - Týdenního jídelníčku")
+        print("    - Detailních receptů")
+        print("    - Meal prep plánu")
         print()
         print("🎯 Hodně štěstí na cestě k vašim cílům!")
         print()
