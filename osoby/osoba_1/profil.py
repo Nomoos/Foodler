@@ -98,7 +98,8 @@ class OsobniProfil:
             "bilkoviny_g": round(self.cil_bilkoviny / self.pocet_jidel, 1),
             "sacharidy_g": round(self.cil_sacharidy / self.pocet_jidel, 1),
             "tuky_g": round(self.cil_tuky / self.pocet_jidel, 1),
-            "vlaknina_g": round(self.cil_vlaknina / self.pocet_jidel, 1)
+            "vlaknina_g": round(self.cil_vlaknina / self.pocet_jidel, 1),
+            "cukry_g": round(self.cil_cukry / self.pocet_jidel, 1)
         }
     
     def __str__(self) -> str:
