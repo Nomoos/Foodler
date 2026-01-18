@@ -235,6 +235,25 @@ class DatabzeJidel:
             poznamky="Rychlá proteinová svačina"
         ),
         Jidlo(
+            nazev="Keto pizza",
+            typ="obed",
+            ingredience=[
+                Ingredience("Červená řepa vařená", 50, "hlavni"),
+                Ingredience("Sýrařův výběr moravský bochník 45% Madeta", 40, "hlavni"),
+                Ingredience("Gizycko klásek Gornicky", 10, "hlavni"),
+            ],
+            kalorie_celkem=195,
+            bilkoviny_celkem=14.7,
+            sacharidy_celkem=3.0,
+            tuky_celkem=13.8,
+            vlaknina_celkem=1.0,
+            priprava_cas_min=30,
+            priprava_postup="1. Červenou řepu nastrouhat nahrubo. 2. Smíchat s polovinou sýra a vytvarovat placku. 3. Péct v troubě 15 min při 180°C. 4. Posypat zbylým sýrem a vrátit na 5 min do trouby.",
+            obtiznost="stredni",
+            porce=1,
+            vhodne_pro_meal_prep=True,
+            vydrzi_dni=2,
+            poznamky="Nízkokalorická keto pizza bez mouky, skvělá varianta pro low-carb stravu"
             nazev="Avokádová pomazánka z tvarohu",
             typ="svacina",
             ingredience=[
