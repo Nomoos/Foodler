@@ -192,6 +192,8 @@ Plánované vylepšení:
 
 **Rozpočet**: Odhadovaná cena 2710 Kč/týden překračuje původní rozpočet 2500 Kč o 210 Kč.
 
+**Cenová aktualizace**: Ceny byly naposledy aktualizovány 18.1.2026 a jsou založené na aktuálních tržních cenách v ČR. Pro nejaktuálnější ceny doporučujeme zkontrolovat letáky nebo použít Kupi.cz.
+
 **Možnosti úspory**:
 1. Nakupovat mleté maso místo části kuřecích prsou (-100 Kč)
 2. Použít mražený losos místo čerstvého (-80 Kč)

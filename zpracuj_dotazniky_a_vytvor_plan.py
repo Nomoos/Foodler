@@ -165,23 +165,35 @@ class RodinnyPlanSystem:
         print("=" * 80)
         print()
         
-        # Výpočet potřeb na týden
-        roman_kalorie_den = 2000
-        paja_kalorie_den = 1508
-        kubik_kalorie_den = 1400
+        # Výpočet potřeb na týden - definice konstant pro přehlednost
+        ROMAN_KALORIE_DEN = 2000
+        PAJA_KALORIE_DEN = 1508
+        KUBIK_KALORIE_DEN = 1400
+        
+        DNI_V_TYDNU = 7
         
         # Kubík jí 2 jídla doma ve všední dny (snídaně + večeře)
         # O víkendu všechna jídla doma
-        kubik_jidla_doma_tyden = (2 * 5) + (5 * 2)  # 20 jídel týdně
-        roman_jidla_tyden = 6 * 7  # 42 jídel týdně (6 jídel denně)
-        paja_jidla_tyden = 5 * 7  # 35 jídel týdně (5 jídel denně)
+        KUBIK_JIDLA_DOMA_DEN_VSEDNI = 2  # snídaně + večeře
+        KUBIK_JIDLA_DOMA_DEN_VIKEND = 5  # všechna jídla
+        DNI_VSEDNI = 5
+        DNI_VIKEND = 2
+        
+        kubik_jidla_doma_tyden = (KUBIK_JIDLA_DOMA_DEN_VSEDNI * DNI_VSEDNI) + (KUBIK_JIDLA_DOMA_DEN_VIKEND * DNI_VIKEND)
+        
+        ROMAN_JIDLA_DEN = 6  # 6 jídel denně
+        PAJA_JIDLA_DEN = 5   # 5 jídel denně
+        
+        roman_jidla_tyden = ROMAN_JIDLA_DEN * DNI_V_TYDNU
+        paja_jidla_tyden = PAJA_JIDLA_DEN * DNI_V_TYDNU
         
         print("📊 NUTRIČNÍ POTŘEBY (týdenní):")
         print("-" * 80)
-        print(f"Roman:  {roman_kalorie_den * 7:,} kcal/týden | {42} jídel")
-        print(f"Pája:   {paja_kalorie_den * 7:,} kcal/týden | {35} jídel")
-        print(f"Kubík:  {kubik_kalorie_den * 7:,} kcal/týden | {20} jídel doma")
-        print(f"CELKEM: {(roman_kalorie_den + paja_kalorie_den + kubik_kalorie_den) * 7:,} kcal/týden")
+        print(f"Roman:  {ROMAN_KALORIE_DEN * DNI_V_TYDNU:,} kcal/týden | {roman_jidla_tyden} jídel")
+        print(f"Pája:   {PAJA_KALORIE_DEN * DNI_V_TYDNU:,} kcal/týden | {paja_jidla_tyden} jídel")
+        print(f"Kubík:  {KUBIK_KALORIE_DEN * DNI_V_TYDNU:,} kcal/týden | {kubik_jidla_doma_tyden} jídel doma")
+        celkem_kalorie = (ROMAN_KALORIE_DEN + PAJA_KALORIE_DEN + KUBIK_KALORIE_DEN) * DNI_V_TYDNU
+        print(f"CELKEM: {celkem_kalorie:,} kcal/týden")
         print()
         
         print("🥘 POTŘEBNÉ POTRAVINY (odhad na týden):")
@@ -244,9 +256,9 @@ class RodinnyPlanSystem:
         print()
         
         self.meal_prep_plan = {
-            "kalorie_tyden": (roman_kalorie_den + paja_kalorie_den + kubik_kalorie_den) * 7,
+            "kalorie_tyden": celkem_kalorie,
             "jidel_celkem": roman_jidla_tyden + paja_jidla_tyden + kubik_jidla_doma_tyden,
-            "krabicek_potreba": 14 + 14 + 20,
+            "krabicek_potreba": 14 + 14 + 20,  # velké obědy + střední večeře + malé svačiny
             "cas_pripravy": "3-4 hodiny (neděle)"
         }
         
@@ -428,7 +440,13 @@ class RodinnyPlanSystem:
         print()
         
         # Uložit seznam do souboru
-        output_path = "/tmp/nakupni_seznam_globus.txt"
+        import tempfile
+        import os
+        
+        # Použít tempfile pro cross-platform kompatibilitu
+        output_dir = tempfile.gettempdir()
+        output_path = os.path.join(output_dir, "nakupni_seznam_globus.txt")
+        
         with open(output_path, 'w', encoding='utf-8') as f:
             f.write("NÁKUPNÍ SEZNAM - GLOBUS\n")
             f.write(f"Datum vytvoření: {datetime.now().strftime('%d.%m.%Y %H:%M')}\n")
@@ -617,7 +635,6 @@ class RodinnyPlanSystem:
 def main():
     """Hlavní funkce."""
     # Kontrola, zda spustit interaktivní nebo automatický režim
-    import sys
     interactive = True
     if len(sys.argv) > 1 and sys.argv[1] == "--auto":
         interactive = False
