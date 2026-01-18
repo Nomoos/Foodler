@@ -1,0 +1,27 @@
+nazev: Vaječná omeleta se špenátem a sýrem
+typ: snidane
+ingredience:
+- nazev: Vejce
+  mnozstvi_g: 150
+  kategorie: hlavni
+- nazev: Špenát čerstvý
+  mnozstvi_g: 100
+  kategorie: priloha
+- nazev: Sýr eidam
+  mnozstvi_g: 30
+  kategorie: priloha
+- nazev: Máslo
+  mnozstvi_g: 10
+  kategorie: omacka
+kalorie_celkem: 365
+bilkoviny_celkem: 29.5
+sacharidy_celkem: 5.2
+tuky_celkem: 26.0
+vlaknina_celkem: 2.2
+priprava_cas_min: 10
+priprava_postup: 1. Vejce rozšlehat s trochou soli. 2. Špenát nakrájet. 3. Smažit
+  na másle, přidat špenát a sýr.
+obtiznost: snadna
+porce: 1
+vhodne_pro_meal_prep: false
+poznamky: Nejlepší čerstvě připravená

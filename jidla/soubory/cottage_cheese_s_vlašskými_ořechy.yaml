@@ -1,0 +1,25 @@
+nazev: Cottage cheese s vlašskými ořechy
+typ: svacina
+ingredience:
+- nazev: Cottage cheese
+  mnozstvi_g: 200
+  kategorie: hlavni
+- nazev: Vlašské ořechy
+  mnozstvi_g: 20
+  kategorie: priloha
+- nazev: Skořice
+  mnozstvi_g: 2
+  kategorie: koření
+kalorie_celkem: 327
+bilkoviny_celkem: 31.0
+sacharidy_celkem: 10.8
+tuky_celkem: 21.0
+vlaknina_celkem: 1.3
+priprava_cas_min: 2
+priprava_postup: 1. Cottage cheese dát do misky. 2. Přidat nasekané ořechy. 3. Posypat
+  skořicí.
+obtiznost: snadna
+porce: 1
+vhodne_pro_meal_prep: true
+vydrzi_dni: 1
+poznamky: Rychlá proteinová svačina

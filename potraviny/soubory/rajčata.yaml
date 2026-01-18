@@ -1,0 +1,13 @@
+nazev: Rajčata
+kategorie: zelenina
+kalorie: 18
+bilkoviny: 0.9
+sacharidy: 3.9
+tuky: 0.2
+vlaknina: 1.2
+cena_za_kg: 45.0
+sezona:
+- '6'
+- '7'
+- '8'
+- '9'

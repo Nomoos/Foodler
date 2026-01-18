@@ -5,6 +5,22 @@ Tento modul spravuje **hotová jídla** složená z více potravin, připravená
 ## Obsah
 
 - `databaze.py` - Databáze hotových jídel s receptury a nutričními hodnotami
+- `soubory/` - Adresář s jednotlivými YAML soubory pro každé jídlo
+- `JAK_PRIDAT_JIDLO.md` - Návod pro přidání nového jídla
+
+## Struktura databáze
+
+Od verze 2026-01 jsou jídla ukládána jako **jednotlivé YAML soubory** v adresáři `soubory/`. 
+To umožňuje:
+- ✅ Přidávat nová jídla bez konfliktů při spolupráci více lidí
+- ✅ Snadno spravovat a verzovat jednotlivá jídla
+- ✅ Přehledně organizovat recepty
+
+## Přidání nového jídla
+
+Viz podrobný návod v souboru [JAK_PRIDAT_JIDLO.md](JAK_PRIDAT_JIDLO.md).
+
+Stručně: vytvořte nový YAML soubor v adresáři `soubory/` s receptem a nutričními hodnotami.
 
 ## Použití
 

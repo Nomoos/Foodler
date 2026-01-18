@@ -1,0 +1,12 @@
+nazev: Květák
+kategorie: zelenina
+kalorie: 25
+bilkoviny: 1.9
+sacharidy: 5.0
+tuky: 0.3
+vlaknina: 2.0
+cena_za_kg: 45.0
+sezona:
+- '9'
+- '10'
+- '11'

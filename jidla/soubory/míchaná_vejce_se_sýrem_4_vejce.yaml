@@ -1,0 +1,24 @@
+nazev: Míchaná vejce se sýrem (4 vejce)
+typ: snidane
+ingredience:
+- nazev: Vejce slepičí M
+  mnozstvi_g: 220
+  kategorie: hlavni
+- nazev: Sýr eidam
+  mnozstvi_g: 40
+  kategorie: priloha
+- nazev: Máslo
+  mnozstvi_g: 10
+  kategorie: omacka
+kalorie_celkem: 498
+bilkoviny_celkem: 38.0
+sacharidy_celkem: 2.28
+tuky_celkem: 37.72
+vlaknina_celkem: 0.0
+priprava_cas_min: 8
+priprava_postup: 1. Vejce rozšlehat s trochou soli. 2. Smažit na másle za stálého
+  míchání. 3. Na konci přidat nastrouhaný sýr.
+obtiznost: snadna
+porce: 1
+vhodne_pro_meal_prep: false
+poznamky: Vysoký obsah bílkovin, ideální pro protein-first plán

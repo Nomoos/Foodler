@@ -1,0 +1,30 @@
+nazev: Omeleta se zeleninou (3 vejce)
+typ: vecere
+ingredience:
+- nazev: Vejce slepičí M
+  mnozstvi_g: 165
+  kategorie: hlavni
+- nazev: Paprika
+  mnozstvi_g: 100
+  kategorie: priloha
+- nazev: Cuketa
+  mnozstvi_g: 100
+  kategorie: priloha
+- nazev: Cibule
+  mnozstvi_g: 50
+  kategorie: priloha
+- nazev: Olivový olej
+  mnozstvi_g: 10
+  kategorie: omacka
+kalorie_celkem: 402
+bilkoviny_celkem: 23.3
+sacharidy_celkem: 14.5
+tuky_celkem: 28.6
+vlaknina_celkem: 3.8
+priprava_cas_min: 15
+priprava_postup: 1. Zeleninu nakrájet a opéct na oleji. 2. Vejce rozšlehat. 3. Zalít
+  zeleninu vejci a péct pod pokličkou 8 min.
+obtiznost: snadna
+porce: 1
+vhodne_pro_meal_prep: false
+poznamky: Lehká večeře s hodně zeleniny
