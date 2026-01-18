@@ -73,16 +73,22 @@ Nástroj pro podporu hubnutí a zdravého stravování pro celou rodinu s důraz
 ### 🛒 Nákupy a slevy
 - **[KUPI_INTEGRATION.md](docs/technical/KUPI_INTEGRATION.md)** - Integrace s Kupi.cz pro sledování slev
 - **[DISCOUNT_SCRAPING_GUIDE.md](docs/technical/DISCOUNT_SCRAPING_GUIDE.md)** - 🆕 Kompletní stahování a ukládání slev ze všech obchodů
+- **[DOPORUCENI_BALENYCH_PRODUKTU.md](docs/technical/DOPORUCENI_BALENYCH_PRODUKTU.md)** - ⭐ NOVÉ! Doporučení jogurtů, tvarohů a mléčných výrobků v akci
 
 **Nové funkce v2.0.0:**
 ```bash
 # Stáhnout a uložit slevy ze všech obchodů (Lidl, Kaufland, Albert, ...)
 python scrape_and_save_discounts.py
+
+# 🆕 Najít vhodné jogurty, tvarohy a mléčné výrobky v akci
+python doporuc_balene_produkty.py
 ```
 - ✅ Automatická extrakce dat platnosti (od-do)
 - ✅ JSON storage s metadaty
 - ✅ Srovnání cen napříč obchody
 - ✅ Historie cen pro trend analýzu
+- ✅ Hodnocení vhodnosti produktů pro keto dietu (0-100 bodů)
+- ✅ Filtrování ochucených produktů (sladké vs. slané)
 
 ### 📊 Plánovač jídelníčků
 - **[MEAL_PLANNER_GUIDE.md](docs/technical/MEAL_PLANNER_GUIDE.md)** - Interaktivní plánovač s fitness funkcemi
