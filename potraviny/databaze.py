@@ -110,15 +110,15 @@ class DatabazePotravIn:
             poznamky="Praktický zdroj bílkovin"
         ),
         Potravina(
-            nazev="Vejce",
+            nazev="Vejce slepičí M",
             kategorie="bilkoviny",
-            kalorie=155,
-            bilkoviny=13.0,
-            sacharidy=1.1,
-            tuky=11.0,
+            kalorie=151,  # 83 kcal per 55g = 151 per 100g
+            bilkoviny=12.38,  # 6.81g per 55g = 12.38 per 100g
+            sacharidy=0.95,  # 0.52g per 55g = 0.95 per 100g
+            tuky=10.87,  # 5.98g per 55g = 10.87 per 100g
             vlaknina=0.0,
             cena_za_kg=40.0,
-            poznamky="Kompletní aminokyselinový profil"
+            poznamky="Velikost M (55g), kompletní aminokyselinový profil, cholesterol 237mg/ks"
         ),
         
         # Mléčné výrobky

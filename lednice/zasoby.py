@@ -146,10 +146,11 @@ class SpravceZasob:
             umisteni="mrazak"
         ))
         self.lednice.pridat_polozku(ZasobaPolozka(
-            "Vejce", 12, "ks", "bilkoviny",
+            "Vejce slepičí M", 40, "ks", "bilkoviny",
             datum_nakupu=dnes - timedelta(days=3),
             datum_expirace=dnes + timedelta(days=18),
-            umisteni="lednice"
+            umisteni="lednice",
+            poznamky="Velikost M (55g/ks), celkem 2200g"
         ))
         
         # Mléčné výrobky
