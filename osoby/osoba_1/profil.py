@@ -42,13 +42,91 @@ class OsobniProfil:
     # Zdravotní poznámky
     zdravotni_poznamky: List[str] = None
     
+    # Detailní zdravotní stav
+    zdravotni_stav: Dict[str, any] = None
+    
     def __post_init__(self):
         if self.zdravotni_poznamky is None:
             self.zdravotni_poznamky = [
                 "Léky na krevní tlak",
                 "Léčba refluxu (Omeprazol)",
-                "Kardiovaskulární monitoring"
+                "Kardiovaskulární monitoring",
+                "Prasklina chrupavky levého kolene - omezená pohyblivost",
+                "Chronické bolesti beder - špatná spánková poloha",
+                "Akutní bolest krční páteře (cervikální)"
             ]
+        
+        if self.zdravotni_stav is None:
+            self.zdravotni_stav = {
+                "koleno_levy": {
+                    "diagnoza": "Chondrální léze (prasklina chrupavky)",
+                    "omezeni": [
+                        "Žádné běhání, jogging",
+                        "Žádné skoky a seskoky",
+                        "Žádné bruslení",
+                        "Žádné lyžování",
+                        "Žádné náhlé pohyby (basketbal, volejbal)"
+                    ],
+                    "doporucene_aktivity": [
+                        "Lehací kolo (recumbent bike)",
+                        "Plavání",
+                        "Aqua aerobik",
+                        "Nordic walking",
+                        "Eliptický trenažér"
+                    ],
+                    "suplementace": [
+                        "Kolagen 10g denně (Alavis Maxima)",
+                        "Glukosamin 1500mg",
+                        "Chondroitin 1200mg",
+                        "Omega-3 2-3g",
+                        "Vitamin D3 2000-4000 IU",
+                        "Vitamin C 500-1000mg"
+                    ]
+                },
+                "bedra": {
+                    "diagnoza": "Chronická bolest bederní páteře",
+                    "pricina": "Špatná spánková poloha - Kubík kopá nohy pod záda",
+                    "rizika": ["Výhřez ploténky", "Svalové spasmy", "Chronická bolest"],
+                    "opatreni": [
+                        "Změnit uspořádání postele - Kubík pryč od zad",
+                        "Tvrdší matrace s podporou bederní páteře",
+                        "Ortopedický polštář pod kolena",
+                        "Denní protažení 5-10 minut",
+                        "Posilování core (plank, bird dog)",
+                        "Fyzioterapie"
+                    ]
+                },
+                "krcni_pater": {
+                    "diagnoza": "Akutní bolest cervikální páteře",
+                    "pricina": "Příliš dlouhé polohování krku v nevhodné poloze při orálním sexu",
+                    "lecba": [
+                        "Led/studené obklady prvních 24-48h (15 min každé 2 hodiny)",
+                        "Ibuprofen 400mg (po konzultaci s lékařem)",
+                        "Teplé obklady po 48 hodinách",
+                        "Jemná masáž",
+                        "Vyhýbat se nevhodným polohám min. týden"
+                    ],
+                    "prevence": [
+                        "Změna techniky/poloh - méně extrémní pozice krku",
+                        "Časové limity - pravidelné přestávky",
+                        "Protažení před/po aktivitě",
+                        "Posilování šíje - izometrické cviky"
+                    ]
+                },
+                "obezita": {
+                    "bmi": 40.1,
+                    "stupen": "Obezita III. stupně (těžká)",
+                    "rizika": [
+                        "Kardiovaskulární onemocnění (3-4x vyšší riziko infarktu)",
+                        "Diabetes mellitus 2. typu",
+                        "Vysoký krevní tlak",
+                        "Cévní mozková příhoda",
+                        "Artróza kloubů (zvýšení tlaku na koleno)",
+                        "Apnoe spánku"
+                    ],
+                    "cil": "Úbytek 39.2 kg (134.2 → 95.0 kg) za 12 měsíců"
+                }
+            }
     
     def vypocti_bmi(self) -> float:
         """Vypočítá BMI (Body Mass Index)."""
