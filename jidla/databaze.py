@@ -234,6 +234,30 @@ class DatabzeJidel:
             vydrzi_dni=1,
             poznamky="Rychlá proteinová svačina"
         ),
+        Jidlo(
+            nazev="Keto chléb Mark 2 by Nomoos",
+            typ="snidane",
+            ingredience=[
+                Ingredience("Vejce slepičí", 220, "hlavni"),
+                Ingredience("Eidam 45% polotvrdý", 200, "hlavni"),
+                Ingredience("Psyllium vláknina", 70, "priloha"),
+                Ingredience("Lněné semínko drcené", 30, "priloha"),
+                Ingredience("Černý sezam", 30, "priloha"),
+                Ingredience("Kypřící prášek do pečiva", 10, "koření"),
+                Ingredience("Kmín drcený, koření", 5, "koření"),
+            ],
+            kalorie_celkem=1473,
+            bilkoviny_celkem=90.5,
+            sacharidy_celkem=10.0,
+            tuky_celkem=105.0,
+            vlaknina_celkem=77.4,
+            priprava_cas_min=60,
+            priprava_postup="1. Vejce rozšlehat s nastrouhaným eidamem. 2. Přidat psyllium vlákninu, lněné semínko, sezam, kypřící prášek a kmín. 3. Nechat odpočinout 10 min, aby nabobtnal psyllium. 4. Přelit do formy a péct 45-50 min při 180°C.",
+            obtiznost="stredni",
+            porce=8,
+            vhodne_pro_meal_prep=True,
+            vydrzi_dni=5,
+            poznamky="Ketogenní chléb s vysokým obsahem vlákniny a bílkovin, ideální pro low-carb dietu. Vydrží až 5 dní v lednici."
         # New egg-based meals to use the 40 eggs in fridge
         Jidlo(
             nazev="Vařená vejce na tvrd (3 ks)",
