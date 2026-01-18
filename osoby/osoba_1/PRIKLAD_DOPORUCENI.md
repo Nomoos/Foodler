@@ -4,6 +4,27 @@ Tento soubor ukazuje ukázkový výstup z dotazníku s konkrétními doporučen�
 
 ---
 
+## 📅 Rodinný týdenní režim
+
+### Kubík - pondělí až pátek:
+- **Školka:** 6:30-16:30 (každý den)
+- **Úterý:** Možnost levného kina 17+ (rodinný program)
+- **Středa:** Cvičení/smyslohraní 15:30-17:30
+- **Čtvrtek:** (do konce ledna) Cvičení/gymathon 17:30-18:30
+
+### Víkendy:
+- **Program s dětmi** - priorita!
+- **Vaření/nákup** - musí se vejít do rodinného programu
+- **Cíl:** Vyhnout se jídlu venku
+
+### Strategie meal prepu s ohledem na rodinu:
+✅ **Flexibilní timing** - sobota ráno NEBO neděle odpoledne  
+✅ **Páteční nákup** - po práci, ušetří víkendový čas  
+✅ **Ranní meal prep** - sobota 7:00-10:00 když Kubík spí  
+✅ **Předpřipravené jídlo** - úterý kino, středa/čtvrtek cvičení  
+
+---
+
 ## 👤 Profil
 
 **Roman (Romča/Nom)**
@@ -36,9 +57,21 @@ Tento soubor ukazuje ukázkový výstup z dotazníku s konkrétními doporučen�
 - Největší hlad: večer
 - Mírné problémy s trávením (pálení žáhy)
 
+### Rodinný režim:
+**Kubík (pondělí-pátek):**
+- Školka: 6:30-16:30
+- **Středa:** cvičení/smyslohraní 15:30-17:30
+- **Čtvrtek:** (do konce ledna) cvičení/gymathon 17:30-18:30
+- **Úterý:** možnost levného kina 17+
+
+**Víkend:**
+- Program s dětmi (priorita)
+- Vaření/nákup musí být začleněny do rodinného programu
+- Cíl: vyhnout se jídlu venku
+
 ### Meal Prep:
 - **Čas na meal prep:** 180 minut týdně (3 hodiny)
-- **Den:** Neděle odpoledne
+- **Den:** Víkendové okno - kdy to vyjde s rodinným programem
 - **Příprava na:** 7 dní (celý týden)
 - **Počet jídel:** 4 různá jídla v rotaci
 
@@ -71,13 +104,15 @@ Tento soubor ukazuje ukázkový výstup z dotazníku s konkrétními doporučen�
 ### 1. 📅 Týdenní meal prep plán
 
 **Doporučení:**
-Plánuj přípravu na neděli odpoledne (14:00-17:00). Připrav **4 různá jídla** v dávkách pro celý týden.
+Optimalizuj meal prep podle rodinného programu. **Flexibilní přístup:**
+- **Varianta A:** Sobota ráno (7:00-10:00) - zatímco Kubík spí/sleduje pohádky
+- **Varianta B:** Neděle odpoledne (13:00-16:00) - po rodinném programu
+- **Varianta C:** Rozdělený meal prep - pátek večer (19:00-20:30) příprava + sobota ráno (1.5h) dokončení
 
-**Konkrétní strategie:**
-- 2 kg kuřecích prsou → 14 porcí (7 obědů)
-- 1 kg mletého masa s omáčkou → 7 večeří
-- 20 vajec napečených → 10 snídaní/svačin
-- 2 kg zeleniny (brokolice, špenát) → přílohy na týden
+**Konkrétní strategie s ohledem na rodinný režim:**
+- Pátek večer: Velký nákup po práci (18:00-19:00)
+- Sobota ráno: Meal prep (7:00-10:00) nebo rodinný program
+- Neděle: Rodinný program + meal prep když vyjde čas
 
 ---
 
@@ -359,38 +394,59 @@ Plánuj přípravu na neděli odpoledne (14:00-17:00). Připrav **4 různá jíd
 
 ---
 
-## ✅ Akční plán na první týden
+## ✅ Akční plán na první týden (s ohledem na Kubíkův režim)
 
 ### Čtvrtek (dnes):
 - [ ] Vyplň dotazník
 - [ ] Přečti si doporučení
 - [ ] Zkontroluj slevy na Kupi.cz
+- [ ] Naplánuj víkendový program s Kubíkem
 
 ### Pátek:
 - [ ] Vytvoř týdenní jídelníček
 - [ ] Sestav nákupní seznam
-- [ ] Připrav krabičky a vakuové sáčky
+- [ ] **18:00-19:00** - Velký nákup po práci (Lidl + Kaufland)
+- [ ] **19:30-21:00** - (Volitelně) Příprava část 1: Napéct vejce, nakrájet zeleninu
 
-### Sobota:
-- [ ] 09:00 - Velký nákup (Lidl + Kaufland)
-- [ ] 11:00 - Organizace potravin doma
-- [ ] 12:00 - Plánování zítřejšího meal prepu
+### Sobota (flexibilní podle rodinného programu):
+**Varianta A - Ranní meal prep:**
+- [ ] **07:00-10:00** - VELKÝ MEAL PREP (zatímco Kubík spí/pohádky)
+  - [ ] 07:00 - Kuřecí prsa do trouby
+  - [ ] 07:10 - Mleté maso do tlakového hrnce
+  - [ ] 07:30 - Brokolice do trouby
+  - [ ] 08:30 - Vakuování všeho
+  - [ ] 09:30 - Organizace lednice/mrazáku
+  - [ ] 10:00 - HOTOVO! Rodinný program 🎉
+- [ ] **10:00+** - Rodinný program s Kubíkem
+
+**Varianta B - Program s dětmi celý den:**
+- [ ] Rodinný program přes den
+- [ ] Meal prep odložen na neděli
 
 ### Neděle:
-- [ ] 14:00-17:00 - VELKÝ MEAL PREP!
-  - [ ] 14:00 - Kuřecí prsa do trouby
-  - [ ] 14:10 - Mleté maso do tlakového hrnce
-  - [ ] 14:30 - Brokolice do trouby
-  - [ ] 15:00 - Napéct vejce
-  - [ ] 15:30 - Připravit saláty
-  - [ ] 16:00 - Vakuování všeho
-  - [ ] 16:30 - Organizace lednice/mrazáku
-  - [ ] 17:00 - HOTOVO! 🎉
+**Varianta A - Když se v sobotu nestihlo:**
+- [ ] **Dopoledne** - Rodinný program s Kubíkem
+- [ ] **13:00-16:00** - MEAL PREP (po obědě, Kubík odpočívá/hraje)
+- [ ] **16:00+** - Večerní rodinný čas
 
-### Pondělí-Neděle:
-- [ ] Pouze ohřívání (5-10 min denně)
+**Varianta B - Když je v sobotu hotovo:**
+- [ ] Celý den rodinný program! 🎊
+- [ ] Pouze doplnění čerstvé zeleniny (15 min)
+
+### Pondělí-Pátek:
+- [ ] **Pouze ohřívání** (5-10 min denně)
 - [ ] Sleduj jak to funguje
+- [ ] **Úterý 17+:** Volitelně levné kino s rodinou
+- [ ] **Středa 15:30-17:30:** Kubík má cvičení/smyslohraní
+- [ ] **Čtvrtek 17:30-18:30:** (do konce ledna) Kubík má gymathon
 - [ ] Dělej poznámky co vylepšit
+
+### Klíčová strategie:
+✅ **Jídlo venku = NIKDY** - vždy meal prep připravený  
+✅ **Flexibilní timing** - meal prep kdy to vyjde s rodinou  
+✅ **Rodinný program priorita** - vaření se přizpůsobí  
+✅ **Úterý večer volno** - využij meal prep, jdi do kina  
+✅ **Středa + čtvrtek zaneprázdněno** - předpřipravené jídlo zachraňuje
 
 ---
 
