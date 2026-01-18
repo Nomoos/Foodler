@@ -7,59 +7,59 @@ Tento dotazník ti pomůže vytvořit jídelníček přesně podle tvých potře
 ## 1️⃣ ŽIVOTNÍ STYL A DENNÍ RUTINA
 
 ### Pracovní režim
-1. **Kolik dní v týdnu pracuješ?**
-2. **V kolik hodin obvykle začínáš práci?**
-3. **V kolik hodin obvykle končíš práci?**
-4. **Pracuješ z domu nebo dojíždíš?**
+1. **Kolik dní v týdnu pracuješ?** 5d-6d pá-so
+2. **V kolik hodin obvykle začínáš práci?** 7:30-8:00
+3. **V kolik hodin obvykle končíš práci?** 15:30-16:00
+4. **Pracuješ z domu nebo dojíždíš?** dojíždím, 25 minut jedna cesta z domu do práce, pokud vezu kubíka do školky tak cesta do práce trvá 50m - 60m
 
 ### Spánek a rytmus
-5. **V kolik hodin obvykle vstáváš?**
-6. **V kolik hodin obvykle jdeš spát?**
+5. **V kolik hodin obvykle vstáváš?** 5:30-6:00
+6. **V kolik hodin obvykle jdeš spát?** 22:00-22:30
 7. **Jaká je tvoje kvalita spánku?**
    - [ ] Výborná - usínám snadno, spím celou noc
-   - [ ] Dobrá - občas se probudím, ale většinou dobře spím
+   - [X] Dobrá - občas se probudím, ale většinou dobře spím
    - [ ] Střední - často se probouzím, občas problémy s usínáním
    - [ ] Špatná - pravidelně nespím dobře
 
 ### Energetické hladiny
 8. **Jaká je tvoje energie RÁNO po probuzení?**
    - [ ] Vysoká - hned po probuzení jsem plná energie
-   - [ ] Střední - potřebuji chvíli, ale pak je to OK
+   - [X] Střední - potřebuji chvíli, ale pak je to OK
    - [ ] Nízká - ráno je pro mě nejtěžší část dne
 
 9. **Jaká je tvoje energie O POLEDNI (kolem 12-14h)?**
    - [ ] Vysoká
-   - [ ] Střední
+   - [X] Střední
    - [ ] Nízká (mívám poobědové unavení)
 
 10. **Jaká je tvoje energie VEČER (po práci)?**
     - [ ] Vysoká
-    - [ ] Střední
+    - [X] Střední
     - [ ] Nízká
 
 ### Hlad a chutě
 11. **Kdy během dne pociťuješ největší hlad?**
-    - [ ] Ráno (po probuzení)
+    - [X] Ráno (po probuzení)
     - [ ] Dopoledne (9-11h)
     - [ ] Kolem oběda (12-14h)
     - [ ] Odpoledne (15-17h)
     - [ ] Večer (18-20h)
     - [ ] V noci
 
-12. **Kdy během dne máš největší chuť na jídlo/svačiny?**
+12. **Kdy během dne máš největší chuť na jídlo/svačiny?** odpoledne 15-16
 
 ### Stres a zdraví
 13. **Jaká je tvoje obvyklá úroveň stresu?**
     - [ ] Nízká - většinou jsem v pohodě
     - [ ] Střední - občas se cítím ve stresu
-    - [ ] Vysoká - často jsem ve stresu
+    - [X] Vysoká - často jsem ve stresu
 
 14. **Máš nějaké problémy s trávením?** (vyber všechny, které platí)
-    - [ ] Nadýmání
-    - [ ] Pálení žáhy / refluX
-    - [ ] Zácpa
+    - [X] Nadýmání
+    - [X] Pálení žáhy / refluX
+    - [X] Zácpa
     - [ ] Průjem
-    - [ ] Pocit plnosti po jídle
+    - [X] Pocit plnosti po jídle
     - [ ] Jiné: _______________
 
 ---
@@ -67,29 +67,29 @@ Tento dotazník ti pomůže vytvořit jídelníček přesně podle tvých potře
 ## 2️⃣ ČASOVÉ PREFERENCE
 
 ### Čas na přípravu jídel
-15. **Kolik času máš na přípravu jídel O VÍKENDU?** (minuty)
+15. **Kolik času máš na přípravu jídel O VÍKENDU?** (minuty) 60m - jídla připravuje Roman já uklidím/otočím myčku
 
-16. **Kolik času máš na přípravu jídel VE VŠEDNÍ DEN?** (minuty)
+16. **Kolik času máš na přípravu jídel VE VŠEDNÍ DEN?** (minuty) 60m - jídla připravuje Roman já uklidím/otočím myčku
 
 ### Meal prep
 17. **Kdy ti nejvíc vyhovuje meal prep?**
     - [ ] Sobota ráno
-    - [ ] Sobota odpoledne
-    - [ ] Neděle ráno
+    - [X] Sobota odpoledne
+    - [X] Neděle ráno
     - [ ] Neděle odpoledne
-    - [ ] Jinak: _______________
+    - [X] Jinak: čtvrtek odpoledne a pondělí odpoledne 20-30 minut navíc
 
 ### Časy jídel
 18. **Liší se tvoje preferované časy jídel od těchto standardních časů?**
-    - Snídaně: 07:30 → Tvoje: _______
-    - Dopolední svačina: 10:00 → Tvoje: _______
-    - Oběd: 12:30 → Tvoje: _______
-    - Odpolední svačina: 15:30 → Tvoje: _______
-    - Večeře: 18:30 → Tvoje: _______
+    - Snídaně: 07:30 → Tvoje: 6:00-6:30
+    - Dopolední svačina: 10:00 → Tvoje: 9:00
+    - Oběd: 12:30 → Tvoje: 11:15
+    - Odpolední svačina: 15:30 → Tvoje: 15
+    - Večeře: 18:30 → Tvoje: 18
+    - Druhá večeře: není preferována, ale pokud je tak v 19-19:30
 
 19. **Přeskakuješ někdy nějaká jídla?** Která a proč?
-
----
+nemám druhou večeři téměř nikdy, svačiny protože nestíhám nebo ji nemám
 
 ## 3️⃣ JÍDELNÍ PREFERENCE
 
@@ -107,35 +107,35 @@ Tento dotazník ti pomůže vytvořit jídelníček přesně podle tvých potře
 
 ### Preference typu jídel
 23. **Preferuješ teplá jídla?**
-    - [ ] Ano, raději mám teplá jídla
+    - [X] Ano, raději mám teplá jídla
     - [ ] Nevadí mi studená jídla
     - [ ] Záleží na situaci
 
 24. **Jsi ochotná jíst studené předpřipravené saláty a misky?**
-    - [ ] Ano, bez problému
+    - [X] Ano, bez problému
     - [ ] Občas ano
     - [ ] Ne, radši mám teplá jídla
 
 ### Komplexnost přípravy
 25. **Jsi ochotná vařit složitější recepty?** (více než 5 ingrediencí, více kroků)
     - [ ] Ano, ráda vařím složitější jídla
-    - [ ] Občas ano, ale radši jednoduché
+    - [X] Občas ano, ale radši jednoduché
     - [ ] Ne, preferuji jednoduché recepty
 
 26. **Ideální počet ingrediencí v receptu pro tebe?**
-    - [ ] 3-4 ingredience (velmi jednoduché)
-    - [ ] 5-7 ingrediencí (standardní)
+    - [X] 3-4 ingredience (velmi jednoduché)
+    - [X] 5-7 ingrediencí (standardní)
     - [ ] 8+ ingrediencí (nevadí složitější)
 
 ### Chuťové preference
 27. **Preferuješ sladké nebo slané svačiny?**
     - [ ] Spíše sladké
     - [ ] Spíše slané
-    - [ ] Obojí stejně
+    - [X] Obojí stejně - dopoledne preferuji sladkou, odpoledne slanou
 
 28. **Jak moc jsi ochotná zkoušet nové recepty a ingredience?**
-    - [ ] Vysoká - ráda zkouším nové věci
-    - [ ] Střední - občas něco nového
+    - [X] Vysoká - ráda zkouším nové věci
+    - [X] Střední - občas něco nového
     - [ ] Nízká - radši ověřené recepty
 
 ---
@@ -144,62 +144,62 @@ Tento dotazník ti pomůže vytvořit jídelníček přesně podle tvých potře
 
 ### Hlavní cíle
 29. **Jaké jsou tvoje hlavní cíle?** (vyber všechny, které platí)
-    - [ ] Úbytek váhy
-    - [ ] Více energie během dne
-    - [ ] Lepší trávení
-    - [ ] Snížení procenta tělesného tuku
-    - [ ] Zvýšení svalové hmoty
+    - [X] Úbytek váhy
+    - [X] Více energie během dne
+    - [X] Lepší trávení
+    - [X] Snížení procenta tělesného tuku
+    - [X] Zvýšení svalové hmoty
     - [ ] Lepší spánek
-    - [ ] Lepší nálada a mentální pohoda
-    - [ ] Jiné: _______________
+    - [X] Lepší nálada a mentální pohoda
+    - [X] Jiné: snížení výkyvů nálady, psychické nepohody
 
 ### Váhové cíle
 30. **Aktuální váha:** 77.3 kg (měření 22.12.2025)
 
-31. **Cílová váha za 1 měsíc?** _____ kg
+31. **Cílová váha za 1 měsíc?** 74 kg
 
-32. **Cílová váha za 3 měsíce?** _____ kg
+32. **Cílová váha za 3 měsíce?** 66 kg
 
-33. **Cílová váha za 6 měsíců?** _____ kg
+33. **Cílová váha za 6 měsíců?** 60 kg
 
-34. **Ideální váha dlouhodobě?** _____ kg
+34. **Ideální váha dlouhodobě?** 57 kg
 
 ### Problémové oblasti
 35. **Jaké jsou tvoje problémové oblasti?** (kde bys chtěla zhubnout)
-    - [ ] Břicho
-    - [ ] Boky
+    - [X] Břicho
+    - [X] Boky
     - [ ] Stehna
     - [ ] Paže
-    - [ ] Celkově všude rovnoměrně
+    - [X] Celkově všude rovnoměrně
     - [ ] Jiné: _______________
 
 ### Zdravotní stav
 36. **Máš nějaké zdravotní problémy související se stravou?**
-    - [ ] Únava po jídle
+    - [X] Únava po jídle
     - [ ] Problémy se spaním
-    - [ ] Kolísání nálad
-    - [ ] Problémy s koncentrací
-    - [ ] Časté nemoci/oslabená imunita
+    - [X] Kolísání nálad
+    - [X] Problémy s koncentrací
+    - [X] Časté nemoci/oslabená imunita
     - [ ] Jiné: _______________
 
-37. **Užíváš nějaké léky pravidelně?** Jaké?
+37. **Užíváš nějaké léky pravidelně?** Jaké? - Letrox 50mg, Antikoncepce Minisiston 
 
 38. **Užíváš nějaké doplňky stravy?** Jaké?
     - [ ] Multivitamin
-    - [ ] Vitamin D
-    - [ ] Omega-3
+    - [X] Vitamin D
+    - [X] Omega-3
     - [ ] Probiotika
     - [ ] Protein (whey, vegan)
-    - [ ] Jiné: _______________
+    - [X] Jiné: Magnesium 1x denně (doporučení lékaře je 3x denně, ale zapomínám na to)
 
 ### Hormonální vliv
 39. **Ovlivňuje menstruační cyklus tvoji chuť k jídlu?**
-    - [ ] Ano, výrazně
+    - [X] Ano, výrazně
     - [ ] Trochu
     - [ ] Ne
 
 40. **Pokud ano, kdy máš největší chuť k jídlu?**
-    - [ ] Před menstruací (PMS)
+    - [X] Před menstruací (PMS)
     - [ ] Během menstruace
     - [ ] Po menstruaci
     - [ ] Jinak: _______________
@@ -209,77 +209,83 @@ Tento dotazník ti pomůže vytvořit jídelníček přesně podle tvých potře
 ## 5️⃣ PRAKTICKÁ OMEZENÍ
 
 ### Rozpočet
-41. **Jaký je tvůj týdenní rozpočet na potraviny NA OSOBU?** _____ Kč
+41. **Jaký je tvůj týdenní rozpočet na potraviny NA OSOBU?** 6500 Kč
 
 42. **Jsi ochotná nakupovat dražší kvalitní potraviny?** (bio, kvalitní maso, losos)
-    - [ ] Ano, kvalita je priorita
+    - [X] Ano, kvalita je priorita
     - [ ] Někdy ano, záleží na ceně
     - [ ] Ne, preferuji cenově dostupné
 
 ### Nákupní návyky
 43. **Kde nejčastěji nakupuješ?** (seřaď podle preference)
-    - [ ] Lidl
-    - [ ] Kaufland
-    - [ ] Albert
-    - [ ] Penny
-    - [ ] Billa
-    - [ ] Tesco
-    - [ ] Online (Rohlík.cz, Košík.cz)
+    - [X] Lidl
+    - [X] Kaufland
+    - [X] Albert
+    - [X] Penny
+    - [X] Billa
+    - [X] Tesco
+    - [X] Online (Rohlík.cz, Košík.cz)
     - [ ] Jiné: _______________
 
 44. **Jak často nakupuješ?**
     - [ ] Denně nebo skoro denně
     - [ ] 2-3x týdně
-    - [ ] 1x týdně
+    - [X] 1x týdně max doplním pokud něco bude chybět
     - [ ] Méně často
 
 45. **Používáš aplikace pro sledování slev?** (např. Kupi.cz)
-    - [ ] Ano, pravidelně
+    - [X] Ano, pravidelně
     - [ ] Občas
     - [ ] Ne
 
 ### Kuchyňské vybavení
 46. **Jaké kuchyňské vybavení máš?** (vyber všechny, které máš)
-    - [ ] Multicooker / tlakový hrnec
+    - [X] Multicooker / tlakový hrnec
     - [ ] Airfryer (horkovzdušná fritéza)
-    - [ ] Mixér / tyčový mixér
+    - [X] Mixér / tyčový mixér
     - [ ] Pomalý hrnec (slow cooker)
-    - [ ] Kuchyňský robot / food processor
-    - [ ] Grilovací pánev
-    - [ ] Mikrovlnná trouba
+    - [X] Kuchyňský robot / food processor
+    - [X] Grilovací pánev
+    - [X] Mikrovlnná trouba
+    - [X] Trouba
+    - [X] Parní hrnec
+    - [X] Wok
+    - [X] Hrnce
+    - [X] Pánve
     - [ ] Jiné: _______________
 
 ### Skladování
 47. **Jaká je velikost tvé lednice?**
     - [ ] Malá (pod pracovní deskou)
     - [ ] Střední (standardní)
-    - [ ] Velká (americká lednice)
+    - [X] Velká (americká lednice)
 
 48. **Máš samostatný mrazák?**
     - [ ] Ano, velký
-    - [ ] Ano, menší
+    - [X] Ano, menší
     - [ ] Ne, jen mrazák v lednici
 
 49. **Máš místo na meal prep krabičky?** (v lednici i ve skříňkách)
-    - [ ] Ano, hodně místa
+    - [X] Ano, hodně místa
     - [ ] Ano, ale omezené
     - [ ] Ne, málo místa
 
 ### Rodinná situace
 50. **Jak často vaříš pro celou rodinu?**
     - [ ] Denně
-    - [ ] Většinu dní
+    - [X] Většinu dní
     - [ ] O víkendech
     - [ ] Občas
     - [ ] Málokdy
 
 51. **Sdílí rodina stejné jídlo?**
-    - [ ] Ano, všichni jíme stejně
+    - [X] Ano, všichni jíme stejně
     - [ ] Částečně (některá jídla ano)
     - [ ] Ne, každý má vlastní stravu
 
 52. **Vaří někdo jiný v domácnosti?** (Roman, babička)
-    - [ ] Ano, partner pravidelně
+    - [X] Ano, partner pravidelně
+    - [X] Vaří Roman(partner)    
     - [ ] Občas
     - [ ] Ne, vařím jen já
 
@@ -289,59 +295,61 @@ Tento dotazník ti pomůže vytvořit jídelníček přesně podle tvých potře
 
 ### Spouštěče přejídání
 53. **Jíš, když jsi ve stresu?**
-    - [ ] Ano, často
+    - [X] Ano, často
     - [ ] Občas
     - [ ] Ne
 
 54. **Jíš, když je ti nuda?**
     - [ ] Ano, často
-    - [ ] Občas
+    - [X] Občas
     - [ ] Ne
 
 55. **Jíš, když jsi smutná nebo unavená?**
-    - [ ] Ano, často
+    - [X] Ano, často
     - [ ] Občas
     - [ ] Ne
 
 ### Strategie zvládání
 56. **Co ti pomáhá odolat pokušení?** (vyber všechny, které fungují)
-    - [ ] Mít připravené zdravé svačiny
-    - [ ] Pití vody
-    - [ ] Čištění zubů / žvýkačka
-    - [ ] Procházka / pohyb
-    - [ ] Rozptýlení (práce, koníčky)
+    - [X] Mít připravené zdravé svačiny
+    - [X] Pití vody
+    - [ ] Čištění zubů
+    - [X] žvýkačka
+    - [X] Procházka / pohyb
+    - [X] Rozptýlení (práce, koníčky)
     - [ ] Jiné: _______________
 
 ### Obtížné situace
 57. **Jaké situace jsou pro tebe NEJOBTÍŽNĚJŠÍ?** (kdy je těžké dodržet jídelníček)
-    - [ ] Oslavy a večírky
-    - [ ] Návštěvy u rodiny/přátel
-    - [ ] Restaurace
+    - [X] Oslavy a večírky
+    - [X] Návštěvy u rodiny/přátel
+    - [X] Restaurace
     - [ ] Víkendové snídaně
-    - [ ] Večery před TV
-    - [ ] Práce (svačiny od kolegů)
+    - [X] Večery před TV
+    - [X] Práce (svačiny od kolegů)
+    - [X] Práce (narozeninové dortíky apod.)
     - [ ] Jiné: _______________
 
 58. **Co ti v těchto situacích pomohlo by?**
 
 ### Podpora
 59. **Máš podporu rodiny v hubnutí?**
-    - [ ] Ano, velkou podporu
+    - [X] Ano, velkou podporu
     - [ ] Částečnou podporu
     - [ ] Spíše ne
     - [ ] Ne
 
 60. **Chceš hubnout společně s partnerem?** (Roman)
-    - [ ] Ano, je to motivující
+    - [X] Ano, je to motivující
     - [ ] Je to jedno
     - [ ] Ne, každý svůj plán
 
 61. **Co tě nejvíc motivuje k dodržování jídelníčku?**
-    - [ ] Vidět výsledky na váze
-    - [ ] Lepší energie a pocit
-    - [ ] Podpora partnera
-    - [ ] Fotky "před/po"
-    - [ ] Oblečení (chci se vejít do...)
+    - [X] Vidět výsledky na váze
+    - [X] Lepší energie a pocit
+    - [X] Podpora partnera
+    - [X] Fotky "před/po"
+    - [X] Oblečení (chci se vejít do...)
     - [ ] Jiné: _______________
 
 ---
@@ -350,12 +358,7 @@ Tento dotazník ti pomůže vytvořit jídelníček přesně podle tvých potře
 
 62. **Jakékoli další poznámky, speciální požadavky nebo informace, které by měly být zohledněny:**
 
-_______________________________________________________________
-
-_______________________________________________________________
-
-_______________________________________________________________
-
+máme dítě má rádo sýr, mrkev a fíky
 ---
 
 ## 🎯 CO DÁLE?
