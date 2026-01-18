@@ -17,7 +17,7 @@ class DetskyyProfil:
     jmeno: str = "Kubík"
     datum_narozeni: str = "1.1.2021"
     vek_roky: float = 4.5  # roky
-    vaha: float = 18.0  # kg (průměr pro 4.5 let)
+    vaha: float = 17.0  # kg (měření 18.1.2026)
     vyska: int = 106  # cm (průměr pro 4.5 let)
     pohlavi: str = "chlapec"
     
