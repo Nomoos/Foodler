@@ -27,7 +27,7 @@ cd scripts
 python3 generate_meal_plan_tomorrow.py
 ```
 
-#### `generate_weekly_meal_plan.py` ⭐ NOVÉ
+#### `generate_weekly_meal_plan.py`
 Generuje kompletní týdenní jídelníček (7 dní) a ukládá do JSON souboru.
 
 **Použití:**
@@ -40,6 +40,28 @@ python3 generate_weekly_meal_plan.py 2026-01-19       # ISO formát
 **Výstup:**
 - Vytiskne týdenní jídelníček do konzole
 - Uloží JSON soubor do `../data/meal_plans/weekly/`
+
+#### `generate_weekly_meal_plan_md.py` ⭐ NOVÉ - DOPORUČENO
+Generuje kompletní týdenní jídelníček ve formátu Markdown - čitelný a tisknutelný!
+
+**Použití:**
+```bash
+cd scripts
+python3 generate_weekly_meal_plan_md.py 19.1.2026     # Týden od 19.1.2026
+python3 generate_weekly_meal_plan_md.py 2026-01-19    # ISO formát
+```
+
+**Výstup složka:** `../data/meal_plans/weekly/week_YYYY-MM-DD/`
+- ✅ `README.md` - Týdenní souhrn s odkazy na jednotlivé dny
+- ✅ `day_1_YYYY-MM-DD_den.md` - Jídelníček pro každý den (7 souborů)
+- ✅ `shopping_list.md` - Kompletní nákupní seznam s kategoriemi
+
+**Výhody MD formátu:**
+- 📖 Čitelný v textovém editoru, GitHub, nebo tištěný
+- 🔗 Odkazy mezi soubory
+- ☑️ Checkboxy pro nákupní seznam
+- 📱 Snadno zobrazitelný na mobilu
+- 🖨️ Připravený k tisku
 
 #### `generate_optimized_plan.py`
 Generuje optimalizovaný jídelníček s ohledem na nutriční cíle.
@@ -88,8 +110,39 @@ data/
 └── meal_plans/
     ├── meal_plan_28_days.json       # Základní 28denní cyklus
     └── weekly/
-        └── weekly_plan_YYYY-MM-DD_to_YYYY-MM-DD.json  # Týdenní plány
+        ├── weekly_plan_YYYY-MM-DD_to_YYYY-MM-DD.json  # Týdenní plány (JSON)
+        └── week_YYYY-MM-DD/         # 📁 Týdenní plány (Markdown) ⭐
+            ├── README.md            # Týdenní souhrn s odkazy
+            ├── day_1_YYYY-MM-DD_den.md  # Pondělí
+            ├── day_2_YYYY-MM-DD_den.md  # Úterý
+            ├── day_3_YYYY-MM-DD_den.md  # Středa
+            ├── day_4_YYYY-MM-DD_den.md  # Čtvrtek
+            ├── day_5_YYYY-MM-DD_den.md  # Pátek
+            ├── day_6_YYYY-MM-DD_den.md  # Sobota
+            ├── day_7_YYYY-MM-DD_den.md  # Neděle
+            └── shopping_list.md     # Nákupní seznam
 ```
+
+### Příklad MD Struktury (week_2026-01-19)
+
+**README.md obsahuje:**
+- 📅 Přehled týdne s odkazy na jednotlivé dny
+- 📊 Statistiky týdne (35 jídel, vegetariánské varianty)
+- 🛒 Odkaz na nákupní seznam
+
+**day_X_YYYY-MM-DD_den.md obsahuje:**
+- 🌅 Snídaně
+- 🍎 Dopolední svačina
+- 🍽️ Oběd (včetně vegetariánských variant)
+- 🥤 Odpolední svačina
+- 🌙 Večeře
+- 💡 Tipy pro přípravu
+
+**shopping_list.md obsahuje:**
+- ☑️ Checkboxy pro označení položek
+- 📦 Kategorie: Zelenina, Ovoce, Maso, Mléčné produkty, Obiloviny, Ořechy, Koření
+- 🔢 Počet použití každé ingredience během týdne
+- 💡 Tipy pro nákup (čerstvost, slevy, meal prep)
 
 ## 🔧 Technické Detaily
 

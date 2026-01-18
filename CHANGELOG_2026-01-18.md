@@ -15,7 +15,7 @@
 - Snadná navigace
 
 #### Vytvořené složky:
-- ✅ `scripts/` - Spustitelné skripty (7 souborů)
+- ✅ `scripts/` - Spustitelné skripty (8 souborů)
 - ✅ `tests/` - Testovací soubory (9 souborů)
 - ✅ `examples/` - Demo příklady (7 souborů)
 - ✅ `docs/archive/` - Archivní dokumenty (20 souborů)
@@ -48,17 +48,52 @@
 
 ### 2. Vytvoření Jídelníčku 19.1-25.1.2026 ✅
 
-#### Nový skript:
-✅ **`scripts/generate_weekly_meal_plan.py`**
+#### Nové skripty:
+✅ **`scripts/generate_weekly_meal_plan.py`** (JSON formát)
 - Generuje kompletní týdenní jídelníček (7 dní)
-- Podporuje české názvy dnů v týdnu
 - Ukládá do JSON formátu
 - Zobrazuje den v 28denním cyklu
 
-#### Vygenerovaný jídelníček:
-✅ **`data/meal_plans/weekly/weekly_plan_2026-01-19_to_2026-01-25.json`**
+✅ **`scripts/generate_weekly_meal_plan_md.py`** ⭐ DOPORUČENO (Markdown formát)
+- Generuje jednotlivé MD soubory pro každý den
+- Vytváří týdenní souhrn s odkazy
+- Generuje nákupní seznam s kategoriemi
+- Čitelný, tisknutelný, s checkboxy
 
-**Obsah týdne:**
+#### Vygenerované soubory:
+
+**JSON formát:**
+✅ `data/meal_plans/weekly/weekly_plan_2026-01-19_to_2026-01-25.json`
+
+**Markdown formát:** (složka `data/meal_plans/weekly/week_2026-01-19/`)
+- ✅ `README.md` - Týdenní souhrn s odkazy na jednotlivé dny
+- ✅ `day_1_2026-01-19_pondělí.md` - Pondělí
+- ✅ `day_2_2026-01-20_úterý.md` - Úterý
+- ✅ `day_3_2026-01-21_středa.md` - Středa
+- ✅ `day_4_2026-01-22_čtvrtek.md` - Čtvrtek
+- ✅ `day_5_2026-01-23_pátek.md` - Pátek
+- ✅ `day_6_2026-01-24_sobota.md` - Sobota
+- ✅ `day_7_2026-01-25_neděle.md` - Neděle
+- ✅ `shopping_list.md` - Nákupní seznam
+
+### 3. Nákupní Seznam ✅
+
+**Obsah shopping_list.md:**
+- ☑️ Checkboxy pro označení položek
+- 📦 Kategorie:
+  - Zelenina (16 položek)
+  - Ovoce (7 položek)
+  - Maso a Ryby (5 položek)
+  - Mléčné Produkty (4 položky)
+  - Obiloviny (3 položky)
+  - Ořechy a Semínka (2 položky)
+  - Koření a Doplňky (1 položka)
+  - Ostatní (2 položky)
+- 🔢 Počet použití každé ingredience (např. Med 10×, Jablko 7×)
+- 💡 Tipy pro nákup (slevy, meal prep, kvalita)
+- 📊 Statistiky (40 položek celkem)
+
+**Obsah týdne (19-25.1.2026):**
 
 ##### Pondělí 19.1.2026 (Den 19)
 - 🌅 Snídaně: Pohankové vločky, sójové mléko, jablko, vlašské ořechy, med
