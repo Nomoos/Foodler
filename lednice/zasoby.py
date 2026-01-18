@@ -146,6 +146,13 @@ class SpravceZasob:
             umisteni="mrazak"
         ))
         self.lednice.pridat_polozku(ZasobaPolozka(
+            "Tuňák kousky v oleji", 750, "g", "bilkoviny",
+            datum_nakupu=dnes - timedelta(days=5),
+            datum_expirace=dnes + timedelta(days=180),
+            umisteni="spiz",
+            poznamky="Sun&Sea 750g, konzervovaný"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
             "Vejce slepičí M", 40, "ks", "bilkoviny",
             datum_nakupu=dnes - timedelta(days=3),
             datum_expirace=dnes + timedelta(days=18),

@@ -110,6 +110,17 @@ class DatabazePotravIn:
             poznamky="Praktický zdroj bílkovin"
         ),
         Potravina(
+            nazev="Tuňák kousky v oleji",
+            kategorie="bilkoviny",
+            kalorie=159,
+            bilkoviny=26.0,
+            sacharidy=0.0,
+            tuky=6.0,
+            vlaknina=0.0,
+            cena_za_kg=200.0,
+            poznamky="Sun&Sea 750g, v slunečnicovém oleji, vysoký obsah bílkovin, sůl 1.2g/100g"
+        ),
+        Potravina(
             nazev="Vejce slepičí M",
             kategorie="bilkoviny",
             kalorie=151,  # 83 kcal per 55g = 151 per 100g
