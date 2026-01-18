@@ -5,7 +5,7 @@ Nástroj pro podporu hubnutí a zdravého stravování pro celou rodinu s důraz
 ## 👥 Cílová skupina
 
 ### Roman (Romča)
-- **Váha:** 134.2 kg (měření 1.9.2026)
+- **Váha:** 134.2 kg (měření 9.1.2026)
 - **Výška:** 183 cm
 - **Věk:** 34 let
 - **BMI:** 40.1

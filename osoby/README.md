@@ -60,7 +60,7 @@ seznam = RodinnePlanovani.vypocti_nakupni_seznam_pro_tyden()
 
 ## Společné preference
 
-- **Bez hub**: Obě dospělé osoby nepreferují houby a produkty z hub
+- **Bez hub a slizké konzistence**: Obě dospělé osoby nepreferují houby a produkty s kluzkou/slizkou texturou (okra, lilek, řasy, apod.)
 - **Ketogenní dieta**: Pro dospělé - nízký příjem sacharidů, vysoký příjem bílkovin a tuků
 - **Meal prep**: Zaměření na jídla vhodná pro přípravu dopředu
 
@@ -101,6 +101,11 @@ from osoby.osoba_3.preference import PreferenceJidel, DietniOmezeni
 
 # Kontrola jídla na podporu zraku
 obsahuje_podporu = PreferenceJidel.obsahuje_podporu_zraku("Mrkev s lososem")
+
+# Kontrola jídla s texturovými preferencemi
+from osoby.osoba_1.preference import PreferenceJidel as Osoba1Preference
+vhodne = Osoba1Preference.je_jidlo_vhodne("Žampionová omáčka")  # False - obsahuje slizkou texturu
+vhodne = Osoba1Preference.je_jidlo_vhodne("Žampionová omáčka", kontrolovat_texturu=False)  # False - stále v NEPREFERRED_FOODS
 
 # Získat týdenní plán
 tydenni_plan = DietniOmezeni.navrhni_jidla_pro_tyden()

@@ -19,6 +19,39 @@ class PreferenceJidel:
         "shiitake"
     ]
     
+    # Potraviny se slizkou/kluzkou konzistencí (texture preference)
+    # Note: Includes items from NEPREFERRED_FOODS plus additional slimy-textured foods
+    # This allows for granular control via the kontrolovat_texturu parameter
+    SLIMY_TEXTURED_FOODS: List[str] = [
+        "houby",           # všechny druhy hub
+        "houb",            # variace (houbová omáčka)
+        "hříbky",
+        "hříbk",           # variace (hříbková polévka)
+        "žampiony",
+        "žampion",         # variace (žampionová omáčka)
+        "hlíva",
+        "hlív",            # variace (hlívová polévka)
+        "shiitake",
+        "lilek",           # může být slizký po vaření
+        "okra",            # velmi slizká zelenina
+        "okr",             # variace
+        "ustřice",         # slizká textura
+        "ústřice",
+        "slimáci",         # velmi slizká textura
+        "slimák",
+        "žabí stehýnka",   # slizká textura
+        "mořské řasy",     # mohou být slizké
+        "řasy",
+        "řas",             # variace (s řasami)
+        "aloe vera",       # slizká konzistence
+        "chobotnice",      # může mít slizkou texturu
+        "chobotnic",       # variace
+        "syrová vejce",    # slizká konzistence
+        "syrové vejce",
+        "rosolovité pokrmy",
+        "rosol"
+    ]
+    
     # Oblíbené zdroje bílkovin
     PREFERRED_PROTEINS: List[str] = [
         "kuřecí prsa",
@@ -57,20 +90,30 @@ class PreferenceJidel:
     ]
     
     @staticmethod
-    def je_jidlo_vhodne(jidlo: str) -> bool:
+    def je_jidlo_vhodne(jidlo: str, kontrolovat_texturu: bool = True) -> bool:
         """
         Zkontroluje, zda jídlo neobsahuje nepreferované ingredience.
         
         Args:
             jidlo: Název nebo popis jídla
+            kontrolovat_texturu: Pokud True, kontroluje i slizké textury
             
         Returns:
             True pokud je jídlo vhodné, False pokud obsahuje nepreferované složky
         """
         jidlo_lower = jidlo.lower()
+        
+        # Kontrola běžných nepreferovaných potravin
         for nepref in PreferenceJidel.NEPREFERRED_FOODS:
             if nepref in jidlo_lower:
                 return False
+        
+        # Kontrola slizké/kluzké konzistence
+        if kontrolovat_texturu:
+            for slimy in PreferenceJidel.SLIMY_TEXTURED_FOODS:
+                if slimy in jidlo_lower:
+                    return False
+        
         return True
     
     @staticmethod
@@ -91,6 +134,7 @@ class PreferenceJidel:
         """Vrátí kompletní přehled preferencí."""
         return {
             "nepreferovane": PreferenceJidel.NEPREFERRED_FOODS,
+            "slizke_textury": PreferenceJidel.SLIMY_TEXTURED_FOODS,
             "preferovane_bilkoviny": PreferenceJidel.PREFERRED_PROTEINS,
             "preferovana_zelenina": PreferenceJidel.PREFERRED_VEGETABLES,
             "preferovane_tuky": PreferenceJidel.PREFERRED_FATS
@@ -150,6 +194,10 @@ def main():
     
     print("\nNepreferované potraviny:")
     for item in preference["nepreferovane"]:
+        print(f"  ✗ {item}")
+    
+    print("\n🚫 Slizké/kluzké textury (vyhýbat se):")
+    for item in preference["slizke_textury"]:
         print(f"  ✗ {item}")
     
     print("\nPreferované bílkoviny:")
