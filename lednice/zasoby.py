@@ -655,6 +655,306 @@ class SpravceZasob:
             poznamky="150ml, Vitar, pro Kubíka, Globus nákup"
         ))
     
+    def naplnit_zasoby_z_nakupu_globus_20260118(self):
+        """
+        Naplní lednici položkami z nákupu Globus z 18.1.2026.
+        Kompletní nákup za 3708 Kč s 40 položkami.
+        """
+        datum_nakupu = date(2026, 1, 18)
+        dnes = datum_nakupu
+        
+        # Mléčné výrobky a vejce
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Vejce M30 podestýlkové", 60, "ks", "bilkoviny",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=21),
+            umisteni="lednice",
+            poznamky="2 balení po 30 ks, Globus 18.1.2026"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Sýr Císařský 45%", 173, "g", "mlecne_vyrobky",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=14),
+            umisteni="lednice",
+            poznamky="Polotvrdý sýr, Globus 18.1.2026"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Sýr Císařský uzený 44%", 170, "g", "mlecne_vyrobky",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=14),
+            umisteni="lednice",
+            poznamky="Uzený polotvrdý, Globus 18.1.2026"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Sýr Gouda Light", 867, "g", "mlecne_vyrobky",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=14),
+            umisteni="lednice",
+            poznamky="4 kusy (249g+232g+200g+186g), Globus 18.1.2026"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Král sýrů přírodní", 480, "g", "mlecne_vyrobky",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=10),
+            umisteni="lednice",
+            poznamky="4x 120g, Globus 18.1.2026"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Král sýrů s pepřem", 240, "g", "mlecne_vyrobky",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=10),
+            umisteni="lednice",
+            poznamky="2x 120g, Globus 18.1.2026"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Mascarpone", 500, "g", "mlecne_vyrobky",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=7),
+            umisteni="lednice",
+            poznamky="2x 250g, Globus 18.1.2026"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Cottage cheese s pažitkou", 180, "g", "mlecne_vyrobky",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=5),
+            umisteni="lednice",
+            poznamky="180g, Globus 18.1.2026"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Řecký jogurt 5%", 2000, "g", "mlecne_vyrobky",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=10),
+            umisteni="lednice",
+            poznamky="2x 1kg, Globus 18.1.2026"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Řecký jogurt natural", 1000, "g", "mlecne_vyrobky",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=10),
+            umisteni="lednice",
+            poznamky="1kg, Globus 18.1.2026"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Mozzarella", 250, "g", "mlecne_vyrobky",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=14),
+            umisteni="lednice",
+            poznamky="2x 125g, Globus 18.1.2026"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Jogurt nugát", 150, "g", "mlecne_vyrobky",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=7),
+            umisteni="lednice",
+            poznamky="Globus 18.1.2026"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Jogurt borůvka", 150, "g", "mlecne_vyrobky",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=7),
+            umisteni="lednice",
+            poznamky="Globus 18.1.2026"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Bio jogurt jahoda", 180, "g", "mlecne_vyrobky",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=7),
+            umisteni="lednice",
+            poznamky="Bio, Globus 18.1.2026"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Řecký jogurt malina", 280, "g", "mlecne_vyrobky",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=7),
+            umisteni="lednice",
+            poznamky="2x 140g, Globus 18.1.2026"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Řecký jogurt hruška", 280, "g", "mlecne_vyrobky",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=7),
+            umisteni="lednice",
+            poznamky="2x 140g, Globus 18.1.2026"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Řecký jogurt meruňka", 140, "g", "mlecne_vyrobky",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=7),
+            umisteni="lednice",
+            poznamky="140g, Globus 18.1.2026"
+        ))
+        
+        # Zelenina a ovoce
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Jablka červená", 1290, "g", "ovoce",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=14),
+            umisteni="lednice",
+            poznamky="Čerstvá, Globus 18.1.2026"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Celer bulvový", 2930, "g", "zelenina",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=10),
+            umisteni="lednice",
+            poznamky="2.93 kg, Globus 18.1.2026"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Borůvky", 125, "g", "ovoce",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=3),
+            umisteni="lednice",
+            poznamky="Rychle spotřebovat, Globus 18.1.2026"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Pažitka v květináči", 1, "ks", "zelenina",
+            datum_nakupu=dnes,
+            datum_expirace=None,
+            umisteni="kuchyne",
+            poznamky="Živá rostlina, Globus 18.1.2026"
+        ))
+        
+        # Ořechy a semínka
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Kešu ořechy pražené", 200, "g", "orechy",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=90),
+            umisteni="spiz",
+            poznamky="200g nesolené, Globus 18.1.2026"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Pekanové ořechy", 200, "g", "orechy",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=90),
+            umisteni="spiz",
+            poznamky="200g premium, Globus 18.1.2026"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Dýňová semínka", 200, "g", "orechy",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=180),
+            umisteni="spiz",
+            poznamky="200g, zinek a hořčík, Globus 18.1.2026"
+        ))
+        
+        # Tuky a oleje
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Olivový olej", 1000, "ml", "tuky",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=365),
+            umisteni="spiz",
+            poznamky="1L, Globus 18.1.2026"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Rýžový olej", 750, "ml", "tuky",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=365),
+            umisteni="spiz",
+            poznamky="750ml, Globus 18.1.2026"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Dýňový olej", 250, "ml", "tuky",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=365),
+            umisteni="spiz",
+            poznamky="250ml styrijský, Globus 18.1.2026"
+        ))
+        
+        # Sacharidy (pro Kubíka)
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Rýže basmati", 5000, "g", "sacharidy",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=365),
+            umisteni="spiz",
+            poznamky="5kg pro Kubíka, Globus 18.1.2026"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Bio pohankové vločky", 500, "g", "sacharidy",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=180),
+            umisteni="spiz",
+            poznamky="2x 250g, Globus 18.1.2026"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Bio ovesné vločky", 1000, "g", "sacharidy",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=180),
+            umisteni="spiz",
+            poznamky="2x 500g, Globus 18.1.2026"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Čočka velkozrnná", 500, "g", "sacharidy",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=365),
+            umisteni="spiz",
+            poznamky="500g, Globus 18.1.2026"
+        ))
+        
+        # Ostatní
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Bio Goji", 100, "g", "ovoce",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=90),
+            umisteni="spiz",
+            poznamky="Sušené bobule, Globus 18.1.2026"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Utopenci", 1550, "g", "ostatni",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=30),
+            umisteni="lednice",
+            poznamky="Nakládaná klobása, Globus 18.1.2026"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Olivy zelené", 880, "g", "zelenina",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=180),
+            umisteni="spiz",
+            poznamky="Konzervované, Globus 18.1.2026"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Švestky půlené sušené", 660, "g", "ovoce",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=180),
+            umisteni="spiz",
+            poznamky="Sušené, Globus 18.1.2026"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Fíky sušené", 600, "g", "ovoce",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=180),
+            umisteni="spiz",
+            poznamky="3x 200g, Globus 18.1.2026"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Kmín celý", 30, "g", "koreni",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=365),
+            umisteni="spiz",
+            poznamky="Koření, Globus 18.1.2026"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Nové koření", 12, "g", "koreni",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=365),
+            umisteni="spiz",
+            poznamky="Koření, Globus 18.1.2026"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Petržel sušená", 7, "g", "koreni",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=365),
+            umisteni="spiz",
+            poznamky="Koření, Globus 18.1.2026"
+        ))
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Jedlá soda", 1000, "g", "ostatni",
+            datum_nakupu=dnes,
+            datum_expirace=None,
+            umisteni="spiz",
+            poznamky="Kypřící prášek, Globus 18.1.2026"
+        ))
+    
     def vypis_inventar(self):
         """Vypíše kompletní inventář."""
         print("=" * 70)
