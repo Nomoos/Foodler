@@ -329,5 +329,5 @@ VFA: 143 → 147.2 cm² (+4.2)
 - [TRAVENI_A_METABOLISMUS.md](TRAVENI_A_METABOLISMUS.md) - Optimalizace metabolismu
 - [../diet-plans/PROTEIN_FIRST_PLAN.md](../diet-plans/PROTEIN_FIRST_PLAN.md) - Protein-first přístup
 - [../diet-plans/MACINGOVA_DIETA.md](../diet-plans/MACINGOVA_DIETA.md) - Mačingova dieta
-- [osoby/osoba_1/profil.py](/osoby/osoba_1/profil.py) - Profil Romana s metrikami
-- [osoby/osoba_2/profil.py](/osoby/osoba_2/profil.py) - Profil Páji s metrikami
+- [../../osoby/osoba_1/profil.py](../../osoby/osoba_1/profil.py) - Profil Romana s metrikami
+- [../../osoby/osoba_2/profil.py](../../osoby/osoba_2/profil.py) - Profil Páji s metrikami
