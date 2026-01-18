@@ -83,5 +83,6 @@
       "dinner": "Cottage cheese (200g), avokádo (1/2), olivový olej",
       "evening_snack": "Cottage cheese (100g), lněné semínko"
     }
-  ]
+  ],
+  "note_about_actual_consumption": "Days with roman_total_calories field contain actual consumption data (not planned). Other days remain as planned meals."
 }
