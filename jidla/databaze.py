@@ -234,6 +234,30 @@ class DatabzeJidel:
             vydrzi_dni=1,
             poznamky="Rychlá proteinová svačina"
         ),
+        Jidlo(
+            nazev="Avokádová pomazánka z tvarohu",
+            typ="svacina",
+            ingredience=[
+                Ingredience("Jaroměřický měkký tvaroh", 50, "hlavni"),
+                Ingredience("Avokádo", 100, "hlavni"),
+                Ingredience("Česnek", 3, "koření"),
+                Ingredience("Citrónová šťáva", 10, "koření"),
+                Ingredience("Sůl kuchyňská", 0.5, "koření"),
+                Ingredience("Chilli paprička", 5, "koření"),
+            ],
+            kalorie_celkem=297,
+            bilkoviny_celkem=10.8,
+            sacharidy_celkem=9.9,
+            tuky_celkem=23.8,
+            vlaknina_celkem=4.9,
+            priprava_cas_min=5,
+            priprava_postup="1. Chilli papričku nasekáme najemno. 2. Rozmixujeme měkčí avokádo s tvarohem a prolisovaným česnekem. Pokapeme citronovou šťávou. Přidáme sůl a chilli.",
+            obtiznost="snadna",
+            porce=1,
+            vhodne_pro_meal_prep=False,
+            vydrzi_dni=1,
+            poznamky="Rychlá pomazánka, nejlepší čerstvá, bohatá na zdravé tuky"
+        ),
     ]
     
     @classmethod
