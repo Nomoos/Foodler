@@ -185,6 +185,7 @@ The script includes error handling for:
 
 - [PURPOSE_ANALYSIS.md](./docs/health/PURPOSE_ANALYSIS.md) - Comprehensive analysis of dietary plan and methodology
 - [KUPI_INTEGRATION.md](./docs/technical/KUPI_INTEGRATION.md) - Guide for using the Kupi.cz discount scraper
+- [GITHUB_COPILOT_WEB_ACCESS.md](./docs/technical/GITHUB_COPILOT_WEB_ACCESS.md) - ⭐ Guide for GitHub Copilot Pro+ and testing web scrapers
 
 ## Features
 

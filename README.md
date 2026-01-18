@@ -71,6 +71,7 @@ Nástroj pro podporu hubnutí a zdravého stravování pro celou rodinu s důraz
   - Scoring a threshold systém
 
 ### 🔧 Technická dokumentace
+- **[GITHUB_COPILOT_WEB_ACCESS.md](docs/technical/GITHUB_COPILOT_WEB_ACCESS.md)** - ⭐ Návod pro GitHub Copilot Pro+ a testování scraperů
 - **[IMPLEMENTATION_SUMMARY.md](docs/technical/IMPLEMENTATION_SUMMARY.md)** - Shrnutí implementace
 - **[REFACTORING_SUMMARY.md](docs/technical/REFACTORING_SUMMARY.md)** - Historie refaktoringu
 - **[osoby/README.md](osoby/README.md)** - Práce s profily a preferencemi
