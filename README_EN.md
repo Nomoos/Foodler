@@ -191,6 +191,7 @@ When errors occur, the script will print an error message to stderr and return N
 - **[LANGUAGE_EVALUATION.md](docs/technical/LANGUAGE_EVALUATION.md)** - Comprehensive language analysis
 - [PURPOSE_ANALYSIS.md](./docs/health/PURPOSE_ANALYSIS.md) - Comprehensive analysis of dietary plan and methodology
 - [KUPI_INTEGRATION.md](./docs/technical/KUPI_INTEGRATION.md) - Guide for using the Kupi.cz discount scraper
+- [GITHUB_COPILOT_WEB_ACCESS.md](./docs/technical/GITHUB_COPILOT_WEB_ACCESS.md) - ⭐ Guide for GitHub Copilot Pro+ and testing web scrapers
 
 ## Contributing
 
