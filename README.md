@@ -143,6 +143,15 @@ python osoby/sdilena_jidla/jidla.py
 # Databáze potravin
 python potraviny/databaze.py
 
+# Databáze jídel
+python jidla/databaze.py
+
+# Generátor variací receptů (nové!)
+python jidla/variace_receptu.py
+
+# Demo variací receptů (interaktivní)
+python demo_variace_receptu.py
+
 # Nákupní seznam
 python nakup/seznamy.py
 
