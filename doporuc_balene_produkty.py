@@ -6,6 +6,8 @@ Vyhledává jogurty, tvarohy a podobné produkty v akci pomocí Kupi.cz.
 
 import sys
 import os
+import time
+import traceback
 from typing import List, Dict, Tuple
 from datetime import datetime
 
@@ -130,7 +132,6 @@ def search_dairy_products(scraper: KupiCzScraper) -> Dict[str, List[Tuple[Produc
         for keyword in category_info['keywords']:
             print(f"  🔍 Vyhledávám: '{keyword}'...", end=' ')
             try:
-                import time
                 time.sleep(2)  # Rate limiting
                 
                 products = scraper.search_products(keyword)
@@ -320,7 +321,6 @@ def main():
         print("  • Nejste připojeni k internetu")
         print("  • Struktura webu kupi.cz se změnila")
         print("  • Web dočasně nedostupný")
-        import traceback
         traceback.print_exc()
         sys.exit(1)
 
