@@ -395,7 +395,151 @@ Vždy s komunikací a respektem
   - Plavání, chůze, jóga
   - Sex jako pravidelná fyzická aktivita!
 
-#### 2. Emoční stravování a stress eating
+#### 2. Psychické problémy a deprese
+
+**Aktuální stav** (kritický):
+- 😰 **Víkendová deprese**: Není schopná vstát z postele o víkendech
+- 😔 **Nízké sebevědomí**: "Jsem k ničemu" (před pár týdny)
+- 📈 **Zlepšení při práci**: V týdnu chodí do práce, což ji zvedne
+- 😡 **Premenstruační agresivita**: Cca týden před periodou (PMS/PMDD)
+- 🔄 **Začarovaný kruh**: Deprese → nízká aktivita → horší deprese
+
+**Možné příčiny**:
+- ❌ **Hormonální dysbalance**:
+  - Nízký serotonin (hormon štěstí)
+  - Kolísající estrogen/progesteron (PMS)
+  - Nízký testosteron (únava, deprese, nízké libido)
+  - Nedostatek vitaminu D (zimní měsíce)
+- ❌ **Nedostatek intimity a fyzického kontaktu**:
+  - Nedostatek oxytocinu (hormon lásky)
+  - Emoční izolace
+  - Pocit neplnění v partnerství
+- ❌ **Nedostatek pohybu**:
+  - Žádné endorfiny (hormony štěstí z cvičení)
+  - Sedavý životní styl zhoršuje depresi
+- ❌ **Sociální izolace o víkendech**:
+  - Práce = struktura + sociální kontakt
+  - Víkendy = samota (Roman a Kubík možná nedávají dost podpory)
+- ❌ **Emoční vyčerpání**:
+  - Péče o Kubíka
+  - Domácnost
+  - Práce
+  - Nedostatek času pro sebe
+
+**VAROVÁNÍ - Vážné signály**:
+- 🚨 Neschopnost vstát z postele = středně těžká deprese
+- 🚨 Pocity bezcennosti ("jsem k ničemu") = depresivní myšlenky
+- 🚨 Zlepšení jen při vnější struktuře (práce) = závislost na externích faktorech
+- ⚠️ PMS agresivita = možné PMDD (premenstruační dysforická porucha)
+
+**URGENTNÍ doporučení**:
+- 🏥 **Návštěva psychiatra/psychologa** - co nejdříve!
+  - Možná potřeba antidepresiv (SSRI) krátkodobě
+  - Terapie (CBT - kognitivně-behaviorální)
+  - Vyšetření hormonů (estrogen, progesteron, testosteron, TSH)
+- 🌞 **Vitamin D3**: 4000-5000 IU denně (KLÍČOVÉ v zimě!)
+  - Nedostatek D3 = deprese, únava, špatná nálada
+  - Vyšetřit hladiny (ideální 50-80 ng/ml)
+- 🐟 **Omega-3**: 2-3g denně (EPA důležité pro depresi)
+  - Prokazatelný antidepresivní efekt
+  - Zlepšuje hormonální rovnováhu
+- 💊 **Hořčík**: 400mg denně (večer)
+  - Snižuje úzkost
+  - Pomáhá se spánkem
+  - Zmírňuje PMS
+- 🌿 **Šafrán nebo Třezalka** (Hypericum):
+  - Přírodní antidepresiva
+  - POUZE po konzultaci s lékařem!
+
+**Doporučení specifická pro Pavlu**:
+
+1. **PRAVIDELNÝ SEX - KLÍČOVÉ PRO PSYCHIKU!**
+   - ❤️ **Oxytocin**: Nejsilnější přírodní antidepresivum
+     - Snižuje úzkost a depresi
+     - Zvyšuje pocit spokojenosti
+     - Posiluje emoční spojení
+   - 😊 **Endorfiny**: Přírodní analgetikum a antidepresivum
+   - 💪 **Testosteron**: Více energie, méně deprese
+   - 🎯 **Cíl**: 2-3x týdně MINIMÁLNĚ (v akutní fázi i 4-5x!)
+   - 📅 **Pevný plán**: Pondělí, středa, sobota ráno (struktura pomáhá)
+
+2. **RANNÍ RUTINA O VÍKENDECH** (boj proti víkendové depresi):
+   - ⏰ **Pevný čas vstávání**: Stejně jako v týdnu (např. 8:00)
+   - 🌞 **Okamžitě na světlo**: Ven nebo k oknu (15 min)
+   - 🚿 **Studená sprcha**: Aktivuje sympatikus, zvedne náladu
+   - 🏃 **Pohyb do 30 min po probuzení**: Chůze 20 min nebo ranní sex!
+   - ☕ **Zdravá snídaně**: Vysokoproteinová (vajíčka + avokádo)
+   - 📋 **Plán na den**: Minimálně 1 aktivita ven (nákup, procházka)
+
+3. **DENNÍ POHYB - POVINNOST!**
+   - 🏊 **Plavání**: 2x týdně minimálně (endorfiny!)
+   - 🚶 **Chůze**: Každý den 30 min (ideálně ráno nebo po práci)
+   - 🧘 **Jóga/pilates**: 2x týdně (uvolnění, mindfulness)
+   - 💑 **Sex**: 2-3x týdně (nejlepší antidepresivum)
+   - 🌳 **Pobyt venku**: Denně minimálně 30 min (denní světlo!)
+
+4. **SOCIÁLNÍ PODPORA**:
+   - 👥 **Terapie**: Individuální nebo párová s Romanem
+   - 💬 **Komunikace s Romanem**: Denní check-in (10 min)
+   - 📱 **Kontakt s přáteli**: Minimálně 1x týdně
+   - 👨‍👩‍👦 **Rodinný čas**: Kvalitní čas s Kubíkem a Romanem o víkendech
+
+5. **MANAGEMENT PMS/PMDD**:
+   - 📅 **Tracking menstruačního cyklu**: App pro sledování nálady
+   - 💊 **Zvýšená suplementace před periodou**:
+     - Hořčík 600mg (místo 400mg)
+     - Vitamin B6: 100mg (pomáhá s PMS)
+     - Evening primrose oil: 1000mg (hormonální balancování)
+   - 🤗 **Předem varovat Romana**: "Příští týden mám PMS, budu možná agresivní"
+   - 😌 **Více self-care**: Teplé koupele, odpočinek, menší nároky
+   - ❌ **Vyhýbat se velkým rozhodnutím**: Týden před periodou
+
+6. **NUTRIČNÍ PODPORA PSYCHIKY**:
+   - 🥚 **Tryptofan** (pro serotonin):
+     - Vejce, krůta, kuřecí maso
+     - Důležité pro výrobu serotoninu
+   - 🥑 **Zdravé tuky** (pro hormony):
+     - Avokádo, ořechy, olivový olej
+     - Losos 2-3x týdně
+   - 🥬 **Listová zelenina** (folát pro psychiku):
+     - Špenát, brokolice
+   - 🍫 **Kvalitní hořká čokoláda** (70%+):
+     - Zlepšuje náladu (theobromin)
+     - Max 20g denně
+
+**Očekávané zlepšení**:
+
+**Po 2 týdnech** (s pravidelným sexem + D3 + pohyb):
+- ✅ Mírnější deprese
+- ✅ Schopnost vstát o víkendech s menším úsilím
+- ✅ Trochu více energie
+
+**Po 1 měsíci**:
+- ✅ Výrazně lepší nálada
+- ✅ Víkendy zvládnutelné
+- ✅ Mírnější PMS (s hořčíkem a B6)
+- ✅ Pocit, že "nejsem k ničemu" pryč
+
+**Po 3 měsících** (s terapií):
+- ✅ Stabilní nálada většinu času
+- ✅ Víkendy jako pozitivní čas (ne deprese)
+- ✅ PMS agresivita výrazně nižší
+- ✅ Pocit smysluplnosti a hodnoty
+
+**Po 6 měsících**:
+- ✅ Deprese pod kontrolou nebo pryč
+- ✅ Zdravý vztah se sexem a intimitou
+- ✅ PMS zvládnutelné
+- ✅ Vysoká kvalita života
+
+**DŮLEŽITÉ POZNÁMKY**:
+- 🚨 **Psycholog/psychiatr je NUTNOST**, ne volba
+- 🚨 Pravidelný sex není řešení všeho, ale je KLÍČOVÁ součást léčby
+- 🚨 Antidepresiva mohou krátkodobě pomoci (3-6 měsíců), pak postupně vysadit
+- 🚨 Bez léčby se stav bude jen zhoršovat
+- ✅ S komplexní léčbou (terapie + sex + pohyb + suplementace) je prognóza VYNIKAJÍCÍ
+
+#### 3. Emoční stravování a stress eating
 
 **Aktuální stav** (z dotazníku):
 - Pája přiznává problém s emočním stravováním
@@ -417,7 +561,7 @@ Vždy s komunikací a respektem
   - Teplý čaj
   - **Sex!** (nejlepší stress relief)
 
-#### 3. Nedostatečný pohyb
+#### 4. Nedostatečný pohyb
 
 **Aktuální stav**:
 - Pomáhá s úklidem místo vaření
@@ -441,7 +585,7 @@ Vždy s komunikací a respektem
   - Zlepšení kondice
   - Posílení intimity
 
-#### 4. Riziko nezdravých vzorců
+#### 5. Riziko nezdravých vzorců
 
 **Rizika bez změny**:
 - ❌ Pokračující weight gain (přibírání)
@@ -574,6 +718,7 @@ NEDĚLE:    Meal prep společně (lehká aktivita)
 ## 🎯 PRIORITNÍ AKCE - CO DĚLAT HNED
 
 ### 1. URGENTNÍ (tento týden)
+**Roman**:
 - [ ] **Objednat se k obvodnímu lékaři** - kompletní vyšetření
   - Krevní tlak
   - Glykémie (cukr v krvi)
@@ -583,31 +728,53 @@ NEDĚLE:    Meal prep společně (lehká aktivita)
 - [ ] **Změnit uspořádání postele** - Kubík pryč od Romanova zad
 - [ ] **Ledové obklady na krk** - 3x denně po 15 minut
 
+**Pája** (KRITICKÉ!):
+- [ ] **🚨 Objednat se k psychiatrovi/psychologovi** - NEJVYŠŠÍ PRIORITA!
+  - Víkendová deprese je vážný signál
+  - Možná potřeba antidepresiv krátkodobě
+  - Vyšetření hormonů (estrogen, progesteron, testosteron, TSH)
+- [ ] **Zakoupit Vitamin D3** - 4000-5000 IU denně (klíčové pro psychiku v zimě!)
+- [ ] **Zakoupit Omega-3** - 2-3g denně (EPA pro depresi)
+- [ ] **Zakoupit Hořčík** - 400mg denně (večer, na úzkost a PMS)
+- [ ] **Začít ranní rutinu o víkendech** - pevný čas vstávání 8:00
+
+**Společné**:
+- [ ] **Začít pravidelný sex** - MINIMÁLNĚ 2-3x týdně (klíčové pro oba!)
+  - Plán: Pondělí večer, Středa večer, Sobota ráno
+
 ### 2. KRÁTKODOBÉ (tento měsíc)
 - [ ] **Začít keto/low-carb dietu** (už implementováno v systému!)
 - [ ] **Meal prep systém** - neděle 3 hodiny (usnadní dodržování diety)
-- [ ] **Pravidelný sex** - 2-3x týdně (bonding + fyzická aktivita)
-- [ ] **Objednat se k ortopedovi** - vyšetření kolene
-- [ ] **Objednat se k fyzioterapeutovi** - cvičení na záda
-- [ ] **Zakoupit lehací kolo** nebo zkusit v posilovně
-- [ ] **Začít plavat** - 2x týdně po 30 minutách
+- [ ] **Pravidelný sex 2-3x týdně** - pevně zařazeno do rutiny
+- [ ] **Roman: Objednat se k ortopedovi** - vyšetření kolene
+- [ ] **Roman: Objednat se k fyzioterapeutovi** - cvičení na záda
+- [ ] **Roman: Zakoupit lehací kolo** nebo zkusit v posilovně
+- [ ] **Pája: Začít terapii** - individuální nebo párová
+- [ ] **Pája: Začít plavat** - 2x týdně po 30-45 minutách (antidepresivum!)
+- [ ] **Pája: Tracking menstruačního cyklu** - app pro sledování PMS
+- [ ] **Společně: Denní check-in** - 10 minut komunikace večer
 
 ### 3. STŘEDNĚDOBÉ (3 měsíce) - Roman a Pája
 - [ ] **Roman: Úbytek 10-15 kg** - snížení tlaku na koleno a páteř
 - [ ] **Pája: Úbytek 6-9 kg** - lepší energie a sebevědomí
+- [ ] **Pája: Stabilní nálada** - deprese pod kontrolou s terapií
+- [ ] **Pája: PMS pod kontrolou** - s hořčíkem, B6 a sledováním cyklu
 - [ ] **Pravidelné cvičení SPOLEČNĚ** - 3x týdně (plavání, chůze)
 - [ ] **Sex 2-3x týdně standardně** - rutina je klíč
 - [ ] **Kontrolní vyšetření** - sledování pokroku (oba)
 - [ ] **Nová matrace** - investice do kvality spánku a zdraví zad
+- [ ] **Víkendová rutina funguje** - Pája vstává bez problémů
 
 ### 4. DLOUHODOBÉ (6-12 měsíců) - Roman a Pája
 - [ ] **Roman: Úbytek 30-40 kg** - cílová váha 95 kg
 - [ ] **Pája: Úbytek 15-20 kg** - cílová váha 57 kg
+- [ ] **Pája: Deprese pryč nebo výrazně lepší** - možné vysazení antidepresiv
 - [ ] **Pravidelný pohyb** - součást životního stylu (oba)
 - [ ] **Udržení váhy** - dlouhodobá změna stravování (oba)
 - [ ] **Roman: Zlepšení zdraví kolene** - možné zlepšení chrupavky
-- [ ] **Pája: Optimální hormonální rovnováha** - vysoké libido, výborná nálada
+- [ ] **Pája: Optimální hormonální rovnováha** - vysoké libido, výborná nálada, žádná deprese
 - [ ] **Silný vztah** - intimita jako základ štěstí
+- [ ] **Vysoká kvalita života** - oba šťastní, zdraví, plní energie
 
 ---
 
