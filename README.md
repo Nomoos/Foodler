@@ -54,6 +54,16 @@ Nástroj pro podporu hubnutí a zdravého stravování pro celou rodinu s důraz
 - **[RECEPTY_SALATY.md](docs/meal-planning/RECEPTY_SALATY.md)** - Recepty a saláty
 - **[RECEPTY_KETO.md](docs/meal-planning/RECEPTY_KETO.md)** - Keto recepty (chléb, pečivo)
 
+### 📋 Personalizované dotazníky
+- **[osoby/osoba_1/README_DOTAZNIK.md](osoby/osoba_1/README_DOTAZNIK.md)** - ⭐ NOVÉ! Dotazník pro Romana - Meal prep a nákupy
+  - 67 otázek zaměřených na týdenní přípravu jídel
+  - Optimalizace nákupů a využití slev
+  - Personalizovaná doporučení pro batch cooking
+  - Ukázka: `python demo_dotaznik_roman.py`
+- **[osoby/osoba_2/README_DOTAZNIK.md](osoby/osoba_2/README_DOTAZNIK.md)** - Dotazník pro Páju - Jídelní preference
+  - 62 otázek pro lepší přizpůsobení jídelníčku
+  - Zaměření na emoční stravování a časové preference
+
 ### 🏥 Zdraví a metabolismus
 - **[TRAVENI_A_METABOLISMUS.md](docs/health/TRAVENI_A_METABOLISMUS.md)** - Trávení a metabolismus
 - **[PURPOSE_ANALYSIS.md](docs/health/PURPOSE_ANALYSIS.md)** - Analýza účelu a zdravotního kontextu
@@ -147,6 +157,12 @@ python osoby/osoba_3/profil.py    # Kubík
 # Zobrazit preference
 python osoby/osoba_1/preference.py
 python osoby/osoba_3/preference.py  # Kubík - potraviny pro podporu zraku
+
+# Dotazníky pro personalizaci
+python osoby/osoba_1/dotaznik_roman.py    # ⭐ Roman - Meal prep a nákupy
+python demo_dotaznik_roman.py             # Demo - ukázka pro Romana
+python osoby/osoba_2/dotaznik_paja.py     # Pája - Jídelní preference
+python demo_dotaznik_paja.py              # Demo - ukázka pro Páju
 
 # Sdílená jídla a meal prep
 python osoby/sdilena_jidla/jidla.py
