@@ -5,8 +5,11 @@ Tento modul spravuje **hotová jídla** složená z více potravin, připravená
 ## Obsah
 
 - `databaze.py` - Databáze hotových jídel s receptury a nutričními hodnotami
+- `variace_receptu.py` - Generátor variací receptů s různými ingrediencemi
 
 ## Použití
+
+### Základní práce s recepty
 
 ```python
 from jidla.databaze import DatabzeJidel, Jidlo
@@ -32,6 +35,49 @@ rychla = DatabzeJidel.najdi_rychla(max_minut=15)
 low_carb = DatabzeJidel.najdi_low_carb(max_sacharidy=15.0)
 ```
 
+### Generování variací receptů
+
+```python
+from jidla.databaze import DatabzeJidel
+from jidla.variace_receptu import GeneratorVariaci
+
+# Načti recept
+keto_pizza = DatabzeJidel.najdi_podle_nazvu("Keto pizza")
+
+# Vygeneruj varianty s různými sýry
+syrove_varianty = GeneratorVariaci.vygeneruj_varianty_syr(
+    keto_pizza,
+    ingredience_k_nahrade="Sýrařův výběr moravský bochník 45% Madeta",
+    alternativni_syry=["Mozzarella", "Parmazán", "Gouda"]
+)
+
+# Vygeneruj variantu s vejci
+vejce_varianty = GeneratorVariaci.vygeneruj_varianty_s_vejci(
+    keto_pizza,
+    mnozstvi_vajec_g=50  # cca 1 vejce
+)
+
+# Nebo vygeneruj všechny varianty najednou
+vsechny_varianty = GeneratorVariaci.vygeneruj_komplexni_varianty(
+    keto_pizza,
+    syrove_varianty=True,
+    vejce_varianta=True
+)
+```
+
+### Demo skripty
+
+```bash
+# Spusť hlavní databázi jídel
+python jidla/databaze.py
+
+# Spusť generátor variací
+python jidla/variace_receptu.py
+
+# Spusť interaktivní demo
+python demo_variace_receptu.py
+```
+
 ## Typy jídel
 
 - **snidane** - Snídaně
@@ -49,6 +95,24 @@ Každé jídlo obsahuje:
 - Obtížnost (snadná, střední, náročná)
 - Vhodnost pro meal prep
 - Trvanlivost (vydrží X dní)
+
+## Generátor variací receptů
+
+Generátor variací umožňuje:
+- **Varianty se sýry** - Nahradí jeden sýr různými typy sýrů (Mozzarella, Parmazán, Gouda, Cheddar, atd.)
+- **Varianty s vejci** - Přidá vejce do receptu pro zvýšení obsahu bílkovin
+- **Automatický výpočet makronutrientů** - Každá variace má přepočítané nutriční hodnoty
+- **Výběr nejlepší varianty** - Možnost filtrovat podle makronutrientů
+
+### Příklady použití
+
+**Keto pizza s různými sýry:**
+- Varianta s Mozzarellou: 144 kcal, 9.7g bílkovin
+- Varianta s Parmazánem: 189 kcal, 16.9g bílkovin (nejvíce protein!)
+- Varianta s Eidamem: 166 kcal, 0.3g sacharidů (nejméně carbs!)
+
+**Keto pizza s vejci:**
+- + 50g vajec: 250 kcal, 18.2g bílkovin, 0.9g sacharidů
 
 ## Rozdíl oproti modulu `osoby/sdilena_jidla`
 
