@@ -21,7 +21,6 @@ from typing import List, Dict, Optional
 # Import scraperů
 from fetch_nutrition_data import fetch_by_product_name, search_product, fetch_nutrition_data
 from src.scrapers.kupi_scraper import KupiCzScraper
-from modely.product import Product
 
 
 def print_section(title: str):
@@ -131,7 +130,7 @@ def test_kupi_scraper():
                 if products:
                     sorted_products = sorted(
                         [p for p in products if p.discount_percentage],
-                        key=lambda x: x.discount_percentage,
+                        key=lambda x: x.discount_percentage or 0,
                         reverse=True
                     )
                     if sorted_products:
@@ -174,7 +173,7 @@ def test_keto_deals():
                 # Seřadit podle slevy
                 sorted_products = sorted(
                     [p for p in all_keto_products if p.discount_percentage],
-                    key=lambda x: x.discount_percentage,
+                    key=lambda x: x.discount_percentage or 0,
                     reverse=True
                 )
                 
