@@ -4,10 +4,17 @@ Tento modul se zabývá pouze scrapováním dat z webu (Single Responsibility)
 """
 
 import requests
-from typing import List, Optional
+from typing import List, Optional, Dict, Tuple
 from bs4 import BeautifulSoup
 from urllib.parse import urlencode, quote_plus
 import logging
+from datetime import datetime
+import json
+import os
+import re
+import time
+import re
+from datetime import datetime
 
 from modely.product import Product
 
@@ -59,13 +66,16 @@ class KupiCzScraper:
             logger.error(f"Error fetching {url}: {e}")
             return None
     
-    def get_current_discounts(self, category: Optional[str] = None, store: Optional[str] = None) -> List[Product]:
+    def get_current_discounts(self, category: Optional[str] = None, store: Optional[str] = None, 
+                             sort_order: Optional[int] = None, page: int = 1) -> List[Product]:
         """
         Stáhne aktuální slevy z kupi.cz.
         
         Args:
-            category: Volitelný filtr kategorie (např. 'potraviny', 'napoje')
-            store: Volitelný filtr obchodu (např. 'lidl', 'kaufland', 'albert')
+            category: Volitelný filtr kategorie (např. 'slevy/drubez', 'slevy/potraviny')
+            store: Volitelný filtr obchodu (např. 'kaufland', 'albert', 'tesco', 'billa')
+            sort_order: Řazení (0=cena za jednotku, další hodnoty dle webu)
+            page: Číslo stránky pro stránkování
             
         Returns:
             Seznam Product objektů s informacemi o slevách
@@ -76,10 +86,22 @@ class KupiCzScraper:
         url = self.BASE_URL
         params = {}
         
-        if category:
-            url += f"/{category}"
-        if store:
-            params['store'] = store
+        # Pokud je zadána kategorie, přidej ji do URL
+        if category and store:
+            # URL ve formátu /slevy/kategorie/obchod
+            url += f"/slevy/{category}/{store}"
+        elif category:
+            # URL ve formátu /slevy/kategorie
+            url += f"/slevy/{category}"
+        elif store:
+            # URL ve formátu /slevy/obchod
+            url += f"/slevy/{store}"
+        
+        # Přidání parametrů pro řazení a stránkování
+        if sort_order is not None:
+            params['ord'] = sort_order
+        if page > 1:
+            params['page'] = page
         
         if params:
             url += f"?{urlencode(params)}"
@@ -97,6 +119,41 @@ class KupiCzScraper:
             logger.error(f"Error parsing products: {e}")
         
         return products
+    
+    def get_ajax_discounts(self, store: str, page: int = 1, sort_order: int = 0) -> List[Product]:
+        """
+        Stáhne slevy pomocí AJAX endpointu pro rychlejší načítání.
+        
+        Args:
+            store: Název obchodu (např. 'kaufland', 'albert', 'tesco')
+            page: Číslo stránky
+            sort_order: Řazení (0=cena za jednotku)
+            
+        Returns:
+            Seznam Product objektů
+        """
+        # AJAX endpoint: /get-akce/obchod?page=X&ord=X&load_linear=0&ajax=1
+        url = f"{self.BASE_URL}/get-akce/{store}"
+        params = {
+            'page': page,
+            'ord': sort_order,
+            'load_linear': 0,
+            'ajax': 1
+        }
+        url += f"?{urlencode(params)}"
+        
+        soup = self.fetch_page(url)
+        if not soup:
+            logger.warning(f"Failed to fetch AJAX data for {store}")
+            return []
+        
+        try:
+            products = self._parse_products(soup)
+            logger.info(f"Found {len(products)} products via AJAX")
+            return products
+        except Exception as e:
+            logger.error(f"Error parsing AJAX products: {e}")
+            return []
     
     def _parse_products(self, soup: BeautifulSoup) -> List[Product]:
         """
@@ -214,6 +271,9 @@ class KupiCzScraper:
                 if product_url and not product_url.startswith('http'):
                     product_url = self.BASE_URL + product_url
             
+            # Extrakce dat platnosti
+            valid_from, valid_until = self._extract_dates_from_element(element)
+            
             # Pouze vracet produkt pokud má smysluplný název
             if name and name != "Unknown" and len(name) > 2:
                 return Product(
@@ -222,8 +282,8 @@ class KupiCzScraper:
                     discount_price=discount_price,
                     discount_percentage=discount_percentage,
                     store=store,
-                    valid_from=None,
-                    valid_until=None,
+                    valid_from=valid_from,
+                    valid_until=valid_until,
                     image_url=image_url,
                     product_url=product_url,
                     category=None
@@ -258,6 +318,147 @@ class KupiCzScraper:
         except ValueError:
             logger.warning(f"Could not parse price: {price_text}")
             return 0.0
+    
+    def _parse_czech_date(self, date_text: str) -> Optional[datetime]:
+        """
+        Parsuje datum z českého formátu.
+        
+        Args:
+            date_text: Datum ve formátu "dd.mm.yyyy", "d.m.yyyy", nebo "d. m. yyyy"
+        Parsuje datum v českém formátu.
+        
+        Args:
+            date_text: Datum jako "18.1.2026", "18. 1. 2026", nebo "18. ledna 2026"
+            
+        Returns:
+            datetime objekt nebo None při chybě
+        """
+        if not date_text:
+            return None
+        
+        # Odstranění nadbytečných znaků
+        date_text = date_text.strip()
+        
+        # Zkusit různé formáty
+        date_formats = [
+            '%d.%m.%Y',     # 15.1.2026
+            '%d. %m. %Y',   # 15. 1. 2026
+            '%d.%m.%y',     # 15.1.26
+        ]
+        
+        for date_format in date_formats:
+            try:
+                return datetime.strptime(date_text, date_format)
+            except ValueError:
+                continue
+        # Čištění textu
+        date_text = date_text.strip()
+        
+        # České názvy měsíců
+        mesice = {
+            'leden': 1, 'ledna': 1,
+            'únor': 2, 'února': 2,
+            'březen': 3, 'března': 3,
+            'duben': 4, 'dubna': 4,
+            'květen': 5, 'května': 5,
+            'červen': 6, 'června': 6,
+            'červenec': 7, 'července': 7,
+            'srpen': 8, 'srpna': 8,
+            'září': 9,
+            'říjen': 10, 'října': 10,
+            'listopad': 11, 'listopadu': 11,
+            'prosinec': 12, 'prosince': 12
+        }
+        
+        # Pokus o parsování s názvem měsíce
+        for mesic_nazev, mesic_cislo in mesice.items():
+            if mesic_nazev in date_text.lower():
+                try:
+                    # Extrahuj den a rok
+                    parts = re.findall(r'\d+', date_text)
+                    if len(parts) >= 2:
+                        den = int(parts[0])
+                        rok = int(parts[1])
+                        return datetime(rok, mesic_cislo, den)
+                except (ValueError, IndexError):
+                    pass
+        
+        # Pokus o parsování čísleného formátu (d.m.yyyy nebo dd.mm.yyyy)
+        patterns = [
+            r'(\d{1,2})\.?\s*(\d{1,2})\.?\s*(\d{4})',  # 18.1.2026 nebo 18. 1. 2026
+            r'(\d{1,2})/(\d{1,2})/(\d{4})',  # 18/1/2026
+        ]
+        
+        for pattern in patterns:
+            match = re.search(pattern, date_text)
+            if match:
+                try:
+                    den = int(match.group(1))
+                    mesic = int(match.group(2))
+                    rok = int(match.group(3))
+                    return datetime(rok, mesic, den)
+                except (ValueError, IndexError):
+                    pass
+        
+        logger.debug(f"Could not parse date: {date_text}")
+        return None
+    
+    def _extract_dates_from_element(self, element) -> Tuple[Optional[datetime], Optional[datetime]]:
+        """
+        Extrahuje platnost akce z HTML elementu.
+        
+        Args:
+            element: BeautifulSoup element obsahující info o produktu
+            
+        Returns:
+            Tuple (valid_from, valid_until) nebo (None, None)
+        """
+        valid_from = None
+        valid_until = None
+        
+        try:
+            # Hledat všechny texty v elementu, které mohou obsahovat data
+            all_text = element.get_text()
+            
+            # Vzory pro hledání dat
+            # Pattern pro rozsah: "od 15.1.2026 do 21.1.2026", "15.1. - 21.1.2026", etc.
+            range_patterns = [
+                r'od\s+(\d{1,2}\.\s*\d{1,2}\.\s*\d{4})\s+do\s+(\d{1,2}\.\s*\d{1,2}\.\s*\d{4})',
+                r'platnost\s*:?\s*(\d{1,2}\.\s*\d{1,2}\.\s*\d{4})\s*[-–]\s*(\d{1,2}\.\s*\d{1,2}\.\s*\d{4})',
+                r'(\d{1,2}\.\s*\d{1,2}\.\s*\d{4})\s*[-–]\s*(\d{1,2}\.\s*\d{1,2}\.\s*\d{4})',
+            ]
+            
+            for pattern in range_patterns:
+                match = re.search(pattern, all_text, re.IGNORECASE)
+                if match:
+                    date1_text = match.group(1).replace(' ', '')
+                    date2_text = match.group(2).replace(' ', '')
+                    valid_from = self._parse_czech_date(date1_text)
+                    valid_until = self._parse_czech_date(date2_text)
+                    if valid_from and valid_until:
+                        return valid_from, valid_until
+            
+            # Pattern pro jednotlivá data
+            single_date_patterns = [
+                r'od\s+(\d{1,2}\.\s*\d{1,2}\.\s*\d{4})',
+                r'platí?\s+do\s+(\d{1,2}\.\s*\d{1,2}\.\s*\d{4})',
+            ]
+            
+            for i, pattern in enumerate(single_date_patterns):
+                match = re.search(pattern, all_text, re.IGNORECASE)
+                if match:
+                    date_text = match.group(1).replace(' ', '')
+                    parsed_date = self._parse_czech_date(date_text)
+                    if parsed_date:
+                        if i == 0:  # "od" pattern
+                            valid_from = parsed_date
+                        else:  # "do" pattern
+                            valid_until = parsed_date
+            
+        except Exception as e:
+            logger.debug(f"Error extracting dates: {e}")
+        
+        return valid_from, valid_until
     
     def search_products(self, query: str) -> List[Product]:
         """
@@ -298,6 +499,161 @@ class KupiCzScraper:
             {'name': 'Makro', 'id': 'makro'},
         ]
         return stores
+    
+    def scrape_all_shop_discounts(self) -> Dict[str, List[Product]]:
+        """
+        Stáhne slevy ze všech dostupných obchodů.
+        
+        Returns:
+            Slovník kde klíč je ID obchodu a hodnota je seznam produktů
+        """
+        all_discounts = {}
+        stores = self.get_stores()
+        
+        logger.info(f"Starting to scrape discounts from {len(stores)} stores")
+        
+        for store in stores:
+            store_id = store['id']
+            store_name = store['name']
+            
+            logger.info(f"Scraping {store_name}...")
+            try:
+                # Přidáme zpoždění mezi požadavky (etika scrapování)
+                if all_discounts:  # Pokud již nějaké obchody zpracovány
+                    time.sleep(2)  # 2 sekundové zpoždění
+                
+                products = self.get_current_discounts(store=store_id)
+                all_discounts[store_id] = products
+                logger.info(f"Found {len(products)} products from {store_name}")
+                
+            except Exception as e:
+                logger.error(f"Error scraping {store_name}: {e}")
+                all_discounts[store_id] = []
+        
+        return all_discounts
+    
+    def save_discounts_to_json(
+        self, 
+        discounts: Dict[str, List[Product]], 
+        filename: Optional[str] = None,
+        directory: str = "data"
+    ) -> str:
+        """
+        Uloží slevy do JSON souboru.
+        
+        Args:
+            discounts: Slovník s produkty z jednotlivých obchodů
+            filename: Název souboru (pokud None, použije se timestamp)
+            directory: Adresář pro uložení (výchozí: "data")
+            
+        Returns:
+            Cesta k uloženému souboru
+        """
+        # Vytvoření adresáře pokud neexistuje
+        os.makedirs(directory, exist_ok=True)
+        
+        # Generování názvu souboru s časovým razítkem
+        if filename is None:
+            timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+            filename = f"kupi_discounts_{timestamp}.json"
+        
+        filepath = os.path.join(directory, filename)
+        
+        # Konverze produktů na serializovatelný formát
+        json_data = {
+            'scraped_at': datetime.now().isoformat(),
+            'total_stores': len(discounts),
+            'total_products': sum(len(products) for products in discounts.values()),
+            'stores': {}
+        }
+        
+        for store_id, products in discounts.items():
+            json_data['stores'][store_id] = {
+                'product_count': len(products),
+                'products': [self._product_to_dict(p) for p in products]
+            }
+        
+        # Uložení do souboru
+        with open(filepath, 'w', encoding='utf-8') as f:
+            json.dump(json_data, f, ensure_ascii=False, indent=2)
+        
+        logger.info(f"Saved {json_data['total_products']} products to {filepath}")
+        return filepath
+    
+    def _product_to_dict(self, product: Product) -> dict:
+        """
+        Převede Product objekt na slovník pro JSON serializaci.
+        
+        Args:
+            product: Product objekt
+            
+        Returns:
+            Slovník s informacemi o produktu
+        """
+        return {
+            'name': product.name,
+            'original_price': product.original_price,
+            'discount_price': product.discount_price,
+            'discount_percentage': product.discount_percentage,
+            'store': product.store,
+            'valid_from': product.valid_from.isoformat() if product.valid_from else None,
+            'valid_until': product.valid_until.isoformat() if product.valid_until else None,
+            'image_url': product.image_url,
+            'product_url': product.product_url,
+            'category': product.category
+        }
+    
+    def load_discounts_from_json(self, filepath: str) -> Dict[str, List[Product]]:
+        """
+        Načte slevy z JSON souboru.
+        
+        Args:
+            filepath: Cesta k JSON souboru
+            
+        Returns:
+            Slovník s produkty z jednotlivých obchodů
+        """
+        with open(filepath, 'r', encoding='utf-8') as f:
+            json_data = json.load(f)
+        
+        discounts = {}
+        for store_id, store_data in json_data.get('stores', {}).items():
+            products = []
+            for prod_dict in store_data.get('products', []):
+                # Převést datumy zpět na datetime objekty
+                valid_from = None
+                valid_until = None
+                
+                if prod_dict.get('valid_from'):
+                    try:
+                        valid_from = datetime.fromisoformat(prod_dict['valid_from'])
+                    except (ValueError, TypeError):
+                        pass
+                
+                if prod_dict.get('valid_until'):
+                    try:
+                        valid_until = datetime.fromisoformat(prod_dict['valid_until'])
+                    except (ValueError, TypeError):
+                        pass
+                
+                product = Product(
+                    name=prod_dict['name'],
+                    original_price=prod_dict.get('original_price'),
+                    discount_price=prod_dict['discount_price'],
+                    discount_percentage=prod_dict.get('discount_percentage'),
+                    store=prod_dict['store'],
+                    valid_from=valid_from,
+                    valid_until=valid_until,
+                    image_url=prod_dict.get('image_url'),
+                    product_url=prod_dict.get('product_url'),
+                    category=prod_dict.get('category')
+                )
+                products.append(product)
+            
+            discounts[store_id] = products
+        
+        logger.info(f"Loaded {sum(len(p) for p in discounts.values())} products from {filepath}")
+        return discounts
     
     def close(self):
         """Zavře session."""
