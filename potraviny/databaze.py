@@ -162,6 +162,72 @@ class DatabazePotravIn:
             vlaknina=0.0,
             cena_za_kg=180.0
         ),
+        Potravina(
+            nazev="Sýrařův výběr moravský bochník 45% Madeta",
+            kategorie="mlecne_vyrobky",
+            kalorie=350,
+            bilkoviny=23.0,
+            sacharidy=0.5,
+            tuky=28.0,
+            vlaknina=0.0,
+            cena_za_kg=200.0,
+            poznamky="Polotvrdý sýr s 45% tuku v sušině"
+        ),
+        Potravina(
+            nazev="Gizycko klásek Gornicky",
+            kategorie="mlecne_vyrobky",
+            kalorie=320,
+            bilkoviny=25.0,
+            sacharidy=0.5,
+            tuky=24.0,
+            vlaknina=0.0,
+            cena_za_kg=190.0,
+            poznamky="Polský polotvrdý sýr"
+        ),
+        Potravina(
+            nazev="Mozzarella",
+            kategorie="mlecne_vyrobky",
+            kalorie=280,
+            bilkoviny=18.0,
+            sacharidy=2.2,
+            tuky=22.0,
+            vlaknina=0.0,
+            cena_za_kg=160.0,
+            poznamky="Ideální na pizzu"
+        ),
+        Potravina(
+            nazev="Parmazán",
+            kategorie="mlecne_vyrobky",
+            kalorie=392,
+            bilkoviny=36.0,
+            sacharidy=3.2,
+            tuky=26.0,
+            vlaknina=0.0,
+            cena_za_kg=450.0,
+            poznamky="Tvrdý sýr, bohatý na protein"
+        ),
+        Potravina(
+            nazev="Gouda",
+            kategorie="mlecne_vyrobky",
+            kalorie=356,
+            bilkoviny=25.0,
+            sacharidy=2.2,
+            tuky=27.0,
+            vlaknina=0.0,
+            cena_za_kg=180.0,
+            poznamky="Polotvrdý holandský sýr"
+        ),
+        Potravina(
+            nazev="Cheddar",
+            kategorie="mlecne_vyrobky",
+            kalorie=403,
+            bilkoviny=23.0,
+            sacharidy=3.1,
+            tuky=33.0,
+            vlaknina=0.0,
+            cena_za_kg=220.0,
+            poznamky="Tvrdý anglický sýr"
+        ),
         
         # Zelenina
         Potravina(
@@ -271,7 +337,8 @@ class DatabazePotravIn:
             tuky=0.2,
             vlaknina=2.8,
             cena_za_kg=25.0,
-            sezona=["9", "10", "11", "12", "1", "2"]
+            sezona=["9", "10", "11", "12", "1", "2"],
+            poznamky="Hodnoty platí pro vařenou řepu"
         ),
         
         # Zdravé tuky
