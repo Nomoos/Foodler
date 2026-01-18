@@ -49,7 +49,7 @@ def demo_dotaznik():
         energie_vecer="stredni",
         nejvetsi_hlad="vecer",
         uroven_stresu="stredni",
-        problemy_s_travoreanim=["pálení žáhy občas", "nadýmání"]
+        problemy_s_travenim=["pálení žáhy občas", "nadýmání"]
     )
     
     meal_prep_preference = MealPrepPreference(
@@ -155,7 +155,7 @@ def demo_dotaznik():
         zdravotni_problemy=["pálení žáhy", "únava odpoledne"],
         uzivane_suplementy=["Multivitamin", "Omega-3", "Vitamin D"],
         priorita_bilkoviny=True,
-        dennich_cil_bilkoviny=140,
+        denni_cil_bilkoviny=140,
         denni_cil_kalorie=2000,
         denni_limit_sacharidy=70,
         denni_cil_tuky=129,
@@ -243,7 +243,7 @@ def demo_dotaznik():
     print(f"• Cíl za 3 měsíce: {zdravotni_cile.cilova_vaha_3_mesice} kg")
     print(f"• Konečný cíl: {zdravotni_cile.cilova_vaha_konecna} kg")
     print(f"• Denní kalorie: {zdravotni_cile.denni_cil_kalorie} kcal (BMR: {zdravotni_cile.bazalni_metabolismus} kcal)")
-    print(f"• Makra: {zdravotni_cile.dennich_cil_bilkoviny}g P / {zdravotni_cile.denni_limit_sacharidy}g C / {zdravotni_cile.denni_cil_tuky}g F")
+    print(f"• Makra: {zdravotni_cile.denni_cil_bilkoviny}g P / {zdravotni_cile.denni_limit_sacharidy}g C / {zdravotni_cile.denni_cil_tuky}g F")
     print()
     
     print("-" * 80)

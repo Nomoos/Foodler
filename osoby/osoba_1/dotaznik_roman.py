@@ -41,7 +41,7 @@ class ZivotniStyl:
     
     # Stres a problémy
     uroven_stresu: str = "stredni"  # "nizka", "stredni", "vysoka"
-    problemy_s_travoreanim: List[str] = field(default_factory=list)  # např. "nadýmání", "pálení žáhy", "zácpa"
+    problemy_s_travenim: List[str] = field(default_factory=list)  # např. "nadýmání", "pálení žáhy", "zácpa"
 
 
 @dataclass
@@ -192,7 +192,7 @@ class ZdravotniCile:
     
     # Priorita bílkovin
     priorita_bilkoviny: bool = True  # Protein-first approach
-    dennich_cil_bilkoviny: int = 140  # gramy (32%)
+    denni_cil_bilkoviny: int = 140  # gramy (32%)
     denni_cil_kalorie: int = 2000  # kcal
     denni_limit_sacharidy: int = 70  # gramy (12%)
     denni_cil_tuky: int = 129  # gramy (56%)
@@ -311,7 +311,7 @@ class DotaznikRoman:
         # === JÍDELNÍ DOPORUČENÍ ===
         if self.zdravotni_cile.priorita_bilkoviny:
             doporuceni.append(
-                f"🥩 Protein first: Tvůj denní cíl je {self.zdravotni_cile.dennich_cil_bilkoviny}g bílkovin (32% z {self.zdravotni_cile.denni_cil_kalorie} kcal). "
+                f"🥩 Protein first: Tvůj denní cíl je {self.zdravotni_cile.denni_cil_bilkoviny}g bílkovin (32% z {self.zdravotni_cile.denni_cil_kalorie} kcal). "
                 "Připravuj ve velkém: 2kg kuřecích prsou = 14 porcí po 140g (35g proteinu). "
                 "Doplň vejci (6g protein/kus), tvarohem (18g/100g). "
                 f"Rozložení: 6x 370 kcal + 1x 158 kcal (celkem 6 jídel denně)."
@@ -378,7 +378,7 @@ class DotaznikRoman:
                 f"cíl za měsíc {self.zdravotni_cile.cilova_vaha_1_mesic}kg ({ubytek_1m:.1f}kg). "
                 f"Udržuj deficit {self.zdravotni_cile.denni_cil_kalorie} kcal denně "
                 f"(BMR: {self.zdravotni_cile.bazalni_metabolismus} kcal), "
-                f"prioritizuj protein ({self.zdravotni_cile.dennich_cil_bilkoviny}g/32%), "
+                f"prioritizuj protein ({self.zdravotni_cile.denni_cil_bilkoviny}g/32%), "
                 f"limituj sacharidy ({self.zdravotni_cile.denni_limit_sacharidy}g/12%), "
                 f"tuky ({self.zdravotni_cile.denni_cil_tuky}g/56%)."
             )
@@ -549,7 +549,7 @@ def interaktivni_dotaznik() -> DotaznikRoman:
             break
         bilkoviny.append(protein)
     
-    jedelni_preference = JidelniPreference(
+    jidelni_preference = JidelniPreference(
         top_oblibena_jidla=oblibena_jidla,
         jidla_vhodna_pro_meal_prep=jidla_meal_prep,
         oblibene_zdroje_bilkovin=bilkoviny
