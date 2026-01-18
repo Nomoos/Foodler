@@ -9,8 +9,9 @@ Tento skript demonstruje, jak funguje systém dotazníku a doporučení.
 import sys
 import os
 
-# Přidej parent directory do path pro import
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# Přidej projekt root directory do path pro import
+project_root = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, project_root)
 
 from osoby.osoba_2.dotaznik_paja import (
     DotaznikPaja,

@@ -244,7 +244,7 @@ Tento dotazník ti pomůže vytvořit jídelníček přesně podle tvých potře
     - [ ] Airfryer (horkovzdušná fritéza)
     - [ ] Mixér / tyčový mixér
     - [ ] Pomalý hrnec (slow cooker)
-    - [ ]食品procesor
+    - [ ] Kuchyňský robot / food processor
     - [ ] Grilovací pánev
     - [ ] Mikrovlnná trouba
     - [ ] Jiné: _______________
