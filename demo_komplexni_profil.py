@@ -72,10 +72,14 @@ def demo_generovani_doporuceni():
     # Ověřit, že je sytící
     if SyticiJidla.je_jidlo_sytici(priorita_rano['priklad']):
         print("   ✓ Sytící (vláknina + objem + jemná sladkost)")
+    else:
+        print("   ⚠️ Méně sytící - zvážit doplnění vlákniny")
     
     # Zkontrolovat reakce
     if not ReakceTela.muze_zpusobit_unavu(priorita_rano['priklad']):
         print("   ✓ Nezpůsobuje únavu")
+    else:
+        print("   ⚠️ Může způsobit únavu - pozor na velikost porce")
     
     print("\n💡 Příprava:")
     print("   • Připravit večer (kvůli časovému tlaku ráno)")
