@@ -292,14 +292,52 @@ This will:
 
 Potential improvements:
 
-- [ ] Add async support for faster scraping
-- [ ] Implement caching mechanism
+- [x] Add async support for faster scraping
+- [x] Implement JSON storage for discount data
+- [x] Extract and save discount validity dates (valid_from, valid_until)
+- [x] Create complete shop discount list scraping
 - [ ] Add database storage for price history
 - [ ] Create price tracking and alerts
 - [ ] Add visualization of price trends
 - [ ] Integrate with meal planning system
 - [ ] Support for multiple regions
 - [ ] Mobile app notifications for deals
+
+## New Features (v2.0.0)
+
+### 🎉 Discount Scraping and Saving
+
+New functionality added in v2.0.0:
+
+1. **Date Extraction** - Automatically extract `valid_from` and `valid_until` dates from discount offers
+2. **Bulk Scraping** - `scrape_all_shop_discounts()` to get discounts from all shops at once
+3. **JSON Storage** - Save and load discount data with full metadata
+4. **Price History Tracking** - Save multiple snapshots over time for price trend analysis
+
+### Quick Example
+
+```python
+from src.scrapers.kupi_scraper import KupiCzScraper
+
+with KupiCzScraper() as scraper:
+    # Scrape all shops
+    all_discounts = scraper.scrape_all_shop_discounts()
+    
+    # Save to JSON
+    filepath = scraper.save_discounts_to_json(all_discounts)
+    print(f"Saved to: {filepath}")
+    
+    # Load later
+    discounts = scraper.load_discounts_from_json(filepath)
+```
+
+Or use the ready-made script:
+
+```bash
+python scrape_and_save_discounts.py
+```
+
+**For complete documentation, see:** [Discount Scraping Guide](DISCOUNT_SCRAPING_GUIDE.md)
 
 ## Support for Foodler Diet Goals
 
