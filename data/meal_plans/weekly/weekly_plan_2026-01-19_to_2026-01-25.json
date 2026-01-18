@@ -1,77 +1,84 @@
 {
   "week_start": "19.01.2026",
   "week_end": "25.01.2026",
-  "generated": "18.01.2026 15:48",
+  "generated": "18.01.2026 16:11",
   "days": [
     {
       "date": "19.01.2026",
       "day_name": "pondělí",
       "cycle_day": 19,
-      "breakfast": "Pohankové vločky, sójové mléko, jablko, vlašské ořechy, med",
-      "morning_snack": "Ovocný salát",
-      "lunch": "Treska na másle, celerové pyré / Vegetarián: Indické tofu, celerové pyré",
-      "afternoon_snack": "Ředkvičkový salát",
-      "dinner": "Mrkvový perkelt, strouhaný sýr, brokolice s česnekem"
+      "breakfast": "Vejce na měkko (3 ks), avokádo (1/2), olivový olej, ředkvička",
+      "morning_snack": "Avokádo (1/2) s olivovým olejem a solí",
+      "lunch": "Hovězí maso (150g), zeleninový salát (ledový salát, paprika, olivový olej)",
+      "afternoon_snack": "Avokádo (1/2), sýr gouda (50g)",
+      "dinner": "Vejce (3 ks) míchaná, špenát, sýr gouda",
+      "evening_snack": "Cottage cheese (100g), lněné semínko"
     },
     {
       "date": "20.01.2026",
       "day_name": "úterý",
       "cycle_day": 20,
-      "breakfast": "Mrkev, jablko, med, rozinky, vlašské ořechy",
-      "morning_snack": "Jablko",
-      "lunch": "Kuřecí stehno, pečený celer/ Vegetarián: Tofu karbanátek, pečený celer",
-      "afternoon_snack": "Bílý jogurt, med, mandle",
-      "dinner": "Brokolice s česnekem, tuňák"
+      "breakfast": "Omeleta z 3 vajec s tuňákem, ledový salát",
+      "morning_snack": "Mandle (40g), MCT olej v prášku",
+      "lunch": "Tuňák v oleji (150g), zuketa grilovaná, brokolice",
+      "afternoon_snack": "Kysané zelí (100g), olivový olej",
+      "dinner": "Tuňák (150g), zeleninový salát, olivový olej",
+      "evening_snack": "Tvaroh (100g), vlašské ořechy"
     },
     {
       "date": "21.01.2026",
       "day_name": "středa",
       "cycle_day": 21,
-      "breakfast": "Vařené jáhly, vlašské ořechy, sušené švestky, med",
-      "morning_snack": "Meruňky",
-      "lunch": "Krůtí stehna, pečený celer / Červená řepa, okurek / Vegetarián: Indické tofu, pečený celer",
-      "afternoon_snack": "Bílý jogurt",
-      "dinner": "Brynza s bílky"
+      "breakfast": "Tvaroh (200g), vlašské ořechy, olivový olej, sezam",
+      "morning_snack": "Cottage cheese s chia semínky",
+      "lunch": "Kuřecí prsa (200g), špenát, papriky, olivový olej",
+      "afternoon_snack": "Mandle (30g), sezam",
+      "dinner": "Hovězí maso (100g), cuketa, brokolice",
+      "evening_snack": "Iso whey protein shake"
     },
     {
       "date": "22.01.2026",
       "day_name": "čtvrtek",
       "cycle_day": 22,
-      "breakfast": "Pohankové vločky, sójové mléko, jablko, vlašské ořechy, med",
-      "morning_snack": "Datle",
-      "lunch": "Těstoviny, kedlubna",
-      "afternoon_snack": "Slaný špenátový koláč",
-      "dinner": "Kuřecí karbanátky s celerem, zeleninový salát / Vegetarián: Brokolicové karbanátky, zeleninový salát"
+      "breakfast": "Omeleta ze 3 vajec, špenát, sýr gouda, avokádo (1/2)",
+      "morning_snack": "Cottage cheese (100g), mandle (30g)",
+      "lunch": "Losos pečený (150g), brokolice, kysané zelí",
+      "afternoon_snack": "Vejce natvrdo (2 ks), olivový olej",
+      "dinner": "Omeleta ze 3 vajec, špenát, sýr, brokolice",
+      "evening_snack": "Vejce natvrdo (2 ks)"
     },
     {
       "date": "23.01.2026",
       "day_name": "pátek",
       "cycle_day": 23,
-      "breakfast": "Mrkev, jablko, med, rozinky, vlašské ořechy",
-      "morning_snack": "Ananas",
-      "lunch": "Mrkvový perkelt, strouhaný sýr, brokolice s česnekem",
-      "afternoon_snack": "Bílý jogurt, med, mandle",
-      "dinner": "Salát z červené řepy, smažená kuřecí prsa obalená ve vlašských ořech. / Vegetarián: Salát z červené řepy, vejce"
+      "breakfast": "Míchaná vajíčka (3 ks), cottage cheese, brokolice, olivový olej",
+      "morning_snack": "Iso whey protein shake",
+      "lunch": "Hovězí maso (150g), cuketa s česnekem, ledový salát",
+      "afternoon_snack": "Tvaroh (100g), vlašské ořechy",
+      "dinner": "Kuřecí prsa (150g), ledový salát s olivovým olejem",
+      "evening_snack": "Mandle (30g), MCT olej"
     },
     {
       "date": "24.01.2026",
       "day_name": "sobota",
       "cycle_day": 24,
-      "breakfast": "Vařené jáhly, vlašské ořechy, sušené švestky, med",
-      "morning_snack": "Ovocné pyré",
-      "lunch": "Treska na másle, salát z červené řepy / Vegetarián: Salát z červené řepy, sýr",
-      "afternoon_snack": "Zeleninový salát s mandlemi",
-      "dinner": "Dýňový krém, Cuketové placky"
+      "breakfast": "Iso whey protein shake s MCT olejem, mandle",
+      "morning_snack": "Tvaroh (100g), lněné semínko",
+      "lunch": "Tuňák (150g), špenát, papriky, olivový olej",
+      "afternoon_snack": "Cottage cheese (100g), mandle",
+      "dinner": "Losos (100g), brokolice, kysané zelí",
+      "evening_snack": "Sýr gouda (50g), olivový olej"
     },
     {
       "date": "25.01.2026",
       "day_name": "neděle",
       "cycle_day": 25,
-      "breakfast": "Mrkev, jablko, med, rozinky, vlašské ořechy",
-      "morning_snack": "Jablko",
-      "lunch": "Těstoviny, špenát",
-      "afternoon_snack": "Bílý jogurt, med, mandle",
-      "dinner": "Salát z červené řepy, tuňák / Vegetarián: Salát z červené řepy, vejce"
+      "breakfast": "Cottage cheese (200g) s lněnými semínky a chia, skořice",
+      "morning_snack": "Vejce natvrdo (2 ks), olivový olej",
+      "lunch": "Kuřecí prsa grilovaná (200g), brokolice s olivovým olejem, kysané zelí",
+      "afternoon_snack": "Iso whey protein shake s MCT olejem",
+      "dinner": "Cottage cheese (200g), avokádo (1/2), olivový olej",
+      "evening_snack": "Cottage cheese (100g), lněné semínko"
     }
   ]
 }

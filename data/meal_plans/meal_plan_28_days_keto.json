@@ -14,15 +14,15 @@
       {
         "day": 1,
         "breakfast": "Omeleta ze 3 vajec, špenát, sýr gouda, avokádo (1/2)",
-        "morning_snack": "Tvaroh (100g), mandle (30g)",
+        "morning_snack": "Cottage cheese (100g), mandle (30g)",
         "lunch": "Kuřecí prsa grilovaná (200g), brokolice s olivovým olejem, kysané zelí",
         "afternoon_snack": "Vejce natvrdo (2 ks), olivový olej",
         "dinner": "Omeleta ze 3 vajec, špenát, sýr, brokolice",
-        "evening_snack": "Tvaroh (100g), lněné semínko"
+        "evening_snack": "Cottage cheese (100g), lněné semínko"
       },
       {
         "day": 2,
-        "breakfast": "Míchaná vajíčka (3 ks), tvaroh, brokolice, olivový olej",
+        "breakfast": "Míchaná vajíčka (3 ks), cottage cheese, brokolice, olivový olej",
         "morning_snack": "Iso whey protein shake",
         "lunch": "Losos (150g), špenát s česnekem, avokádo",
         "afternoon_snack": "Tvaroh (100g), vlašské ořechy",
@@ -34,17 +34,17 @@
         "breakfast": "Iso whey protein shake s MCT olejem, mandle",
         "morning_snack": "Tvaroh (100g), lněné semínko",
         "lunch": "Hovězí maso (150g), zeleninový salát (ledový salát, paprika, olivový olej)",
-        "afternoon_snack": "Tvaroh (100g), mandle",
+        "afternoon_snack": "Cottage cheese (100g), mandle",
         "dinner": "Losos (100g), brokolice, kysané zelí",
         "evening_snack": "Iso whey protein shake"
       },
       {
         "day": 4,
-        "breakfast": "Tvaroh polotučný (200g) s lněnými semínky a chia, skořice",
+        "breakfast": "Cottage cheese (200g) s lněnými semínky a chia, skořice",
         "morning_snack": "Vejce natvrdo (2 ks), olivový olej",
         "lunch": "Tuňák v oleji (150g), zuketa grilovaná, brokolice",
         "afternoon_snack": "Iso whey protein shake s MCT olejem",
-        "dinner": "Tvaroh (200g), avokádo (1/2), olivový olej",
+        "dinner": "Cottage cheese (200g), avokádo (1/2), olivový olej",
         "evening_snack": "Vejce natvrdo (2 ks)"
       },
       {
@@ -68,16 +68,16 @@
       {
         "day": 7,
         "breakfast": "Tvaroh (200g), vlašské ořechy, olivový olej, sezam",
-        "morning_snack": "Tvaroh s chia semínky",
+        "morning_snack": "Cottage cheese s chia semínky",
         "lunch": "Hovězí maso (150g), cuketa s česnekem, ledový salát",
         "afternoon_snack": "Mandle (30g), sezam",
         "dinner": "Hovězí maso (100g), cuketa, brokolice",
-        "evening_snack": "Tvaroh (100g), lněné semínko"
+        "evening_snack": "Cottage cheese (100g), lněné semínko"
       },
       {
         "day": 8,
         "breakfast": "Omeleta ze 3 vajec, špenát, sýr gouda, avokádo (1/2)",
-        "morning_snack": "Tvaroh (100g), mandle (30g)",
+        "morning_snack": "Cottage cheese (100g), mandle (30g)",
         "lunch": "Tuňák (150g), špenát, papriky, olivový olej",
         "afternoon_snack": "Vejce natvrdo (2 ks), olivový olej",
         "dinner": "Omeleta ze 3 vajec, špenát, sýr, brokolice",
@@ -85,7 +85,7 @@
       },
       {
         "day": 9,
-        "breakfast": "Míchaná vajíčka (3 ks), tvaroh, brokolice, olivový olej",
+        "breakfast": "Míchaná vajíčka (3 ks), cottage cheese, brokolice, olivový olej",
         "morning_snack": "Iso whey protein shake",
         "lunch": "Kuřecí prsa grilovaná (200g), brokolice s olivovým olejem, kysané zelí",
         "afternoon_snack": "Tvaroh (100g), vlašské ořechy",
@@ -97,17 +97,17 @@
         "breakfast": "Iso whey protein shake s MCT olejem, mandle",
         "morning_snack": "Tvaroh (100g), lněné semínko",
         "lunch": "Losos (150g), špenát s česnekem, avokádo",
-        "afternoon_snack": "Tvaroh (100g), mandle",
+        "afternoon_snack": "Cottage cheese (100g), mandle",
         "dinner": "Losos (100g), brokolice, kysané zelí",
         "evening_snack": "Vejce natvrdo (2 ks)"
       },
       {
         "day": 11,
-        "breakfast": "Tvaroh polotučný (200g) s lněnými semínky a chia, skořice",
+        "breakfast": "Cottage cheese (200g) s lněnými semínky a chia, skořice",
         "morning_snack": "Vejce natvrdo (2 ks), olivový olej",
         "lunch": "Hovězí maso (150g), zeleninový salát (ledový salát, paprika, olivový olej)",
         "afternoon_snack": "Iso whey protein shake s MCT olejem",
-        "dinner": "Tvaroh (200g), avokádo (1/2), olivový olej",
+        "dinner": "Cottage cheese (200g), avokádo (1/2), olivový olej",
         "evening_snack": "Mandle (30g), MCT olej"
       },
       {
@@ -126,12 +126,12 @@
         "lunch": "Kuřecí prsa (200g), špenát, papriky, olivový olej",
         "afternoon_snack": "Kysané zelí (100g), olivový olej",
         "dinner": "Tuňák (150g), zeleninový salát, olivový olej",
-        "evening_snack": "Tvaroh (100g), lněné semínko"
+        "evening_snack": "Cottage cheese (100g), lněné semínko"
       },
       {
         "day": 14,
         "breakfast": "Tvaroh (200g), vlašské ořechy, olivový olej, sezam",
-        "morning_snack": "Tvaroh s chia semínky",
+        "morning_snack": "Cottage cheese s chia semínky",
         "lunch": "Losos pečený (150g), brokolice, kysané zelí",
         "afternoon_snack": "Mandle (30g), sezam",
         "dinner": "Hovězí maso (100g), cuketa, brokolice",
@@ -140,7 +140,7 @@
       {
         "day": 15,
         "breakfast": "Omeleta ze 3 vajec, špenát, sýr gouda, avokádo (1/2)",
-        "morning_snack": "Tvaroh (100g), mandle (30g)",
+        "morning_snack": "Cottage cheese (100g), mandle (30g)",
         "lunch": "Hovězí maso (150g), cuketa s česnekem, ledový salát",
         "afternoon_snack": "Vejce natvrdo (2 ks), olivový olej",
         "dinner": "Omeleta ze 3 vajec, špenát, sýr, brokolice",
@@ -148,7 +148,7 @@
       },
       {
         "day": 16,
-        "breakfast": "Míchaná vajíčka (3 ks), tvaroh, brokolice, olivový olej",
+        "breakfast": "Míchaná vajíčka (3 ks), cottage cheese, brokolice, olivový olej",
         "morning_snack": "Iso whey protein shake",
         "lunch": "Tuňák (150g), špenát, papriky, olivový olej",
         "afternoon_snack": "Tvaroh (100g), vlašské ořechy",
@@ -160,17 +160,17 @@
         "breakfast": "Iso whey protein shake s MCT olejem, mandle",
         "morning_snack": "Tvaroh (100g), lněné semínko",
         "lunch": "Kuřecí prsa grilovaná (200g), brokolice s olivovým olejem, kysané zelí",
-        "afternoon_snack": "Tvaroh (100g), mandle",
+        "afternoon_snack": "Cottage cheese (100g), mandle",
         "dinner": "Losos (100g), brokolice, kysané zelí",
         "evening_snack": "Mandle (30g), MCT olej"
       },
       {
         "day": 18,
-        "breakfast": "Tvaroh polotučný (200g) s lněnými semínky a chia, skořice",
+        "breakfast": "Cottage cheese (200g) s lněnými semínky a chia, skořice",
         "morning_snack": "Vejce natvrdo (2 ks), olivový olej",
         "lunch": "Losos (150g), špenát s česnekem, avokádo",
         "afternoon_snack": "Iso whey protein shake s MCT olejem",
-        "dinner": "Tvaroh (200g), avokádo (1/2), olivový olej",
+        "dinner": "Cottage cheese (200g), avokádo (1/2), olivový olej",
         "evening_snack": "Sýr gouda (50g), olivový olej"
       },
       {
@@ -180,7 +180,7 @@
         "lunch": "Hovězí maso (150g), zeleninový salát (ledový salát, paprika, olivový olej)",
         "afternoon_snack": "Avokádo (1/2), sýr gouda (50g)",
         "dinner": "Vejce (3 ks) míchaná, špenát, sýr gouda",
-        "evening_snack": "Tvaroh (100g), lněné semínko"
+        "evening_snack": "Cottage cheese (100g), lněné semínko"
       },
       {
         "day": 20,
@@ -194,7 +194,7 @@
       {
         "day": 21,
         "breakfast": "Tvaroh (200g), vlašské ořechy, olivový olej, sezam",
-        "morning_snack": "Tvaroh s chia semínky",
+        "morning_snack": "Cottage cheese s chia semínky",
         "lunch": "Kuřecí prsa (200g), špenát, papriky, olivový olej",
         "afternoon_snack": "Mandle (30g), sezam",
         "dinner": "Hovězí maso (100g), cuketa, brokolice",
@@ -203,7 +203,7 @@
       {
         "day": 22,
         "breakfast": "Omeleta ze 3 vajec, špenát, sýr gouda, avokádo (1/2)",
-        "morning_snack": "Tvaroh (100g), mandle (30g)",
+        "morning_snack": "Cottage cheese (100g), mandle (30g)",
         "lunch": "Losos pečený (150g), brokolice, kysané zelí",
         "afternoon_snack": "Vejce natvrdo (2 ks), olivový olej",
         "dinner": "Omeleta ze 3 vajec, špenát, sýr, brokolice",
@@ -211,7 +211,7 @@
       },
       {
         "day": 23,
-        "breakfast": "Míchaná vajíčka (3 ks), tvaroh, brokolice, olivový olej",
+        "breakfast": "Míchaná vajíčka (3 ks), cottage cheese, brokolice, olivový olej",
         "morning_snack": "Iso whey protein shake",
         "lunch": "Hovězí maso (150g), cuketa s česnekem, ledový salát",
         "afternoon_snack": "Tvaroh (100g), vlašské ořechy",
@@ -223,18 +223,18 @@
         "breakfast": "Iso whey protein shake s MCT olejem, mandle",
         "morning_snack": "Tvaroh (100g), lněné semínko",
         "lunch": "Tuňák (150g), špenát, papriky, olivový olej",
-        "afternoon_snack": "Tvaroh (100g), mandle",
+        "afternoon_snack": "Cottage cheese (100g), mandle",
         "dinner": "Losos (100g), brokolice, kysané zelí",
         "evening_snack": "Sýr gouda (50g), olivový olej"
       },
       {
         "day": 25,
-        "breakfast": "Tvaroh polotučný (200g) s lněnými semínky a chia, skořice",
+        "breakfast": "Cottage cheese (200g) s lněnými semínky a chia, skořice",
         "morning_snack": "Vejce natvrdo (2 ks), olivový olej",
         "lunch": "Kuřecí prsa grilovaná (200g), brokolice s olivovým olejem, kysané zelí",
         "afternoon_snack": "Iso whey protein shake s MCT olejem",
-        "dinner": "Tvaroh (200g), avokádo (1/2), olivový olej",
-        "evening_snack": "Tvaroh (100g), lněné semínko"
+        "dinner": "Cottage cheese (200g), avokádo (1/2), olivový olej",
+        "evening_snack": "Cottage cheese (100g), lněné semínko"
       },
       {
         "day": 26,
@@ -257,7 +257,7 @@
       {
         "day": 28,
         "breakfast": "Tvaroh (200g), vlašské ořechy, olivový olej, sezam",
-        "morning_snack": "Tvaroh s chia semínky",
+        "morning_snack": "Cottage cheese s chia semínky",
         "lunch": "Tuňák v oleji (150g), zuketa grilovaná, brokolice",
         "afternoon_snack": "Mandle (30g), sezam",
         "dinner": "Hovězí maso (100g), cuketa, brokolice",

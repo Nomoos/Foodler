@@ -171,6 +171,12 @@ def generate_day_markdown(date, day_data, cycle_day):
 
 ---
 
+## 🌃 Večerní Svačina
+
+{day_data.get('evening_snack', 'N/A')}
+
+---
+
 ## 💡 Tipy
 
 - Připravte si ingredience předem
@@ -260,7 +266,7 @@ def generate_shopping_list(days_info):
     all_ingredients = defaultdict(int)
     
     for day_info in days_info:
-        for meal_type in ['breakfast', 'morning_snack', 'lunch', 'afternoon_snack', 'dinner']:
+        for meal_type in ['breakfast', 'morning_snack', 'lunch', 'afternoon_snack', 'dinner', 'evening_snack']:
             meal_text = day_info.get(meal_type, '')
             ingredients = extract_ingredients(meal_text)
             for ing in ingredients:
@@ -424,7 +430,8 @@ def generate_weekly_plan(start_date, meal_plan_data):
             'morning_snack': day_data.get('morning_snack', ''),
             'lunch': day_data.get('lunch', ''),
             'afternoon_snack': day_data.get('afternoon_snack', ''),
-            'dinner': day_data.get('dinner', '')
+            'dinner': day_data.get('dinner', ''),
+            'evening_snack': day_data.get('evening_snack', '')
         })
     
     # Generuj týdenní souhrn

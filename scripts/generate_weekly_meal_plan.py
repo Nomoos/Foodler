@@ -119,7 +119,8 @@ def generate_weekly_plan(start_date, meal_plan_data):
             "morning_snack": day_data.get("morning_snack", ""),
             "lunch": day_data.get("lunch", ""),
             "afternoon_snack": day_data.get("afternoon_snack", ""),
-            "dinner": day_data.get("dinner", "")
+            "dinner": day_data.get("dinner", ""),
+            "evening_snack": day_data.get("evening_snack", "")
         }
         
         weekly_plan["days"].append(day_info)
@@ -154,6 +155,10 @@ def print_weekly_plan(weekly_plan):
         
         print(f"\n🌙 VEČEŘE")
         print(f"   {day['dinner']}")
+        
+        if day.get('evening_snack'):
+            print(f"\n🌃 VEČERNÍ SVAČINA")
+            print(f"   {day['evening_snack']}")
     
     print("\n" + "="*70)
     print("✅ Příjemnou chuť po celý týden!")

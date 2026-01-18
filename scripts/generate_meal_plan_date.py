@@ -93,7 +93,8 @@ def get_meal_for_day(day_number):
             'dopolední_svačina': day['morning_snack'],
             'oběd': day['lunch'],
             'odpolední_svačina': day['afternoon_snack'],
-            'večeře': day['dinner']
+            'večeře': day['dinner'],
+            'večerní_svačina': day.get('evening_snack', '')
         }
     return None
 
@@ -155,6 +156,11 @@ def format_meal_plan(target_date, cycle_day, meals):
     output.append("🌙 VEČEŘE")
     output.append(f"   {meals['večeře']}")
     output.append("")
+    
+    if meals.get('večerní_svačina'):
+        output.append("🌃 VEČERNÍ SVAČINA")
+        output.append(f"   {meals['večerní_svačina']}")
+        output.append("")
     
     output.append("=" * 70)
     output.append("")
