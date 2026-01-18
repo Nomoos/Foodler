@@ -47,6 +47,9 @@ class OsobniProfil:
     # Zdravotní poznámky
     zdravotni_poznamky: List[str] = None
     
+    # Zdravotní stav - psychické a hormonální problémy
+    zdravotni_stav: Dict = None
+    
     def __post_init__(self):
         if self.zdravotni_poznamky is None:
             self.zdravotni_poznamky = [
@@ -57,6 +60,161 @@ class OsobniProfil:
                 "  • Váha: 76.7 kg, PBF: 39.1%, Tuk: 30.0 kg",
                 "  • SSM: 25.6 kg, VFA: 143 cm²/level"
             ]
+        
+        if self.zdravotni_stav is None:
+            self.zdravotni_stav = {
+                "psychicke_zdravi": {
+                    "diagnoza": "Středně těžká deprese s možným PMDD",
+                    "symptomy": [
+                        "Víkendová deprese - neschopnost vstát z postele",
+                        "Pocity bezcennosti ('jsem k ničemu')",
+                        "Fungování závislé na vnější struktuře (práce)",
+                        "Extrémní agresivita cca týden před menstruací"
+                    ],
+                    "lecba": {
+                        "aktualni_stav": "V léčbě od ledna 2026",
+                        "terapie": "Psychoterapie 1x týdně (probíhá)",
+                        "medikace": "Čeká na nové léky od psychiatra (leden 2026)",
+                        "predchozi_medikace": "Antipsychotika + regulátor nálady (nefungovaly dobře - 'fungovala' ale nebylo jí dobře)",
+                        "poznamka": "Důležité zmínit psychiatrovi možné PMDD (ne jen PMS)"
+                    },
+                    "pmdd_vysvetleni": {
+                        "nazev": "PMDD = Premenstrual Dysphoric Disorder (Premenstruační dysforická porucha)",
+                        "co_to_je": "Těžká forma PMS - vážná hormonální porucha způsobující extrémní psychické symptomy",
+                        "rozdil_od_pms": {
+                            "PMS": "Mírné až střední nálady, únava, bolest - běžné, 75% žen",
+                            "PMDD": "Extrémní agresivita, deprese, úzkost, sebepoškozující myšlenky - vzácné, 3-8% žen"
+                        },
+                        "hlavni_symptomy": [
+                            "Extrémní agresivita/vzteklost (ne jen podrážděnost)",
+                            "Hluboká deprese týden před menstruací",
+                            "Úzkost, panické ataky",
+                            "Naprostá neschopnost fungovat",
+                            "Symptomy mizí 1-2 dny po začátku menstruace"
+                        ],
+                        "paja_symptomy": [
+                            "✅ Extrémní agresivita týden před periodou (match s PMDD)",
+                            "✅ Problémy s fungováním o víkendech (může být horší před menstruací)",
+                            "❓ Sledovat zda deprese/neschopnost vstát koreluje s cyklem"
+                        ],
+                        "lecba_pmdd": [
+                            "SSRI antidepresiva (nejúčinnější - Prozac, Zoloft)",
+                            "Hormonální antikoncepce (stabilizace hormonů)",
+                            "Vitamin B6 1000mg denně",
+                            "Evening primrose oil (pupalkový olej)",
+                            "Hořčík 400-800mg denně",
+                            "Sledování menstruačního cyklu (aplikace)"
+                        ],
+                        "proc_je_dulezite": [
+                            "PMDD vyžaduje JINOU léčbu než běžná deprese",
+                            "Antidepresiva (SSRI) jsou extrémně účinná pro PMDD",
+                            "Někdy stačí brát SSRI jen 14 dní před menstruací",
+                            "Neléčené PMDD může vést k sebevraždě (vážné!)"
+                        ],
+                        "akce": "Zmínit psychiatrovi podezření na PMDD + sledovat korelaci symptomů s cyklem"
+                    }
+                },
+                "hormonalni_problemy": {
+                    "snizene_libido": {
+                        "popis": "Výrazně snížené libido - pravděpodobně hormonální nerovnováha",
+                        "mozne_priciny": [
+                            "Nízký testosteron (ano i u žen!)",
+                            "Nedostatek oxytocinu (málo intimity)",
+                            "Nízký serotonin (deprese)",
+                            "Nedostatek vitaminu D",
+                            "Nedostatek pohybu (žádné endorfiny)"
+                        ],
+                        "aktualni_frekvence_sexu": "1x za 3 týdny (extrémně málo pro zdraví)",
+                        "zdrava_frekvence": "2-3x týdně (ideální pro hormonální rovnováhu)",
+                        "plan_zlepseni": {
+                            "faze_1": "Týdny 1-2: 1x týdně (využít čas 21-22h)",
+                            "faze_2": "Týdny 3-4: 2x za 2 týdny",
+                            "faze_3": "Měsíce 2-3: 2x týdně",
+                            "dlouhodobe": "2-3x týdně standardně",
+                            "poznamka": "ŽÁDNÝ TLAK - kvalita > kvantita, i mazlení/objímání pomáhá"
+                        }
+                    },
+                    "emocionalni_prejedani": {
+                        "popis": "Používá jídlo jako náhradu za emocionální naplnění",
+                        "souvislost": "Nedostatek intimity → jídlo jako kompenzace",
+                        "reseni": "Zvýšení intimity + pravidelný pohyb → menší potřeba kompenzovat jídlem"
+                    }
+                },
+                "nedostatek_pohybu": {
+                    "aktualni_stav": "Sedavý životní styl, minimální pohyb",
+                    "dusledky": [
+                        "Žádné endorfiny (přirozené antidepresivum)",
+                        "Nízká energie",
+                        "Horší nálada",
+                        "Zhoršená hormonální rovnováha"
+                    ],
+                    "doporuceny_plan": {
+                        "pondeli": "Volno/odpočinek",
+                        "utery": "Plavání 45 min",
+                        "streda": "Chůze 30 min",
+                        "ctvrtek": "Jóga/strečink 30 min",
+                        "patek": "Plavání 45 min",
+                        "sobota": "Chůze/procházka 45 min",
+                        "nedele": "Volno/lehká aktivita",
+                        "poznamka": "Plus intimita 2-3x týdně (pohybová aktivita!)"
+                    }
+                },
+                "suplementace_urgentni": {
+                    "vitamin_d3": {
+                        "davka": "5000 IU denně",
+                        "proc": "Kritické pro zimní depresi, pravděpodobně má nedostatek",
+                        "efekt": "2-4 týdny na zlepšení nálady",
+                        "cena": "~200 Kč/měsíc"
+                    },
+                    "omega_3": {
+                        "davka": "2-3g EPA+DHA denně",
+                        "proc": "Prokázaný antidepresivní efekt, doplňuje léky",
+                        "efekt": "2-4 týdny na zlepšení nálady",
+                        "cena": "~300-400 Kč/měsíc"
+                    },
+                    "horcik": {
+                        "davka": "400mg večer (citrate nebo glycinate)",
+                        "proc": "Úzkost, lepší spánek, PMS/PMDD",
+                        "efekt": "1-2 týdny",
+                        "cena": "~150 Kč/měsíc"
+                    },
+                    "pro_pmdd_extra": {
+                        "vitamin_b6": "100mg denně (až 1000mg pro PMDD)",
+                        "evening_primrose_oil": "1000-1500mg denně",
+                        "poznamka": "Zmínit psychiatrovi pro PMDD léčbu"
+                    }
+                },
+                "vikendova_rutina": {
+                    "problem": "O víkendu není schopná vstát z postele",
+                    "reseni": {
+                        "pevny_cas_vstavani": "8:00 i o víkendu (bez výjimky!)",
+                        "ihned_po_vstavani": [
+                            "Okno otevřít - světlo (30 sec)",
+                            "Studená sprcha nebo omytí obličeje (aktivace)",
+                            "Pohyb ven 10-15 min (i jen na balkon)",
+                            "Snídaně s bílkovinami"
+                        ],
+                        "poznamka": "První 2 týdny bude těžké, pak se tělo přizpůsobí"
+                    }
+                },
+                "spolecny_cas_v_posteli": {
+                    "aktualni": "21-22h společně v posteli (výborný základ!)",
+                    "vyuziti": "Ideální čas pro intimitu, povídání, mazlení",
+                    "poznamka": "Využít tento už nastavený čas pro budování intimity"
+                },
+                "timeline_zlepseni": {
+                    "2_4_tydny": "Nové léky začnou působit + D3/Omega-3 efekty, mírnější deprese, intimita 1x týdně",
+                    "1_2_mesice": "Výrazně lepší nálada, zvládnutelné víkendy, mírnější PMS/PMDD, intimita 2x za 2 týdny",
+                    "3_mesice": "Stabilní nálada většinu času, žádná víkendová deprese, kontrolované PMS/PMDD, intimita 2x týdně",
+                    "6_mesicu": "Deprese vyřešená/kontrolovaná, optimální hormonální rovnováha, zdravý intimní vztah (2-3x týdně), možná diskuse o snížení léků (POUZE s psychiatrem!)"
+                },
+                "cile_hubnutia": {
+                    "aktualni_vaha": "77.3 kg",
+                    "cilova_vaha": "57 kg (BMI 22, ideální)",
+                    "ubytek_potrebny": "20.3 kg",
+                    "souvislost_s_psychikou": "Hubnutí pomůže s náladou (lepší hormony, více energie), ale psychika musí být stabilní NEJDŘÍV"
+                }
+            }
     
     def vypocti_bmi(self) -> float:
         """Vypočítá BMI (Body Mass Index)."""
