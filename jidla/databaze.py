@@ -242,7 +242,7 @@ class DatabzeJidel:
                 Ingredience("Eidam 45% polotvrdý", 200, "hlavni"),
                 Ingredience("Psyllium vláknina", 70, "priloha"),
                 Ingredience("Lněné semínko drcené", 30, "priloha"),
-                Ingredience("Černý sezam", 30, "koření"),
+                Ingredience("Černý sezam", 30, "priloha"),
                 Ingredience("Kypřící prášek do pečiva", 10, "koření"),
                 Ingredience("Kmín drcený, koření", 5, "koření"),
             ],
