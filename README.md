@@ -52,6 +52,7 @@ Nástroj pro podporu hubnutí a zdravého stravování pro celou rodinu s důraz
 - **[TYDENNI_PLANOVANI.md](docs/meal-planning/TYDENNI_PLANOVANI.md)** - Strategie týdenního meal prepu
 - **[VYBAVENI_A_TIPY.md](docs/meal-planning/VYBAVENI_A_TIPY.md)** - Využití kuchyňského vybavení
 - **[RECEPTY_SALATY.md](docs/meal-planning/RECEPTY_SALATY.md)** - Recepty a saláty
+- **[RECEPTY_KETO.md](docs/meal-planning/RECEPTY_KETO.md)** - Keto recepty (chléb, pečivo)
 
 ### 🏥 Zdraví a metabolismus
 - **[TRAVENI_A_METABOLISMUS.md](docs/health/TRAVENI_A_METABOLISMUS.md)** - Trávení a metabolismus
