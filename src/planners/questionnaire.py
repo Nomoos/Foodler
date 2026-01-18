@@ -113,6 +113,10 @@ class DietaryPreferences:
     disliked_foods: List[str] = field(default_factory=list)
     preferred_foods: List[str] = field(default_factory=list)
     
+    # Texture preferences - foods with certain textures to avoid
+    avoid_slimy_textures: bool = False  # Avoid slimy/slippery textured foods (mushrooms, okra, etc.)
+    disliked_textures: List[str] = field(default_factory=list)  # Other texture preferences
+    
     # Meal timing preferences
     meals_per_day: int = 3
     intermittent_fasting: bool = False
@@ -259,7 +263,9 @@ class Questionnaire:
             "restrictions": {
                 "allergies": self.preferences.allergies,
                 "intolerances": self.preferences.intolerances,
-                "disliked_foods": self.preferences.disliked_foods
+                "disliked_foods": self.preferences.disliked_foods,
+                "avoid_slimy_textures": self.preferences.avoid_slimy_textures,
+                "disliked_textures": self.preferences.disliked_textures
             }
         }
     
@@ -371,11 +377,16 @@ def interactive_questionnaire() -> Questionnaire:
     if intermittent_fasting:
         fasting_window = int(input("Fasting window (hours, e.g., 12 for 12:12, 16 for 16:8): "))
     
+    # Texture preferences
+    avoid_slimy = input("\nAvoid slimy/slippery textured foods (mushrooms, okra, etc.)? (yes/no): ").lower()
+    avoid_slimy_textures = avoid_slimy in ['yes', 'y']
+    
     preferences = DietaryPreferences(
         diet_type=diet_type,
         meals_per_day=meals_per_day,
         intermittent_fasting=intermittent_fasting,
-        fasting_window_hours=fasting_window
+        fasting_window_hours=fasting_window,
+        avoid_slimy_textures=avoid_slimy_textures
     )
     
     print("\n--- FITNESS GOALS ---\n")
