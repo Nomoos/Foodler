@@ -7,12 +7,14 @@
       "date": "19.01.2026",
       "day_name": "pondělí",
       "cycle_day": 19,
-      "breakfast": "Vejce natvrdo R150g (3 ks) P100g (2 ks), avokádo R80g P60g, ředkev bílá R100g P90g | K: Ve školce",
-      "morning_snack": "Borůvky R40g P40g, Řecký jogurt R140g P120g | K: Ve školce",
-      "lunch": "R: Špagety aglio olio e peperoncino 150g (258 kcal), tuňák v slunečnicovém oleji Sun & Sea 60g (114 kcal) | P: V práci | K: Ve školce",
-      "afternoon_snack": "Cottage cheese s pažitkou R100g P80g, ořechy R30g P25g | K: Ve školce",
-      "dinner": "Vejce míchaná R165g (3 ks) P110g (2 ks), sýr Císařský R80g P70g, olivový olej R10ml P5ml | K: Rýže basmati 60g, vejce míchaná 55g (1 ks), máslo 5g",
-      "evening_snack": "Řecký jogurt R150g P120g, semínka R20g P15g | K: Bio jogurt jahoda 90g"
+      "roman_total_calories": 1977,
+      "roman_target_calories": 2000,
+      "breakfast": "R: Vejce na tvrdo 150g (214 kcal), avokádo 80g (127 kcal), ředkev bílá 100g (25.9 kcal) [Celkem: 366.9 kcal] | P: Vejce P100g (2 ks), avokádo P60g, ředkev bílá P90g | K: Ve školce",
+      "morning_snack": "R: Borůvky kanadské 40g (22.8 kcal), Řecký jogurt bílý 5% tuku Milko 140g (132 kcal), chia semínka 30g (148 kcal) [Celkem: 302.8 kcal] | P: Borůvky P40g, Řecký jogurt P120g | K: Ve školce",
+      "lunch": "R: Špagety aglio olio e peperoncino 150g (258 kcal), Tuna in sunflower oil Sun & Sea 60g (114 kcal) [Celkem: 372 kcal] | P: V práci | K: Ve školce",
+      "afternoon_snack": "R: Císařský sýr s oky 45% plátky Madeta 50g (173 kcal), Kešu ořechy pražené nesolené Váš Výběr 40g (233 kcal) [Celkem: 406 kcal] | P: Cottage cheese s pažitkou P80g, ořechy P25g | K: Ve školce",
+      "dinner": "R: Míchaná vejce (vajíčka) 165g (273 kcal), Gouda Light 30% Globus 40g (101 kcal) [Celkem: 374 kcal] | P: Vejce míchaná P110g (2 ks), sýr Císařský P70g, olivový olej P5ml | K: Rýže basmati 60g, vejce míchaná 55g (1 ks), máslo 5g",
+      "evening_snack": "R: Iso whey prozero chocolate brownies Nutrend 40g (152 kcal) [Celkem: 152 kcal] | P: Řecký jogurt P120g, semínka P15g | K: Bio jogurt jahoda 90g"
     },
     {
       "date": "20.01.2026",
