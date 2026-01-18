@@ -25,10 +25,10 @@ Zaměřuje se na **praktickou realitu**, ne ideální teorii.
 
 ### Aktivní cíle
 - Bílkoviny: **140 g (32 %)**
-- Sacharidy: **70 g (12 %)**
+- Sacharidy: **70 g (12 %, maximum)**
 - Tuky: **129 g (56 %)**
-- Vláknina: **50 g**
-- Cukry: **10 g**
+- Vláknina: **30 g (optimum, minimum 20 g)**
+- Cukry: **10 g (maximum)**
 
 ### Doporučení pro dlouhodobé fungování
 - vysoký tuk je udržitelný pouze při:

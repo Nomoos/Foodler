@@ -30,7 +30,7 @@ class OsobniProfil:
     cil_bilkoviny: int = 140  # g (32%, minimum 93g, maximum 154g)
     cil_sacharidy: int = 70   # g (12%, maximum)
     cil_tuky: int = 129       # g (56%, minimum 30g, maximum 183g)
-    cil_vlaknina: int = 50    # g (zvýšeno pro trávení tuků a udržitelnost)
+    cil_vlaknina: int = 30    # g (optimum pro trávení tuků: 14g/1000kcal, minimum 20g)
     cil_cukry: int = 10       # g (maximum)
     
     # Aktivita a lifestyle
@@ -130,7 +130,7 @@ Denní cíle (udržitelná keto/low-carb dieta):
   Bílkoviny: {self.cil_bilkoviny}g (32%, range: 93-154g)
   Sacharidy: max {self.cil_sacharidy}g (12%)
   Tuky: {self.cil_tuky}g (56%, range: 30-183g)
-  Vláknina: min {self.cil_vlaknina}g (zvýšeno pro lepší trávení)
+  Vláknina: {self.cil_vlaknina}g optimum (min 20g, ideální pro trávení tuků)
   Cukry: max {self.cil_cukry}g
   
 Zdravotní poznámky:
