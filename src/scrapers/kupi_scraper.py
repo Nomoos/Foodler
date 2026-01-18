@@ -4,7 +4,7 @@ Tento modul se zabývá pouze scrapováním dat z webu (Single Responsibility)
 """
 
 import requests
-from typing import List, Optional, Dict
+from typing import List, Optional, Dict, Tuple
 from bs4 import BeautifulSoup
 from urllib.parse import urlencode, quote_plus
 import logging
@@ -12,6 +12,7 @@ from datetime import datetime
 import json
 import os
 import re
+import time
 
 from modely.product import Product
 
@@ -298,7 +299,7 @@ class KupiCzScraper:
         logger.debug(f"Could not parse date: {date_text}")
         return None
     
-    def _extract_dates_from_element(self, element) -> tuple[Optional[datetime], Optional[datetime]]:
+    def _extract_dates_from_element(self, element) -> Tuple[Optional[datetime], Optional[datetime]]:
         """
         Extrahuje platnost akce z HTML elementu.
         
@@ -414,7 +415,6 @@ class KupiCzScraper:
             logger.info(f"Scraping {store_name}...")
             try:
                 # Přidáme zpoždění mezi požadavky (etika scrapování)
-                import time
                 if all_discounts:  # Pokud již nějaké obchody zpracovány
                     time.sleep(2)  # 2 sekundové zpoždění
                 
@@ -523,13 +523,13 @@ class KupiCzScraper:
                 if prod_dict.get('valid_from'):
                     try:
                         valid_from = datetime.fromisoformat(prod_dict['valid_from'])
-                    except:
+                    except (ValueError, TypeError):
                         pass
                 
                 if prod_dict.get('valid_until'):
                     try:
                         valid_until = datetime.fromisoformat(prod_dict['valid_until'])
-                    except:
+                    except (ValueError, TypeError):
                         pass
                 
                 product = Product(
