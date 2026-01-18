@@ -110,15 +110,26 @@ class DatabazePotravIn:
             poznamky="Praktický zdroj bílkovin"
         ),
         Potravina(
-            nazev="Vejce",
+            nazev="Tuňák kousky v oleji",
             kategorie="bilkoviny",
-            kalorie=155,
-            bilkoviny=13.0,
-            sacharidy=1.1,
-            tuky=11.0,
+            kalorie=159,
+            bilkoviny=26.0,
+            sacharidy=0.0,
+            tuky=6.0,
+            vlaknina=0.0,
+            cena_za_kg=200.0,
+            poznamky="Sun&Sea 750g, v slunečnicovém oleji, vysoký obsah bílkovin, sůl 1.2g/100g"
+        ),
+        Potravina(
+            nazev="Vejce slepičí M",
+            kategorie="bilkoviny",
+            kalorie=151,  # 83 kcal per 55g = 151 per 100g
+            bilkoviny=12.38,  # 6.81g per 55g = 12.38 per 100g
+            sacharidy=0.95,  # 0.52g per 55g = 0.95 per 100g
+            tuky=10.87,  # 5.98g per 55g = 10.87 per 100g
             vlaknina=0.0,
             cena_za_kg=40.0,
-            poznamky="Kompletní aminokyselinový profil"
+            poznamky="Velikost M (55g), kompletní aminokyselinový profil, cholesterol 237mg/ks"
         ),
         
         # Mléčné výrobky
@@ -162,6 +173,81 @@ class DatabazePotravIn:
             vlaknina=0.0,
             cena_za_kg=180.0
         ),
+        Potravina(
+            nazev="Sýrařův výběr moravský bochník 45% Madeta",
+            kategorie="mlecne_vyrobky",
+            kalorie=350,
+            bilkoviny=23.0,
+            sacharidy=0.5,
+            tuky=28.0,
+            vlaknina=0.0,
+            cena_za_kg=200.0,
+            poznamky="Polotvrdý sýr s 45% tuku v sušině"
+        ),
+        Potravina(
+            nazev="Gizycko klásek Gornicky",
+            kategorie="mlecne_vyrobky",
+            kalorie=320,
+            bilkoviny=25.0,
+            sacharidy=0.5,
+            tuky=24.0,
+            vlaknina=0.0,
+            cena_za_kg=190.0,
+            poznamky="Polský polotvrdý sýr"
+        ),
+        Potravina(
+            nazev="Mozzarella",
+            kategorie="mlecne_vyrobky",
+            kalorie=280,
+            bilkoviny=18.0,
+            sacharidy=2.2,
+            tuky=22.0,
+            vlaknina=0.0,
+            cena_za_kg=160.0,
+            poznamky="Ideální na pizzu"
+        ),
+        Potravina(
+            nazev="Parmazán",
+            kategorie="mlecne_vyrobky",
+            kalorie=392,
+            bilkoviny=36.0,
+            sacharidy=3.2,
+            tuky=26.0,
+            vlaknina=0.0,
+            cena_za_kg=450.0,
+            poznamky="Tvrdý sýr, bohatý na protein"
+        ),
+        Potravina(
+            nazev="Gouda",
+            kategorie="mlecne_vyrobky",
+            kalorie=356,
+            bilkoviny=25.0,
+            sacharidy=2.2,
+            tuky=27.0,
+            vlaknina=0.0,
+            cena_za_kg=180.0,
+            poznamky="Polotvrdý holandský sýr"
+        ),
+        Potravina(
+            nazev="Cheddar",
+            kategorie="mlecne_vyrobky",
+            kalorie=403,
+            bilkoviny=23.0,
+            sacharidy=3.1,
+            tuky=33.0,
+            vlaknina=0.0,
+            cena_za_kg=220.0,
+            poznamky="Tvrdý anglický sýr"
+            nazev="Sýr gouda 45%",
+            kategorie="mlecne_vyrobky",
+            kalorie=344,
+            bilkoviny=26.0,
+            sacharidy=0.0,
+            tuky=27.0,
+            vlaknina=0.0,
+            cena_za_kg=180.0,
+            poznamky="Polotvrdý sýr, 45% tuku, nulové sacharidy"
+        ),
         
         # Zelenina
         Potravina(
@@ -195,6 +281,28 @@ class DatabazePotravIn:
             vlaknina=2.5,
             cena_za_kg=20.0,
             sezona=["9", "10", "11", "12", "1", "2", "3"]
+        ),
+        Potravina(
+            nazev="Kysané zelí",
+            kategorie="zelenina",
+            kalorie=19,
+            bilkoviny=0.9,
+            sacharidy=4.3,
+            tuky=0.1,
+            vlaknina=2.9,
+            cena_za_kg=30.0,
+            poznamky="Fermentované, probiotické, nízkokalorické"
+        ),
+        Potravina(
+            nazev="Ledový salát",
+            kategorie="zelenina",
+            kalorie=16.1,
+            bilkoviny=0.7,
+            sacharidy=2.0,
+            tuky=0.14,
+            vlaknina=1.2,
+            cena_za_kg=35.0,
+            poznamky="Nízkokalorický, hodně vody, cukry 1.97g/100g"
         ),
         Potravina(
             nazev="Cuketa",
@@ -271,7 +379,8 @@ class DatabazePotravIn:
             tuky=0.2,
             vlaknina=2.8,
             cena_za_kg=25.0,
-            sezona=["9", "10", "11", "12", "1", "2"]
+            sezona=["9", "10", "11", "12", "1", "2"],
+            poznamky="Hodnoty platí pro vařenou řepu"
         ),
         
         # Zdravé tuky

@@ -52,6 +52,7 @@ Nástroj pro podporu hubnutí a zdravého stravování pro celou rodinu s důraz
 - **[TYDENNI_PLANOVANI.md](docs/meal-planning/TYDENNI_PLANOVANI.md)** - Strategie týdenního meal prepu
 - **[VYBAVENI_A_TIPY.md](docs/meal-planning/VYBAVENI_A_TIPY.md)** - Využití kuchyňského vybavení
 - **[RECEPTY_SALATY.md](docs/meal-planning/RECEPTY_SALATY.md)** - Recepty a saláty
+- **[RECEPTY_KETO.md](docs/meal-planning/RECEPTY_KETO.md)** - Keto recepty (chléb, pečivo)
 
 ### 🏥 Zdraví a metabolismus
 - **[TRAVENI_A_METABOLISMUS.md](docs/health/TRAVENI_A_METABOLISMUS.md)** - Trávení a metabolismus
@@ -71,6 +72,9 @@ Nástroj pro podporu hubnutí a zdravého stravování pro celou rodinu s důraz
   - Scoring a threshold systém
 
 ### 🔧 Technická dokumentace
+- **[GITHUB_COPILOT_WEB_ACCESS.md](docs/technical/GITHUB_COPILOT_WEB_ACCESS.md)** - ⭐ Návod pro GitHub Copilot Pro+ a testování scraperů
+- **[LANGUAGE_DECISION.md](LANGUAGE_DECISION.md)** - ⭐ Rozhodnutí o programovacím jazyce (Python vs C# vs TypeScript)
+- **[LANGUAGE_EVALUATION.md](docs/technical/LANGUAGE_EVALUATION.md)** - Podrobná analýza jazyků
 - **[IMPLEMENTATION_SUMMARY.md](docs/technical/IMPLEMENTATION_SUMMARY.md)** - Shrnutí implementace
 - **[REFACTORING_SUMMARY.md](docs/technical/REFACTORING_SUMMARY.md)** - Historie refaktoringu
 - **[osoby/README.md](osoby/README.md)** - Práce s profily a preferencemi
@@ -138,6 +142,15 @@ python osoby/sdilena_jidla/jidla.py
 
 # Databáze potravin
 python potraviny/databaze.py
+
+# Databáze jídel
+python jidla/databaze.py
+
+# Generátor variací receptů (nové!)
+python jidla/variace_receptu.py
+
+# Demo variací receptů (interaktivní)
+python demo_variace_receptu.py
 
 # Nákupní seznam
 python nakup/seznamy.py
