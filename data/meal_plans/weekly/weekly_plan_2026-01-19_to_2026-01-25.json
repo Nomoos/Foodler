@@ -7,12 +7,12 @@
       "date": "19.01.2026",
       "day_name": "pondělí",
       "cycle_day": 19,
-      "breakfast": "R: Vejce natvrdo 150g (3 ks), avokádo 80g, ředkev bílá 100g | P: Řecký jogurt malina 140g, pekanové ořechy 25g | K: Ve školce",
-      "morning_snack": "R: Borůvky 40g, Řecký jogurt meruňka 140g | P: Borůvky 40g, Řecký jogurt natural 100g | K: Ve školce",
-      "lunch": "R: Špagety aglio olio e peperoncino 150g (258 kcal), tuňák v slunečnicovém oleji Sun & Sea 60g (114 kcal) | P: Vejce natvrdo 55g (1 ks), sýr Gouda Light 80g, olivy zelené 40g, olivový olej 10ml | K: Ve školce",
-      "afternoon_snack": "R: Cottage cheese s pažitkou 100g, vlašské ořechy 30g | P: Cottage cheese s pažitkou 80g, dýňová semínka 20g | K: Ve školce",
-      "dinner": "R: Vejce míchaná 165g (3 ks), sýr Císařský 45% 80g, olivový olej 10ml | P: Vejce míchaná 110g (2 ks), sýr Císařský uzený 44% 70g, olivový olej 5ml | K: Rýže basmati 60g, vejce míchaná 55g (1 ks), máslo 5g",
-      "evening_snack": "R: Řecký jogurt 5% 150g, lněné semínko mleté 20g | P: Řecký jogurt natural 100g, chia semínka 15g | K: Bio jogurt jahoda 90g"
+      "breakfast": "Vejce natvrdo R150g (3 ks) P100g (2 ks), avokádo R80g P60g, ředkev bílá R100g P90g | K: Ve školce",
+      "morning_snack": "Borůvky R40g P40g, Řecký jogurt R140g P120g | K: Ve školce",
+      "lunch": "R: Špagety aglio olio e peperoncino 150g (258 kcal), tuňák v slunečnicovém oleji Sun & Sea 60g (114 kcal) | P: V práci | K: Ve školce",
+      "afternoon_snack": "Cottage cheese s pažitkou R100g P80g, ořechy R30g P25g | K: Ve školce",
+      "dinner": "Vejce míchaná R165g (3 ks) P110g (2 ks), sýr Císařský R80g P70g, olivový olej R10ml P5ml | K: Rýže basmati 60g, vejce míchaná 55g (1 ks), máslo 5g",
+      "evening_snack": "Řecký jogurt R150g P120g, semínka R20g P15g | K: Bio jogurt jahoda 90g"
     },
     {
       "date": "20.01.2026",
