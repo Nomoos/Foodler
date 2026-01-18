@@ -258,6 +258,136 @@ class DatabzeJidel:
             vhodne_pro_meal_prep=True,
             vydrzi_dni=5,
             poznamky="Ketogenní chléb s vysokým obsahem vlákniny a bílkovin, ideální pro low-carb dietu. Vydrží až 5 dní v lednici."
+        # New egg-based meals to use the 40 eggs in fridge
+        Jidlo(
+            nazev="Vařená vejce na tvrd (3 ks)",
+            typ="svacina",
+            ingredience=[
+                Ingredience("Vejce slepičí M", 165, "hlavni"),  # 3 eggs x 55g
+            ],
+            kalorie_celkem=249,  # 83 x 3
+            bilkoviny_celkem=20.43,  # 6.81 x 3
+            sacharidy_celkem=1.56,  # 0.52 x 3
+            tuky_celkem=17.94,  # 5.98 x 3
+            vlaknina_celkem=0.0,
+            priprava_cas_min=12,
+            priprava_postup="1. Vejce dát do studené vody. 2. Přivést k varu. 3. Vařit 10 minut. 4. Opláchout studenou vodou.",
+            obtiznost="snadna",
+            porce=1,
+            vhodne_pro_meal_prep=True,
+            vydrzi_dni=5,
+            poznamky="Perfektní proteinová svačina, lze uvařit dopředu na celý týden"
+        ),
+        Jidlo(
+            nazev="Míchaná vejce se sýrem (4 vejce)",
+            typ="snidane",
+            ingredience=[
+                Ingredience("Vejce slepičí M", 220, "hlavni"),  # 4 eggs x 55g
+                Ingredience("Sýr eidam", 40, "priloha"),
+                Ingredience("Máslo", 10, "omacka"),
+            ],
+            kalorie_celkem=498,
+            bilkoviny_celkem=38.0,
+            sacharidy_celkem=2.28,
+            tuky_celkem=37.72,
+            vlaknina_celkem=0.0,
+            priprava_cas_min=8,
+            priprava_postup="1. Vejce rozšlehat s trochou soli. 2. Smažit na másle za stálého míchání. 3. Na konci přidat nastrouhaný sýr.",
+            obtiznost="snadna",
+            porce=1,
+            vhodne_pro_meal_prep=False,
+            poznamky="Vysoký obsah bílkovin, ideální pro protein-first plán"
+        ),
+        Jidlo(
+            nazev="Vaječný salát s cottage cheese",
+            typ="obed",
+            ingredience=[
+                Ingredience("Vejce slepičí M", 110, "hlavni"),  # 2 eggs x 55g
+                Ingredience("Cottage cheese", 150, "hlavni"),
+                Ingredience("Zelený salát", 100, "priloha"),
+                Ingredience("Okurka", 50, "priloha"),
+                Ingredience("Olivový olej", 10, "omacka"),
+            ],
+            kalorie_celkem=402,
+            bilkoviny_celkem=34.6,
+            sacharidy_celkem=8.54,
+            tuky_celkem=25.96,
+            vlaknina_celkem=2.0,
+            priprava_cas_min=15,
+            priprava_postup="1. Vejce uvařit natvrdo (10 min). 2. Nakrájet vejce a zeleninu. 3. Smíchat s cottage cheese a olivovým olejem.",
+            obtiznost="snadna",
+            porce=1,
+            vhodne_pro_meal_prep=True,
+            vydrzi_dni=2,
+            poznamky="Lehký oběd s vysokým obsahem bílkovin"
+        ),
+        Jidlo(
+            nazev="Omeleta se zeleninou (3 vejce)",
+            typ="vecere",
+            ingredience=[
+                Ingredience("Vejce slepičí M", 165, "hlavni"),  # 3 eggs x 55g
+                Ingredience("Paprika", 100, "priloha"),
+                Ingredience("Cuketa", 100, "priloha"),
+                Ingredience("Cibule", 50, "priloha"),
+                Ingredience("Olivový olej", 10, "omacka"),
+            ],
+            kalorie_celkem=402,
+            bilkoviny_celkem=23.3,
+            sacharidy_celkem=14.5,
+            tuky_celkem=28.6,
+            vlaknina_celkem=3.8,
+            priprava_cas_min=15,
+            priprava_postup="1. Zeleninu nakrájet a opéct na oleji. 2. Vejce rozšlehat. 3. Zalít zeleninu vejci a péct pod pokličkou 8 min.",
+            obtiznost="snadna",
+            porce=1,
+            vhodne_pro_meal_prep=False,
+            poznamky="Lehká večeře s hodně zeleniny"
+        ),
+        Jidlo(
+            nazev="Vajíčka v kapustě (3 vejce)",
+            typ="obed",
+            ingredience=[
+                Ingredience("Vejce slepičí M", 165, "hlavni"),  # 3 eggs x 55g
+                Ingredience("Zelí", 200, "priloha"),
+                Ingredience("Cibule", 50, "priloha"),
+                Ingredience("Olivový olej", 10, "omacka"),
+            ],
+            kalorie_celkem=418,
+            bilkoviny_celkem=23.5,
+            sacharidy_celkem=15.5,
+            tuky_celkem=29.3,
+            vlaknina_celkem=5.7,
+            priprava_cas_min=20,
+            priprava_postup="1. Zelí a cibuli nakrájet a podusit na oleji. 2. Udělat jamky a do každé rozbít vejce. 3. Péct pod pokličkou 10 min.",
+            obtiznost="snadna",
+            porce=1,
+            vhodne_pro_meal_prep=True,
+            vydrzi_dni=3,
+            poznamky="Tradiční jídlo, hodně vlákniny"
+        ),
+        Jidlo(
+            nazev="RaPaCiSo salát (zeleninový mix)",
+            typ="priloha",
+            ingredience=[
+                Ingredience("Rajčata", 60, "priloha"),
+                Ingredience("Paprika", 25, "priloha"),
+                Ingredience("Sladká paprika", 25, "priloha"),
+                Ingredience("Cibule", 20, "priloha"),
+                Ingredience("Olej slunečnicový", 5, "omacka"),
+                Ingredience("Makadamiový olej", 5, "omacka"),
+            ],
+            kalorie_celkem=121,
+            bilkoviny_celkem=1.3,
+            sacharidy_celkem=6.1,
+            tuky_celkem=9.9,
+            vlaknina_celkem=2.4,
+            priprava_cas_min=10,
+            priprava_postup="1. Rajčata a papriky nakrájet na kostky. 2. Cibuli najemno nakrájet. 3. Vše smíchat s oleji. 4. Podle chuti dochutit.",
+            obtiznost="snadna",
+            porce=1,
+            vhodne_pro_meal_prep=True,
+            vydrzi_dni=2,
+            poznamky="Lehká zeleninová příloha, bohatá na zdravé tuky, 140g porce"
         ),
     ]
     
