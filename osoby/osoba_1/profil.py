@@ -3,6 +3,9 @@
 """
 Profil osoby 1 - Roman (Romča)
 Obsahuje osobní údaje a cíle pro hubnutí
+
+Pro vysvětlení metrik tělesného složení (procento_tuku, svalová_hmota, atd.)
+viz: docs/health/METRIKY_DEXA_BIA.md
 """
 
 from dataclasses import dataclass
@@ -11,7 +14,13 @@ from typing import List, Dict
 
 @dataclass
 class OsobniProfil:
-    """Osobní profil s antropometrickými daty a dietními cíli."""
+    """
+    Osobní profil s antropometrickými daty a dietními cíli.
+    
+    Metriky tělesného složení (procento_tuku, tuková_hmota, svalová_hmota):
+    - Měřeno pomocí BIA (Bioelektrická impedanční analýza) - chytrá váha
+    - Pro podrobné vysvětlení všech metrik viz: docs/health/METRIKY_DEXA_BIA.md
+    """
     
     jmeno: str = "Roman (Romča)"
     vaha: float = 133.6  # kg (měření 18.1.2026 09:52)

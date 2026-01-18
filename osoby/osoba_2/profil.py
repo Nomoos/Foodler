@@ -3,6 +3,9 @@
 """
 Profil osoby 2 - Pája (Pavla)
 Obsahuje osobní údaje a cíle pro hubnutí
+
+Pro vysvětlení metrik tělesného složení (PBF, SSM, VFA, atd.)
+viz: docs/health/METRIKY_DEXA_BIA.md
 """
 
 from dataclasses import dataclass
@@ -11,7 +14,16 @@ from typing import List, Dict
 
 @dataclass
 class OsobniProfil:
-    """Osobní profil s antropometrickými daty a dietními cíli."""
+    """
+    Osobní profil s antropometrickými daty a dietními cíli.
+    
+    Metriky tělesného složení (PBF, SSM, VFA):
+    - PBF = Percent Body Fat (procento tuku)
+    - SSM = Skeletal Muscle Mass (svalová hmota)
+    - VFA = Visceral Fat Area (viscerální tuk)
+    - Měřeno pomocí BIA (Bioelektrická impedanční analýza) - chytrá váha
+    - Pro podrobné vysvětlení všech metrik viz: docs/health/METRIKY_DEXA_BIA.md
+    """
     
     jmeno: str = "Pája (Pavla)"
     vaha: float = 77.3  # kg (měření 22.12.2025)
