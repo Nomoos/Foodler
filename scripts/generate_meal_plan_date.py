@@ -16,7 +16,7 @@ import sys
 from datetime import datetime, timedelta
 
 # Cesta k meal plan datům
-MEAL_PLAN_JSON = 'data/meal_plans/meal_plan_28_days.json'
+MEAL_PLAN_JSON = '../data/meal_plans/meal_plan_28_days.json'
 
 
 def load_meal_plan_json():

@@ -1,0 +1,77 @@
+{
+  "week_start": "19.01.2026",
+  "week_end": "25.01.2026",
+  "generated": "18.01.2026 15:48",
+  "days": [
+    {
+      "date": "19.01.2026",
+      "day_name": "pondělí",
+      "cycle_day": 19,
+      "breakfast": "Pohankové vločky, sójové mléko, jablko, vlašské ořechy, med",
+      "morning_snack": "Ovocný salát",
+      "lunch": "Treska na másle, celerové pyré / Vegetarián: Indické tofu, celerové pyré",
+      "afternoon_snack": "Ředkvičkový salát",
+      "dinner": "Mrkvový perkelt, strouhaný sýr, brokolice s česnekem"
+    },
+    {
+      "date": "20.01.2026",
+      "day_name": "úterý",
+      "cycle_day": 20,
+      "breakfast": "Mrkev, jablko, med, rozinky, vlašské ořechy",
+      "morning_snack": "Jablko",
+      "lunch": "Kuřecí stehno, pečený celer/ Vegetarián: Tofu karbanátek, pečený celer",
+      "afternoon_snack": "Bílý jogurt, med, mandle",
+      "dinner": "Brokolice s česnekem, tuňák"
+    },
+    {
+      "date": "21.01.2026",
+      "day_name": "středa",
+      "cycle_day": 21,
+      "breakfast": "Vařené jáhly, vlašské ořechy, sušené švestky, med",
+      "morning_snack": "Meruňky",
+      "lunch": "Krůtí stehna, pečený celer / Červená řepa, okurek / Vegetarián: Indické tofu, pečený celer",
+      "afternoon_snack": "Bílý jogurt",
+      "dinner": "Brynza s bílky"
+    },
+    {
+      "date": "22.01.2026",
+      "day_name": "čtvrtek",
+      "cycle_day": 22,
+      "breakfast": "Pohankové vločky, sójové mléko, jablko, vlašské ořechy, med",
+      "morning_snack": "Datle",
+      "lunch": "Těstoviny, kedlubna",
+      "afternoon_snack": "Slaný špenátový koláč",
+      "dinner": "Kuřecí karbanátky s celerem, zeleninový salát / Vegetarián: Brokolicové karbanátky, zeleninový salát"
+    },
+    {
+      "date": "23.01.2026",
+      "day_name": "pátek",
+      "cycle_day": 23,
+      "breakfast": "Mrkev, jablko, med, rozinky, vlašské ořechy",
+      "morning_snack": "Ananas",
+      "lunch": "Mrkvový perkelt, strouhaný sýr, brokolice s česnekem",
+      "afternoon_snack": "Bílý jogurt, med, mandle",
+      "dinner": "Salát z červené řepy, smažená kuřecí prsa obalená ve vlašských ořech. / Vegetarián: Salát z červené řepy, vejce"
+    },
+    {
+      "date": "24.01.2026",
+      "day_name": "sobota",
+      "cycle_day": 24,
+      "breakfast": "Vařené jáhly, vlašské ořechy, sušené švestky, med",
+      "morning_snack": "Ovocné pyré",
+      "lunch": "Treska na másle, salát z červené řepy / Vegetarián: Salát z červené řepy, sýr",
+      "afternoon_snack": "Zeleninový salát s mandlemi",
+      "dinner": "Dýňový krém, Cuketové placky"
+    },
+    {
+      "date": "25.01.2026",
+      "day_name": "neděle",
+      "cycle_day": 25,
+      "breakfast": "Mrkev, jablko, med, rozinky, vlašské ořechy",
+      "morning_snack": "Jablko",
+      "lunch": "Těstoviny, špenát",
+      "afternoon_snack": "Bílý jogurt, med, mandle",
+      "dinner": "Salát z červené řepy, tuňák / Vegetarián: Salát z červené řepy, vejce"
+    }
+  ]
+}
