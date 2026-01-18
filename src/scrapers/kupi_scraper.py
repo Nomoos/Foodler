@@ -8,6 +8,8 @@ from typing import List, Optional
 from bs4 import BeautifulSoup
 from urllib.parse import urlencode, quote_plus
 import logging
+import re
+from datetime import datetime
 
 from modely.product import Product
 
@@ -59,13 +61,16 @@ class KupiCzScraper:
             logger.error(f"Error fetching {url}: {e}")
             return None
     
-    def get_current_discounts(self, category: Optional[str] = None, store: Optional[str] = None) -> List[Product]:
+    def get_current_discounts(self, category: Optional[str] = None, store: Optional[str] = None, 
+                             sort_order: Optional[int] = None, page: int = 1) -> List[Product]:
         """
         Stáhne aktuální slevy z kupi.cz.
         
         Args:
-            category: Volitelný filtr kategorie (např. 'potraviny', 'napoje')
-            store: Volitelný filtr obchodu (např. 'lidl', 'kaufland', 'albert')
+            category: Volitelný filtr kategorie (např. 'slevy/drubez', 'slevy/potraviny')
+            store: Volitelný filtr obchodu (např. 'kaufland', 'albert', 'tesco', 'billa')
+            sort_order: Řazení (0=cena za jednotku, další hodnoty dle webu)
+            page: Číslo stránky pro stránkování
             
         Returns:
             Seznam Product objektů s informacemi o slevách
@@ -76,10 +81,22 @@ class KupiCzScraper:
         url = self.BASE_URL
         params = {}
         
-        if category:
-            url += f"/{category}"
-        if store:
-            params['store'] = store
+        # Pokud je zadána kategorie, přidej ji do URL
+        if category and store:
+            # URL ve formátu /slevy/kategorie/obchod
+            url += f"/slevy/{category}/{store}"
+        elif category:
+            # URL ve formátu /slevy/kategorie
+            url += f"/slevy/{category}"
+        elif store:
+            # URL ve formátu /slevy/obchod
+            url += f"/slevy/{store}"
+        
+        # Přidání parametrů pro řazení a stránkování
+        if sort_order is not None:
+            params['ord'] = sort_order
+        if page > 1:
+            params['page'] = page
         
         if params:
             url += f"?{urlencode(params)}"
@@ -97,6 +114,41 @@ class KupiCzScraper:
             logger.error(f"Error parsing products: {e}")
         
         return products
+    
+    def get_ajax_discounts(self, store: str, page: int = 1, sort_order: int = 0) -> List[Product]:
+        """
+        Stáhne slevy pomocí AJAX endpointu pro rychlejší načítání.
+        
+        Args:
+            store: Název obchodu (např. 'kaufland', 'albert', 'tesco')
+            page: Číslo stránky
+            sort_order: Řazení (0=cena za jednotku)
+            
+        Returns:
+            Seznam Product objektů
+        """
+        # AJAX endpoint: /get-akce/obchod?page=X&ord=X&load_linear=0&ajax=1
+        url = f"{self.BASE_URL}/get-akce/{store}"
+        params = {
+            'page': page,
+            'ord': sort_order,
+            'load_linear': 0,
+            'ajax': 1
+        }
+        url += f"?{urlencode(params)}"
+        
+        soup = self.fetch_page(url)
+        if not soup:
+            logger.warning(f"Failed to fetch AJAX data for {store}")
+            return []
+        
+        try:
+            products = self._parse_products(soup)
+            logger.info(f"Found {len(products)} products via AJAX")
+            return products
+        except Exception as e:
+            logger.error(f"Error parsing AJAX products: {e}")
+            return []
     
     def _parse_products(self, soup: BeautifulSoup) -> List[Product]:
         """
@@ -258,6 +310,71 @@ class KupiCzScraper:
         except ValueError:
             logger.warning(f"Could not parse price: {price_text}")
             return 0.0
+    
+    def _parse_czech_date(self, date_text: str) -> Optional[datetime]:
+        """
+        Parsuje datum v českém formátu.
+        
+        Args:
+            date_text: Datum jako "18.1.2026", "18. 1. 2026", nebo "18. ledna 2026"
+            
+        Returns:
+            datetime objekt nebo None při chybě
+        """
+        if not date_text:
+            return None
+        
+        # Čištění textu
+        date_text = date_text.strip()
+        
+        # České názvy měsíců
+        mesice = {
+            'leden': 1, 'ledna': 1,
+            'únor': 2, 'února': 2,
+            'březen': 3, 'března': 3,
+            'duben': 4, 'dubna': 4,
+            'květen': 5, 'května': 5,
+            'červen': 6, 'června': 6,
+            'červenec': 7, 'července': 7,
+            'srpen': 8, 'srpna': 8,
+            'září': 9,
+            'říjen': 10, 'října': 10,
+            'listopad': 11, 'listopadu': 11,
+            'prosinec': 12, 'prosince': 12
+        }
+        
+        # Pokus o parsování s názvem měsíce
+        for mesic_nazev, mesic_cislo in mesice.items():
+            if mesic_nazev in date_text.lower():
+                try:
+                    # Extrahuj den a rok
+                    parts = re.findall(r'\d+', date_text)
+                    if len(parts) >= 2:
+                        den = int(parts[0])
+                        rok = int(parts[1])
+                        return datetime(rok, mesic_cislo, den)
+                except (ValueError, IndexError):
+                    pass
+        
+        # Pokus o parsování čísleného formátu (d.m.yyyy nebo dd.mm.yyyy)
+        patterns = [
+            r'(\d{1,2})\.?\s*(\d{1,2})\.?\s*(\d{4})',  # 18.1.2026 nebo 18. 1. 2026
+            r'(\d{1,2})/(\d{1,2})/(\d{4})',  # 18/1/2026
+        ]
+        
+        for pattern in patterns:
+            match = re.search(pattern, date_text)
+            if match:
+                try:
+                    den = int(match.group(1))
+                    mesic = int(match.group(2))
+                    rok = int(match.group(3))
+                    return datetime(rok, mesic, den)
+                except (ValueError, IndexError):
+                    pass
+        
+        logger.debug(f"Could not parse date: {date_text}")
+        return None
     
     def search_products(self, query: str) -> List[Product]:
         """
