@@ -433,17 +433,17 @@ class DatabazePotravIn:
         return potraviny
     
     @classmethod
-    def _get_all_potraviny(cls) -> List[Potravina]:
-        """Vrátí všechny potraviny (s cachováním)."""
+    def get_all(cls) -> List[Potravina]:
+        """Vrátí všechny potraviny (s cachováním). Preferovaný způsob přístupu."""
         if cls._cache is None:
             cls._cache = cls._load_from_yaml_files()
         return cls._cache
     
-    # Module-level access to POTRAVINY for backward compatibility
+    # Backward compatibility - can also be accessed as class attribute
     @property
     def POTRAVINY(self) -> List[Potravina]:
-        """Property for instance access to POTRAVINY."""
-        return self.__class__._get_all_potraviny()
+        """Property for backward compatibility. Use get_all() classmethod instead."""
+        return self.__class__.get_all()
     
     @classmethod
     def reload(cls):
@@ -453,7 +453,7 @@ class DatabazePotravIn:
     @classmethod
     def najdi_podle_nazvu(cls, nazev: str) -> Optional[Potravina]:
         """Najde potravinu podle názvu."""
-        for potravina in cls._get_all_potraviny():
+        for potravina in cls.get_all():
             if potravina.nazev.lower() == nazev.lower():
                 return potravina
         return None
@@ -461,21 +461,27 @@ class DatabazePotravIn:
     @classmethod
     def najdi_podle_kategorie(cls, kategorie: str) -> List[Potravina]:
         """Najde všechny potraviny v dané kategorii."""
-        return [p for p in cls._get_all_potraviny() if p.kategorie == kategorie]
+        return [p for p in cls.get_all() if p.kategorie == kategorie]
     
     @classmethod
     def najdi_low_carb(cls, max_sacharidy: float = 10.0) -> List[Potravina]:
         """Najde nízkosacharidové potraviny."""
-        return [p for p in cls._get_all_potraviny() if p.je_low_carb(max_sacharidy)]
+        return [p for p in cls.get_all() if p.je_low_carb(max_sacharidy)]
     
     @classmethod
     def najdi_high_protein(cls, min_bilkoviny: float = 15.0) -> List[Potravina]:
         """Najde vysokobílkovinové potraviny."""
-        return [p for p in cls._get_all_potraviny() if p.je_high_protein(min_bilkoviny)]
+        return [p for p in cls.get_all() if p.je_high_protein(min_bilkoviny)]
 
 
-# Module-level access to POTRAVINY for backward compatibility
-DatabazePotravIn.POTRAVINY = DatabazePotravIn._get_all_potraviny()
+# For backward compatibility with code that accesses DatabazePotravIn.POTRAVINY directly
+# This creates a class variable that lazy-loads the data
+class _PotravinyDescriptor:
+    """Descriptor for lazy loading POTRAVINY as a class attribute."""
+    def __get__(self, obj, objtype=None):
+        return objtype.get_all()
+
+DatabazePotravIn.POTRAVINY = _PotravinyDescriptor()
 
 
 def main():
@@ -485,7 +491,7 @@ def main():
     print("=" * 70)
     
     # Ukázka kategorií
-    all_potraviny = DatabazePotravIn._get_all_potraviny()
+    all_potraviny = DatabazePotravIn.get_all()
     print("\n📊 KATEGORIE POTRAVIN:\n")
     kategorie = {}
     for potravina in all_potraviny:

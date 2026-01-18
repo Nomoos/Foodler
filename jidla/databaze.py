@@ -145,18 +145,17 @@ class DatabzeJidel:
         return jidla
     
     @classmethod
-    def _get_all_jidla(cls) -> List[Jidlo]:
-        """Vrátí všechna jídla (s cachováním)."""
+    def get_all(cls) -> List[Jidlo]:
+        """Vrátí všechna jídla (s cachováním). Preferovaný způsob přístupu."""
         if cls._cache is None:
             cls._cache = cls._load_from_yaml_files()
         return cls._cache
     
-    # Class variable that acts like the old JIDLA list
-    # Accessed as DatabzeJidel.JIDLA
+    # Backward compatibility - can also be accessed as instance attribute
     @property  
     def JIDLA(self) -> List[Jidlo]:
-        """Property for instance access to JIDLA."""
-        return self.__class__._get_all_jidla()
+        """Property for backward compatibility. Use get_all() classmethod instead."""
+        return self.__class__.get_all()
     
     @classmethod
     def reload(cls):
@@ -542,7 +541,7 @@ class DatabzeJidel:
     @classmethod
     def najdi_podle_nazvu(cls, nazev: str) -> Optional[Jidlo]:
         """Najde jídlo podle názvu."""
-        for jidlo in cls._get_all_jidla():
+        for jidlo in cls.get_all():
             if jidlo.nazev.lower() == nazev.lower():
                 return jidlo
         return None
@@ -550,32 +549,37 @@ class DatabzeJidel:
     @classmethod
     def najdi_podle_typu(cls, typ: str) -> List[Jidlo]:
         """Najde všechna jídla daného typu."""
-        return [j for j in cls._get_all_jidla() if j.typ == typ]
+        return [j for j in cls.get_all() if j.typ == typ]
     
     @classmethod
     def najdi_meal_prep(cls) -> List[Jidlo]:
         """Najde jídla vhodná pro meal prep."""
-        return [j for j in cls._get_all_jidla() if j.vhodne_pro_meal_prep]
+        return [j for j in cls.get_all() if j.vhodne_pro_meal_prep]
     
     @classmethod
     def najdi_rychla(cls, max_minut: int = 15) -> List[Jidlo]:
         """Najde rychlá jídla."""
-        return [j for j in cls._get_all_jidla() if j.priprava_cas_min <= max_minut]
+        return [j for j in cls.get_all() if j.priprava_cas_min <= max_minut]
     
     @classmethod
     def najdi_low_carb(cls, max_sacharidy: float = 15.0) -> List[Jidlo]:
         """Najde nízkosacharidová jídla."""
-        return [j for j in cls._get_all_jidla() if j.je_low_carb(max_sacharidy)]
+        return [j for j in cls.get_all() if j.je_low_carb(max_sacharidy)]
     
     @classmethod
     def najdi_high_protein(cls, min_bilkoviny: float = 25.0) -> List[Jidlo]:
         """Najde vysokobílkovinová jídla."""
-        return [j for j in cls._get_all_jidla() if j.je_high_protein(min_bilkoviny)]
+        return [j for j in cls.get_all() if j.je_high_protein(min_bilkoviny)]
 
 
-# Module-level access to JIDLA for backward compatibility
-# This allows: from jidla.databaze import DatabzeJidel; ... for j in DatabzeJidel.JIDLA
-DatabzeJidel.JIDLA = DatabzeJidel._get_all_jidla()
+# For backward compatibility with code that accesses DatabzeJidel.JIDLA directly
+# This creates a class variable that lazy-loads the data
+class _JidlaDescriptor:
+    """Descriptor for lazy loading JIDLA as a class attribute."""
+    def __get__(self, obj, objtype=None):
+        return objtype.get_all()
+
+DatabzeJidel.JIDLA = _JidlaDescriptor()
 
 
 def main():
@@ -585,7 +589,7 @@ def main():
     print("=" * 70)
     
     # Všechna jídla
-    all_jidla = DatabzeJidel._get_all_jidla()
+    all_jidla = DatabzeJidel.get_all()
     print("\n🍽️  VŠECHNA JÍDLA:\n")
     for i, jidlo in enumerate(all_jidla, 1):
         makra = jidlo.vypocitej_makra_na_porci()
