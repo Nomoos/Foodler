@@ -2,6 +2,8 @@
 
 Tato složka obsahuje osobní profily a preference pro jednotlivé osoby v rodině.
 
+> 📊 **Vysvětlení metrik tělesného složení:** Pro podrobné informace o metrikách jako PBF (procento tuku), SSM (svalová hmota), VFA (viscerální tuk) a metodách měření (DEXA, BIA) viz [docs/health/METRIKY_DEXA_BIA.md](../docs/health/METRIKY_DEXA_BIA.md)
+
 ## Struktura
 
 ```
