@@ -5,6 +5,10 @@ Validační skript pro kontrolu nutričních hodnot v databázi potravin
 
 Tento skript kontroluje konzistenci nutričních hodnot a generuje report.
 Lze jej spustit kdykoliv pro ověření stavu databáze.
+
+POZNÁMKA: Tento výpočet používá standardní hodnoty 4 kcal/g pro všechny sacharidy.
+Ve skutečnosti má vláknina ~2 kcal/g, což může způsobit malé odchylky u zeleniny.
+Proto používáme toleranci 15% pro akceptovatelné rozdíly.
 """
 
 import sys
@@ -16,16 +20,31 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from potraviny.databaze import DatabazePotravIn, Potravina
 
+# Konstanty pro výpočet kalorií a tolerance
+CALORIES_PER_GRAM_PROTEIN = 4.0
+CALORIES_PER_GRAM_CARBS = 4.0
+CALORIES_PER_GRAM_FAT = 9.0
+TOLERANCE_PERCENTAGE = 0.15  # 15% tolerance pro akceptovatelné rozdíly
+CRITICAL_THRESHOLD_PERCENTAGE = 0.20  # 20% hranice pro kritické problémy
+
 
 def calculate_calories_from_macros(p: Potravina) -> float:
-    """Vypočítá kalorie z makroživin"""
-    return (p.bilkoviny * 4) + (p.sacharidy * 4) + (p.tuky * 9)
+    """
+    Vypočítá kalorie z makroživin.
+    
+    POZNÁMKA: Tento výpočet používá zjednodušený vzorec, který předpokládá
+    4 kcal/g pro všechny sacharidy. Ve skutečnosti má vláknina ~2 kcal/g,
+    což může způsobit malé odchylky u zeleniny s vysokým obsahem vlákniny.
+    """
+    return (p.bilkoviny * CALORIES_PER_GRAM_PROTEIN + 
+            p.sacharidy * CALORIES_PER_GRAM_CARBS + 
+            p.tuky * CALORIES_PER_GRAM_FAT)
 
 
 def check_macro_consistency(p: Potravina) -> Dict:
     """Kontrola konzistence makroživin a kalkulace kalorií"""
     calculated_kcal = calculate_calories_from_macros(p)
-    tolerance = p.kalorie * 0.15  # 15% tolerance
+    tolerance = p.kalorie * TOLERANCE_PERCENTAGE
     difference = abs(calculated_kcal - p.kalorie)
     
     return {
