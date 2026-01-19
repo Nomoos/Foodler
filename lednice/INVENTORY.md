@@ -130,17 +130,17 @@
 - **Petržel sušená** - 7 g (spiz)
   - 📅 Vyprší za 365 dní (18.01.2027)
   - ℹ️ Koření, Globus
-- **MK8 choco nut Mana** - 2400 g (spíž)
+- **MK8 choco nut Mana** - 2400 g původně / 2340 g aktuálně (spíž)
   - 📅 Vyprší 02.02.2027 (za 378 dní)
   - ℹ️ 6x balení (400g), kompletní jídlo v prášku, čokoláda a ořechy
   - 🌱 Nutriční hodnoty (100g): 465 kcal, bílkoviny 25g, sacharidy 38.6g (cukry 9.7g), tuky 22g (nasycené 2.3g), vláknina 6.7g, sůl 1g
-  - 💡 Použito: 60g (20.01.2026 odpolední svačina = 279 kcal) - zbývá 2340g
-- **Iso whey prozero chocolate brownies Nutrend** - 2000 g (spíž)
+  - 💡 Použito: 60g (20.01.2026 odpolední svačina = 279 kcal) - **zbývá 2340g**
+- **Iso whey prozero chocolate brownies Nutrend** - 2000 g původně / 1980 g aktuálně (spíž)
   - 📅 Vyprší 03.06.2027 (za 499 dní)
   - ℹ️ 2 kg protein izolát, čokoládové brownies
   - 🌱 Nutriční hodnoty (100g): 380 kcal, bílkoviny 84g (!), sacharidy 5g (cukry 3g), tuky 2g (nasycené 0.7g), vláknina 0.5g, sůl 0.7g
   - 💪 Vysoký obsah bílkovin (92% složení) - ideální pro keto
-  - 💡 Použito: 20g (20.01.2026 odpolední svačina = 76 kcal, 16.8g bílkovin) - zbývá 1980g
+  - 💡 Použito: 20g (20.01.2026 odpolední svačina = 76 kcal, 16.8g bílkovin) - **zbývá 1980g**
 
 ### ⚪ BEZ EXPIRACE (trvanlivé)
 
