@@ -1,7 +1,32 @@
 # 📋 Seznam produktů k aktualizaci nutričních hodnot
 
 **Datum vytvoření:** 19.1.2026  
+**Poslední aktualizace:** 19.1.2026  
 **Účel:** Identifikace a aktualizace nepřesných nebo neúplných nutričních dat v databázi potravin
+
+---
+
+## ⚠️ DŮLEŽITÉ - Správný vzorec pro výpočet kalorií
+
+**V databázi kaloricketabulky.cz platí:**
+- **"Sacharidy"** = NET carbs (čisté sacharidy **BEZ** vlákniny)
+- **"Vláknina"** = uvedena samostatně a má **~2 kcal/g** (ne 4 kcal/g)
+
+**Správný vzorec:**
+```
+kalorie = (bílkoviny × 4) + (sacharidy × 4) + (vláknina × 2) + (tuky × 9)
+```
+
+**NIKOLI:**
+```
+kalorie = (bílkoviny × 4) + (sacharidy × 4) + (tuky × 9)  ❌ ŠPATNĚ
+```
+
+**Příklad - Chia semínka:**
+- Uvedeno: 495 kcal
+- Bílkoviny: 21.2g, Sacharidy: 20g, Vláknina: 41g, Tuky: 31.4g
+- Výpočet: (21.2 × 4) + (20 × 4) + (41 × 2) + (31.4 × 9) = **529.4 kcal** ✅
+- Pokud by se použil špatný vzorec: 447.4 kcal ❌ (chyba 47 kcal)
 
 ---
 
@@ -13,11 +38,13 @@
 - ⚠️ **Produkty s menšími problémy:** 10 (29%)
 - ❌ **Produkty vyžadující aktualizaci:** 9 (26%)
 
+**Poznámka:** Původní analýza používala nesprávný vzorec. Po opravě jsou údaje přesnější.
+
 ---
 
 ## ❌ PRIORITNÍ AKTUALIZACE (9 produktů)
 
-Tyto produkty mají významné nesrovnalosti mezi uvedenými kaloriemi a kaloriemi vypočtenými z makroživin. Kalorie by měly odpovídat vzorci: `kalorie = (bílkoviny × 4) + (sacharidy × 4) + (tuky × 9)` s tolerancí ±15% kvůli alkoholu, vláknině a dalším složkám.
+Tyto produkty mají významné nesrovnalosti mezi uvedenými kaloriemi a kaloriemi vypočtenými z makroživin. Kalorie by měly odpovídat vzorci: `kalorie = (bílkoviny × 4) + (sacharidy × 4) + (vláknina × 2) + (tuky × 9)` s tolerancí ±15%.
 
 ### 1. 🥦 Brokolice
 

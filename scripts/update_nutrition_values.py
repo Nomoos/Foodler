@@ -59,9 +59,14 @@ def save_yaml_food(food_file: Path, data: Dict) -> bool:
         return False
 
 
-def calculate_calories_from_macros(protein: float, carbs: float, fat: float) -> float:
-    """Vypočítá kalorie z makroživin"""
-    return (protein * 4) + (carbs * 4) + (fat * 9)
+def calculate_calories_from_macros(protein: float, carbs: float, fat: float, fiber: float = 0) -> float:
+    """
+    Vypočítá kalorie z makroživin.
+    
+    DŮLEŽITÉ: V databázi kaloricketabulky.cz jsou "sacharidy" uvedeny jako
+    NET carbs (čisté sacharidy bez vlákniny). Vláknina má ~2 kcal/g.
+    """
+    return (protein * 4) + (carbs * 4) + (fiber * 2) + (fat * 9)
 
 
 def check_consistency(data: Dict) -> Dict:
@@ -69,9 +74,10 @@ def check_consistency(data: Dict) -> Dict:
     protein = float(data.get('bilkoviny', 0))
     carbs = float(data.get('sacharidy', 0))
     fat = float(data.get('tuky', 0))
+    fiber = float(data.get('vlaknina', 0))
     calories = float(data.get('kalorie', 0))
     
-    calculated_calories = calculate_calories_from_macros(protein, carbs, fat)
+    calculated_calories = calculate_calories_from_macros(protein, carbs, fat, fiber)
     difference = abs(calculated_calories - calories)
     tolerance = calories * 0.15  # 15% tolerance
     

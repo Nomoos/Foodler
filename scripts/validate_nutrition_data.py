@@ -6,9 +6,11 @@ Validační skript pro kontrolu nutričních hodnot v databázi potravin
 Tento skript kontroluje konzistenci nutričních hodnot a generuje report.
 Lze jej spustit kdykoliv pro ověření stavu databáze.
 
-POZNÁMKA: Tento výpočet používá standardní hodnoty 4 kcal/g pro všechny sacharidy.
-Ve skutečnosti má vláknina ~2 kcal/g, což může způsobit malé odchylky u zeleniny.
-Proto používáme toleranci 15% pro akceptovatelné rozdíly.
+DŮLEŽITÉ: V databázi kaloricketabulky.cz jsou "sacharidy" uvedeny jako
+NET carbs (čisté sacharidy bez vlákniny). Vláknina je uvedena samostatně
+a má ~2 kcal/g místo 4 kcal/g.
+
+Vzorec: kalorie = (bílkoviny × 4) + (sacharidy × 4) + (vláknina × 2) + (tuky × 9)
 """
 
 import sys
@@ -22,7 +24,8 @@ from potraviny.databaze import DatabazePotravIn, Potravina
 
 # Konstanty pro výpočet kalorií a tolerance
 CALORIES_PER_GRAM_PROTEIN = 4.0
-CALORIES_PER_GRAM_CARBS = 4.0
+CALORIES_PER_GRAM_CARBS = 4.0  # Digestible carbs (net carbs)
+CALORIES_PER_GRAM_FIBER = 2.0  # Fiber has lower caloric value
 CALORIES_PER_GRAM_FAT = 9.0
 TOLERANCE_PERCENTAGE = 0.15  # 15% tolerance pro akceptovatelné rozdíly
 CRITICAL_THRESHOLD_PERCENTAGE = 0.20  # 20% hranice pro kritické problémy
@@ -32,12 +35,15 @@ def calculate_calories_from_macros(p: Potravina) -> float:
     """
     Vypočítá kalorie z makroživin.
     
-    POZNÁMKA: Tento výpočet používá zjednodušený vzorec, který předpokládá
-    4 kcal/g pro všechny sacharidy. Ve skutečnosti má vláknina ~2 kcal/g,
-    což může způsobit malé odchylky u zeleniny s vysokým obsahem vlákniny.
+    DŮLEŽITÉ: V databázi kaloricketabulky.cz jsou "sacharidy" uvedeny jako
+    NET carbs (čisté sacharidy bez vlákniny). Vláknina je uvedena samostatně
+    a má ~2 kcal/g místo 4 kcal/g.
+    
+    Vzorec: kalorie = (bílkoviny × 4) + (sacharidy × 4) + (vláknina × 2) + (tuky × 9)
     """
     return (p.bilkoviny * CALORIES_PER_GRAM_PROTEIN + 
             p.sacharidy * CALORIES_PER_GRAM_CARBS + 
+            p.vlaknina * CALORIES_PER_GRAM_FIBER +
             p.tuky * CALORIES_PER_GRAM_FAT)
 
 
