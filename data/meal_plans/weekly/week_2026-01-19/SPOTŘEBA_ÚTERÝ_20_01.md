@@ -8,6 +8,18 @@
 
 ## 📋 Přehled spotřeby podle priority
 
+### 🔴 KRITICKÁ PRIORITA (expiruje 21.01.2026 - ZÍTRA!)
+
+**Sýr Císařský 45%** ❗❗❗
+- 📊 Spotřeba: 30g (dopolední svačina)
+- ⏰ **VYPRŠÍ ZÍTRA 21.01.2026!**
+- 💡 Zbytek: ~143g - **NUTNO SPOTŘEBOVAT DNES/ZÍTRA!**
+
+**Sýr Gouda Light** ❗❗❗
+- 📊 Spotřeba: 0g dnes
+- ⏰ **VYPRŠÍ ZÍTRA 21.01.2026!**
+- 💡 Celkem: 867g - **NUTNO SPOTŘEBOVAT DNES/ZÍTRA!**
+
 ### 🟡 BRZY VYPRŠÍ (priorita ke spotřebování)
 
 **Cottage cheese s pažitkou** - Nevyužito dnes
@@ -18,6 +30,10 @@
 - 📊 Spotřeba: 90g (večerní svačina Kubík)
 - ⏰ Vyprší za 7 dní (25.01.2026)
 - 💡 Zbytek: 90g - použít zítra
+
+**Řecké jogurty (malina, hruška, meruňka)**
+- ⏰ Vyprší za 7 dní (25.01.2026)
+- 💡 **Použít do oběda - probiotika, čerstvé!**
 
 ### 🟢 STŘEDNĚDOBÉ ZÁSOBY (8-30 dní)
 
@@ -31,10 +47,11 @@
 
 **Řecké jogurty a sýry** (lednice)
 - ✅ **Císařský sýr s oky 45% plátky Madeta: 30g** - dopolední svačina
-- Sýr Gouda Light: nevyužito dnes
-- Řecký jogurt 5%: nevyužito dnes
-- Řecký jogurt natural: nevyužito dnes
-- 📅 Vyprší za 10-14 dní (Císařský sýr vyprší za 14 dní - 01.02.2026)
+- ⏰ **Císařský sýr vyprší ZÍTRA 21.01.2026** - zbytek ~143g
+- ⏰ **Gouda Light vyprší ZÍTRA 21.01.2026** - celkem 867g
+- Řecký jogurt 5%: nevyužito dnes (vyprší za 10 dní - 28.01.2026)
+- Řecký jogurt natural: nevyužito dnes (vyprší za 10 dní - 28.01.2026)
+- 💡 **Řecké jogurty (malina, hruška, meruňka) vyprší za 7 dní (25.01.2026) - použít do oběda!**
 
 **Jablka červená** (lednice)
 - 📊 Spotřeba: 0g (nejsou v dnešním jídelníčku)
@@ -145,6 +162,20 @@
 - 🛒 **POUŽITO ZE ZÁSOB**
 - 💪 Protein izolát - čokoládové brownies
 
+### 🥛 NÁVRH: JOGURT DO OBĚDA ❗
+
+**Řecký jogurt (malina/hruška/meruňka)** - DOPORUČENO PŘIDAT DO OBĚDA
+- 📊 Navrhované množství: **140-200g** (oběd Roman)
+- ⏰ **Vyprší za 7 dní (25.01.2026)** - použít dříve než později!
+- 💡 Výhody:
+  - Probiotika pro trávení
+  - Vysoký obsah bílkovin (~10g/100g)
+  - Nízké sacharidy (keto friendly)
+  - Čerstvý, lahodný
+- 🍽️ Kombinace s obědem:
+  - Jako dezert po tuňákovi a zelenině
+  - Nebo jako součást odpolední svačiny místo Mana
+
 ### 🍝 PRO KUBÍKA
 
 **Těstoviny**
@@ -212,10 +243,27 @@
 
 ## 💡 TIPY A POZNÁMKY
 
+### ⚠️ KRITICKÁ PRIORITA - SPOTŘEBOVAT DNES/ZÍTRA!
+❗❗❗ **Tvrdé sýry vyprší ZÍTRA 21.01.2026:**
+- **Císařský sýr 45%:** Zbytek ~143g (použito 30g dnes)
+- **Gouda Light:** Celkem 867g (nepoužito dnes)
+
+💡 **Návrhy na spotřebu:**
+1. **Oběd:** Přidat 50-80g Gouda ke grilované zelenině
+2. **Večeře:** Strouhané sýry do salátu (Císařský + Gouda)
+3. **Večerní svačina:** Sýrová tácka s ořechy místo tvarohu
+4. **Zítra ráno:** Omeleta se sýrem (využít zbytek)
+
+### 🥛 JOGURT DO OBĚDA - DOPORUČENO!
+✅ **Řecké jogurty vyprší za 7 dní (25.01.2026)**
+- Přidat 140-200g řeckého jogurtu (malina/hruška/meruňka) do oběda
+- Probiotika, vysoké bílkoviny, keto friendly
+- Jako dezert nebo součást odpolední svačiny
+
 ### Příprava jídel
 1. **Snídaně (omeleta):** Připravit večer předem, ráno jen ohřát
-2. **Oběd Romana:** Grilovat cuketu a brokolici najednou (20 min)
-3. **Večeře:** Salát připravit čerstvý, tuňák jen otevřít
+2. **Oběd Romana:** Grilovat cuketu a brokolici najednou (20 min) + přidat sýr a jogurt!
+3. **Večeře:** Salát připravit čerstvý, tuňák jen otevřít + strouhané sýry
 
 ### Optimalizace nákupu
 - 🏪 **Lidl:** Nejlepší ceny na tuňáka (Sun&Sea)
@@ -227,7 +275,7 @@
 - ✅ Skvělá keto náhrada za plánovanou zeleninu
 - ✅ Méně sacharidů než brokolice (6g vs 7g/100g)
 - ✅ Vysoký obsah vitaminu C
-- ✅ Rychlá příprava - snědeno syrové jako svačina
+- ✅ Rychlá příprava - snédeno syrové jako svačina
 
 ---
 
@@ -257,16 +305,29 @@
 - ❌ Nepoužito kysané zelí, olivový olej, slunečnicová semínka
 
 ### 💡 VÝBORNÁ SPRÁVA ZÁSOB!
-Využili jste **Císařský sýr** z inventáře, který vyprší 01.02.2026 (za 14 dní). To je skvělé pro minimalizaci plýtvání! 🎯
+Využili jste **Císařský sýr** z inventáře, který vyprší **ZÍTRA 21.01.2026**. 
+❗ **UPOZORNĚNÍ:** Zbývá spotřebovat ještě ~143g Císařského sýra a 867g Gouda Light do zítřka!
+💡 **TIP:** Přidejte jogurt do oběda (vyprší za 7 dní) - probiotika a čerstvost! 🎯
 
 ---
 
-## ⚡ AKČNÍ PLÁN NA RÁNO
+## ⚡ AKČNÍ PLÁN NA DNES/ZÍTRA
 
-1. ✅ **Zkontrolovat lednici:** Máslo, těstoviny, paprika červená
-2. 🛒 **Nakoupit:** ~~Brokolice, cuketa~~ (nebo použít papriku/celer), tuňák, ledový salát, rajčata
-3. 🍳 **Připravit snídani:** Omeleta (7 vajec)
-4. 📦 **Meal prep:** Grilovat zeleninu na oběd (nebo použít papriku/celer bulvový)
+### 🔴 KRITICKÁ PRIORITA - SÝR EXPIRUJE ZÍTRA!
+1. ❗❗❗ **SPOTŘEBOVAT TVRDÉ SÝRY DO ZÍTŘKA (21.01.2026):**
+   - Císařský sýr: ~143g zbývá
+   - Gouda Light: 867g zbývá
+   - **Návrhy:** Do oběda, večeře, nebo zítra na snídani
+
+2. 🥛 **PŘIDAT JOGURT DO OBĚDA:**
+   - Řecký jogurt (malina/hruška/meruňka): 140-200g
+   - Vyprší za 7 dní, ale čím dříve tím lepší!
+
+### ✅ BĚŽNÉ ÚKOLY:
+3. ✅ **Zkontrolovat lednici:** Máslo, těstoviny, paprika červená
+4. 🛒 **Nakoupit (volitelné):** ~~Brokolice, cuketa~~ (nebo použít papriku/celer), tuňák, ledový salát, rajčata
+5. 🍳 **Připravit snídani:** Omeleta (7 vajec)
+6. 📦 **Meal prep:** Grilovat zeleninu na oběd + přidat sýr a jogurt!
 
 ---
 
