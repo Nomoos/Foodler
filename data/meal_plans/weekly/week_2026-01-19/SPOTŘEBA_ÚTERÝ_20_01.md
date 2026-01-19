@@ -47,11 +47,12 @@
 
 **Řecké jogurty a sýry** (lednice)
 - ✅ **Císařský sýr s oky 45% plátky Madeta: 30g** - dopolední svačina
+- ✅ **Řecký jogurt bílý 5% tuku Milko: 200g** - oběd
 - ⏰ **Císařský sýr vyprší ZÍTRA 21.01.2026** - zbytek ~143g
 - ⏰ **Gouda Light vyprší ZÍTRA 21.01.2026** - celkem 867g
-- Řecký jogurt 5%: nevyužito dnes (vyprší za 10 dní - 28.01.2026)
+- Řecký jogurt 5%: zbývá ~1800g (použito 200g) - vyprší za 10 dní (28.01.2026)
 - Řecký jogurt natural: nevyužito dnes (vyprší za 10 dní - 28.01.2026)
-- 💡 **Řecké jogurty (malina, hruška, meruňka) vyprší za 7 dní (25.01.2026) - použít do oběda!**
+- 💡 **Řecké jogurty (malina, hruška, meruňka) vyprší za 7 dní (25.01.2026) - použít do večeře!**
 
 **Jablka červená** (lednice)
 - 📊 Spotřeba: 0g (nejsou v dnešním jídelníčku)
@@ -62,10 +63,14 @@
 
 **Ořechy a semínka** (spíž)
 - ✅ **Mandle neloupané: 40g** - dopolední svačina (skutečná spotřeba)
-- Vlašské ořechy: 50g (R: 30g, P: 20g) - večerní svačina
+- ✅ **Chia semínka: 15g** - oběd (skutečná spotřeba)
+- 💡 **DOPORUČENO: Přidat 10g kešu nebo pekanových ořechů do oběda** (chybí ~57 kcal)
+- Vlašské ořechy: 50g (R: 30g, P: 20g) - večerní svačina (podle plánu)
 - ~~Slunečnicová semínka: 35g (R: 20g, P: 15g)~~ - odpolední svačina ZMĚNĚNO
-- Lněná semínka: 10g (Roman) - večerní svačina
-- Chia semínka: 10g (Pája) - večerní svačina
+- Lněná semínka: 10g (Roman) - večerní svačina (podle plánu)
+- Chia semínka: 10g (Pája) - večerní svačina (podle plánu) - zbývá ještě
+- Kešu ořechy: máme 200g v zásobě
+- Pekanové ořechy: máme 200g v zásobě
 - 📅 Vyprší za 90-180 dní
 
 **Olivový olej** (spíž)
@@ -341,6 +346,54 @@ Využili jste **Císařský sýr** z inventáře, který vyprší **ZÍTRA 21.01
 - Ledový salát 80g - 12,9 kcal
 - **Celkem: 360,9 kcal** z 370 kcal cíle
 
+### 💡 ALTERNATIVA: Tvrdý sýr místo vejce k snídani
+
+**Porovnání makronutrientů:**
+
+**Současné: Vejce na tvrdo 110g (1 ks velké)**
+- Kalorie: ~157 kcal
+- Bílkoviny: ~13.6g
+- Tuky: ~12g
+- Sacharidy: ~1g
+- 💚 Výhody: Kompletní aminokyseliny, cholin, vitamin B12, D
+
+**Alternativa 1: Císařský sýr 45% - 50g** ⚠️ EXPIRUJE ZÍTRA!
+- Kalorie: ~167 kcal (+10 kcal oproti vejci)
+- Bílkoviny: ~13.5g (podobné)
+- Tuky: ~13g (+1g) ⚠️
+- Sacharidy: ~0.2g (méně než vejce)
+- ✅ Hodí se k tuňákovi, máme ~143g zbývá
+- ⚠️ **POZOR:** O trochu více tuku než vejce!
+- 🎯 **DOPORUČENO** - kvůli expiraci zítra!
+
+**Alternativa 2: Gouda Light 30% - 50g** ⚠️ EXPIRUJE ZÍTRA!
+- Kalorie: ~150 kcal (-7 kcal oproti vejci)
+- Bílkoviny: ~13g (podobné)
+- Tuky: ~10g (-2g) ✅ MÉNĚ tuku!
+- Sacharidy: ~0g
+- ✅ **NEJLEPŠÍ VOLBA** - méně tuku než vejce!
+- ✅ Hodí se k tuňákovi, máme 867g zbývá
+- 🎯 **SILNĚ DOPORUČENO** - méně tuku + expiruje zítra!
+
+**Alternativa 3: Gouda 45% - 40g** ⚠️ EXPIRUJE ZÍTRA!
+- Kalorie: ~138 kcal (-19 kcal)
+- Bílkoviny: ~10.4g (méně než vejce)
+- Tuky: ~10.8g (podobné vejci)
+- Sacharidy: ~0g
+- ✅ Hodí se k tuňákovi, pokud máme
+
+**🎯 NEJLEPŠÍ DOPORUČENÍ PRO ZÍTŘEJŠÍ SNÍDAŇ:**
+- **50g Gouda Light** místo vejce
+- ✅ Méně tuku než vejce (-2g)
+- ✅ Podobné bílkoviny
+- ✅ Skvěle se hodí k tuňákovi
+- ✅ **NUTNO SPOTŘEBOVAT - expiruje 21.01.2026!**
+- 💡 Pokud chcete stejné kalorie: 55g Gouda Light = ~165 kcal
+
+**Kombinace (pokud chcete oba):**
+- 55g vejce (půl vejce) + 25g Císařský sýr = ~78 + 84 = 162 kcal
+- Bílkoviny: ~13g, Tuky: ~12g
+
 **Dopolední svačina (22:19-22:22):**
 - ✅ Kapie sladká paprika 80g - 21,6 kcal
 - ✅ Mandle neloupané 40g - 245 kcal
@@ -352,13 +405,54 @@ Využili jste **Císařský sýr** z inventáře, který vyprší **ZÍTRA 21.01
 - ✅ Iso whey prozero chocolate brownies Nutrend 20g - 76 kcal
 - **Celkem: 355 kcal** z 370 kcal cíle
 
+**Oběd (22:29-22:30):**
+- ✅ Řecký jogurt bílý 5% tuku Milko 200g - 189 kcal
+- ✅ Chia semínka 15g - 74,2 kcal
+- ✅ Med včelí 15g (lžička) - 49,9 kcal
+- **Celkem: 313,1 kcal** z 370 kcal cíle
+- ⚠️ **Chybí: ~57 kcal do cíle**
+
+### 💡 CO PŘIDAT DO OBĚDA (návrhy na doplnění):
+
+**Varianta 1: Ořechy (ze zásob) - doporučeno! 🥜**
+- **Pekanové ořechy: 10g** (~69 kcal) ✅ MÁME
+- **Vlašské ořechy: 10g** (~65 kcal) ✅ MÁME
+- **Kešu ořechy: 10g** (~57 kcal) ✅ MÁME - PŘESNĚ!
+- 💡 Přidejte 10g kešu nebo pekanových ořechů do jogurtu - perfektní keto kombinace!
+
+**Varianta 2: Mandle (ze zásob)**
+- **Mandle neloupané: 10g** (~61 kcal) ✅ MÁME
+- 💡 Ještě máte mandle z dopolední svačiny
+
+**Varianta 3: Kokos (pokud máte)**
+- **Kokosové vločky: 10g** (~60 kcal)
+- 💡 Skvělé do jogurtu s medem
+
+**Varianta 4: Máslo nebo olivový olej**
+- **Máslo: 6g** (~45 kcal)
+- **Olivový olej: 6ml** (~54 kcal) ✅ MÁME
+- 💡 Méně vhodné do sladkého jogurtu
+
+**Varianta 5: Další med**
+- **Med včelí: 10g** (~33 kcal) + něco dalšího
+- 💡 Můžete přidat ještě lžičku medu + pár ořechů
+
+### ⭐ DOPORUČENÍ:
+**Přidejte 10g kešu nebo pekanových ořechů** (máme ze zásob v spíži):
+- ✅ Přesně ~57-69 kcal
+- ✅ Zdravé tuky pro keto
+- ✅ Skvělá chuť s jogurtem, chia a medem
+- ✅ Konzistence a crunch
+- ✅ Omega-3 a minerály
+
 ### 📊 DENNÍ BILANCE (částečná):
-- **Celkem zatím:** 1086,5 kcal
-- **Zbývá do cíle:** ~915 kcal (oběd + večeře + večerní svačina)
+- **Celkem zatím:** 1086,5 kcal (snídaně + dopolední + odpolední + oběd)
+- **Zbývá do cíle:** ~915 kcal (večeře + večerní svačina)
+- **Oběd:** 313,1 kcal (chybí ~57 kcal → **přidat 10g ořechů!**)
 - **Makra zatím:**
-  - Bílkoviny: ~35g (vejce 11g + tuňák 20g + sýr 8g)
-  - Sacharidy: ~10g (velmi nízké - skvělé pro keto!)
-  - Tuky: vysoké z mandlí, sýra, tuňáka v oleji
+  - Bílkoviny: ~55g (vejce 11g + tuňák 20g + sýr 8g + jogurt 10g + chia 2g + whey 15g)
+  - Sacharidy: ~35g (chia 1g + med 13g + jogurt 10g + mandle 2g + Mana 7g)
+  - Tuky: vysoké z mandlí, sýra, tuňáka v oleji, jogurtu, chia
 
 ---
 
