@@ -1,12 +1,13 @@
 nazev: Okurka
 kategorie: zelenina
-kalorie: 15
-bilkoviny: 0.7
-sacharidy: 3.6
-tuky: 0.1
-vlaknina: 0.5
+kalorie: 15.8
+bilkoviny: 0.82
+sacharidy: 2.28
+tuky: 0.18
+vlaknina: 0.93
 cena_za_kg: 35.0
 sezona:
 - '6'
 - '7'
 - '8'
+poznamky: "Okurka salátová, aktualizováno z kaloricketabulky.cz (19.1.2026), cukry 1.47g, vápník 18mg, hodně vody (96.9%)"
