@@ -34,6 +34,10 @@ class Potravina:
     sezona: Optional[List[str]] = None  # Měsíce dostupnosti
     poznamky: Optional[str] = None
     
+    # Zdroj dat - pro budoucí korekci a tracking
+    zdroj: Optional[str] = None  # "kaloricketabulky.cz", "USDA", "manuální", atd.
+    datum_aktualizace: Optional[str] = None  # YYYY-MM-DD formát
+    
     def vypocitej_makra(self, mnozstvi_g: float) -> dict:
         """Vypočítá makronutrienty pro dané množství."""
         koeficient = mnozstvi_g / 100

@@ -1,0 +1,30 @@
+# Seznam produktů k prioritní aktualizaci nutričních hodnot
+# 
+# Použití: python scripts/update_nutrition_values.py --batch priority_update_list.txt
+#
+# Tento seznam obsahuje produkty s největšími nesrovnalostmi v nutričních hodnotách
+# Doporučujeme aktualizovat je v uvedeném pořadí (podle frekvence použití)
+
+# Vysoká priorita - často používáme
+Brokolice
+Špenát
+Cuketa
+Rajčata
+Okurka
+Zelí
+
+# Střední priorita
+Květák
+Kedlubna
+Ledový salát
+
+# Produkty k ověření (mají zaokrouhlené hodnoty)
+# Odkomentujte, pokud chcete tyto produkty také ověřit
+# Hovězí maso (libové)
+# Krůtí prsa
+# Losos
+# Tuňák kousky v oleji
+# Chia semínka
+# Lněné semínko (mleté)
+# Mandle
+# Sýr gouda 45%

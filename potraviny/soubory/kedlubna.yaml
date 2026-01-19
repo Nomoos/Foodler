@@ -1,13 +1,16 @@
 nazev: Kedlubna
 kategorie: zelenina
-kalorie: 27
-bilkoviny: 1.7
-sacharidy: 6.2
-tuky: 0.1
-vlaknina: 3.6
+kalorie: 28.1
+bilkoviny: 1.93
+sacharidy: 3.5
+tuky: 0.14
+vlaknina: 2.71
 cena_za_kg: 30.0
 sezona:
 - '5'
 - '6'
 - '7'
 - '8'
+poznamky: "Kedlubna bílá, cukry 3.4g, vápník 24mg, sůl 0.1g, hodně vody (91.6%)"
+zdroj: "kaloricketabulky.cz"
+datum_aktualizace: "2026-01-19"
