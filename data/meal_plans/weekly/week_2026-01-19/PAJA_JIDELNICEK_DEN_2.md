@@ -10,13 +10,15 @@
 
 | Makro | Celkem | Denní cíl | % |
 |-------|--------|-----------|---|
-| **Kalorie** | 766 kcal | 1508 kcal | 51% |
-| **Bílkoviny** | 60g | 92g | 65% |
+| **Kalorie** | 767 kcal | 1508 kcal | 51% |
+| **Bílkoviny** | 60.4g | 92g | 66% |
 | **Sacharidy** | 41g | 60g max | 68% |
 | **Tuky** | 42g | 100g | 42% |
 | **Vláknina** | 5.8g | 20g | 29% |
 
 💡 **Poznámka:** Tento jídelníček pokrývá snídani, svačiny a malý oběd. Hlavní oběd (pokud má v práci) a večeři viz hlavní jídelníček `day_2_2026-01-20_úterý.md`.
+
+⚖️ **Kalorické rozložení:** Snídaně a svačiny jsou kaloricky vyrovnané (266 / 187 / 168 kcal), snídaně má nejvíce bílkovin (23g).
 
 ---
 
@@ -25,26 +27,27 @@
 ### 🍳 Co sníst:
 
 - **Vejce natvrdo** 55g (1 ks)
-- **Císařský sýr 45%** 100g
-- **Tuňák v oleji** 75g
-- **Ledový salát** 100g
+- **Císařský sýr 45%** 60g
+- **Ledový salát** 50g
 
 ### 📊 Nutriční hodnoty:
 
 | Složka | Hodnota |
 |--------|---------|
-| Kalorie | 536 kcal |
-| Bílkoviny | 56.9g |
-| Sacharidy | 3.5g |
-| Tuky | 31.7g |
-| Vláknina | 1.3g |
+| Kalorie | 266 kcal |
+| Bílkoviny | 23.1g ⭐ |
+| Sacharidy | 2.0g |
+| Tuky | 18.8g |
+| Vláknina | 0.7g |
+
+⭐ **Nejvíce bílkovin ze všech jídel**
 
 ### 💡 Tipy:
 
 - Vejce můžete namazat na salát nebo sníst samostatně
 - Sýr nakrájejte na plátky nebo kousky
-- Tuňák přímo z plechovky nebo smíchejte se salátem
 - Salát jako základ - osvěží a přidá objem
+- Ideální protein-boost na začátek dne
 
 ---
 
@@ -52,25 +55,54 @@
 
 ### 🥗 Co sníst:
 
+- **Císařský sýr 45%** 40g
 - **Jablko červené** 129g
+
+### 📊 Nutriční hodnoty:
+
+| Složka | Hodnota |
+|--------|---------|
+| Kalorie | 187 kcal |
+| Bílkoviny | 10.8g |
+| Sacharidy | 18.1g |
+| Tuky | 9.1g |
+| Vláknina | 3.1g |
+
+### 💡 Tipy:
+
+- Sýr nakrájejte na kostičky nebo plátky
+- Jablko nakrájejte na kousky nebo jezte celé
+- Skvělá kombinace slaného a sladkého
+- Ideální svačina do práce - nevyžaduje ohřívání
+- Vláknina z jablka pomůže se sytostí
+
+---
+
+## 🥤 Odpolední svačina (15:00-15:30)
+
+### 🐟 Co sníst:
+
+- **Tuňák v oleji** 75g
+- **Ledový salát** 50g
 - **Paprika kapia sladká** 65g
 
 ### 📊 Nutriční hodnoty:
 
 | Složka | Hodnota |
 |--------|---------|
-| Kalorie | 85 kcal |
-| Bílkoviny | 1.0g |
-| Sacharidy | 22.0g |
-| Tuky | 0.4g |
-| Vláknina | 4.5g |
+| Kalorie | 168 kcal |
+| Bílkoviny | 16.4g |
+| Sacharidy | 5.3g |
+| Tuky | 9.2g |
+| Vláknina | 2.0g |
 
 ### 💡 Tipy:
 
-- Jablko nakrájejte na kousky nebo jezte celé
-- Papriku nakrájejte na proužky - snadné k pojídání
-- Ideální svačina do práce - nevyžaduje příbor
-- Obě položky jsou bohaté na vlákninu a vitaminy
+- Tuňák přímo z plechovky nebo smíchejte se salátem
+- Papriku nakrájejte na proužky
+- Salát jako základ - osvěží
+- Skvělý zdroj omega-3 z tuňáka
+- Perfektní odpolední protein boost
 
 ---
 
@@ -88,9 +120,9 @@
 | Složka | Hodnota |
 |--------|---------|
 | Kalorie | 145 kcal |
-| Bílkoviny | 2.1g |
+| Bílkoviny | 10.1g |
 | Sacharidy | 15.5g |
-| Tuky | 10.0g |
+| Tuky | 5.0g |
 | Vláknina | 0g |
 
 ### 💡 Tipy:
@@ -105,17 +137,26 @@
 ## 📋 Přehled jídel v průběhu dne
 
 ```
-🕐 7:00-8:00   ☀️  SNÍDANĚ
-               └─ Vejce, sýr, tuňák, salát (536 kcal)
+🕐 7:00-8:00   ☀️  SNÍDANĚ (nejvíce proteinů)
+               └─ Vejce 55g + Sýr 60g + Salát 50g
+               └─ 266 kcal | 23.1g P ⭐
 
 🕙 10:00-10:30 🍎 DOPOLEDNÍ SVAČINA
-               └─ Jablko, paprika (85 kcal)
+               └─ Sýr 40g + Jablko 129g
+               └─ 187 kcal | 10.8g P
 
 🕛 12:30-13:00 🍽️  OBĚD (jen pokud nemá v práci)
-               └─ Jogurt s medem (145 kcal)
+               └─ Jogurt 100g + Med 14g
+               └─ 145 kcal | 10.1g P
 
-               ────────────────────────────────
-               CELKEM: 766 kcal | 60g P | 41g S
+🕒 15:00-15:30 🥤 ODPOLEDNÍ SVAČINA
+               └─ Tuňák 75g + Salát 50g + Kapia 65g
+               └─ 168 kcal | 16.4g P
+
+               ────────────────────────────────────────
+               CELKEM: 767 kcal | 60.4g P | 41g S
+               
+⚖️ Kaloricky vyrovnané: 266 / 187 / 168 kcal
 ```
 
 ---
@@ -124,8 +165,10 @@
 
 ### ✅ Co je dobře:
 
-- **Vysoký obsah bílkovin**: 60g (65% denního cíle) - výborně pro snídani a svačiny!
+- **Vysoký obsah bílkovin**: 60.4g (66% denního cíle) - výborně pro snídani a svačiny!
 - **Nízké sacharidy**: 41g - perfektní pro keto/low-carb
+- **Kaloricky vyrovnané**: Tři hlavní jídla mají podobný obsah kalorií (266 / 187 / 168 kcal)
+- **Snídaně s nejvíce proteiny**: 23.1g - ideální start dne
 - **Sytost**: Kombinace bílkovin, tuků a vlákniny udrží hlad pod kontrolou
 - **Praktické**: Většinu lze připravit dopředu
 
@@ -149,12 +192,21 @@ Pokud **nemá oběd v práci**, jogurt s medem je dobrá lehká varianta. Pro v�
 
 Všechny položky jsou **už nachystané** - není potřeba nic dalšího nakupovat! ✅
 
+### Snídaně:
 - ✅ Vejce natvrdo 55g
-- ✅ Císařský sýr 100g (❗ vyprší 21.01.2026 - ZÍTRA!)
-- ✅ Tuňák v oleji 75g
-- ✅ Ledový salát 100g
+- ✅ Císařský sýr 60g (❗ vyprší 21.01.2026 - ZÍTRA!)
+- ✅ Ledový salát 50g
+
+### Dopolední svačina:
+- ✅ Císařský sýr 40g
 - ✅ Jablko červené 129g
+
+### Odpolední svačina:
+- ✅ Tuňák v oleji 75g
+- ✅ Ledový salát 50g
 - ✅ Paprika kapia 65g
+
+### Oběd (pokud nemá v práci):
 - ✅ Řecký jogurt 100g
 - ✅ Med 14g
 
@@ -165,13 +217,15 @@ Všechny položky jsou **už nachystané** - není potřeba nic dalšího nakupo
 ### Večer před (19.01.):
 1. ✅ Uvařit vejce natvrdo (10 min)
 2. ✅ Připravit sýr, tuňák, jogurt, med do krabiček
-3. Nakrájet salát do krabičky (2 min)
-4. Umýt jablko a papriku (1 min)
+3. Rozdělit sýr: 60g pro snídani, 40g pro svačinu
+4. Rozdělit salát: 50g pro snídani, 50g pro odpolední svačinu
+5. Umýt jablko a papriku (1 min)
 
 ### Ráno (20.01.):
-1. Sestavit snídani na talíř (2 min)
-2. Zabalit svačinu (jablko + paprika) do sáčku (1 min)
-3. Zabalit jogurt s medem (pokud oběd doma) (1 min)
+1. Sestavit snídani na talíř: vejce + sýr 60g + salát 50g (2 min)
+2. Zabalit dopolední svačinu: sýr 40g + jablko (1 min)
+3. Zabalit odpolední svačinu: tuňák + salát 50g + paprika (2 min)
+4. Zabalit jogurt s medem (pokud oběd doma) (1 min)
 
 **⏱️ Celková příprava: 5-10 minut ráno**
 
@@ -182,23 +236,25 @@ Všechny položky jsou **už nachystané** - není potřeba nic dalšího nakupo
 ### Pokud má **OBĚD V PRÁCI**:
 
 ```
-☀️  Snídaně:    536 kcal (doma)
-🍎 Svačina:     85 kcal (do práce/doma)
-🍽️  Oběd:       ??? kcal (v práci - JINÝ PLÁN)
-🌙 Večeře:      ??? kcal (doma - viz hlavní jídelníček)
-────────────────────────────────────────────────
-📊 Tento plán: 621 kcal (bez oběda)
+☀️  Snídaně:         266 kcal (doma, 23.1g P)
+🍎 Dopolední svačina: 187 kcal (do práce, 10.8g P)
+🍽️  Oběd:            ??? kcal (v práci - JINÝ PLÁN)
+🥤 Odpolední svačina: 168 kcal (v práci, 16.4g P)
+🌙 Večeře:           ??? kcal (doma - viz hlavní jídelníček)
+──────────────────────────────────────────────────────
+📊 Tento plán: 621 kcal (bez oběda) | 50.3g P
 ```
 
 ### Pokud **NEMÁ OBĚD V PRÁCI**:
 
 ```
-☀️  Snídaně:    536 kcal (doma)
-🍎 Svačina:     85 kcal (do práce/doma)
-🍽️  Oběd:       145 kcal (doma - jogurt+med)
-🌙 Večeře:      ??? kcal (doma - viz hlavní jídelníček)
-────────────────────────────────────────────────
-📊 Tento plán: 766 kcal
+☀️  Snídaně:         266 kcal (doma, 23.1g P)
+🍎 Dopolední svačina: 187 kcal (do práce, 10.8g P)
+🍽️  Oběd:            145 kcal (doma, 10.1g P)
+🥤 Odpolední svačina: 168 kcal (v práci, 16.4g P)
+🌙 Večeře:           ??? kcal (doma - viz hlavní jídelníček)
+──────────────────────────────────────────────────────
+📊 Tento plán: 767 kcal | 60.4g P
 ```
 
 ---
