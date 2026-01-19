@@ -1,10 +1,10 @@
 nazev: Červená řepa
 kategorie: zelenina
-kalorie: 43
-bilkoviny: 1.6
-sacharidy: 9.6
-tuky: 0.2
-vlaknina: 2.8
+kalorie: 50.9
+bilkoviny: 1.57
+sacharidy: 9.54
+tuky: 0.19
+vlaknina: 2.53
 cena_za_kg: 25.0
 sezona:
 - '9'
@@ -13,3 +13,6 @@ sezona:
 - '12'
 - '1'
 - '2'
+poznamky: "Vyšší obsah cukrů (6.96g), vápník 29.62mg, sladká kořenová zelenina"
+zdroj: "kaloricketabulky.cz"
+datum_aktualizace: "2026-01-19"
