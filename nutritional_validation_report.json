@@ -1,0 +1,315 @@
+{
+  "metadata": {
+    "total_products": 34,
+    "ok_count": 15,
+    "minor_issues_count": 10,
+    "needs_update_count": 9
+  },
+  "priority_updates": [
+    {
+      "nazev": "Brokolice",
+      "kategorie": "zelenina",
+      "file": "brokolice.yaml",
+      "current_values": {
+        "kalorie": 34.0,
+        "bilkoviny": 2.8,
+        "sacharidy": 7.0,
+        "tuky": 0.4,
+        "vlaknina": 2.6
+      },
+      "issues": [
+        "Kalorie nesedí: uvedeno 34.0 kcal, vypočteno z maker 42.8 kcal (rozdíl 8.8 kcal)"
+      ]
+    },
+    {
+      "nazev": "Cuketa",
+      "kategorie": "zelenina",
+      "file": "cuketa.yaml",
+      "current_values": {
+        "kalorie": 17.0,
+        "bilkoviny": 1.2,
+        "sacharidy": 3.1,
+        "tuky": 0.3,
+        "vlaknina": 1.0
+      },
+      "issues": [
+        "Kalorie nesedí: uvedeno 17.0 kcal, vypočteno z maker 19.9 kcal (rozdíl 2.9 kcal)"
+      ]
+    },
+    {
+      "nazev": "Kedlubna",
+      "kategorie": "zelenina",
+      "file": "kedlubna.yaml",
+      "current_values": {
+        "kalorie": 27.0,
+        "bilkoviny": 1.7,
+        "sacharidy": 6.2,
+        "tuky": 0.1,
+        "vlaknina": 3.6
+      },
+      "issues": [
+        "Kalorie nesedí: uvedeno 27.0 kcal, vypočteno z maker 32.5 kcal (rozdíl 5.5 kcal)"
+      ]
+    },
+    {
+      "nazev": "Květák",
+      "kategorie": "zelenina",
+      "file": "květák.yaml",
+      "current_values": {
+        "kalorie": 25.0,
+        "bilkoviny": 1.9,
+        "sacharidy": 5.0,
+        "tuky": 0.3,
+        "vlaknina": 2.0
+      },
+      "issues": [
+        "Kalorie nesedí: uvedeno 25.0 kcal, vypočteno z maker 30.3 kcal (rozdíl 5.3 kcal)"
+      ]
+    },
+    {
+      "nazev": "Ledový salát",
+      "kategorie": "zelenina",
+      "file": "ledový_salát.yaml",
+      "current_values": {
+        "kalorie": 16.1,
+        "bilkoviny": 0.7,
+        "sacharidy": 2.0,
+        "tuky": 0.14,
+        "vlaknina": 1.2
+      },
+      "issues": [
+        "Kalorie nesedí: uvedeno 16.1 kcal, vypočteno z maker 12.1 kcal (rozdíl 4.0 kcal)"
+      ]
+    },
+    {
+      "nazev": "Okurka",
+      "kategorie": "zelenina",
+      "file": "okurka.yaml",
+      "current_values": {
+        "kalorie": 15.0,
+        "bilkoviny": 0.7,
+        "sacharidy": 3.6,
+        "tuky": 0.1,
+        "vlaknina": 0.5
+      },
+      "issues": [
+        "Kalorie nesedí: uvedeno 15.0 kcal, vypočteno z maker 18.1 kcal (rozdíl 3.1 kcal)",
+        "Nízký obsah vlákniny (0.5g) pro zeleninu"
+      ]
+    },
+    {
+      "nazev": "Rajčata",
+      "kategorie": "zelenina",
+      "file": "rajčata.yaml",
+      "current_values": {
+        "kalorie": 18.0,
+        "bilkoviny": 0.9,
+        "sacharidy": 3.9,
+        "tuky": 0.2,
+        "vlaknina": 1.2
+      },
+      "issues": [
+        "Kalorie nesedí: uvedeno 18.0 kcal, vypočteno z maker 21.0 kcal (rozdíl 3.0 kcal)"
+      ]
+    },
+    {
+      "nazev": "Zelí",
+      "kategorie": "zelenina",
+      "file": "zelí.yaml",
+      "current_values": {
+        "kalorie": 25.0,
+        "bilkoviny": 1.3,
+        "sacharidy": 5.8,
+        "tuky": 0.1,
+        "vlaknina": 2.5
+      },
+      "issues": [
+        "Kalorie nesedí: uvedeno 25.0 kcal, vypočteno z maker 29.3 kcal (rozdíl 4.3 kcal)"
+      ]
+    },
+    {
+      "nazev": "Špenát",
+      "kategorie": "zelenina",
+      "file": "špenát.yaml",
+      "current_values": {
+        "kalorie": 23.0,
+        "bilkoviny": 2.9,
+        "sacharidy": 3.6,
+        "tuky": 0.4,
+        "vlaknina": 2.2
+      },
+      "issues": [
+        "Kalorie nesedí: uvedeno 23.0 kcal, vypočteno z maker 29.6 kcal (rozdíl 6.6 kcal)"
+      ]
+    }
+  ],
+  "minor_issues": [
+    {
+      "nazev": "Chia semínka",
+      "kategorie": "orechy",
+      "file": "chia_semínka.yaml",
+      "current_values": {
+        "kalorie": 486.0,
+        "bilkoviny": 17.0,
+        "sacharidy": 42.0,
+        "tuky": 31.0,
+        "vlaknina": 34.0
+      },
+      "issues": [
+        "Všechny hodnoty jsou celá čísla - možná aproximace"
+      ]
+    },
+    {
+      "nazev": "Hovězí maso (libové)",
+      "kategorie": "bilkoviny",
+      "file": "hovězí_maso_libové.yaml",
+      "current_values": {
+        "kalorie": 250.0,
+        "bilkoviny": 26.0,
+        "sacharidy": 0.0,
+        "tuky": 17.0,
+        "vlaknina": 0.0
+      },
+      "issues": [
+        "Všechny hodnoty jsou celá čísla - možná aproximace"
+      ]
+    },
+    {
+      "nazev": "Krůtí prsa",
+      "kategorie": "bilkoviny",
+      "file": "krůtí_prsa.yaml",
+      "current_values": {
+        "kalorie": 135.0,
+        "bilkoviny": 30.0,
+        "sacharidy": 0.0,
+        "tuky": 1.0,
+        "vlaknina": 0.0
+      },
+      "issues": [
+        "Všechny hodnoty jsou celá čísla - možná aproximace"
+      ]
+    },
+    {
+      "nazev": "Lněné semínko (mleté)",
+      "kategorie": "orechy",
+      "file": "lněné_semínko_mleté.yaml",
+      "current_values": {
+        "kalorie": 534.0,
+        "bilkoviny": 18.0,
+        "sacharidy": 29.0,
+        "tuky": 42.0,
+        "vlaknina": 27.0
+      },
+      "issues": [
+        "Všechny hodnoty jsou celá čísla - možná aproximace"
+      ]
+    },
+    {
+      "nazev": "Losos",
+      "kategorie": "bilkoviny",
+      "file": "losos.yaml",
+      "current_values": {
+        "kalorie": 208.0,
+        "bilkoviny": 20.0,
+        "sacharidy": 0.0,
+        "tuky": 13.0,
+        "vlaknina": 0.0
+      },
+      "issues": [
+        "Všechny hodnoty jsou celá čísla - možná aproximace"
+      ]
+    },
+    {
+      "nazev": "Mandle",
+      "kategorie": "orechy",
+      "file": "mandle.yaml",
+      "current_values": {
+        "kalorie": 579.0,
+        "bilkoviny": 21.0,
+        "sacharidy": 22.0,
+        "tuky": 50.0,
+        "vlaknina": 12.0
+      },
+      "issues": [
+        "Všechny hodnoty jsou celá čísla - možná aproximace"
+      ]
+    },
+    {
+      "nazev": "Olivový olej",
+      "kategorie": "tuky",
+      "file": "olivový_olej.yaml",
+      "current_values": {
+        "kalorie": 884.0,
+        "bilkoviny": 0.0,
+        "sacharidy": 0.0,
+        "tuky": 100.0,
+        "vlaknina": 0.0
+      },
+      "issues": [
+        "Všechny hodnoty jsou celá čísla - možná aproximace"
+      ]
+    },
+    {
+      "nazev": "Sýr gouda 45%",
+      "kategorie": "mlecne_vyrobky",
+      "file": "sýr_gouda_45%.yaml",
+      "current_values": {
+        "kalorie": 344.0,
+        "bilkoviny": 26.0,
+        "sacharidy": 0.0,
+        "tuky": 27.0,
+        "vlaknina": 0.0
+      },
+      "issues": [
+        "Všechny hodnoty jsou celá čísla - možná aproximace"
+      ]
+    },
+    {
+      "nazev": "Tuňák kousky v oleji",
+      "kategorie": "bilkoviny",
+      "file": "tuňák_kousky_v_oleji.yaml",
+      "current_values": {
+        "kalorie": 159.0,
+        "bilkoviny": 26.0,
+        "sacharidy": 0.0,
+        "tuky": 6.0,
+        "vlaknina": 0.0
+      },
+      "issues": [
+        "Všechny hodnoty jsou celá čísla - možná aproximace"
+      ]
+    },
+    {
+      "nazev": "Vejce slepičí M",
+      "kategorie": "bilkoviny",
+      "file": "vejce_slepičí_m.yaml",
+      "current_values": {
+        "kalorie": 151.0,
+        "bilkoviny": 12.38,
+        "sacharidy": 0.95,
+        "tuky": 10.87,
+        "vlaknina": 0.0
+      },
+      "issues": [
+        "Nízký obsah bílkovin (12.38g) pro kategorii 'bilkoviny'"
+      ]
+    }
+  ],
+  "ok_products": [
+    "Avokádo",
+    "Cottage cheese",
+    "Fazole barevné pinto",
+    "Kuřecí prsa",
+    "Kysané zelí",
+    "Paprika",
+    "Sýr eidam",
+    "Tuňák (konzervovaný)",
+    "Tvaroh polotučný",
+    "Vlašské ořechy",
+    "Černá čočka",
+    "Červená čočka",
+    "Červená řepa",
+    "Řecký jogurt",
+    "Ředkev bílá"
+  ]
+}
