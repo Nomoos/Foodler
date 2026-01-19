@@ -6,4 +6,6 @@ sacharidy: 2.0
 tuky: 0.14
 vlaknina: 1.2
 cena_za_kg: 35.0
-poznamky: "Aktualizováno z kaloricketabulky.cz (19.1.2026). Nízkokalorický (16.1 kcal), hodně vody, cukry 1.97g/100g, sůl 0.03g"
+poznamky: "Nízkokalorický (16.1 kcal), hodně vody, cukry 1.97g/100g, sůl 0.03g"
+zdroj: "kaloricketabulky.cz"
+datum_aktualizace: "2026-01-19"
