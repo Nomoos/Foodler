@@ -182,32 +182,85 @@ def extract_ingredients_from_meals(meals):
         meals: Dictionary s jídly
         
     Returns:
-        Sorted list ingrediencí
+        Dictionary se strukturovanými ingrediencemi podle kategorií
     """
     all_meals_text = " ".join([
         meal for meal_type, meal in meals.items() 
         if meal_type != 'den'
     ]).lower()
     
-    # Seznam běžných ingrediencí k detekci
-    common_ingredients = [
-        "bílý jogurt", "vlašské ořechy", "med", "skořice", "rozinky",
-        "hruška", "jablko", "ananas", "kiwi", "pomelo", "ovocné pyré",
-        "červená řepa", "cibule", "tuňák", "vejce", "vařené vejce",
-        "okurka", "okurkový salát", "salát", "kuřecí prsa", "brokolice",
-        "česnek", "strouhaný sýr", "zázvor", "fazolové lusky",
-        "mrkev", "cuketové placky", "cuketa", "dýně", "jáhly",
-        "sušené švestky", "mandlemi", "ředkvičkový salát", "ředkvičky",
-        "zeleninový krém", "zeleninový salát"
-    ]
+    # Kategorie a jejich klíčová slova pro detekci
+    ingredient_categories = {
+        'Zelenina': [
+            "brokolice", "cuketa", "špenát", "salát", "ledový salát", 
+            "červená řepa", "mrkev", "okurka", "ředkvičky", "papriky", "paprika",
+            "zeleninový salát", "zeleninový krém", "dýně", "česnek"
+        ],
+        'Maso a Ryby': [
+            "kuřecí prsa", "tuňák", "hovězí maso", "krůtí", "losos",
+            "treska", "vepřové"
+        ],
+        'Mléčné Produkty': [
+            "tvaroh", "cottage cheese", "jogurt", "bílý jogurt", 
+            "řecký jogurt", "sýr", "strouhaný sýr"
+        ],
+        'Vejce': [
+            "vejce", "vařené vejce"
+        ],
+        'Ořechy a Semínka': [
+            "vlašské ořechy", "mandle", "mandlemi", "chia", "sezam",
+            "lněné semínko"
+        ],
+        'Ovoce': [
+            "jablko", "hruška", "ananas", "kiwi", "pomelo", 
+            "ovocné pyré", "rozinky", "sušené švestky"
+        ],
+        'Ostatní': [
+            "olivový olej", "mct olej", "med", "skořice", "kysané zelí",
+            "avokádo", "iso whey", "protein"
+        ]
+    }
     
-    ingredients_found = []
-    for ingredient in common_ingredients:
-        if ingredient in all_meals_text:
-            if ingredient not in ingredients_found:
-                ingredients_found.append(ingredient)
+    # Kategorizované ingredience
+    categorized_ingredients = {cat: [] for cat in ingredient_categories.keys()}
     
-    return sorted(ingredients_found)
+    # Hledáme ingredience podle kategorií
+    for category, keywords in ingredient_categories.items():
+        for keyword in keywords:
+            if keyword in all_meals_text:
+                if keyword not in categorized_ingredients[category]:
+                    categorized_ingredients[category].append(keyword)
+    
+    # Seřadíme ingredience v každé kategorii
+    for category in categorized_ingredients:
+        categorized_ingredients[category].sort()
+    
+    return categorized_ingredients
+
+
+def format_ingredients_table(categorized_ingredients):
+    """
+    Formátuje ingredience do tabulkového formátu.
+    
+    Args:
+        categorized_ingredients: Dictionary s kategorizovanými ingrediencemi
+        
+    Returns:
+        String s naformátovanou tabulkou
+    """
+    output = []
+    output.append("| Kategorie | Ingredience |")
+    output.append("|-----------|-------------|")
+    
+    for category, ingredients in categorized_ingredients.items():
+        if ingredients:
+            # První ingredience v kategorii
+            output.append(f"| **{category}** | {ingredients[0]} |")
+            # Další ingredience ve stejné kategorii
+            for ingredient in ingredients[1:]:
+                output.append(f"| | {ingredient} |")
+    
+    return "\n".join(output)
 
 
 def main():
@@ -233,18 +286,23 @@ def main():
     # Vytiskneme jídelníček
     print(format_meal_plan(target_date, cycle_day, meals))
     
-    # Vygenerujeme nákupní seznam
+    # Vygenerujeme přehlednou tabulku ingrediencí
     print("🛒 HLAVNÍ INGREDIENCE")
     print("=" * 70)
+    print()
     
-    ingredients = extract_ingredients_from_meals(meals)
-    if ingredients:
-        for ingredient in ingredients:
-            print(f"   ✓ {ingredient}")
+    categorized_ingredients = extract_ingredients_from_meals(meals)
+    
+    # Zjistíme, zda byly nalezeny nějaké ingredience
+    has_ingredients = any(ingredients for ingredients in categorized_ingredients.values())
+    
+    if has_ingredients:
+        print(format_ingredients_table(categorized_ingredients))
     else:
-        print("   (žádné specifické ingredience nenalezeny)")
+        print("(žádné specifické ingredience nenalezeny)")
     
-    print("\n" + "=" * 70)
+    print()
+    print("=" * 70)
     print("\n💡 TIPY PRO PŘÍPRAVU:")
     print("   • Některá jídla lze připravit předem")
     print("   • Využívejte vegetariánské varianty podle preference")
