@@ -1,8 +1,8 @@
 # 📊 Skutečná Konzumace - Úterý 20.01.2026 (Roman)
 
 **Datum:** 20. ledna 2026 (úterý)  
-**Čas záznamu:** 21:30  
-**Celková spotřeba:** 1415 kcal (71% denního cíle 2000 kcal)
+**Čas záznamu:** 21:30 (aktualizováno 21:32)  
+**Celková spotřeba:** 1772 kcal (89% denního cíle 2000 kcal) ✅
 
 ---
 
@@ -31,35 +31,43 @@
 - **120g MK8 choco nut Mana**
 - 📊 Makra: 558 kcal, ~22.4g protein, ~31.4g carbs, ~35.8g fat
 
-### 🌃 Druhá Večeře (22:16-22:19)
+### 🌃 Druhá Večeře (21:32, 22:16-22:19) - AKTUALIZOVÁNO
+- **120g Utopenci Globus** - 357 kcal (přidáno 21:32)
 - **80g Ledový salát** - 12.9 kcal
 - **80g Kapie sladká paprika** - 21.6 kcal
-- 📊 Makra celkem: 34.5 kcal, ~1.6g protein, ~6.4g carbs, ~0.5g fat
+- 📊 Makra celkem: 391.5 kcal, ~19.2g protein, ~16.4g carbs, ~28.4g fat
 
 ---
 
 ## 📊 Denní Bilance
 
-### Celkové Makronutrienty
+### Celkové Makronutrienty (AKTUALIZOVÁNO 21:32)
 | Nutrient | Spotřeba | Cíl | % Cíle |
 |----------|----------|-----|--------|
-| **Kalorie** | 1415 kcal | 2000 kcal | 71% ⚠️ |
-| **Bílkoviny** | ~100.3g | 140g | 72% ⚠️ |
-| **Sacharidy** | ~58.3g | 70g max | 83% ✅ |
-| **Tuky** | ~85.3g | 129g | 66% ⚠️ |
+| **Kalorie** | 1772 kcal | 2000 kcal | 89% ✅ |
+| **Bílkoviny** | ~118g | 140g | 84% ✅ |
+| **Sacharidy** | ~74.5g | 70g max | 106% ⚠️ |
+| **Tuky** | ~109g | 129g | 84% ✅ |
+| **Vláknina** | ~17.7g | 50g | 35% ⚠️ |
 
-### ⚠️ Analýza
+### ✅ Analýza - ZLEPŠENO!
 
-**Výrazný kalorický deficit:**
-- Chybí: **585 kcal** (29% denního cíle)
-- Chybí: **39.7g bílkovin** (28% denního cíle)
-- Chybí: **43.7g tuků** (34% denního cíle)
+**Výrazné zlepšení po přidání utopenců:**
+- Zbývá: **228 kcal** (11% denního cíle) ✅ Téměř splněno!
+- Zbývá: **22g bílkovin** (16% denního cíle) ✅ Výrazně lépe!
+- Zbývá: **20g tuků** (16% denního cíle) ✅
 
 **Pozitivní:**
-- ✅ Sacharidy v normě (58.3g z 70g max)
+- ✅ Kalorie téměř u cíle (89%)
+- ✅ Bílkoviny výborně (84%)
+- ✅ Tuky dobře (84%)
 - ✅ Spotřeba expirujícího sýra Gouda Light (166g z 867g)
 - ✅ Konzumace zeleniny (paprika, salát)
-- ✅ Rozmanitost bílkovinných zdrojů (sýr, jogurt, whey, ořechy, semínka)
+- ✅ Rozmanitost bílkovinných zdrojů (sýr, jogurt, whey, ořechy, semínka, utopenci)
+
+**Upozornění:**
+- ⚠️ Sacharidy mírně nad limitem (74.5g z 70g max) - není kritické
+- ⚠️ Nízká vláknina (17.7g z 50g) - přidat zeleninu zítra
 
 **Doporučení pro zítra:**
 1. 🍳 Vydatnější snídaně s vejci + sýr + tuňák
@@ -98,26 +106,30 @@
 
 ### Druhá Večeře
 - **Plán:** Tvaroh 120g, Gouda 30g, ořechy 30g, semínka 10g (~370 kcal)
-- **Realita:** Salát 80g, paprika 80g (35 kcal)
-- **Rozdíl:** -335 kcal, -35g protein ⚠️
+- **Realita:** Utopenci 120g, salát 80g, paprika 80g (391.5 kcal)
+- **Rozdíl:** +21.5 kcal, -17g protein ⚠️
 
 ---
 
 ## 💡 Závěr
 
-Dnešní příjem byl **výrazně pod cílem** - pouze 71% kalorií a 72% bílkovin. 
+Dnešní příjem byl **výrazně zlepšen po přidání utopenců** - dosaženo 89% kalorií a 84% bílkovin! 
 
-**Hlavní příčiny:**
+**Hlavní příčiny původního deficitu:**
 1. Nahrazení plnohodnotných jídel pouze sýrem (snídaně, dopolední svačina)
 2. Malá porce oběda (140g jogurtu místo 200g + ořechy + med)
 3. Mana místo tuňákového salátu s množstvím sýrů na večeři
-4. Minimální druhá večeře (jen zelenina)
+
+**Zlepšení:**
+- ✅ Přidání utopenců (120g, 357 kcal, ~19g protein) výrazně pomohlo
+- ✅ Celková bilance nyní výborná - 89% kalorií, 84% bílkovin
 
 **Pro zítra (21.01.2026):**
 - ⚠️ **URGENTNĚ spotřebovat zbývající Gouda Light (701g) a Císařský sýr (143g) - EXPIRUJÍ DNES!**
 - 🍳 Dodržet plánovanou snídaně s vejci, tuňákem a sýrem
 - 🥗 Větší porce při všech jídlech
-- 🎯 Cíl: min. 1800 kcal, 130g+ protein
+- 🥬 Přidat více zeleniny pro vlákninu
+- 🎯 Cíl: 1800-2000 kcal, 130g+ protein, udržet sacharidy pod 70g
 
 ---
 
