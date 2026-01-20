@@ -327,28 +327,32 @@ Tento seznam obsahuje všechny ingredience potřebné pro jídelníček na celý
 
 ---
 
+## 🛒 Ingredience v Přehledné Tabulce
+
+| Kategorie | Ingredience | Četnost |
+|-----------|-------------|---------|
 """
     
-    # Kategorizované ingredience
+    # Kategorizované ingredience v tabulkovém formátu
     for cat in ['Zelenina', 'Ovoce', 'Maso a Ryby', 'Mléčné Produkty', 'Vejce a Náhražky', 
                 'Obiloviny', 'Ořechy a Semínka', 'Koření a Doplňky']:
         if cat in categorized:
-            md += f"## {cat}\n\n"
-            for ing, count in categorized[cat]:
+            for idx, (ing, count) in enumerate(categorized[cat]):
                 # Kapitalizujeme první písmeno
                 ing_display = ing[0].upper() + ing[1:]
-                md += f"- [ ] **{ing_display}** (použito {count}× během týdne)\n"
-            md += "\n"
+                # První řádek kategorie má název kategorie, ostatní mají prázdné pole
+                cat_display = f"**{cat}**" if idx == 0 else ""
+                md += f"| {cat_display} | {ing_display} | {count}× týdně |\n"
     
-    # Ostatní
+    # Ostatní kategorie
     if uncategorized:
-        md += "## Ostatní\n\n"
-        for ing, count in uncategorized:
+        for idx, (ing, count) in enumerate(uncategorized):
             ing_display = ing[0].upper() + ing[1:]
-            md += f"- [ ] **{ing_display}** (použito {count}× během týdne)\n"
-        md += "\n"
+            cat_display = "**Ostatní**" if idx == 0 else ""
+            md += f"| {cat_display} | {ing_display} | {count}× týdně |\n"
     
-    md += f"""---
+    md += f"""
+---
 
 ## 💡 Tipy pro Nákup
 
