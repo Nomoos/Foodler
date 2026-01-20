@@ -1,0 +1,19 @@
+nazev: Mrkev
+kategorie: zelenina
+kalorie: 41
+bilkoviny: 0.9
+sacharidy: 9.6
+tuky: 0.2
+vlaknina: 2.8
+cena_za_kg: 18.0
+sezona:
+- '8'
+- '9'
+- '10'
+- '11'
+- '12'
+- '1'
+- '2'
+poznamky: Bohatá na beta-karoten (vitamin A), důležitá pro zrak
+zdroj: kaloricketabulky.cz
+datum_aktualizace: '2026-01-20'

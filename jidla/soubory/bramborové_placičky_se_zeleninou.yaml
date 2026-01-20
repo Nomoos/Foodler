@@ -1,0 +1,39 @@
+nazev: Bramborové placičky se zeleninou
+typ: vecere
+ingredience:
+- nazev: Brambory
+  mnozstvi_g: 400
+  kategorie: hlavni
+- nazev: Vejce slepičí M
+  mnozstvi_g: 55
+  kategorie: hlavni
+- nazev: Mrkev
+  mnozstvi_g: 100
+  kategorie: priloha
+- nazev: Celer
+  mnozstvi_g: 80
+  kategorie: priloha
+- nazev: Zelí
+  mnozstvi_g: 80
+  kategorie: priloha
+- nazev: Olivový olej
+  mnozstvi_g: 20
+  kategorie: omacka
+kalorie_celkem: 580
+bilkoviny_celkem: 17.1
+sacharidy_celkem: 94.5
+tuky_celkem: 19.1
+vlaknina_celkem: 14.5
+priprava_cas_min: 40
+priprava_postup: |
+  1. Brambory uvařit, oloupat a nastrouhat nebo rozmačkat.
+  2. Mrkev a celer nastrouhať na jemném struhadle.
+  3. Zelí nakrájet najemno.
+  4. Smíchat brambory, nastrouhanou zeleninu a vejce.
+  5. Osolit, okořenit, utvořit placičky.
+  6. Opéct na pánvi na olivovém oleji dozlatova z obou stran (cca 4 min na stranu).
+obtiznost: stredni
+porce: 3
+vhodne_pro_meal_prep: true
+vydrzi_dni: 2
+poznamky: Zdravá vegetariánská varianta bramboráků s přidanou zeleninou. Vhodné pro večeři nebo oběd.
