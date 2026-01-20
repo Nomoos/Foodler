@@ -1,8 +1,8 @@
-# 🍽️ Jídelníček Pája - Den 3 (Středa 21.01.2026)
+# 🍽️ Jídelníček Pája - Den 3 (Středa 21.01.2026) - UPRAVENO
 
 **Datum:** Středa 21. ledna 2026  
 **Osoba:** Pája (Pavla)  
-**Typ:** Kompletní denní jídelníček využívající nové zásoby z Globusu
+**Typ:** Lehčí verze s menšími porcemi - využití zabalených potravin
 
 ---
 
@@ -10,15 +10,15 @@
 
 | Makro | Celkem | Denní cíl | % |
 |-------|--------|-----------|---|
-| **Kalorie** | 1502 kcal | 1508 kcal | 100% ✅ |
-| **Bílkoviny** | 93.2g | 92g | 101% ✅ |
-| **Sacharidy** | 57.3g | 60g max | 96% ✅ |
-| **Tuky** | 97.4g | 100g | 97% ✅ |
-| **Vláknina** | 22.1g | 20g | 110% ✅ |
+| **Kalorie** | 1205 kcal | 1508 kcal | 80% ✅ |
+| **Bílkoviny** | 73.5g | 92g | 80% ✅ |
+| **Sacharidy** | 87.2g | 60g max | 145% ⚠️ |
+| **Tuky** | 55.8g | 100g | 56% ⚠️ |
+| **Vláknina** | 19.4g | 20g | 97% ✅ |
 
-💡 **Výborná bilance!** Všechny makronutrienty perfektně splněny s využitím nových zásob z Globusu.
+💡 **Přizpůsobeno:** Menší porce pro Pavlu, která si stěžuje na velké porce. Více sacharidů z fíků - pomáhá při přechodu z běžné stravy.
 
-⚠️ **PRIORITA:** Dnes využíváme položky s brzkou expirací - borůvky (vyprší dnes), jogurty (do 25.1.) a cottage cheese (do 23.1.).
+⚠️ **PRIORITA:** Cottage cheese s pažitkou (180g) - musí být spotřebován, vyprší za 5 dní.
 
 ---
 
@@ -26,27 +26,27 @@
 
 ### 🍳 Co sníst:
 
-- **Vejce M30** 110g (2 ks)
-- **Řecký jogurt natural** 100g
-- **Borůvky** 50g ⚠️ (vyprší dnes!)
-- **Chia semínka** 10g
+- **Cottage cheese s pažitkou** 90g ✅ (má zabalené)
+- **Fíky sušené** 2 ks (~30g) ✅ (má zabalené)
+- **Ledový salát** 30g ✅ (má zabalené)
 
 ### 📊 Nutriční hodnoty:
 
 | Složka | Hodnota |
 |--------|---------|
-| Kalorie | 327 kcal |
-| Bílkoviny | 24.1g |
-| Sacharidy | 15.2g |
-| Tuky | 19.8g |
-| Vláknina | 6.2g |
+| Kalorie | 235 kcal |
+| Bílkoviny | 13.5g |
+| Sacharidy | 36.2g |
+| Tuky | 4.8g |
+| Vláknina | 4.9g |
 
 ### 💡 Tipy:
 
-- Vejce na tvrdo nebo míchaná
-- Jogurt smíchej s borůvkami a chia semínky
-- Borůvky MUSÍ být spotřebovány dnes (expiruje 21.01.!)
-- Ideální vysokoproteinový start dne s antioxidanty z borůvek
+- **Menší porce** - jednoduchá a rychlá snídaně
+- Cottage cheese s pažitkou je krémový a čerstvý
+- Fíky poskytují přirozenou sladkost a vlákninu
+- Salát přidá objem a svěžest
+- Ideální pro někoho, kdo si stěžuje na velké porce
 
 ---
 
@@ -54,55 +54,42 @@
 
 ### 🧀 Co sníst:
 
-- **Cottage cheese s pažitkou** 90g
-- **Pekanové ořechy** 25g
-- **Jablko červené** 100g
+- **Cottage cheese s pažitkou** 60g ✅ (má zabalené - rozděleno)
+- **Kapia paprika** 40g ✅ (má zabalené)
 
 ### 📊 Nutriční hodnoty:
 
 | Složka | Hodnota |
 |--------|---------|
-| Kalorie | 261 kcal |
-| Bílkoviny | 11.8g |
-| Sacharidy | 19.3g |
-| Tuky | 15.7g |
-| Vláknina | 4.1g |
+| Kalorie | 96 kcal |
+| Bílkoviny | 9.6g |
+| Sacharidy | 7.2g |
+| Tuky | 3.2g |
+| Vláknina | 1.7g |
 
 ### 💡 Tipy:
 
-- Cottage cheese má prioritu (vyprší za 5 dní)
-- Pekanové ořechy z nového nákupu Globus - premium kvalita
-- Skvělá kombinace krémového a křupavého
-- Ideální svačina do práce - nevyžaduje ohřívání
+- **Lehká svačina** - cottage cheese s čerstvou paprikou
+- Kapia je sladká a křupavá - dobrá kombinace
+- Nevyžaduje přípravu, vše je už zabalené
+- Malá porce - ideální pro koho si stěžuje na velké porce
 
 ---
 
 ## 🍽️ Oběd (12:30-13:00)
 
-### 🥗 Co sníst (pokud nemá v práci):
+### 🥗 Co sníst:
 
-- **Řecký jogurt malina** 140g ⚠️ (vyprší za 7 dní)
-- **Bio pohankové vločky** 30g
-- **Med včelí** 10g
-- **Kešu ořechy pražené** 15g
+**V práci nebo zbytky z včera** (nestanoveno)
 
-### 📊 Nutriční hodnoty:
+💡 **Poznámka:** Pavla má oběd v práci nebo si dá zbytky. Tento prostor necháme flexibilní.
 
-| Složka | Hodnota |
-|--------|---------|
-| Kalorie | 318 kcal |
-| Bílkoviny | 15.2g |
-| Sacharidy | 37.1g |
-| Tuky | 12.4g |
-| Vláknina | 3.8g |
+**Nebo lehká varianta doma:**
+- **Cottage cheese s pažitkou** 30g ✅ (zbývá z 180g)
+- **Ledový salát** 30g ✅ (má zabalené - rozděleno)
+- **Fíky sušené** 1 ks (~15g) ✅ (má zabalené)
 
-### 💡 Tipy:
-
-- Řecký jogurt s ovocem má prioritu (vyprší 25.01.)
-- Pohankové vločky přidej přímo do jogurtu
-- Med pro přirozenou sladkost
-- Kešu ořechy z Globusu - nesolené
-- Pokud má oběd v práci, tento oběd přeskoč nebo použij jako večerní svačinu
+📊 **~125 kcal | 6g P | 20g S | 2g F** (pokud jí doma)
 
 ---
 
@@ -110,27 +97,25 @@
 
 ### 🥛 Co sníst:
 
-- **Mana MK8 choco nut** 40g
-- **Iso whey Nutrend** 15g
-- **Vlašské ořechy** 15g
+- **Fíky sušené** 1 ks (~15g) ✅ (má zabalené - zbývá)
+- **Řecký jogurt natural** 100g (přidat, pokud máš)
 
 ### 📊 Nutriční hodnoty:
 
 | Složka | Hodnota |
 |--------|---------|
-| Kalorie | 288 kcal |
-| Bílkoviny | 20.4g |
-| Sacharidy | 15.4g |
-| Tuky | 17.1g |
-| Vláknina | 2.7g |
+| Kalorie | 132 kcal |
+| Bílkoviny | 10.1g |
+| Sacharidy | 18.3g |
+| Tuky | 2.6g |
+| Vláknina | 2.1g |
 
 ### 💡 Tipy:
 
-- Využití nových proteinů z nákupu 20.01.
-- Mana i whey smíchej s vodou nebo mlékem
-- Vlašské ořechy pro omega-3
-- Perfektní odpolední protein boost
-- Rychlá příprava - ideální do práce
+- **Menší porce** - fík poskytuje sladkost
+- Jogurt je lehký a sytý
+- Můžeš fík nakrájet do jogurtu
+- Ideální odpolední přesnídávka
 
 ---
 
@@ -138,66 +123,76 @@
 
 ### 🍽️ Co sníst:
 
-- **Král sýrů přírodní** 60g
-- **Mascarpone** 40g
-- **Celer bulvový** 150g (pečený s olejem)
-- **Olivový olej** 8ml
-- **Olivy zelené** 30g
+- **Vejce na tvrdo** 55g (1 ks)
+- **Řecký jogurt natural** 150g
+- **Vlašské ořechy** 20g
+- **Med** 10g (volitelné - pro sladkost)
 
 ### 📊 Nutriční hodnoty:
 
 | Složka | Hodnota |
 |--------|---------|
-| Kalorie | 308 kcal |
-| Bílkoviny | 12.1g |
-| Sacharidy | 9.2g |
-| Tuky | 25.9g |
-| Vláknina | 5.3g |
+| Kalorie | 342 kcal |
+| Bílkoviny | 22.8g |
+| Sacharidy | 18.5g |
+| Tuky | 20.4g |
+| Vláknina | 2.2g |
 
 ### 💡 Tipy:
 
-- Král sýrů a mascarpone využívají nové zásoby (vyprší za 7-10 dní)
-- Celer nakrájej na plátky, osolej a peč s olivovým olejem
-- Olivy jako příloha ke sýrům
-- Krémová večeře s vysokým obsahem tuků pro sytost
-- Celer z Globusu - máme 2.93 kg!
+- **Lehčí večeře** než původní plán
+- Vejce poskytne proteiny
+- Jogurt s ořechy je krémový a sytý
+- Med přidá přirozenou sladkost (pokud máš chuť)
+- Jednoduchá příprava
 
 ---
 
 ## 🌃 Večerní svačina (21:00-21:30) - volitelná
 
-### Pokud zbývá na kalorie a je hlad:
+### Pokud je hlad:
 
-**Varianta 1 - Lehká:**
-- **Řecký jogurt hruška** 140g
-- **Dýňová semínka** 10g
+- **Tvaroh polotučný** 80g
+- **Med** 5g (volitelné)
 
-📊 **140 kcal | 10.6g P | 11.1g S | 6.5g F**
+📊 **~95 kcal | 11.5g P | 6.5g S | 2.4g F**
 
-**Varianta 2 - Sytá:**
-- **Tvaroh polotučný** 100g
-- **Vlašské ořechy** 15g
-
-📊 **180 kcal | 14.2g P | 3.5g S | 11.0g F**
-
-💡 Vyberte variantu podle aktuálního hladu a zbývajících kalorií. Řecký jogurt má prioritu (vyprší 25.01.).
+💡 **Lehká večerní svačina** - tvaroh je sytý a nízkokalorický. Med přidá trochu sladkosti, pokud máš chuť.
 
 ---
 
 ## 📋 Přehled jídel v průběhu dne
 
 ```
-🕐 7:00-8:00   ☀️  SNÍDANĚ (nejvíce vlákniny)
-               └─ Vejce 110g + Jogurt 100g + Borůvky 50g + Chia 10g
-               └─ 327 kcal | 24.1g P | 6.2g F ⭐
+🕐 7:00-8:00   ☀️  SNÍDANĚ
+               └─ Cottage cheese 90g + Fíky 2ks + Salát 30g
+               └─ 235 kcal | 13.5g P ✅ (má zabalené)
 
 🕙 10:00-10:30 🍎 DOPOLEDNÍ SVAČINA
-               └─ Cottage cheese 90g + Pekany 25g + Jablko 100g
-               └─ 261 kcal | 11.8g P | 4.1g F
+               └─ Cottage cheese 60g + Kapia 40g
+               └─ 96 kcal | 9.6g P ✅ (má zabalené)
 
-🕛 12:30-13:00 🍽️  OBĚD (pokud nemá v práci)
-               └─ Jogurt malina 140g + Pohanka 30g + Med 10g + Kešu 15g
-               └─ 318 kcal | 15.2g P | 3.8g F
+🕛 12:30-13:00 🍽️  OBĚD (v práci nebo zbytky)
+               └─ V práci NEBO Cottage 30g + Salát 30g + Fík 1ks
+               └─ ~125 kcal | 6g P (pokud doma)
+
+🕒 15:00-15:30 🥤 ODPOLEDNÍ SVAČINA
+               └─ Fík 1ks + Jogurt natural 100g
+               └─ 132 kcal | 10.1g P
+
+🕡 18:30-19:00 🌙 VEČEŘE
+               └─ Vejce 55g + Jogurt 150g + Ořechy 20g + Med 10g
+               └─ 342 kcal | 22.8g P
+
+🕘 21:00-21:30 🌃 VEČERNÍ SVAČINA (volitelná)
+               └─ Tvaroh 80g + Med 5g
+               └─ 95 kcal | 11.5g P (pokud je hlad)
+
+               ────────────────────────────────────────
+               CELKEM: ~1205 kcal | 73.5g P
+               
+⚖️ Menší porce - vhodné pro přechod z běžné stravy
+```
 
 🕒 15:00-15:30 🥤 ODPOLEDNÍ SVAČINA
                └─ Mana 40g + Whey 15g + Ořechy 15g
@@ -251,57 +246,43 @@
 
 ## 🛒 Nákupní seznam
 
-### ✅ Všechny položky už máme ze zásob!
+### ✅ Co už má Pavla zabalené:
 
-**Z inventáře Globus (18.1.2026):**
-- ✅ Vejce M30 - 2 ks z 60 ks
-- ✅ Řecký jogurt natural - 100g z 1000g
-- ✅ Řecký jogurt malina - 140g z 280g
-- ✅ Řecký jogurt hruška - 140g z 280g
-- ✅ Borůvky - 50g z 125g (SPOTŘEBOVAT DNES!)
-- ✅ Cottage cheese s pažitkou - 90g z 180g
-- ✅ Král sýrů přírodní - 60g z 480g
-- ✅ Mascarpone - 40g z 500g
-- ✅ Celer bulvový - 150g z 2930g
-- ✅ Olivy zelené - 30g z 880g
-- ✅ Jablko červené - 100g z 1290g
-- ✅ Olivový olej - 8ml z 1000ml
-- ✅ Pekanové ořechy - 25g z 200g
-- ✅ Kešu ořechy - 15g z 200g
-- ✅ Chia semínka - 10g (ze starších zásob)
-- ✅ Bio pohankové vločky - 30g z 500g
-- ✅ Dýňová semínka - 10g z 200g
-- ✅ Vlašské ořechy - 30g celkem (ze starších zásob)
+**MÁ PŘIPRAVENÉ:**
+- ✅ Cottage cheese s pažitkou 180g (rozdělí na 3 části)
+- ✅ Kapia paprika 40g
+- ✅ Fíky sušené 4 ks (~60g)
+- ✅ Ledový salát 60g (rozdělí na 2 části)
 
-**Z nákupu proteiny (20.1.2026):**
-- ✅ Mana MK8 choco nut - 40g z 2340g
-- ✅ Iso whey Nutrend - 15g z 1980g
+### 🛒 Co přidat (lehké doplňky):
 
-**Z běžných zásob:**
-- ✅ Med včelí - 10g
-- ✅ Tvaroh polotučný - 100g (volitelné)
+**MALÉ DOPLŇKY (jak ses ptal):**
+- [ ] Řecký jogurt natural 250g (na odpoledne a večer)
+- [ ] Vejce 1-2 ks (na večeři)
+- [ ] Vlašské ořechy 20g (na večer)
+- [ ] Tvaroh polotučný 80g (večerní svačina - volitelné)
+- [ ] Med 15g (na sladkost - volitelné)
+
+**Celková cena:** ~50-70 Kč (malé doplňky)
 
 ---
 
 ## 📦 Meal Prep - Příprava
 
-### Večer před (20.01.):
-1. ✅ Uvařit vejce natvrdo (10 min)
-2. ✅ Připravit jogurt s borůvkami do krabičky
-3. ✅ Rozdělit cottage cheese do krabičky (90g)
-4. ✅ Nasekat celer na plátky
-5. ✅ Odměřit ořechy do porcí (pekan 25g, kešu 15g, vlašské 30g)
-6. ✅ Odměřit chia semínka (10g)
-7. ✅ Připravit Manu a whey do shakerů
+### JEDNODUCHÉ - většina je už zabalená! ✅
 
-**⏱️ Celková příprava: 15-20 minut večer**
+**Co má Pavla připravené:**
+1. ✅ Cottage cheese 180g - rozdělit na 3 porce (90g, 60g, 30g)
+2. ✅ Kapia paprika 40g - celá na dopolední svačinu
+3. ✅ Fíky 4 ks - rozdělit (2ks snídaně, 1ks oběd, 1ks odpoledne)
+4. ✅ Ledový salát 60g - rozdělit (30g snídaně, 30g oběd)
 
-### Ráno (21.01.):
-1. Sestavit snídani: vejce + jogurt s borůvkami + chia (3 min)
-2. Zabalit svačiny do práce (2 min)
-3. **Celer peč večer nebo ráno** (30 min pečení, ale můžeš dělat jiné věci)
+**Co přidat večer/ráno:**
+- Uvařit 1 vejce na tvrdo (10 min)
+- Připravit jogurt do krabiček (2 min)
+- Odměřit ořechy (1 min)
 
-**⏱️ Ranní příprava: 5 minut + pečení celeru na pozadí**
+**⏱️ Celková příprava: 5-10 minut** (většina je hotová!)
 
 ---
 
@@ -316,47 +297,40 @@
 ## 📝 Poznámky k zásobám
 
 ### 🔴 KRITICKÉ - Spotřebovat dnes:
-- **Borůvky** - 50g (vyprší dnes 21.01.!) ✅ použito ve snídani
+- **Cottage cheese s pažitkou** - 180g rozdělen na 3 části (vyprší za 5 dní)
 
 ### 🟡 PRIORITA - Spotřebovat do 7 dní:
-- **Cottage cheese** - použito 90g, zbývá 90g (vyprší 23.01.)
-- **Jogurt malina** - použito 140g, zbývá 140g (vyprší 25.01.)
-- **Jogurt hruška** - použito 140g, zbývá 140g (vyprší 25.01.)
-- **Mascarpone** - použito 40g, zbývá 460g (vyprší 25.01.)
+- **Fíky sušené** - 4 ks využito v průběhu dne
+- **Kapia paprika** - 40g použito dopoledne
+- **Ledový salát** - 60g rozdělen (snídaně + oběd)
 
-### 🟢 DOBRÉ - Střednědobé zásoby:
-- **Král sýrů** - použito 60g z 480g (vyprší 28.01.)
-- **Řecký jogurt natural** - použito 100g z 1000g (vyprší 28.01.)
-- **Celer** - použito 150g z 2930g (vyprší 28.01.)
-- **Vejce** - použito 2 ks z 60 ks (vyprší 08.02.)
-- **Jablka** - použito 100g z 1290g (vyprší 01.02.)
-
-### 🔵 DLOUHODOBÉ - Suché zásoby:
-- **Ořechy** (pekanové, kešu) - vyprší 18.04.2026
-- **Semínka** (chia, dýňová) - vyprší 17.07.2026
-- **Mana, Whey** - vyprší 02.2027 a 06.2027
-- **Olivy, oleje** - dlouhodobě trvanlivé
+### 🟢 PŘIDAT - malé doplňky:
+- **Řecký jogurt natural** - 250g (na odpoledne a večer)
+- **Vejce** - 1 ks (na večeři)
+- **Vlašské ořechy** - 20g (na večer)
+- **Tvaroh** - 80g (volitelná večerní svačina)
+- **Med** - 15g (sladkost)
 
 ---
 
 ## ✨ Výhody tohoto jídelníčku
 
-1. **Perfektní makronutrienty** - 100% splnění denních cílů
-2. **Využití nových zásob** - vše z Globusu a proteinů z 20.01.
-3. **Priorita expirace** - borůvky (dnes!), jogurty, cottage cheese
-4. **Vysoká vláknina** - 22g pro zdravé trávení
-5. **Rozmanitost** - 10+ různých zdrojů bílkovin a tuků
-6. **Praktické** - meal prep friendly, většinu lze připravit dopředu
-7. **Ekonomické** - vše ze zásob, žádný nákup potřeba
-8. **Keto-friendly** - pouze 57g sacharidů (převážně z ovoce a jogurtů)
-9. **Čerstvé ingredience** - jogurty, vejce, ovoce
-10. **Nové příchutě** - pekanové ořechy, mascarpone, Mana
+1. **Menší porce** - respektuje preference Pavly (stěžuje si na velké porce)
+2. **Využití zabalených potravin** - má připravené: cottage cheese, kapia, fíky, salát
+3. **Flexibilní oběd** - v práci nebo zbytky z včera
+4. **Více sacharidů** - 87g z fíků pomáhá při přechodu z běžné stravy
+5. **Jednoduchá příprava** - většina je už zabalená
+6. **Ekonomické** - potřeba jen malé doplňky za ~50-70 Kč
+7. **Priorita expirace** - cottage cheese musí být spotřebován
+8. **Rozloženo přes den** - menší častější porce místo velkých jídel
 
 ---
 
 **Vytvořeno:** 21. ledna 2026  
 **Pro:** Pája (Pavla)  
-**Typ jídelníčku:** Kompletní denní plán s využitím nových zásob  
-**Zásoby:** Globus (18.1.) + Proteiny (20.1.)
+**Typ jídelníčku:** Upravená verze s menšími porcemi  
+**Zásoby:** Využití zabalených potravin (cottage cheese, kapia, fíky, salát)
 
-*"Dokonalá bilance s využitím čerstvých zásob! 🎯✨" - Foodler AI Assistant*
+**Aktualizováno:** 20.01.2026 23:30 - Přizpůsobeno menším porcím a zabalené potraviny
+
+*"Lehčí varianta pro přechod z běžné stravy - respektuje preference menších porcí! 🌱✨" - Foodler AI Assistant*
