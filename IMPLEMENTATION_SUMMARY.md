@@ -21,7 +21,7 @@ Přidány do databáze `potraviny/soubory/`:
 
 Všechny s kompletními nutričními hodnotami, cenami a sezónností.
 
-### 2. Nové recepty (3 soubory YAML)
+### 2. Nové recepty (4 soubory YAML)
 
 Přidány do databáze `jidla/soubory/`:
 
@@ -51,6 +51,16 @@ Přidány do databáze `jidla/soubory/`:
 - **Nutriční hodnoty (na porci):** 193.3 kcal, 5.7g protein, 31.5g carbs
 - **Porce:** 3
 - **Ingredience:** Brambory, vejce, mrkev, celer, zelí, olivový olej
+
+#### D) Zapékané brambory se zeleninou 🆕
+- **Soubor:** `zapékané_brambory_se_zeleninou.yaml`
+- **Typ:** Oběd
+- **Čas:** 50 minut
+- **Obtížnost:** Střední
+- **Nutriční hodnoty (na porci):** 227.3 kcal, 8.7g protein, 26.8g carbs
+- **Porce:** 3
+- **Ingredience:** Brambory, mrkev, celer, zelí, vejce, mléko polotučné, olivový olej
+- **Speciální:** Zapékané jídlo v troubě inspirované ratatouille
 
 ### 3. Denní plán jídel
 
@@ -96,7 +106,7 @@ Všechny recepty byly otestovány:
 
 ```bash
 ✅ Databáze potravin: 48 položek (včetně 4 nových)
-✅ Databáze receptů: 16 položek (včetně 3 nových)
+✅ Databáze receptů: 17 položek (včetně 4 nových)
 ✅ Načítání receptů: Všechny recepty se načítají správně
 ✅ Výpočet makronutrientů: Funguje pro všechny recepty
 ✅ Filtrace receptů: Funguje podle typu, low-carb, high-protein
@@ -105,11 +115,19 @@ Všechny recepty byly otestovány:
 
 ## 📊 Celkové makronutrienty (1 porce každého jídla)
 
+**Původní 3 recepty:**
 - **Kalorie:** 674 kcal
 - **Bílkoviny:** 20.6g
 - **Sacharidy:** 101.3g
 - **Tuky:** 24.3g
 - **Vláknina:** 14.3g
+
+**Nový zapékané jídlo (varianta ratatouille):**
+- **Kalorie:** 227.3 kcal
+- **Bílkoviny:** 8.7g
+- **Sacharidy:** 26.8g
+- **Tuky:** 9.7g
+- **Vláknina:** 5.3g
 
 *Poznámka: To je pouze část denního příjmu. Rodina bude potřebovat doplnit další jídla.*
 
@@ -152,7 +170,8 @@ Foodler/
 ├── jidla/soubory/
 │   ├── bramborová_kaše_s_mlékem_a_celerem.yaml     ← Nový recept
 │   ├── zeleninový_salát_s_okurkami_a_vejci.yaml    ← Nový recept
-│   └── bramborové_placičky_se_zeleninou.yaml       ← Nový recept
+│   ├── bramborové_placičky_se_zeleninou.yaml       ← Nový recept
+│   └── zapékané_brambory_se_zeleninou.yaml          ← Nový recept (ratatouille) 🆕
 └── data/meal_plans/
     ├── meal_plan_2026-01-21.md           ← Denní plán
     └── shopping_list_2026-01-21.md       ← Nákupní seznam
@@ -162,6 +181,7 @@ Foodler/
 
 - ✅ Použity všechny požadované suroviny (mléko, brambory, celer, mrkev, zelí, okurky, vejce)
 - ✅ Vytvořeny všechny požadované formy (kaše, salát, placičky)
+- ✅ Přidáno zapékané jídlo (ratatouille varianta) 🆕
 - ✅ Kompletní denní plán
 - ✅ Nákupní seznam s cenami
 - ✅ Nutriční analýza
@@ -210,9 +230,9 @@ Velmi ekonomické jídlo vhodné pro celou rodinu!
 
 ## 📈 Statistiky
 
-- **Celkový počet přidaných souborů:** 10
-- **Řádků kódu/dat:** ~400
-- **Čas implementace:** ~30 minut
+- **Celkový počet přidaných souborů:** 11 (včetně zapékaného jídla)
+- **Řádků kódu/dat:** ~450
+- **Čas implementace:** ~35 minut
 - **Testů provedeno:** 5 kategorií
 - **Chyb nalezeno:** 0
 

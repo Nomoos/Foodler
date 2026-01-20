@@ -18,8 +18,10 @@ Tento dokument obsahuje kompletní plán jídel na zítřejší den, vytvořený
 | Zeleninový salát s okurkami a vejci | Oběd | 25 min | 258 kcal | 9.2g | Snadná |
 | Bramborová kaše s mlékem a celerem | Příloha | 30 min | 222.5 kcal | 5.7g | Snadná |
 | Bramborové placičky se zeleninou | Večeře | 40 min | 193.3 kcal | 5.7g | Střední |
+| **Zapékané brambory se zeleninou** 🆕 | Oběd | 50 min | 227.3 kcal | 8.7g | Střední |
 
-**Celkem za den (1 porce každého jídla):** 674 kcal, 20.6g bílkovin, 101.3g sacharidů
+**Celkem za den (3 původní jídla):** 674 kcal, 20.6g bílkovin, 101.3g sacharidů  
+**Nová varianta (zapékané):** 227.3 kcal, 8.7g bílkovin, 26.8g sacharidů
 
 ## 📁 Soubory
 
@@ -27,6 +29,7 @@ Tento dokument obsahuje kompletní plán jídel na zítřejší den, vytvořený
 - `jidla/soubory/zeleninový_salát_s_okurkami_a_vejci.yaml`
 - `jidla/soubory/bramborová_kaše_s_mlékem_a_celerem.yaml`
 - `jidla/soubory/bramborové_placičky_se_zeleninou.yaml`
+- `jidla/soubory/zapékané_brambory_se_zeleninou.yaml` 🆕
 
 ### Plány a seznamy
 - `data/meal_plans/meal_plan_2026-01-21.md` - Detailní denní plán s postupy
@@ -114,7 +117,7 @@ Všechny recepty byly otestovány a načítají se správně:
 
 ```bash
 python -c "from jidla.databaze import DatabzeJidel; print(len(DatabzeJidel.get_all()))"
-# Output: 16 receptů
+# Output: 17 receptů (včetně nového zapékaného jídla)
 ```
 
 ## 📊 Nutriční hodnoty (detailní)
@@ -139,6 +142,14 @@ python -c "from jidla.databaze import DatabzeJidel; print(len(DatabzeJidel.get_a
 - Sacharidy: 31.5g
 - Tuky: 6.4g
 - Vláknina: 4.8g
+
+### Zapékané brambory se zeleninou (1 porce) 🆕
+- Kalorie: 227.3 kcal
+- Bílkoviny: 8.7g
+- Sacharidy: 26.8g
+- Tuky: 9.7g
+- Vláknina: 5.3g
+- **Inspirováno ratatouille** - zapékané jídlo v troubě
 
 ## 🔄 Variace receptů
 
