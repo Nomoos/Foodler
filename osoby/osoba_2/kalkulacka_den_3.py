@@ -64,7 +64,7 @@ FOODS_DB = {
     'spinat': Food('Špenát', 23, 2.9, 3.6, 0.4, 2.2),
     'brokolice': Food('Brokolice', 34, 2.8, 7.0, 0.4, 2.6),
     'cuketa': Food('Cuketa', 17, 1.2, 3.1, 0.3, 1.0),
-    'mandle': Food('Mandle', 579, 21.2, 21.6, 49.9, 12.5),
+    'mandle': Food('Mandle', 579, 21.0, 22.0, 50.0, 12.0),
     'vlaske_orechy': Food('Vlašské ořechy', 654, 15.2, 13.7, 65.2, 6.7),
     'recky_jogurt': Food('Řecký jogurt', 97, 10.0, 4.0, 5.0, 0.0),
     'olivy': Food('Olivy', 115, 0.8, 6.3, 10.7, 3.2),

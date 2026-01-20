@@ -132,7 +132,7 @@
 → Nebo přidej sýr k večeři (50g eidamu)
 
 ### Zapomněla jsi chia?
-→ Kup sirup od psyllia v lékárně  
+→ Kup sirup s psylliem v lékárně  
 → Nebo sněz více zeleniny (200g brokolice navíc)
 
 ### Zapomněla jsi tuňák/vejce?
