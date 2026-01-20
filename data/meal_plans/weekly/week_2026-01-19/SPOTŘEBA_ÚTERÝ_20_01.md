@@ -2,7 +2,10 @@
 
 **Datum:** 20. ledna 2026 (úterý)  
 **Jídelníček:** `day_2_2026-01-20_úterý.md`  
+**Skutečná konzumace:** `SKUTEČNÁ_KONZUMACE_20_01.md` ⭐ **NOVÝ DOKUMENT**  
 **Inventář:** `lednice/INVENTORY.md` (aktualizováno 18.01.2026)
+
+> ⚠️ **POZNÁMKA:** Skutečná spotřeba se výrazně liší od plánu. Viz kompletní přehled v `SKUTEČNÁ_KONZUMACE_20_01.md`
 
 ---
 
@@ -15,10 +18,17 @@
 - ⏰ **VYPRŠÍ ZÍTRA 21.01.2026!**
 - 💡 Zbytek: ~143g - **NUTNO SPOTŘEBOVAT DNES/ZÍTRA!**
 
-**Sýr Gouda Light** ❗❗❗
-- 📊 Spotřeba: 0g dnes
+**Sýr Gouda Light 30% Globus** ❗❗❗
+- 📊 **SKUTEČNÁ SPOTŘEBA: 166g (Roman)**
+  - Snídaně: 100g
+  - Svačina: 66g
 - ⏰ **VYPRŠÍ ZÍTRA 21.01.2026!**
-- 💡 Celkem: 867g - **NUTNO SPOTŘEBOVAT DNES/ZÍTRA!**
+- 💡 Zbytek: ~701g (867g - 166g) - **NUTNO SPOTŘEBOVAT ZÍTRA!**
+- 🌱 Nutriční hodnoty (166g):
+  - Kalorie: 436.6 kcal
+  - Bílkoviny: 44.8g
+  - Sacharidy: 0.8g
+  - Tuky: 28.2g
 
 ### 🟡 BRZY VYPRŠÍ (priorita ke spotřebování)
 
@@ -47,9 +57,10 @@
 
 **Řecké jogurty a sýry** (lednice)
 - ✅ **Císařský sýr s oky 45% plátky Madeta: 30g** - dopolední svačina
+- ✅ **Sýr Gouda Light 30% Globus: 166g (Roman)** - snídaně (100g) + svačina (66g)
 - ✅ **Řecký jogurt bílý 5% tuku Milko: 200g** - oběd
 - ⏰ **Císařský sýr vyprší ZÍTRA 21.01.2026** - zbytek ~143g
-- ⏰ **Gouda Light vyprší ZÍTRA 21.01.2026** - celkem 867g
+- ⏰ **Gouda Light vyprší ZÍTRA 21.01.2026** - zbytek ~701g (použito 166g)
 - Řecký jogurt 5%: zbývá ~1800g (použito 200g) - vyprší za 10 dní (28.01.2026)
 - Řecký jogurt natural: nevyužito dnes (vyprší za 10 dní - 28.01.2026)
 - 💡 **Řecké jogurty (malina, hruška, meruňka) vyprší za 7 dní (25.01.2026) - použít do večeře!**
@@ -251,7 +262,7 @@
 ### ⚠️ KRITICKÁ PRIORITA - SPOTŘEBOVAT DNES/ZÍTRA!
 ❗❗❗ **Tvrdé sýry vyprší ZÍTRA 21.01.2026:**
 - **Císařský sýr 45%:** Zbytek ~143g (použito 30g dnes)
-- **Gouda Light:** Celkem 867g (nepoužito dnes)
+- **Gouda Light 30% Globus:** Zbytek ~701g (použito 166g dnes - Roman: 100g snídaně + 66g svačina)
 
 💡 **Návrhy na spotřebu:**
 1. **Oběd:** Přidat 50-80g Gouda ke grilované zelenině
@@ -291,7 +302,7 @@
 | Vejce | 7 ks (snídaně) | - |
 | Ořechy & semínka | ✅ **40g mandle neloupané** | - |
 | Olivový olej | 70ml (pouze pokud bude večeře podle plánu) | - |
-| Mléčné výrobky | ✅ **Císařský sýr 30g**, ~220g tvaroh, ~90g jogurt | **❌ NIČEHO - MÁME SÝR!** |
+| Mléčné výrobky | ✅ **Císařský sýr 30g**, ✅ **Gouda Light 166g (Roman)**, ~220g tvaroh, ~90g jogurt | **❌ NIČEHO - MÁME SÝR!** |
 | Tuňák | - | Podle potřeby na večeři |
 | Zelenina | ✅ **Kapie paprika 80g** | **❌ NIČEHO - MÁME PAPRIKU!** |
 | Zelenina | ~~Kysané zelí 180g~~ NEPOUŽITO | Volitelně: salát, rajčata |
@@ -300,18 +311,28 @@
 
 ### ✅ ZMĚNY OPROTI PLÁNU:
 
+**Snídaně (Roman):**
+- ✅ Použit **Sýr Gouda Light 30% Globus: 100g** ze zásob (snídaně)
+- 📊 Nutriční hodnoty (100g): 263 kcal, 27g bílkovin, 0.5g sacharidů, 17g tuků
+
 **Dopolední svačina:**
 - ✅ Použita **kapie sladká paprika 80g** ze zásob
 - ✅ Použity **mandle 40g** ze zásob (místo plánovaných 70g s MCT olejem)
 - ✅ Použit **Císařský sýr 30g** ze zásob (inventář z Globusu) ⭐
+- ✅ Použit **Sýr Gouda Light 30% Globus: 66g** ze zásob (svačina Roman)
+- 📊 Nutriční hodnoty Gouda (66g): 173.6 kcal, 17.8g bílkovin, 0.3g sacharidů, 11.2g tuků
 
 **Odpolední svačina:**
 - ✅ Použita **MK8 Mana 60g** + **Iso whey 20g** ze zásob
 - ❌ Nepoužito kysané zelí, olivový olej, slunečnicová semínka
 
 ### 💡 VÝBORNÁ SPRÁVA ZÁSOB!
-Využili jste **Císařský sýr** z inventáře, který vyprší **ZÍTRA 21.01.2026**. 
-❗ **UPOZORNĚNÍ:** Zbývá spotřebovat ještě ~143g Císařského sýra a 867g Gouda Light do zítřka!
+Využili jste **Císařský sýr** a **Gouda Light 30% Globus** z inventáře, které vyprší **ZÍTRA 21.01.2026**. 
+✅ **SPOTŘEBOVÁNO DNES:** 
+- Císařský sýr: 30g
+- Gouda Light 30% Globus: 166g (Roman - 100g snídaně + 66g svačina)
+  
+❗ **UPOZORNĚNÍ:** Zbývá spotřebovat ještě ~143g Císařského sýra a ~701g Gouda Light do zítřka!
 💡 **TIP:** Přidejte jogurt do oběda (vyprší za 7 dní) - probiotika a čerstvost! 🎯
 
 ---
@@ -320,8 +341,8 @@ Využili jste **Císařský sýr** z inventáře, který vyprší **ZÍTRA 21.01
 
 ### 🔴 KRITICKÁ PRIORITA - SÝR EXPIRUJE ZÍTRA!
 1. ❗❗❗ **SPOTŘEBOVAT TVRDÉ SÝRY DO ZÍTŘKA (21.01.2026):**
-   - Císařský sýr: ~143g zbývá
-   - Gouda Light: 867g zbývá
+   - Císařský sýr: ~143g zbývá (použito 30g dnes)
+   - Gouda Light 30% Globus: ~701g zbývá (použito 166g dnes - Roman)
    - **Návrhy:** Do oběda, večeře, nebo zítra na snídani
 
 2. 🥛 **PŘIDAT JOGURT DO OBĚDA:**
