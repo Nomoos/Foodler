@@ -1,0 +1,32 @@
+nazev: Bramborová kaše s mlékem a celerem
+typ: priloha
+ingredience:
+- nazev: Brambory
+  mnozstvi_g: 400
+  kategorie: hlavni
+- nazev: Celer
+  mnozstvi_g: 100
+  kategorie: hlavni
+- nazev: Mléko polotučné
+  mnozstvi_g: 100
+  kategorie: omacka
+- nazev: Olivový olej
+  mnozstvi_g: 10
+  kategorie: omacka
+kalorie_celkem: 445
+bilkoviny_celkem: 11.4
+sacharidy_celkem: 85.8
+tuky_celkem: 10.1
+vlaknina_celkem: 10.6
+priprava_cas_min: 30
+priprava_postup: |
+  1. Brambory a celer oloupat a nakrájet na kostky.
+  2. Vařit ve vodě 20-25 minut do měkka.
+  3. Slít vodu, přidat mléko a olivový olej.
+  4. Rozmačkat na kaši vidličkou nebo na pyré.
+  5. Osolit a okořenitdle chuti.
+obtiznost: snadna
+porce: 2
+vhodne_pro_meal_prep: true
+vydrzi_dni: 2
+poznamky: Lehká kaše s celerem pro zdravější variantu. Vhodná příloha nebo samostatné jídlo.

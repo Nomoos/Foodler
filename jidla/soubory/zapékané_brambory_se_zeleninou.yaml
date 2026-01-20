@@ -1,0 +1,45 @@
+nazev: Zapékané brambory se zeleninou
+typ: obed
+ingredience:
+- nazev: Brambory
+  mnozstvi_g: 300
+  kategorie: hlavni
+- nazev: Mrkev
+  mnozstvi_g: 150
+  kategorie: priloha
+- nazev: Celer
+  mnozstvi_g: 150
+  kategorie: priloha
+- nazev: Zelí
+  mnozstvi_g: 100
+  kategorie: priloha
+- nazev: Vejce slepičí M
+  mnozstvi_g: 110
+  kategorie: hlavni
+- nazev: Mléko polotučné
+  mnozstvi_g: 80
+  kategorie: omacka
+- nazev: Olivový olej
+  mnozstvi_g: 15
+  kategorie: omacka
+kalorie_celkem: 682
+bilkoviny_celkem: 26.0
+sacharidy_celkem: 80.5
+tuky_celkem: 29.2
+vlaknina_celkem: 16.0
+priprava_cas_min: 50
+priprava_postup: |
+  1. Brambory oloupat a nakrájet na tenké plátky nebo kolečka.
+  2. Mrkev a celer nastrouhát nahrubo nebo nakrájet na tenké plátky.
+  3. Zelí nakrájet na tenké proužky.
+  4. Do zapékací mísy naskládat vrstvami: brambory, mrkev, celer, zelí.
+  5. Vejce rozšlehat s mlékem, osolit, okořenit.
+  6. Zalít zeleninu vaječno-mléčnou směsí.
+  7. Pokapať olivovým olejem.
+  8. Péct v troubě při 180°C cca 40-45 minut dozlatova.
+  9. Poslední chvíli můžete posypat strouhaným sýrem (volitelně).
+obtiznost: stredni
+porce: 3
+vhodne_pro_meal_prep: true
+vydrzi_dni: 3
+poznamky: Lehké zapékané jídlo inspirované ratatouille, vhodné jako hlavní chod. Lze přidat sýr pro výraznější chuť.
