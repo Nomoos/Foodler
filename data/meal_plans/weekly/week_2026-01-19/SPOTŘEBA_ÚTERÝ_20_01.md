@@ -2,7 +2,10 @@
 
 **Datum:** 20. ledna 2026 (úterý)  
 **Jídelníček:** `day_2_2026-01-20_úterý.md`  
+**Skutečná konzumace:** `SKUTEČNÁ_KONZUMACE_20_01.md` ⭐ **NOVÝ DOKUMENT**  
 **Inventář:** `lednice/INVENTORY.md` (aktualizováno 18.01.2026)
+
+> ⚠️ **POZNÁMKA:** Skutečná spotřeba se výrazně liší od plánu. Viz kompletní přehled v `SKUTEČNÁ_KONZUMACE_20_01.md`
 
 ---
 
