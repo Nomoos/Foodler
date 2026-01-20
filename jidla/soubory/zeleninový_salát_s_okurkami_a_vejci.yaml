@@ -1,0 +1,39 @@
+nazev: Zeleninový salát s okurkami a vejci
+typ: obed
+ingredience:
+- nazev: Vejce slepičí M
+  mnozstvi_g: 110
+  kategorie: hlavni
+- nazev: Brambory
+  mnozstvi_g: 200
+  kategorie: priloha
+- nazev: Mrkev
+  mnozstvi_g: 100
+  kategorie: priloha
+- nazev: Okurky sterilované kyselé
+  mnozstvi_g: 80
+  kategorie: priloha
+- nazev: Zelí
+  mnozstvi_g: 100
+  kategorie: priloha
+- nazev: Olivový olej
+  mnozstvi_g: 15
+  kategorie: omacka
+kalorie_celkem: 516
+bilkoviny_celkem: 18.3
+sacharidy_celkem: 53.8
+tuky_celkem: 25.5
+vlaknina_celkem: 8.3
+priprava_cas_min: 25
+priprava_postup: |
+  1. Vejce uvařit natvrdo (10 minut), oloupat a nakrájet.
+  2. Brambory uvařit ve slupce, oloupat a nakrájet na kostky.
+  3. Mrkev nastrouhať na hrubém struhadle.
+  4. Zelí nakrájet na tenké proužky.
+  5. Okurky nakrájet na kolečka.
+  6. Vše smíchat v míse, přidat olivový olej, osolit a okořenit.
+obtiznost: snadna
+porce: 2
+vhodne_pro_meal_prep: true
+vydrzi_dni: 1
+poznamky: Klasický zeleninový salát vhodný jako oběd. Dobrý zdroj bílkovin a vlákniny.

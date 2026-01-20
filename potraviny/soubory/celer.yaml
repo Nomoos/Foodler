@@ -1,0 +1,18 @@
+nazev: Celer
+kategorie: zelenina
+kalorie: 18
+bilkoviny: 0.7
+sacharidy: 3.0
+tuky: 0.2
+vlaknina: 1.8
+cena_za_kg: 30.0
+sezona:
+- '9'
+- '10'
+- '11'
+- '12'
+- '1'
+- '2'
+poznamky: Celerová bulva, nízkokalorická zelenina bohatá na vlákninu
+zdroj: kaloricketabulky.cz
+datum_aktualizace: '2026-01-20'
