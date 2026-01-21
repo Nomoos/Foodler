@@ -22,10 +22,10 @@ ingredience:
 - nazev: Voda
   mnozstvi_g: 1600
   kategorie: zaklad
-- nazev: Máslo
+- nazev: Máslo (nebo Hera margarín)
   mnozstvi_g: 30
   kategorie: tuk
-- nazev: Smetana ke šlehání 33%
+- nazev: Smetana ke šlehání 33% (nebo mléko 150ml)
   mnozstvi_g: 150
   kategorie: mlecne
 - nazev: Čerstvá pažitka
@@ -38,14 +38,41 @@ tuky_celkem: 60.0
 vlaknina_celkem: 28.0
 priprava_cas_min: 50
 priprava_postup: |
-  1. Cibuli a česnek nakrájejte najemno a zpěňte na másle.
-  2. Přidejte nakrájené brambory, bílou ředkev a celer (očištěné a nakrájené na kostky).
-  3. Zalijte vodou, přidejte bujonové kostky.
-  4. Vařte na mírném ohni 30-35 minut, dokud není zelenina měkká.
-  5. Rozmixujte ponorným mixérem na jemný krém.
-  6. Přidejte smetanu, promíchejte a prohřejte (ale už nevařte).
-  7. Osolte a opepřete podle chuti (opatrně - bujon je již slaný).
-  8. Podávejte posypané čerstvou nasekanou pažitkou.
+  👩‍🍳 POSTUP
+  
+  Základ chuti
+  • Ve velkém hrnci rozpusť máslo (nebo Heru).
+  • Orestuj cibuli do sklovata (střední plamen, cca 5 minut).
+  • Přidej česnek nakrájený najemno, jen krátce rozvoníš (1 minuta).
+  
+  Zelenina
+  • Přidej:
+    - brambory (kostky cca 2×2 cm),
+    - celer (menší kostky 1×1 cm – vaří se déle),
+    - bílou ředkev (klidně větší kusy 3×3 cm).
+  • Promíchej, krátce prohřej (2–3 minuty).
+  
+  Bujon
+  • Zalij 1,5–1,7 l vody.
+  • Přidej 2 bujonové kostky (zeleninové nebo kuřecí).
+  • Přiveď k varu, stáhni na mírný oheň.
+  • Vař 30–35 minut, dokud není všechno úplně měkké.
+  
+  Mixování
+  • Sundej z plotny.
+  • Rozmixuj tyčovým mixérem do hladkého krému.
+  • Pokud je krém moc hustý, přidej trochu horké vody.
+  
+  Zjemnění
+  • Vrať na mírný oheň.
+  • Přidej smetanu (nebo mléko 150ml).
+  • Promíchej a prohřej (ale už nevař!).
+  • Dochuť bílým pepřem, případně jen malinko solí (opatrně – bujon je slaný).
+  
+  Servírování
+  • Na talíři posyp čerstvou pažitkou.
+  • Můžeš přidat kapku smetany nebo řeckého jogurtu.
+  • Podávej s čerstvým chlebem.
 obtiznost: snadna
 porce: 8
 vhodne_pro_meal_prep: true
@@ -55,3 +82,6 @@ poznamky: |
   8 porcí - ideální pro celou rodinu na několik dní.
   Vhodné zmrazit po porcích.
   Nutriční hodnoty na porci: 185 kcal, 4g bílkovin, 25g sacharidů, 7.5g tuků, 3.5g vlákniny.
+  
+  VARIANTA S MLÉKEM: Místo smetany můžete použít 150ml mléka - polévka bude lehčí a méně kalorická.
+  HERA: Můžete použít Hera margarín místo másla.

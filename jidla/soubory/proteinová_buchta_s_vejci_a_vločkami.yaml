@@ -1,0 +1,114 @@
+nazev: Proteinová buchta s vejci a vločkami
+typ: snidane
+ingredience:
+- nazev: Vejce M
+  mnozstvi_g: 220
+  kategorie: hlavni
+- nazev: Bio ovesné vločky
+  mnozstvi_g: 150
+  kategorie: sacharidy
+- nazev: Bio pohankové vločky
+  mnozstvi_g: 50
+  kategorie: sacharidy
+- nazev: Whey protein izolát (čokoládový)
+  mnozstvi_g: 30
+  kategorie: protein
+- nazev: Mana MK8 choco nut prášek
+  mnozstvi_g: 40
+  kategorie: protein
+- nazev: Mléko polotučné
+  mnozstvi_g: 150
+  kategorie: mlecne
+- nazev: Med nebo agávový sirup
+  mnozstvi_g: 30
+  kategorie: sladidlo
+- nazev: Kypřicí prášek (jedlá soda)
+  mnozstvi_g: 8
+  kategorie: koreni
+- nazev: Vanilkový extrakt
+  mnozstvi_g: 3
+  kategorie: koreni
+- nazev: Skořice
+  mnozstvi_g: 2
+  kategorie: koreni
+- nazev: Olivový olej (na vymazání formy)
+  mnozstvi_g: 5
+  kategorie: tuk
+kalorie_celkem: 1340
+bilkoviny_celkem: 85.0
+sacharidy_celkem: 140.0
+tuky_celkem: 38.0
+vlaknina_celkem: 15.0
+priprava_cas_min: 50
+priprava_postup: |
+  👩‍🍳 POSTUP
+  
+  Příprava
+  • Troubu předehřej na 180°C.
+  • Formu na pečení (20×20 cm) vymažž olivovým olejem nebo vysteľ papírem na pečení.
+  
+  Tekutá směs
+  • V míse rozšlehej 4 vejce do pěny.
+  • Přidej mléko a med (nebo agávový sirup).
+  • Přidej vanilkový extrakt.
+  • Vše důkladně promíchej.
+  
+  Suchá směs
+  • V druhé míse smíchej:
+    - ovesné vločky,
+    - pohankové vločky,
+    - whey protein,
+    - Mana prášek,
+    - kypřicí prášek (jedlou sodu),
+    - skořici.
+  • Promíchej, aby se všechno spojilo.
+  
+  Spojení
+  • Vlij tekutou směs do suché.
+  • Promíchej dřevěnou lžící (ne mixérem!) do hladkého těsta.
+  • Nech těsto 5 minut odpočinout (vločky nasáknou tekutinu).
+  
+  Pečení
+  • Vylij těsto do připravené formy.
+  • Nahoru můžeš posypat:
+    - kešu ořechy (20g),
+    - pekanové ořechy (20g),
+    - sušené švestky nakrájené (30g),
+    - nebo fíky (30g).
+  • Peč 35–40 minut, dokud není buchta zlatavá a propečená.
+  • Zkouška špejlí: zapíchni špejli do středu – má vyjít suchá.
+  
+  Servírování
+  • Nech buchtu vychladnout 10 minut ve formě.
+  • Vyklopej na mřížku.
+  • Nakrájej na 8 porcí.
+  • Podávej s řeckým jogurtem nebo cottage cheese.
+  • Můžeš polít trochou medu nebo posypat skořicí.
+obtiznost: snadna
+porce: 8
+vhodne_pro_meal_prep: true
+vydrzi_dni: 4
+poznamky: |
+  Proteinová buchta ideální pro snídaně nebo svačiny celé rodiny.
+  Na porci: 168 kcal, 10.6g bílkovin, 17.5g sacharidů, 4.8g tuků.
+  
+  VÝHODY:
+  - Vysoký obsah bílkovin (85g na celou buchtu)
+  - Použití vloček pro vitamíny a vlákninu
+  - Mírně sladká (30g medu na 8 porcí = necelé 4g/porci)
+  - Vhodná pro děti i dospělé
+  - Vydrží 4 dny v lednici
+  
+  VARIACE:
+  - Můžete přidat čokoládové kousky (30g)
+  - Borůvky (50g) - máme v lednici
+  - Bio goji bobule (20g) - máme
+  - Bez whey proteinu: přidejte 2 lžíce Mana prášku navíc
+  
+  VYUŽITÍ ZÁSOB:
+  - Bio ovesné vločky (máme 1000g)
+  - Bio pohankové vločky (máme 500g)
+  - Whey protein izolát (máme 1980g)
+  - Mana MK8 (máme 2340g)
+  - Vejce (máme 60 ks)
+  - Ořechy na posypání (máme kešu, pekanové)

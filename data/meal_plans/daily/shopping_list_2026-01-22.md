@@ -2,24 +2,22 @@
 
 ## Pro Bramborovo-ředkvovo-celerový krém s pažitkou (8 porcí)
 
-### 🥬 Zelenina
-- [ ] **Bílá ředkev** - 1 ks (cca 350g)
-- [ ] **Brambory** - 5-6 středních kusů (cca 800g)
-- [ ] **Cibule** - 1 větší (cca 120g)
-- [ ] **Česnek** - 2 stroužky
-
-### 🧈 Mléčné výrobky a tuky
-- [ ] **Máslo** - 30g (nebo máme doma?)
+### 🛒 Co musíme koupit (AKTUALIZOVÁNO)
 - [ ] **Smetana ke šlehání 33%** - 200ml balení
-
-### 🧂 Koření a dochucovadla
-- [ ] **Zeleninový bujón** - 2 kostky (nebo kuřecí podle chuti)
-- [ ] **Bílý pepř** - pokud nemáme
-- [ ] **Sůl** - pokud nemáme (opatrně, bujon je slaný)
+  - Alternativa: můžeme použít **mléko** (máme doma) - polévka bude lehčí
 
 ---
 
 ## ✅ Co už máme doma (nemusíme kupovat)
+
+### Ze zásob:
+- ✅ **Bílá ředkev** - 1 ks (máme)
+- ✅ **Brambory** - 3 kg k dispozici (potřebujeme 800g)
+- ✅ **Cibule** - 6 kusů (potřebujeme 1 ks)
+- ✅ **Česnek** - 3 palice (potřebujeme 2 stroužky)
+- ✅ **Hera (margarín)** - nahradí máslo
+- ✅ **Zeleninový/kuřecí bujón** - máme
+- ✅ **Mléko** - můžeme použít místo smetany (150ml)
 
 ### Z lednice:
 - ✅ **Celer bulvový** - 2930g k dispozici (potřebujeme 450g)
@@ -30,18 +28,18 @@
 
 ## 💰 Odhadované náklady
 
+### Varianta 1: Se smetanou
 | Položka | Množství | Odhadovaná cena |
 |---------|----------|-----------------|
-| Bílá ředkev | 1 ks | 15-20 Kč |
-| Brambory | 800g | 12-15 Kč |
-| Cibule | 1 ks | 5 Kč |
-| Česnek | 2 stroužky | 3 Kč |
-| Máslo | 30g | 8 Kč |
 | Smetana | 200ml | 20-25 Kč |
-| Bujón | 2 kostky | 10 Kč |
-| **CELKEM** | | **~75-90 Kč** |
+| **CELKEM** | | **~20-25 Kč** |
 
-**Cena za porci:** ~10 Kč/porce (8 porcí)
+**Cena za porci:** ~3 Kč/porce (8 porcí)
+
+### Varianta 2: S mlékem (máme doma)
+**CELKEM: 0 Kč** - všechny ingredience máme! ✅
+
+**Doporučení:** Použijte mléko místo smetany - ušetříte 25 Kč a polévka bude lehčí a zdravější!
 
 ---
 
@@ -80,12 +78,11 @@ Doplňkový nákup bílkovin a zeleniny
 
 ---
 
-## 🔄 Alternativy (pokud něco neseženeš)
+## 🔄 Alternativy a Úpravy receptu
 
-- **Bílá ředkev** → můžete nahradit 300g kedlubny nebo další celer
-- **Smetana 33%** → lze použít smetanu na vaření 10-12% (polévka bude jen o něco řidší)
-- **Zeleninový bujón** → kuřecí kostky jsou také OK
-- **Máslo** → olivový olej (2 lžíce)
+- **Smetana 33%** → **POUŽIJEME MLÉKO** (150ml) - polévka bude lehčí a méně kalorická
+- **Máslo** → **POUŽIJEME HERU** (margarín) - funguje stejně dobře
+- **Pokud chcete krémovější** → můžete přidat 2-3 lžíce řeckého jogurtu natural (máme v lednici)
 
 ---
 
