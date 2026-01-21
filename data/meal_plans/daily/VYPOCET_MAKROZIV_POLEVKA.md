@@ -2,7 +2,34 @@
 
 **Datum výpočtu:** 21. ledna 2026  
 **Recept:** Bramborovo-ředkvovo-celerový krém s pažitkou  
-**Počet porcí:** 8
+**Počet porcí:** 8  
+**Celkový objem:** ~5.5L (5507ml)
+
+---
+
+## 📏 Makroživiny na 100g / 100ml
+
+| Živina | Na 100g/100ml |
+|--------|---------------|
+| **Kalorie** | **39 kcal** |
+| **Bílkoviny** | **0.81g** |
+| **Sacharidy** | **5.06g** |
+| **Tuky** | **1.74g** |
+| **Vláknina** | **0.75g** |
+
+💡 **Poznámka:** Polévka má vodnatou konzistenci, proto 100ml ≈ 100g (hustota ~1.0 g/ml)
+
+---
+
+## 🥣 Praktické příklady porcí
+
+| Velikost porce | Objem | Kalorie | Bílkoviny | Sacharidy | Tuky |
+|----------------|-------|---------|-----------|-----------|------|
+| **Malá miska** | 200ml | 78 kcal | 1.6g | 10.1g | 3.5g |
+| **Střední miska** | 300ml | 117 kcal | 2.4g | 15.2g | 5.2g |
+| **Velká miska** | 400ml | 156 kcal | 3.3g | 20.2g | 7.0g |
+| **Extra velká** | 500ml | 195 kcal | 4.1g | 25.3g | 8.7g |
+| **1 standartní porce** | 688ml | 268 kcal | 5.6g | 34.8g | 12.0g |
 
 ---
 
@@ -28,14 +55,16 @@
 
 ## 📈 Celkové nutriční hodnoty
 
-### Celá polévka (8 porcí):
+### Celá polévka (5.5L):
+- **Hmotnost:** 5507g
 - **Kalorie:** 2145 kcal
 - **Bílkoviny:** 44.8g
 - **Sacharidy:** 278.5g
 - **Tuky:** 95.9g
 - **Vláknina:** 41.4g
 
-### Na 1 porci (z 8):
+### Na 1 standartní porci (z 8):
+- **Objem:** ~688ml (0.69L)
 - **Kalorie:** 268 kcal
 - **Bílkoviny:** 5.6g
 - **Sacharidy:** 34.8g
@@ -44,7 +73,7 @@
 
 ---
 
-## 🔍 Analýza makroživin (na porci)
+## 🔍 Analýza makroživin (na porci 688ml)
 
 ### Rozdělení energie:
 - **Sacharidy:** 34.8g × 4 kcal/g = 139 kcal (52%)
@@ -59,18 +88,28 @@
 
 ---
 
-## 💡 Doporučení
+## 💡 Doporučení pro jídelníček
+
+### Snídaně (200-300ml):
+- **200ml:** 78 kcal, 1.6g bílkovin
+- **300ml:** 117 kcal, 2.4g bílkovin
+- **Doplnit:** 2-3 vejci (150 kcal, 15g B) nebo cottage cheese (100g = 90 kcal, 12g B)
+
+### Oběd (400-688ml):
+- **400ml:** 156 kcal, 3.3g bílkovin
+- **688ml (1 porce):** 268 kcal, 5.6g bílkovin
+- **Doplnit:** 150g kuřecích prsou (165 kcal, 35g B) nebo 100g lososa (150 kcal, 20g B)
+
+### Večeře (300-400ml):
+- **300ml:** 117 kcal, 2.4g bílkovin
+- **400ml:** 156 kcal, 3.3g bílkovin
+- **Doplnit:** Lehčí proteinový zdroj (tvaroh, vejce, ryba)
 
 ### Pro zvýšení bílkovin:
 1. **Přidej k polévce:** 100-150g kuřecích prsou (+25-35g bílkovin)
 2. **Posyp:** 50g nastrouhaného sýru (+10-12g bílkovin)
 3. **Podávej s:** 2 vařenými vejci (+12g bílkovin)
 4. **Přidej lžíci:** Řeckého jogurtu natural (+3g bílkovin)
-
-### Pro rodinu:
-- **Roman (2001 kcal/den):** 2 porce polévky + proteinový zdroj
-- **Pája (1508 kcal/den):** 2 porce polévky + lehčí proteinový zdroj
-- **Kubík (1400 kcal/den):** 1-1.5 porce (obsahuje vitamíny z zeleniny)
 
 ---
 
@@ -81,6 +120,7 @@
 - Meal prep - vydrží **4 dny** v lednici
 - Vhodné **zmrazit** po porcích na později
 - Výborný zdroj **vitamínů** (A, C, K) a **minerálů** (draslík, hořčík)
+- **1 porce = cca 688ml** (3 velké naběračky)
 
 ---
 
