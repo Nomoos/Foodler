@@ -1,0 +1,57 @@
+nazev: Bramborovo-ředkvovo-celerový krém s pažitkou
+typ: obed
+ingredience:
+- nazev: Bílá ředkev
+  mnozstvi_g: 350
+  kategorie: hlavni
+- nazev: Brambory
+  mnozstvi_g: 800
+  kategorie: hlavni
+- nazev: Celer bulvový
+  mnozstvi_g: 450
+  kategorie: hlavni
+- nazev: Cibule
+  mnozstvi_g: 120
+  kategorie: zaklad
+- nazev: Česnek
+  mnozstvi_g: 6
+  kategorie: koreni
+- nazev: Zeleninový bujón (kostky)
+  mnozstvi_g: 20
+  kategorie: koreni
+- nazev: Voda
+  mnozstvi_g: 1600
+  kategorie: zaklad
+- nazev: Máslo
+  mnozstvi_g: 30
+  kategorie: tuk
+- nazev: Smetana ke šlehání 33%
+  mnozstvi_g: 150
+  kategorie: mlecne
+- nazev: Čerstvá pažitka
+  mnozstvi_g: 10
+  kategorie: koreni
+kalorie_celkem: 1480
+bilkoviny_celkem: 32.0
+sacharidy_celkem: 200.0
+tuky_celkem: 60.0
+vlaknina_celkem: 28.0
+priprava_cas_min: 50
+priprava_postup: |
+  1. Cibuli a česnek nakrájejte najemno a zpěňte na másle.
+  2. Přidejte nakrájené brambory, bílou ředkev a celer (očištěné a nakrájené na kostky).
+  3. Zalijte vodou, přidejte bujonové kostky.
+  4. Vařte na mírném ohni 30-35 minut, dokud není zelenina měkká.
+  5. Rozmixujte ponorným mixérem na jemný krém.
+  6. Přidejte smetanu, promíchejte a prohřejte (ale už nevařte).
+  7. Osolte a opepřete podle chuti (opatrně - bujon je již slaný).
+  8. Podávejte posypané čerstvou nasekanou pažitkou.
+obtiznost: snadna
+porce: 8
+vhodne_pro_meal_prep: true
+vydrzi_dni: 4
+poznamky: |
+  Výtečný krémový krém využívající celer z lednice (vyprší za 10 dní).
+  8 porcí - ideální pro celou rodinu na několik dní.
+  Vhodné zmrazit po porcích.
+  Nutriční hodnoty na porci: 185 kcal, 4g bílkovin, 25g sacharidů, 7.5g tuků, 3.5g vlákniny.
