@@ -50,7 +50,8 @@
 
 ### 3. ⚠️ Priorita expirujících položek
 **KRITICKÉ (vyprší dnes!):**
-- ✅ Borůvky 50g - použito ve snídani
+- ❌ ~~Borůvky 50g~~ - **ZMĚNA:** Borůvky snědeny 20.01. Romanem (50g), zbývá jen 75g
+- ✅ **Náhrada:** Použít jablko ve snídani místo borůvek
 
 **VYSOKÁ PRIORITA (vyprší za 5-7 dní):**
 - ✅ Cottage cheese 90g - použito v dopolední svačině
@@ -66,7 +67,7 @@
 - Sýry (Král sýrů, mascarpone)
 - Ořechy (pekanové, kešu, vlašské)
 - Semínka (chia, dýňová)
-- Ovoce (borůvky, jablko)
+- Ovoce (~~borůvky~~, jablko) ⚠️ *jablko místo borůvek*
 - Zelenina (celer, olivy)
 - Proteiny (Mana, whey)
 
@@ -78,7 +79,7 @@
 ### 5. 🕐 Praktické a časově efektivní
 **Meal prep večer:** 15 minut
 - Uvařit vejce
-- Připravit jogurt s borůvkami
+- Připravit jogurt s ~~borůvkami~~ **jablkem** ⚠️ *změna*
 - Rozdělit cottage cheese
 - Nasekat celer
 - Odměřit ořechy
@@ -119,7 +120,7 @@
 **Celkem:** 57.3g sacharidů (pod limitem 60g)
 
 **Zdroje:**
-- Ovoce: ~20g (borůvky, jablko) - přirozené cukry s vlákninou
+- Ovoce: ~20g (~~borůvky~~, jablko) ⚠️ *jablko místo borůvek* - přirozené cukry s vlákninou
 - Jogurty: ~20g - laktóza, probiotika
 - Pohanka: ~10g - složité sacharidy
 - Ostatní: ~7g - zelenina, ořechy
@@ -151,7 +152,7 @@
 - Pohanka: ~2g (oběd)
 - Celer: ~4g (večeře)
 - Ořechy: ~5g (různé)
-- Ovoce: ~4g (borůvky, jablko)
+- Ovoce: ~4g (~~borůvky~~, jablko) ⚠️ *jablko místo borůvek*
 - Jogurty: ~1g
 
 **Typy:**
@@ -187,7 +188,7 @@
 
 ### Pro dnešní den (21.01.):
 
-1. **⚠️ PRIORITA č.1:** Sníst borůvky při snídani (vyprší dnes!)
+1. **❌ ~~PRIORITA č.1: Sníst borůvky~~** ⚠️ **ZMĚNA:** Borůvky snědeny včera (20.01.), použít jablko místo toho
 2. **✅ Meal prep:** Připrav večer (15 min), ráno jen sestav (5 min)
 3. **🍽️ Oběd v práci?** Pokud ano, přeskoč domácí oběd nebo použij jako večerní svačinu
 4. **🥘 Celer:** Peč 30 min (můžeš dělat jiné věci)
@@ -196,7 +197,7 @@
 ### Pro další dny:
 
 1. **📅 Den 4 (čtvrtek):**
-   - Využít zbývající borůvky (75g)
+   - ~~Využít zbývající borůvky (75g)~~ ⚠️ Borůvky snědeny 20.01., zbývá jen 75g - využít je brzy
    - Spotřebovat zbývající cottage cheese (90g)
    - Experimentovat s mascarpone (zbývá 460g!)
    - Pokračovat v využívání celeru (2.78 kg)

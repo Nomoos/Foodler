@@ -10,9 +10,10 @@
 
 ### 🟡 BRZY VYPRŠÍ (do 7 dní - priorita ke spotřebování)
 
-- **Borůvky** - 125 g (lednice)
+- **Borůvky** - ~~125 g~~ **75 g** (lednice)
   - ⏰ Vyprší za 3 dní (21.01.2026)
   - ℹ️ Rychle spotřebovat, Globus
+  - ⚠️ **AKTUALIZOVÁNO 20.01.2026:** 50g snědeno Romanem večer 20.01. - zbývá pouze 75g
 - **Cottage cheese s pažitkou** - 180 g (lednice)
   - ⏰ Vyprší za 5 dní (23.01.2026)
   - ℹ️ 180g, Globus
@@ -173,7 +174,7 @@
 - **Řecký jogurt meruňka** (mlecne_vyrobky) - 140 g - 🟡 7d
 - **Řecký jogurt natural** (mlecne_vyrobky) - 1000 g - 10d
 - **Utopenci** (ostatni) - 1550 g - 30d
-- **Borůvky** (ovoce) - 125 g - ⏰ 3d
+- **Borůvky** (ovoce) - 75 g - ⏰ 3d *(aktualizováno 20.01.: -50g)*
 - **Jablka červená** (ovoce) - 1290 g - 14d
 - **Celer bulvový** (zelenina) - 2930 g - 10d
 
@@ -267,10 +268,10 @@
 
 ### OVOCE
 
-*Celkem: 2775g (2.8kg)*
+*Celkem: 2725g (2.7kg)* *(aktualizováno 20.01.2026: -50g borůvek)*
 
 - Bio Goji - 100 g
-- Borůvky - 125 g
+- Borůvky - 75 g *(aktualizováno 20.01.)*
 - Fíky sušené - 600 g
 - Jablka červená - 1290 g
 - Švestky půlené sušené - 660 g

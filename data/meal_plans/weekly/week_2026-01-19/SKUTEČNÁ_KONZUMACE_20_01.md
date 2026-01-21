@@ -37,43 +37,50 @@
 - **80g Kapie sladká paprika** - 21.6 kcal
 - 📊 Makra celkem: 391.5 kcal, ~19.2g protein, ~16.4g carbs, ~28.4g fat
 
+### 🫐 Večerní Svačina (23:00) - BORŮVKY SNĚDENY
+- **50g Borůvky** - ~29 kcal
+- 📊 Makra: 29 kcal, ~0.4g protein, ~7.2g carbs, ~0.2g fat
+- ⚠️ **POZNÁMKA:** Borůvky byly snědeny 20.01., takže již nejsou k dispozici pro den 21.01.
+
 ---
 
 ## 📊 Denní Bilance
 
-### Celkové Makronutrienty (AKTUALIZOVÁNO 21:32)
+### Celkové Makronutrienty (AKTUALIZOVÁNO 23:00 - s borůvkami)
 | Nutrient | Spotřeba | Cíl | % Cíle |
 |----------|----------|-----|--------|
-| **Kalorie** | 1772 kcal | 2000 kcal | 89% ✅ |
-| **Bílkoviny** | ~118g | 140g | 84% ✅ |
-| **Sacharidy** | ~74.5g | 70g max | 106% ⚠️ |
-| **Tuky** | ~109g | 129g | 84% ✅ |
-| **Vláknina** | ~17.7g | 50g | 35% ⚠️ |
+| **Kalorie** | 1801 kcal | 2000 kcal | 90% ✅ |
+| **Bílkoviny** | ~118.4g | 140g | 85% ✅ |
+| **Sacharidy** | ~81.7g | 70g max | 117% ⚠️ |
+| **Tuky** | ~109.2g | 129g | 85% ✅ |
+| **Vláknina** | ~18.9g | 50g | 38% ⚠️ |
 
-### ✅ Analýza - ZLEPŠENO!
+### ✅ Analýza - FINÁLNĚ AKTUALIZOVÁNO (23:00)!
 
-**Výrazné zlepšení po přidání utopenců:**
-- Zbývá: **228 kcal** (11% denního cíle) ✅ Téměř splněno!
-- Zbývá: **22g bílkovin** (16% denního cíle) ✅ Výrazně lépe!
-- Zbývá: **20g tuků** (16% denního cíle) ✅
+**Další zlepšení po přidání borůvek:**
+- Zbývá: **199 kcal** (10% denního cíle) ✅ Výborně!
+- Zbývá: **21.6g bílkovin** (15% denního cíle) ✅ Výrazně lépe!
+- Zbývá: **19.8g tuků** (15% denního cíle) ✅
 
 **Pozitivní:**
-- ✅ Kalorie téměř u cíle (89%)
-- ✅ Bílkoviny výborně (84%)
-- ✅ Tuky dobře (84%)
+- ✅ Kalorie u cíle (90%)
+- ✅ Bílkoviny výborně (85%)
+- ✅ Tuky dobře (85%)
 - ✅ Spotřeba expirujícího sýra Gouda Light (166g z 867g)
 - ✅ Konzumace zeleniny (paprika, salát)
 - ✅ Rozmanitost bílkovinných zdrojů (sýr, jogurt, whey, ořechy, semínka, utopenci)
+- ✅ **Borůvky spotřebovány - už nebudou k dispozici pro zítřek!**
 
 **Upozornění:**
-- ⚠️ Sacharidy mírně nad limitem (74.5g z 70g max) - není kritické
-- ⚠️ Nízká vláknina (17.7g z 50g) - přidat zeleninu zítra
+- ⚠️ Sacharidy nad limitem (81.7g z 70g max) - borůvky přidaly 7.2g sacharidů
+- ⚠️ Nízká vláknina (18.9g z 50g) - přidat zeleninu zítra
 
 **Doporučení pro zítra:**
 1. 🍳 Vydatnější snídaně s vejci + sýr + tuňák
 2. 🥗 Větší porce oběda s více bílkovinami
 3. 🥩 Sytá večeře s masem nebo rybami
 4. 🧀 Pokračovat ve spotřebě expirujících sýrů (701g Gouda Light zbývá)
+5. 🫐 **ZMĚNA:** Borůvky již nejsou k dispozici (snědeny 20.01.) - upravit plán dne 21.01.
 
 ---
 
