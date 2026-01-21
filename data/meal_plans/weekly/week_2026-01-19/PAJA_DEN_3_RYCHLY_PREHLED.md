@@ -7,7 +7,8 @@
 ## 🎯 Co je dnes NEJDŮLEŽITĚJŠÍ
 
 ### 🔴 KRITICKÁ PRIORITA:
-- **BORŮVKY vyprší DNES!** - Musí do snídaně (50g)
+- **~~BORŮVKY vyprší DNES~~** ⚠️ **ZMĚNA:** Borůvky byly snědeny 20.01. Romanem - zbývá jen 75g
+- **NÁHRADA:** Použít jablko místo borůvek ve snídani
 
 ### 🟡 VYSOKÁ PRIORITA:
 - **Cottage cheese** - Spotřeba 90g (vyprší za 5 dní)
@@ -21,7 +22,7 @@
 ### ☀️ Snídaně (327 kcal, 24g P)
 - Vejce 110g (2 ks)
 - Jogurt natural 100g
-- **Borůvky 50g** ⚠️ (dnes expiruje!)
+- **~~Borůvky 50g~~** ⚠️ **NÁHRADA: Jablko 50g** (borůvky snědeny 20.01., zbývá jen 75g)
 - Chia 10g
 
 ### 🍎 Dopolední (261 kcal, 12g P)
@@ -57,7 +58,7 @@
 
 ### Večer před:
 - [ ] Uvařit 2 vejce natvrdo
-- [ ] Jogurt natural + borůvky + chia do krabičky
+- [ ] Jogurt natural + ~~borůvky~~ **jablko** + chia do krabičky ⚠️ *Změna: jablko místo borůvek*
 - [ ] Cottage cheese 90g do krabičky
 - [ ] Nasekat celer na plátky
 - [ ] Odměřit ořechy (pekan 25g, kešu 15g, vlašské 30g)
@@ -78,7 +79,7 @@
 
 ## 💡 Klíčové tipy
 
-1. **Borůvky MUSÍ být snědeny dnes** - vyprší!
+1. **~~Borůvky MUSÍ být snědeny dnes~~** ⚠️ **ZMĚNA:** Borůvky snědeny 20.01., použít jablko místo toho
 2. Využívá **nové proteiny** z nákupu 20.01. (Mana, Whey)
 3. **Priorita jogurtů** s ovocem - mají jen 7 dní
 4. **Celer** - máme 2.93 kg, super na pečení
@@ -103,7 +104,7 @@
 
 ## ⚠️ Co hlídat
 
-- [ ] **Borůvky dnes snědeny?** (vyprší dnes!)
+- [ ] **~~Borůvky dnes snědeny?~~** ⚠️ **ZMĚNA:** Borůvky snědeny včera (20.01.), použít jablko
 - [ ] Cottage cheese 90g spotřeba (zbude 90g na zítra)
 - [ ] Jogurt malina použit (zbude 140g)
 - [ ] Pekanové a kešu ořechy otevřeny
