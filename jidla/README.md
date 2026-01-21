@@ -5,7 +5,7 @@ Tento modul spravuje **hotová jídla** složená z více potravin, připravená
 ## Obsah
 
 - `databaze.py` - Databáze hotových jídel s receptury a nutričními hodnotami
-- `soubory/` - Adresář s jednotlivými YAML soubory pro každé jídlo
+- `soubory/` - Adresář s jednotlivými YAML soubory pro každé jídlo organizované do kategorií
 - `JAK_PRIDAT_JIDLO.md` - Návod pro přidání nového jídla
 
 ## Struktura databáze
@@ -14,7 +14,18 @@ Od verze 2026-01 jsou jídla ukládána jako **jednotlivé YAML soubory** v adre
 To umožňuje:
 - ✅ Přidávat nová jídla bez konfliktů při spolupráci více lidí
 - ✅ Snadno spravovat a verzovat jednotlivá jídla
-- ✅ Přehledně organizovat recepty
+- ✅ Přehledně organizovat recepty do kategorií
+
+## Organizace receptů
+
+Recepty jsou organizovány do následujících kategorií (podadresářů):
+
+- **polevky/** - Polévky (např. Asijská polévka s bílou ředkví)
+- **salaty/** - Saláty (např. Salát s tuňákem, Ředkvičkový salát)
+- **hlavni_jidla/** - Hlavní jídla (např. Kuřecí prsa s brokolicí, Hovězí s cuketou)
+- **prilohy/** - Přílohy (např. Bramborová kaše, Pečená ředkev)
+- **snidane/** - Snídaně (např. Omelety, Vejce)
+- **svaciny/** - Svačiny (např. Cottage cheese s ořechy, Tvaroh)
 
 ## Přidání nového jídla
 

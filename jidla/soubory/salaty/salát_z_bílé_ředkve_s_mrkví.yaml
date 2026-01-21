@@ -1,0 +1,33 @@
+nazev: Salát z bílé ředkve s mrkví
+typ: obed
+ingredience:
+- nazev: Bílá ředkev
+  mnozstvi_g: 150
+  kategorie: hlavni
+- nazev: Mrkev
+  mnozstvi_g: 100
+  kategorie: priloha
+- nazev: Olivový olej
+  mnozstvi_g: 10
+  kategorie: omacka
+- nazev: Citronová šťáva
+  mnozstvi_g: 10
+  kategorie: omacka
+- nazev: Sůl a pepř
+  mnozstvi_g: 2
+  kategorie: koření
+kalorie_celkem: 152
+bilkoviny_celkem: 2.8
+sacharidy_celkem: 17.5
+tuky_celkem: 9.3
+vlaknina_celkem: 4.2
+priprava_cas_min: 10
+priprava_postup: |
+  1. Bílou ředkev a mrkev nakrájet na tenké plátky nebo nahrubo nastrouhat.
+  2. Přidat olivový olej, citronovou šťávu, sůl a pepř.
+  3. Dobře promíchat a nechat 5 minut odpočinout.
+obtiznost: snadna
+porce: 1
+vhodne_pro_meal_prep: true
+vydrzi_dni: 2
+poznamky: Osvěžující a křupavý salát, bohatý na vitamín C

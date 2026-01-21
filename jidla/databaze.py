@@ -90,7 +90,7 @@ class DatabzeJidel:
     
     @classmethod
     def _load_from_yaml_files(cls) -> List[Jidlo]:
-        """Načte jídla z YAML souborů."""
+        """Načte jídla z YAML souborů (včetně podadresářů)."""
         jidla = []
         jidla_dir = Path(__file__).parent / "soubory"
         
@@ -98,8 +98,8 @@ class DatabzeJidel:
             print(f"Warning: Directory {jidla_dir} does not exist. No dishes loaded.")
             return []
         
-        # Načte všechny YAML soubory
-        for yaml_file in sorted(jidla_dir.glob("*.yaml")):
+        # Načte všechny YAML soubory z hlavního adresáře i podadresářů
+        for yaml_file in sorted(jidla_dir.glob("**/*.yaml")):
             try:
                 with open(yaml_file, "r", encoding="utf-8") as f:
                     data = yaml.safe_load(f)
