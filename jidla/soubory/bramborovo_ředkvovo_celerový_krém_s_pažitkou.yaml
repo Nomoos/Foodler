@@ -2,59 +2,65 @@ nazev: Bramborovo-ředkvovo-celerový krém s pažitkou
 typ: obed
 ingredience:
 - nazev: Bílá ředkev
-  mnozstvi_g: 350
+  mnozstvi_g: 434
   kategorie: hlavni
 - nazev: Brambory
-  mnozstvi_g: 800
+  mnozstvi_g: 1196
   kategorie: hlavni
 - nazev: Celer bulvový
-  mnozstvi_g: 450
+  mnozstvi_g: 365
   kategorie: hlavni
 - nazev: Cibule
-  mnozstvi_g: 120
+  mnozstvi_g: 80
   kategorie: zaklad
 - nazev: Česnek
-  mnozstvi_g: 6
+  mnozstvi_g: 12
   kategorie: koreni
-- nazev: Zeleninový bujón (kostky)
-  mnozstvi_g: 20
+- nazev: Kuřecí bujón (kostka)
+  mnozstvi_g: 10
   kategorie: koreni
 - nazev: Voda
-  mnozstvi_g: 1600
+  mnozstvi_g: 3000
   kategorie: zaklad
-- nazev: Máslo (nebo Hera margarín)
-  mnozstvi_g: 30
+- nazev: Hera Classic (margarín)
+  mnozstvi_g: 110
   kategorie: tuk
-- nazev: Smetana ke šlehání 33% (nebo mléko 150ml)
-  mnozstvi_g: 150
+- nazev: Mléko polotučné
+  mnozstvi_g: 300
   kategorie: mlecne
 - nazev: Čerstvá pažitka
   mnozstvi_g: 10
   kategorie: koreni
-kalorie_celkem: 1480
-bilkoviny_celkem: 32.0
-sacharidy_celkem: 200.0
-tuky_celkem: 60.0
-vlaknina_celkem: 28.0
+- nazev: Bílý pepř
+  mnozstvi_g: 2
+  kategorie: koreni
+- nazev: Sůl (volitelně)
+  mnozstvi_g: 2
+  kategorie: koreni
+kalorie_celkem: 2145
+bilkoviny_celkem: 44.8
+sacharidy_celkem: 278.5
+tuky_celkem: 95.9
+vlaknina_celkem: 41.4
 priprava_cas_min: 50
 priprava_postup: |
   👩‍🍳 POSTUP
   
   Základ chuti
-  • Ve velkém hrnci rozpusť máslo (nebo Heru).
-  • Orestuj cibuli do sklovata (střední plamen, cca 5 minut).
-  • Přidej česnek nakrájený najemno, jen krátce rozvoníš (1 minuta).
+  • Ve velkém hrnci rozpusť 110g Hery Classic.
+  • Orestuj 80g cibule nakrájené najemno do sklovata (střední plamen, cca 5 minut).
+  • Přidej 12g česneku nakrájeného najemno, jen krátce rozvoníš (1 minuta).
   
   Zelenina
   • Přidej:
-    - brambory (kostky cca 2×2 cm),
-    - celer (menší kostky 1×1 cm – vaří se déle),
-    - bílou ředkev (klidně větší kusy 3×3 cm).
+    - 1196g brambor (kostky cca 2×2 cm),
+    - 365g celeru bulvového (menší kostky 1×1 cm – vaří se déle),
+    - 434g bílé ředkve (klidně větší kusy 3×3 cm).
   • Promíchej, krátce prohřej (2–3 minuty).
   
   Bujon
-  • Zalij 1,5–1,7 l vody.
-  • Přidej 2 bujonové kostky (zeleninové nebo kuřecí).
+  • Zalij 3 litry vody.
+  • Přidej 1 kuřecí bujonovou kostku.
   • Přiveď k varu, stáhni na mírný oheň.
   • Vař 30–35 minut, dokud není všechno úplně měkké.
   
@@ -65,23 +71,39 @@ priprava_postup: |
   
   Zjemnění
   • Vrať na mírný oheň.
-  • Přidej smetanu (nebo mléko 150ml).
+  • Přidej 300ml mléka polotučného.
   • Promíchej a prohřej (ale už nevař!).
   • Dochuť bílým pepřem, případně jen malinko solí (opatrně – bujon je slaný).
   
   Servírování
   • Na talíři posyp čerstvou pažitkou.
-  • Můžeš přidat kapku smetany nebo řeckého jogurtu.
+  • Můžeš přidat kapku mléka nebo řeckého jogurtu.
   • Podávej s čerstvým chlebem.
 obtiznost: snadna
 porce: 8
 vhodne_pro_meal_prep: true
 vydrzi_dni: 4
 poznamky: |
-  Výtečný krémový krém využívající celer z lednice (vyprší za 10 dní).
+  Výtečný krémový krém využívající celer z lednice.
   8 porcí - ideální pro celou rodinu na několik dní.
   Vhodné zmrazit po porcích.
-  Nutriční hodnoty na porci: 185 kcal, 4g bílkovin, 25g sacharidů, 7.5g tuků, 3.5g vlákniny.
   
-  VARIANTA S MLÉKEM: Místo smetany můžete použít 150ml mléka - polévka bude lehčí a méně kalorická.
-  HERA: Můžete použít Hera margarín místo másla.
+  NUTRIČNÍ HODNOTY NA PORCI (z 8):
+  - Kalorie: 268 kcal
+  - Bílkoviny: 5.6g
+  - Sacharidy: 34.8g
+  - Tuky: 12.0g
+  - Vláknina: 5.2g
+  
+  POUŽITÉ MNOŽSTVÍ (skutečné):
+  - 434g bílá ředkev
+  - 1196g brambory
+  - 365g celer bulvový
+  - 80g cibule
+  - 12g česnek
+  - 110g Hera Classic
+  - 1 kuřecí kostka
+  - 3L vody
+  - 300ml mléka
+  
+  VARIANTA: Můžete použít smetanu místo mléka pro bohatší chuť.
