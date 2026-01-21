@@ -289,7 +289,7 @@
 ## 🔗 Související dokumenty
 
 - **Hlavní jídelníček:** `day_3_2026-01-21_středa.md` - kompletní denní plán pro celou rodinu
-- **Inventář:** `lednice/INVENTORY.md` - aktuální stav zásob
+- **Inventář:** `lednice/AKTUALNI_STAV.md` - aktuální stav zásob
 - **Profil:** `osoby/osoba_2/profil.py` - Pájiny cíle a metriky
 
 ---

@@ -86,7 +86,7 @@
 
 ✅ **Úkol splněn:**
 - ✅ Vytvořen detailní přehled spotřeby zásob pro pondělí 19.1.2026
-- ✅ Propojení s existujícím inventářem (`lednice/INVENTORY.md`)
+- ✅ Propojení s existujícím inventářem (`lednice/AKTUALNI_STAV.md`)
 - ✅ Jasný nákupní seznam pro chybějící položky
 - ✅ Sledování expiračních dat pro předcházení plýtvání
 
@@ -118,7 +118,7 @@ tail -n 15 data/meal_plans/weekly/week_2026-01-19/SPOTŘEBA_PONDĚLÍ_19_01.md
 
 Práce zahrnovala:
 - Analýzu jídelníčku pro pondělí 19.1.2026
-- Propojení s inventářem v `lednice/INVENTORY.md`
+- Propojení s inventářem v `lednice/AKTUALNI_STAV.md`
 - Výpočet spotřeby jednotlivých položek
 - Kontrolu expiračních dat
 - Identifikaci chybějících položek

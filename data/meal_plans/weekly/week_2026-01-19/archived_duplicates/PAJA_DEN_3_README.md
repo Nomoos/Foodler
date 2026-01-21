@@ -56,7 +56,7 @@ Tento den představuje **perfektně vyvážený jídelníček** s maximálním v
 
 ### Související dokumenty:
 - **`day_3_2026-01-21_středa.md`** - Rodinný jídelníček pro celý den
-- **`lednice/INVENTORY.md`** - Aktuální stav zásob
+- **`lednice/AKTUALNI_STAV.md`** - Aktuální stav zásob
 - **`SPOTŘEBA_ÚTERÝ_20_01.md`** - Spotřeba z předchozího dne
 
 ---
