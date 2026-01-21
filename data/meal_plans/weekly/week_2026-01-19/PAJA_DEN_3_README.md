@@ -73,7 +73,7 @@ Tento den představuje **perfektně vyvážený jídelníček** s maximálním v
 **Den 3 (Středa 21.01.) - ZLEPŠENO:**
 - ✅ Kompletní denní plán (1502 kcal, 93g P)
 - ✅ Využití nových zásob (Globus + proteiny)
-- ✅ Priorita expirujících položek (borůvky, jogurty)
+- ⚠️ ~~Priorita expirujících položek (borůvky, jogurty)~~ **ZMĚNA:** Borůvky snědeny 20.01., jogurty stále priorita
 - ✅ Větší rozmanitost (pekanové ořechy, mascarpone, celer)
 - ✅ Vyšší vláknina (22g vs. 6g)
 
@@ -166,7 +166,7 @@ Tento den představuje **perfektně vyvážený jídelníček** s maximálním v
 ### 4. **Rozmanitost**
 - 15+ různých ingrediencí
 - 6 různých zdrojů bílkovin
-- Barevná paleta (borůvky, celer, olivy)
+- Barevná paleta (~~borůvky~~, celer, olivy, jablko) ⚠️ *jablko místo borůvek*
 
 ### 5. **Sytost a energie**
 - Rovnoměrné rozložení kalorií
@@ -274,7 +274,7 @@ Den 3 představuje **vzorový jídelníček** s perfektní bilancí makronutrien
 **Klíčové úspěchy:**
 - ✅ 100% splnění kalorického cíle
 - ✅ Využití 8 nových položek z Globusu
-- ✅ Spotřeba kritických položek (borůvky)
+- ⚠️ ~~Spotřeba kritických položek (borůvky)~~ **ZMĚNA:** Borůvky snědeny 20.01.
 - ✅ Vysoká vláknina a rozmanitost
 - ✅ Meal prep friendly
 
