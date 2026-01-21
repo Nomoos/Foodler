@@ -1,10 +1,25 @@
 # Přidání nového jídla
 
-Pro přidání nového jídla do databáze, vytvořte nový YAML soubor v adresáři `jidla/soubory/`.
+Pro přidání nového jídla do databáze, vytvořte nový YAML soubor v příslušné kategorii v adresáři `jidla/soubory/`.
+
+## Kategorie
+
+Recepty jsou organizovány do následujících podadresářů:
+
+- **polevky/** - Polévky
+- **salaty/** - Saláty a studená jídla
+- **hlavni_jidla/** - Hlavní jídla (maso, ryby)
+- **prilohy/** - Přílohy
+- **snidane/** - Snídaně
+- **svaciny/** - Svačiny a lehké pokrmy
+
+Vyberte kategorii, do které vaše jídlo patří, a vytvořte tam nový YAML soubor.
 
 ## Formát souboru
 
 Název souboru by měl být tvořen z názvu jídla (malými písmeny, mezery nahrazeny podtržítky), např. `grilované_kure_s_ryzí.yaml`.
+
+Uložte soubor do příslušného podadresáře, např. `jidla/soubory/hlavni_jidla/grilované_kure_s_ryzí.yaml`.
 
 ### Příklad:
 

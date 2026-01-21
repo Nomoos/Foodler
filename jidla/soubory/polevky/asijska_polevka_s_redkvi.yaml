@@ -1,0 +1,41 @@
+nazev: Asijská polévka s bílou ředkví
+typ: vecere
+ingredience:
+- nazev: Bílá ředkev
+  mnozstvi_g: 200
+  kategorie: hlavni
+- nazev: Kuřecí vývar
+  mnozstvi_g: 400
+  kategorie: hlavni
+- nazev: Kuřecí prsa
+  mnozstvi_g: 150
+  kategorie: hlavni
+- nazev: Zázvor
+  mnozstvi_g: 10
+  kategorie: koření
+- nazev: Česnek
+  mnozstvi_g: 5
+  kategorie: koření
+- nazev: Sojová omáčka
+  mnozstvi_g: 10
+  kategorie: omacka
+- nazev: Jarní cibulka
+  mnozstvi_g: 20
+  kategorie: koření
+kalorie_celkem: 268
+bilkoviny_celkem: 42.8
+sacharidy_celkem: 14.2
+tuky_celkem: 4.8
+vlaknina_celkem: 3.5
+priprava_cas_min: 25
+priprava_postup: |
+  1. Kuřecí vývar přivést k varu.
+  2. Přidat nakrájenou bílou ředkev, zázvor a česnek.
+  3. Vařit 10 minut.
+  4. Přidat nakrájená kuřecí prsa a vařit dalších 8-10 minut.
+  5. Ochutit sojovou omáčkou a posypat jarní cibulkou.
+obtiznost: snadna
+porce: 1
+vhodne_pro_meal_prep: true
+vydrzi_dni: 3
+poznamky: Lehká, sytá polévka bohatá na bílkoviny, nízká na sacharidy

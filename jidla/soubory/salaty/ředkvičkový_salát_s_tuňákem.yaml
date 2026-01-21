@@ -1,0 +1,37 @@
+nazev: Ředkvičkový salát s tuňákem
+typ: obed
+ingredience:
+- nazev: Bílá ředkev
+  mnozstvi_g: 100
+  kategorie: hlavni
+- nazev: Tuňák konzervovaný
+  mnozstvi_g: 120
+  kategorie: hlavni
+- nazev: Okurka
+  mnozstvi_g: 80
+  kategorie: priloha
+- nazev: Cherry rajčata
+  mnozstvi_g: 50
+  kategorie: priloha
+- nazev: Olivový olej
+  mnozstvi_g: 10
+  kategorie: omacka
+- nazev: Citrón
+  mnozstvi_g: 10
+  kategorie: koření
+kalorie_celkem: 234
+bilkoviny_celkem: 29.5
+sacharidy_celkem: 8.4
+tuky_celkem: 10.2
+vlaknina_celkem: 2.8
+priprava_cas_min: 10
+priprava_postup: |
+  1. Bílou ředkev nakrájet na tenké plátky.
+  2. Okurku nakrájet na kostičky, rajčata rozpůlit.
+  3. Přidat tuňák, olivový olej a citronovou šťávu.
+  4. Dobře promíchat a ochutit solí a pepřem.
+obtiznost: snadna
+porce: 1
+vhodne_pro_meal_prep: true
+vydrzi_dni: 2
+poznamky: Vysokobílkovinný, nízkosacharidový salát ideální pro keto dietu

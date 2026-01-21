@@ -1,0 +1,37 @@
+nazev: Pečená bílá ředkev s bylinkami
+typ: priloha
+ingredience:
+- nazev: Bílá ředkev
+  mnozstvi_g: 300
+  kategorie: hlavni
+- nazev: Olivový olej
+  mnozstvi_g: 15
+  kategorie: omacka
+- nazev: Rozmarýn
+  mnozstvi_g: 2
+  kategorie: koření
+- nazev: Tymián
+  mnozstvi_g: 2
+  kategorie: koření
+- nazev: Česnek
+  mnozstvi_g: 5
+  kategorie: koření
+- nazev: Sůl a pepř
+  mnozstvi_g: 2
+  kategorie: koření
+kalorie_celkem: 176
+bilkoviny_celkem: 3.3
+sacharidy_celkem: 19.8
+tuky_celkem: 13.5
+vlaknina_celkem: 6.0
+priprava_cas_min: 35
+priprava_postup: |
+  1. Bílou ředkev nakrájet na kousky (2-3 cm).
+  2. Smíchat s olivovým olejem, bylinkami a česnekem.
+  3. Rozložit na plech a péct na 200°C 30 minut.
+  4. Občas promíchat, aby byla ředkev zlatavá ze všech stran.
+obtiznost: snadna
+porce: 1
+vhodne_pro_meal_prep: true
+vydrzi_dni: 3
+poznamky: Skvělá příloha k masu, sladká a křupavá
