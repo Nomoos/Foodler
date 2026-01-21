@@ -169,7 +169,7 @@ analyzer.analyzovat()
 - `day_2_2026-01-20_úterý.md` - Původní plánovaný jídelníček
 - `SPOTŘEBA_ÚTERÝ_20_01.md` - Sledování spotřeby zásob
 - `shopping_list.md` - Týdenní nákupní seznam
-- `lednice/INVENTORY.md` - Aktuální inventář
+- `lednice/AKTUALNI_STAV.md` - Aktuální inventář
 
 ---
 

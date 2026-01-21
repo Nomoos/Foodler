@@ -1,8 +1,8 @@
 # 🧊 Inventář Domácích Zásob
 
-**Datum aktualizace:** 21. ledna 2026  
+**Datum aktualizace:** 20. ledna 2026  
 **Nákup:** Globus (účtenka z 18.1.2026, 3708 Kč) + Proteiny a Mana (20.1.2026)  
-**Celkem položek:** 43
+**Celkem položek:** 42
 
 ---
 
@@ -14,10 +14,6 @@
   - ⏰ Vyprší za 3 dní (21.01.2026)
   - ℹ️ Rychle spotřebovat, Globus
   - ⚠️ **AKTUALIZOVÁNO 20.01.2026:** 50g snědeno Romanem večer 20.01. - zbývá pouze 75g
-- **Bílá redkev** - 1 ks (lednice)
-  - ⏰ Vyprší za 2 dny (23.01.2026)
-  - ℹ️ Potřebuje rychle spotřebovat
-  - ⚠️ **PŘIDÁNO 21.01.2026:** Zelenina ke spotřebování
 - **Cottage cheese s pažitkou** - 180 g (lednice)
   - ⏰ Vyprší za 5 dní (23.01.2026)
   - ℹ️ 180g, Globus
@@ -180,7 +176,6 @@
 - **Utopenci** (ostatni) - 1550 g - 30d
 - **Borůvky** (ovoce) - 75 g - ⏰ 3d *(aktualizováno 20.01.: -50g)*
 - **Jablka červená** (ovoce) - 1290 g - 14d
-- **Bílá redkev** (zelenina) - 1 ks - ⏰ 2d *(přidáno 21.01.2026)*
 - **Celer bulvový** (zelenina) - 2930 g - 10d
 
 ### 🏠 SPÍŽ
@@ -300,9 +295,8 @@
 
 ### ZELENINA
 
-*Celkem: 2 ks, 3810g (3.8kg)*
+*Celkem: 1 ks, 3810g (3.8kg)*
 
-- Bílá redkev - 1 ks
 - Celer bulvový - 2930 g
 - Olivy zelené - 880 g
 - Pažitka v květináči - 1 ks
@@ -318,4 +312,96 @@
 
 ---
 
-*Vygenerováno: 21.01.2026*
+*Vygenerováno: 18.01.2026*
+
+---
+
+# 📚 Dokumentace a Návod k Použití
+
+Tento modul spravuje **domácí zásoby** - sleduje potraviny v lednici, mrazáku a spíži.
+
+## Obsah
+
+- `zasoby.py` - Správa zásob, sledování expirace a inventář
+
+## Použití
+
+```python
+from lednice.zasoby import SpravceZasob, ZasobaPolozka
+from datetime import date, timedelta
+
+# Vytvoření správce zásob
+spravce = SpravceZasob()
+
+# Přidání položky do lednice
+dnes = date.today()
+spravce.lednice.pridat_polozku(ZasobaPolozka(
+    nazev="Kuřecí prsa",
+    mnozstvi=500,
+    jednotka="g",
+    kategorie="bilkoviny",
+    datum_nakupu=dnes,
+    datum_expirace=dnes + timedelta(days=3),
+    umisteni="lednice"
+))
+
+# Výpis inventáře
+spravce.vypis_inventar()
+
+# Upozornění na expiraci
+spravce.upozorneni_expirace()
+
+# Kontrola, zda lze uvařit jídlo
+ingredience = ["Kuřecí prsa", "Brokolice", "Olivový olej"]
+muzu_uvarit = spravce.lednice.co_muzu_uvarit(ingredience)
+
+if muzu_uvarit:
+    print("✅ Můžete uvařit!")
+else:
+    print("❌ Chybí ingredience")
+
+# Odebrání použité potraviny
+spravce.lednice.odebrat_polozku("Kuřecí prsa", 200, "lednice")
+```
+
+## Funkce
+
+### Správa zásob
+- Přidávání/odebírání položek
+- Sledování množství
+- Aktualizace stavu (otevřeno/neotevřeno)
+
+### Umístění
+- **lednice** - Čerstvé potraviny
+- **mrazak** - Zmrazené potraviny
+- **spiz** - Trvanlivé potraviny
+
+### Sledování expirace
+- Automatická kontrola čerstvosti
+- Upozornění na blížící se expiraci (3 dny)
+- Seznam prošlých položek
+
+### Inventář
+- Zobrazení podle umístění
+- Zobrazení podle kategorií
+- Celková hodnota zásob
+
+### Plánování vaření
+- Kontrola dostupnosti ingrediencí
+- Návrhy na jídla podle dostupných surovin
+
+## Kategorie položek
+
+- **bilkoviny** - Maso, ryby, vejce
+- **mlecne_vyrobky** - Tvaroh, jogurt, sýr
+- **zelenina** - Brokolice, špenát, cuketa, atd.
+- **tuky** - Oleje, máslo
+- **orechy** - Mandle, vlašské ořechy, semínka
+- **koreni** - Koření, bylinky
+
+## Upozornění
+
+⚠️ **Expirační datum** - Systém automaticky upozorní na položky, které brzy vyprší nebo již prošly.
+
+🟡 **Brzy vyprší** - Položky, které vyprší do 3 dnů  
+🔴 **Prošlé** - Položky s prošlým datem expirace

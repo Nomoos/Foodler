@@ -80,4 +80,4 @@
 ---
 
 *Vygenerováno: 19.01.2026*
-*Inventář aktualizován podle: lednice/INVENTORY.md*
+*Inventář aktualizován podle: lednice/AKTUALNI_STAV.md*
