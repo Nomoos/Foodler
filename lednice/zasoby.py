@@ -349,6 +349,14 @@ class SpravceZasob:
             umisteni="lednice",
             poznamky="Živá bylinková rostlina, Globus nákup"
         ))
+        # Bílá redkev - potřebuje spotřebovat
+        self.lednice.pridat_polozku(ZasobaPolozka(
+            "Bílá redkev", 1, "ks", "zelenina",
+            datum_nakupu=dnes,
+            datum_expirace=dnes + timedelta(days=2),
+            umisteni="lednice",
+            poznamky="Potřebuje rychle spotřebovat"
+        ))
         
         # Tuky a ořechy
         # NÁKUP 18.1.2026 - Olivový olej 1L
