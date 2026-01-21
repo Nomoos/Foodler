@@ -2,6 +2,16 @@
 
 Tato složka obsahuje všechny recepty organizované do kategorií pro snadnou orientaci.
 
+## Poznámka k organizaci
+
+**Důležité:** Složková struktura (polevky, salaty, atd.) je **organizační kategorie** podle typu pokrmu, 
+zatímco pole `typ` v receptu (snidane, obed, vecere, svacina) označuje **kdy se jídlo typicky konzumuje**.
+
+Například:
+- Omeleta může být ve složce `snidane/` (je to vaječný pokrm), ale mít `typ: vecere` (pokud se jí na večeři)
+- Polévka může být ve složce `polevky/`, ale mít `typ: vecere` (pokud je to večeře)
+- Salát může být ve složce `salaty/`, ale mít `typ: obed` (pokud je to oběd)
+
 ## Kategorie
 
 ### 🍲 polevky/
