@@ -1,8 +1,8 @@
 # 🧊 Inventář Domácích Zásob
 
-**Datum aktualizace:** 20. ledna 2026  
+**Datum aktualizace:** 21. ledna 2026  
 **Nákup:** Globus (účtenka z 18.1.2026, 3708 Kč) + Proteiny a Mana (20.1.2026)  
-**Celkem položek:** 42
+**Celkem položek:** 43
 
 ---
 
@@ -14,6 +14,10 @@
   - ⏰ Vyprší za 3 dní (21.01.2026)
   - ℹ️ Rychle spotřebovat, Globus
   - ⚠️ **AKTUALIZOVÁNO 20.01.2026:** 50g snědeno Romanem večer 20.01. - zbývá pouze 75g
+- **Bílá redkev** - 1 ks (lednice)
+  - ⏰ Vyprší za 2 dny (23.01.2026)
+  - ℹ️ Potřebuje rychle spotřebovat
+  - ⚠️ **PŘIDÁNO 21.01.2026:** Zelenina ke spotřebování
 - **Cottage cheese s pažitkou** - 180 g (lednice)
   - ⏰ Vyprší za 5 dní (23.01.2026)
   - ℹ️ 180g, Globus
@@ -176,6 +180,7 @@
 - **Utopenci** (ostatni) - 1550 g - 30d
 - **Borůvky** (ovoce) - 75 g - ⏰ 3d *(aktualizováno 20.01.: -50g)*
 - **Jablka červená** (ovoce) - 1290 g - 14d
+- **Bílá redkev** (zelenina) - 1 ks - ⏰ 2d *(přidáno 21.01.2026)*
 - **Celer bulvový** (zelenina) - 2930 g - 10d
 
 ### 🏠 SPÍŽ
@@ -295,8 +300,9 @@
 
 ### ZELENINA
 
-*Celkem: 1 ks, 3810g (3.8kg)*
+*Celkem: 2 ks, 3810g (3.8kg)*
 
+- Bílá redkev - 1 ks
 - Celer bulvový - 2930 g
 - Olivy zelené - 880 g
 - Pažitka v květináči - 1 ks
@@ -312,4 +318,4 @@
 
 ---
 
-*Vygenerováno: 18.01.2026*
+*Vygenerováno: 21.01.2026*
