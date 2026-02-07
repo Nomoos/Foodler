@@ -1,0 +1,63 @@
+nazev: Omeleta s RaPaCiSo a sýrem
+typ: snidane
+ingredience:
+- nazev: Vejce slepičí M
+  mnozstvi_g: 165
+  kategorie: hlavni
+- nazev: RaPaCiSo omáčka (zahuštěná)
+  mnozstvi_g: 40
+  kategorie: omacka
+- nazev: Sýr eidam
+  mnozstvi_g: 30
+  kategorie: priloha
+- nazev: Máslo
+  mnozstvi_g: 10
+  kategorie: omacka
+- nazev: Sůl
+  mnozstvi_g: 0.3
+  kategorie: koreni
+- nazev: Pepř černý mletý
+  mnozstvi_g: 0.2
+  kategorie: koreni
+kalorie_celkem: 412
+bilkoviny_celkem: 29.8
+sacharidy_celkem: 2.9
+tuky_celkem: 31.4
+vlaknina_celkem: 0.7
+priprava_cas_min: 12
+priprava_postup: |
+  1. Vejce rozklepnout do misky, osolit, opepřit a rozšlehat.
+  2. Na pánvi rozehřát máslo na středním ohni.
+  3. Vlít vejce a rozložit po celé pánvi.
+  4. Když spodek začne tuhnout (2-3 min), přidat RaPaCiSo na polovinu omelety.
+  5. Posypat nastrouhaným sýrem.
+  6. Přeložit omeletu na polovinu.
+  7. Nechat chvilku propéct, až se sýr roztaví.
+  8. Podávat ihned.
+obtiznost: snadna
+porce: 1
+vhodne_pro_meal_prep: false
+poznamky: |
+  Chutná a sytá omeleta s rajčatovou chutí.
+  Sýr dodává slanost a krémovost.
+  
+  NUTRIČNÍ PROFIL (1 porce):
+  - Kalorie: 412 kcal
+  - Bílkoviny: 29.8g (vysoký obsah - protein-first)
+  - Sacharidy: 2.9g (ultra-low-carb)
+  - Tuky: 31.4g (zdravé tuky z vajec)
+  - Vláknina: 0.7g
+  
+  DENNÍ PODÍL PRO ROMANA:
+  - 21% kalorií (412/2000)
+  - 21% bílkovin (29.8/140)
+  - 4% sacharidů (2.9/70)
+  
+  Vhodné pro: Romana, Páju - sytá snídaně nebo večeře
+  Best served fresh - nejlepší čerstvá.
+  
+  TIPY:
+  - RaPaCiSo můžeš přidat i přímo do vajec před smažením
+  - Přidej špenát pro extra vitamíny
+  - Použij jiný sýr (gouda, mozzarella, feta)
+  - Pro extra proteiny přidej šunku nebo salám
