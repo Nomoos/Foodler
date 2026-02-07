@@ -5,7 +5,7 @@ ingredience:
   mnozstvi_g: 165
   kategorie: hlavni
 - nazev: RaPaCiSo omáčka (zahuštěná)
-  mnozstvi_g: 30
+  mnozstvi_g: 40
   kategorie: omacka
 - nazev: Smetana 33%
   mnozstvi_g: 10
@@ -19,11 +19,11 @@ ingredience:
 - nazev: Pepř černý mletý
   mnozstvi_g: 0.2
   kategorie: koreni
-kalorie_celkem: 337
-bilkoviny_celkem: 21.9
-sacharidy_celkem: 9.8
-tuky_celkem: 22.8
-vlaknina_celkem: 1.9
+kalorie_celkem: 350
+bilkoviny_celkem: 21.7
+sacharidy_celkem: 10.7
+tuky_celkem: 24.4
+vlaknina_celkem: 0.69
 priprava_cas_min: 40
 priprava_postup: |
   1. Vejce rozklepnout do misky a důkladně rozšlehat.
@@ -39,20 +39,24 @@ vhodne_pro_meal_prep: true
 vydrzi_dni: 3
 poznamky: |
   Jednoduchý a sytý vaječný nákyp se sladkou červenou řepou.
-  Vysoký obsah bílkovin (21.9g), nízké sacharidy (9.8g) - ideální pro keto/low-carb dietu.
+  Vysoký obsah bílkovin (21.7g), nízké sacharidy (10.7g) - ideální pro keto/low-carb dietu.
   
   NUTRIČNÍ PROFIL (1 porce):
-  - Kalorie: 337 kcal
-  - Bílkoviny: 21.9g (vysoký obsah - protein-first)
-  - Sacharidy: 9.8g (nízké - keto-friendly)
-  - Tuky: 22.8g (zdravé tuky z vajec a smetany)
-  - Vláknina: 1.9g
+  - Kalorie: 350 kcal
+  - Bílkoviny: 21.7g (vysoký obsah - protein-first)
+  - Sacharidy: 10.7g (nízké - keto-friendly)
+  - Tuky: 24.4g (zdravé tuky z vajec a smetany)
+  - Vláknina: 0.69g
   
   POZNÁMKY K SUROVINÁM:
   - Vejce zapisovat jako "Vejce slepičí M" (vejce celé syrové)
-  - RaPaCiSo jako konkrétní produkt (88 kcal/100g)
-  - Řepa jako "Červená řepa sterilovaná" (okapaná)
-  - Smetana 33% (kyselá nebo sladká)
+  - RaPaCiSo 6521 jako konkrétní produkt (40g)
+  - Řepa jako "Červená řepa sterilovaná" (Gustona plátky, 65g)
+  - Smetana 33% ke šlehání (Olma, 10g)
   
   Vhodné pro: Romana (v rámci denního limitu 70g sacharidů), Páju (60g limit).
   Excelentní protein-first jídlo bez přílohy.
+  
+  OVĚŘENÉ HODNOTY:
+  Pro Romana: 18% denních kalorií (350/2000), 15% bílkovin (21.7/140), 
+  15% sacharidů (10.7/70), 18% tuků (24.4/129), 1% vlákniny (0.69/50)
