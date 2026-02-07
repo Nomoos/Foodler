@@ -23,7 +23,7 @@ kalorie_celkem: 350
 bilkoviny_celkem: 21.7
 sacharidy_celkem: 10.7
 tuky_celkem: 24.4
-vlaknina_celkem: 0.69
+vlaknina_celkem: 0.68
 priprava_cas_min: 40
 priprava_postup: |
   1. Vejce rozklepnout do misky a důkladně rozšlehat.
@@ -46,7 +46,7 @@ poznamky: |
   - Bílkoviny: 21.7g (vysoký obsah - protein-first)
   - Sacharidy: 10.7g (nízké - keto-friendly)
   - Tuky: 24.4g (zdravé tuky z vajec a smetany)
-  - Vláknina: 0.69g
+  - Vláknina: 0.68g
   
   POZNÁMKY K SUROVINÁM:
   - Vejce zapisovat jako "Vejce slepičí M" (vejce celé syrové)
@@ -59,4 +59,6 @@ poznamky: |
   
   OVĚŘENÉ HODNOTY:
   Pro Romana: 18% denních kalorií (350/2000), 15% bílkovin (21.7/140), 
-  15% sacharidů (10.7/70), 18% tuků (24.4/129), 1% vlákniny (0.69/50)
+  15% sacharidů (10.7/70), 18% tuků (24.4/129), 1% vlákniny (0.68/50)
+  
+  Nutriční hodnoty ověřeny z tracking app s přesnými daty jednotlivých produktů.
